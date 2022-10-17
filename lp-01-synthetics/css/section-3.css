@@ -1,0 +1,105 @@
+#section-3{
+    width: 100%;
+    margin: auto;
+    float: left;
+    min-height: 65vh;
+    margin-top: 10vh;
+    background-image: url("../img/bg-1.png");
+    background-repeat: repeat;
+    color: #333;
+    display: block;
+    padding-bottom: 60px;
+}
+
+#section-3 h3{
+    padding: 30px 15px;
+}
+
+.grid-area{
+    padding: 20px 15px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    line-height: 1.5em;
+}
+
+.grid-item-3{
+    width: 30%;
+    min-width: 140px;
+    margin: 20px 0;
+    float: left;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgb(14 14 14 / 10%) 0px 4px 8px 0px;
+    margin-left: 3%;
+    height: 20vh;
+    min-width: 300px;
+}
+
+.grid-item-3 p, .grid-item-3 .grid-title{
+    padding: 0px 20px;
+}
+
+.grid-item-3 p{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.grid-title{
+    width: 100%;
+    height: 80px;
+}
+
+.grid-title h5{
+    width: 60%;
+    float: left;
+}
+
+.grid-icon{
+    width: 30%;
+    float: right;
+}
+
+.grid-icon img{
+    height: auto;
+    margin-top: 10px;
+}
+
+/* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
+@media only screen and (max-width: 1080px) {    
+    .grid-item-3 p{
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 780PX */
+@media only screen and (max-width: 780px) {    
+    .grid-item-3 p{
+        font-size: 0.85em;
+        font-weight: 300;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 600PX */
+@media only screen and (max-width: 600px) {
+    #section-3{
+        margin-top: 5vh;
+    }
+    #section-3 h3{
+        padding: 20px 15px;
+    }
+    .grid-area{
+        padding: 0px 15px;
+    }
+    .grid-item-3{
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        float: left;
+    }
+    .grid-item-3 p, .grid-item-3 .grid-title{
+        font-size: 0.8em;
+        padding: 0 10px;
+    }
+}

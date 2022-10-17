@@ -1,0 +1,119 @@
+#section-1{
+    width: 100%;
+    margin: auto;
+    min-height: 75vh;
+    background-color: rgb(200, 214, 215, 0.22);
+    color: #333;
+    display: block;
+    padding-bottom: 60px;
+    z-index: 5;
+}
+
+#text-section-1{
+    padding: 0px 15px;
+    padding-top: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#section-1 p{
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+#grid-area-5{
+    margin: auto;
+    padding: 30px 0;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 120px;
+    display: block;
+}
+
+.grid-item-5{
+    width: 20%;
+    min-width: 100px;
+    float: left;
+    height: 100px;
+    text-align: center;
+}
+
+.grid-item-5 p{
+    padding: 6px !important;
+    font-size: 0.85em !important;
+}
+
+.grid-icon-5{
+    max-width: 80%;
+}
+
+.cta-area{
+    width: 100%;
+    min-width: 350px;
+    text-align: center;
+    margin: auto;
+    float: left;
+}
+
+.cta-btn{
+    margin-top: 20px;
+    padding: 12px; 
+    border-radius: 8px; 
+    background-color: #ff444f; 
+    border: 0; 
+    color: #fff; 
+    font-size: 14px; 
+    line-height: 20px; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
+@media only screen and (max-width: 1080px) {
+    #section-1 p{
+        font-size: 1em;
+    }
+    .grid-item-5 p{
+        font-size: 0.75em !important;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 780PX */
+@media only screen and (max-width: 780px) {
+    #section-1 p{
+        font-size: 0.8em;
+    }
+    .grid-item-5 p{
+        font-size: 0.65em !important;
+    }
+    .tab-content{
+        padding: 40px;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 600PX */
+@media only screen and (max-width: 600px) {
+    #grid-area-5{
+        margin: auto;
+        padding: 20px 0;
+        min-height: 120px;
+    }
+    .grid-item-5{
+        width: 30%;
+        min-width: 100px;
+        float: left;
+        height: 180px;
+        text-align: center;
+    }
+    
+    .grid-item-5 p{
+        padding: 6px !important;
+        font-size: 0.85em !important;
+    }
+    
+    .grid-icon-5{
+        max-width: 80%;
+    }
+}

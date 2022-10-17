@@ -1,0 +1,301 @@
+#section-2{
+    width: 100%;
+    float: left;
+    margin: auto;
+    min-height: 65vh;
+    background-color: #fbfbfb;
+    color: #333;
+    display: block;
+    padding: 50px 0;
+}
+
+#section-2 h3{
+    padding: 0px 15px;
+}
+
+#tab-area{
+    padding: 0px 15px;
+    padding-top: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 0px;
+    border-radius: 8px 16px 0px 0px;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: white;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: #fbfbfb;
+    border-radius: 8px 16px 0px 0px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 25px;
+    font-size: 1.5em;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+
+  .tab-cab-img{
+    width: 35px;
+    float: left;
+  }
+
+  .tab-cab-img img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .tab-cab-txt{
+    margin-left: 10px;
+    max-width: 150px;
+    float: left;
+  }
+
+  /* Style the tab content */
+  .tab-content {
+    background-color: white;
+    display: none;
+    padding: 20px 70px 50px 20px;
+    border: 0px;
+    box-shadow: 10px 10px 5px #ccc;
+  }
+
+  .tab-content p{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 20px;
+  }
+
+.h-line{
+    width: 100%;
+    height: 1px;
+    background-color: #eaeced;
+    margin: 20px auto;
+}
+
+.drop-down-asset{
+    width: 100%;
+    min-height: 3.5em;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    border: 1px solid #eaeced;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.dda-cel{
+    float: left;
+    height: 3.5em;
+    margin: auto;
+    text-align: center;
+}
+
+.dda-cel-icon{
+    height: 100%;
+    max-width: 40px;
+    float: left;
+}
+
+.dda-cel-icon img{
+    margin: 10px 15px;
+    max-height: 32px;
+}
+
+.dda-cel-txt{
+    font-size: 0.9em;
+    margin: 20px 15px;
+    max-height: 32px;
+}
+
+.dda-cel p{
+    font-size: 0.9em;
+}
+
+.dda-type{
+    width: 20%;
+    font-weight: 800;
+    float: left;
+}
+
+.dda-item-1{
+    width: 35%;
+    border-left: 1px solid #eaeced;
+}
+
+.dda-item-2{
+    width: 35%;
+}
+
+.dda-action{
+    width: 5%;
+    min-width: 30px;
+    border-left: 1px solid #eaeced;
+    text-align: center;
+    float: right;
+}
+
+.drop-down-asset button {
+    background-color: transparent;
+    float: none;
+    padding: 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+  }
+
+.dd-arrow{
+    max-width: 20px;
+    transform: rotate(180deg);
+    margin-top: 1em;
+}
+
+.asset-description{
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 350;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+}
+
+.asset-description p{
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0 20px;
+}
+
+/* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
+@media only screen and (max-width: 1080px) {
+    #why p{
+        font-size: 1em;
+    }
+    .mkt-link-5 p{
+        font-size: 0.75em !important;
+    }
+    .tab-cab-img{
+        width: 32px;
+    }
+    .tab-cab-img img{
+        width: 30px;
+        height: 30px;
+    }
+    .tab-cab-txt{
+        margin-top: 5px;
+    }
+    .dda-cel-icon img{
+        margin: 15px 15px;
+        max-height: 25px;
+    }
+    .dda-cel-txt{
+        font-size: 0.9em;
+    }
+    .tab-content{
+        padding: 60px;
+    }
+    .tab-content p{
+        font-size: 0.9em !important;
+        padding: 12px;
+    }
+    .tab button{
+        font-size: 1.3em;
+        padding: 20px;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 780PX */
+@media only screen and (max-width: 780px) {
+    #why p{
+        font-size: 0.8em;
+    }
+    .mkt-link-5 p{
+        font-size: 0.65em !important;
+    }
+    .tab-cab-img{
+        width: 30px;
+    }
+    .tab-cab-img img{
+        width: 28px;
+        height: 28px;
+    }
+    .tab-cab-txt{
+        margin-top: 5px;
+    }
+    .dda-cel-icon{
+        max-width: 35px;
+    }
+    .dda-cel-icon img{
+        margin: 15px 5px;
+        max-height: 25px;
+    }
+    .dda-cel-txt{
+        font-size: 0.8em;
+    }
+    .tab-content{
+        padding: 40px;
+    }
+    .tab-content p{
+        font-size: 0.8em !important;
+        padding: 10px;
+    }
+    .tab button{
+        font-size: 1.15em;
+        padding: 20px;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 600PX */
+@media only screen and (max-width: 600px) {
+    #tab-area{
+        padding-top: 25px;
+    }
+    .tab button {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    .dda-cel-icon{
+        max-width: 30px;
+    }
+    .dda-cel-icon img{
+        margin: 15px 5px;
+        max-height: 25px;
+    }
+    .dda-cel-txt{
+        font-size: 0.7em;
+    }
+    .tab-content {
+        padding: 5px;
+    }
+    .tab-content p{
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    .dda-cel p{
+        font-size: 0.8em;
+    }
+    .dd-arrow{
+        max-width: 1em;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .dda-action{
+        width: 30px;
+    }
+    
+}

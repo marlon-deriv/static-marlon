@@ -1,0 +1,114 @@
+/* ==== TOP BAR STYLES ==== */
+    #top{
+        background-color: #000;
+        width: 100%;
+        height: 70vh;
+        z-index: 10;
+    }
+
+    #top-bar{
+        width: 100%;
+        min-height: 70px;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+    }
+
+    #logo-top-bar-area{
+        text-align: right;
+        width: 49%;
+        padding: 20px 0px;
+        float: left;
+        z-index: 20;
+    }
+
+    #logo-top-bar-area img{
+        width: 160px;
+        padding-right: 10px;
+        border-right: 2px solid #F8FAFB;
+    }
+
+    #get-trading-top-bar-area{
+        text-align: left;
+        width: 49%;
+        padding: 20px 0px;
+        float: left;
+    }
+
+    #get-trading-top-bar-area img{
+        padding-top: 4px;
+        padding-left: 10px;
+        width: 140px;
+    }
+/* ==== END OF TOP BAR STYLES ==== */
+
+    #video-div {
+        max-width: 70vw;
+        max-height: 80vh;
+        position: absolute;
+        left: -50px;
+        top: -100px;
+        z-index: 5;
+    } 
+
+    #video-background{
+        left: 0;
+        /* top: -50px; */
+        width: 120%; 
+        max-height: 80vh; 
+        height: auto;
+    } 
+
+/* ==== HERO STYLES: ==== */
+    #hero{
+        width: 100%;
+        color: #F8FAFB;
+        height: 65vh;
+        display: block;
+        position: absolute;
+        top: 10vh;
+        z-index: 30;
+    }
+    #hero h1{
+        max-width: 1000px;
+        margin: auto;
+    }
+    #hero p{
+        max-width: 1000px;
+        padding: 40px 100px;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    @media only screen and (max-width: 1080px) {
+        #hero p{
+            font-size: 1.25em;
+        }
+        #video-div {
+            top: -30px;
+            max-height: 60vh;
+        }
+        #video-background{
+            max-height: 60vh;
+        } 
+    }
+    @media only screen and (max-width: 780px) {
+        #hero p{
+            font-size: 1.1em;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        #hero p{
+            font-size: 1em;
+            padding: 25px 50px;
+        }
+        #video-div {
+            top: 50px;
+            max-height: 50vh;
+        }
+        #video-background{
+            max-height: 50vh;
+        } 
+    }
+/* ==== END OF HERO STYLES ==== */

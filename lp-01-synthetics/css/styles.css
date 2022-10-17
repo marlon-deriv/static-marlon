@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 100%;
+    min-width: 350px;
+    z-index: 1;
+}
+
+h1{
+    padding: 25vh 0 0 0;
+    text-align: center;
+    font-size: 4em;
+    line-height: 1.5em;
+}
+
+h2{
+    padding: 12vh 0 0 0;
+    text-align: center;
+    font-size: 2.8em;
+    line-height: 1.5em;
+}
+
+h3{
+    padding: 10vh 0 0 0;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+h5{
+    padding: 3vh 0 2vh 0;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1080px) {
+    h1{
+        font-size: 3em; 
+    }
+    h2{
+        font-size: 2.4em; 
+    }
+    h3{
+        font-size: 1.75em; 
+    }
+    h5{
+        font-size: 1.2em; 
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    h1{
+        font-size: 2.4em; 
+    }
+    h2{
+        font-size: 2em; 
+    }
+    h3{
+        font-size: 1.5em; 
+    }
+    h5{
+        font-size: 1.1em; 
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 600PX */
+@media only screen and (max-width: 600px) {
+    h1{
+        padding: 15vh 0 0 0;
+        font-size: 2.2em; 
+    }
+    h2{
+        padding: 10vh 0 0 0;
+        font-size: 1.8em; 
+    }
+    h3{
+        font-size: 1.3em; 
+    }
+    h5{
+        font-size: 1em; 
+    }
+}
