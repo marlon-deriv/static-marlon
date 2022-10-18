@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/top.css">
-        <link rel="stylesheet" href="css/section-1.css">
-        <link rel="stylesheet" href="css/section-2.css">
-        <link rel="stylesheet" href="css/section-3.css">
-        <link rel="stylesheet" href="css/bottom.css">
-        <!-- TODO: Insert favicon -->
+        <link rel="stylesheet" href="css/styles.css"> <!-- Generic HTML tags -->
+        <link rel="stylesheet" href="css/top.css"> <!-- Top of the page (bar, menu, hero) -->
+        <link rel="stylesheet" href="css/section-1.css"> <!-- Section 1 -->
+        <link rel="stylesheet" href="css/section-2.css"> <!-- Section 2 -->
+        <link rel="stylesheet" href="css/section-3.css"> <!-- Section 3 -->
+        <link rel="stylesheet" href="css/bottom.css"> <!-- Footer, disclaimer, social media -->
         <title>Synthetic indices | Volatility indices | Deriv</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body>
         <section id="top">
@@ -96,7 +96,7 @@
                             <div class="dda-cel-txt">Volatility 300 (1s) Index</div>
                         </div>
                         <div class="dda-action dda-cel">
-                            <button class="dd-arrow" onclick="openDescription(event, 'cfd-vol')"><img src="img/arrow.svg"/></button>
+                            <button class="dd-arrow" onclick="openDescription(event, 'cfd-vol', this)"><img src="img/arrow.svg"/></button>
                         </div>
                     </div>
                     <div class="asset-description" id="cfd-vol">
@@ -116,7 +116,7 @@
                             <div class="dda-cel-txt">Boom 300 Index</div>
                         </div>
                         <div class="dda-action dda-cel">
-                            <button class="dd-arrow" onclick="openDescription(event, 'cfd-cb')"><img src="img/arrow.svg"/></button>
+                            <button class="dd-arrow" onclick="openDescription(event, 'cfd-cb', this)"><img src="img/arrow.svg"/></button>
                         </div>
                     </div>
                     <div class="asset-description" id="cfd-cb">
@@ -142,7 +142,7 @@
                                 <div class="dda-cel-txt">Volatility 300 (1s) Index</div>
                             </div>
                             <div class="dda-action dda-cel">
-                                <button class="dd-arrow" onclick="openDescription(event, 'mult-vol')"><img src="img/arrow.svg"/></button>
+                                <button class="dd-arrow" onclick="openDescription(event, 'mult-vol', this)"><img src="img/arrow.svg"/></button>
                             </div>
                         </div>
                         <div class="asset-description" id="mult-vol">
@@ -185,7 +185,7 @@
             </div>
         </section>
         <div id="live-chat">
-            <img src="img/live-chat.svg"/>
+            <a href="#"><img src="img/live-chat.svg"/></a>
         </div>
         <footer>
             <div id="footer-area">

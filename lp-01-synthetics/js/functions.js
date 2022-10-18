@@ -22,16 +22,21 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
   }
 
-  function openDescription(evt, descName) {
+  function openDescription(evt, descName, btn) {
     // Variables:
-    var i, description, assetsDescs;
+    var i, description, arrow;
 
     // Get element with id selected and hide them
     description = document.getElementById(descName);
+    arrow = btn.children[0];
+    // alert(btn.children[0]);
 
     if(description.style.display == "block"){
+        arrow.style.transform = "rotate(0deg)";
         description.style.display = "none";
+        
     } else {
         description.style.display = "block";
+        arrow.style.transform = "rotate(180deg)";
     }
   }
