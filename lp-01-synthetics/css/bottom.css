@@ -2,10 +2,9 @@ footer{
     width: 100%;
     float: left;
     padding-top: 30px;
-    min-height: 60vh;
+    min-height: 50vh;
     color: #333;
     background-color: #F8FAFB;
-    min-height: 75vh;
 }
 
 #live-chat{
@@ -31,10 +30,9 @@ footer{
 */
 
 #footer-area{
-    padding-top: 20px;
+    padding: 20px 15px;
     max-width: 1000px;
     margin: auto;
-    padding: 0px 15px;
 }
 
 .flex-container-main {
@@ -88,7 +86,7 @@ footer{
     justify-content: center;
     width: 100%;
     height: fit-content;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     box-shadow: inset 0 1px 0 0 #e5e5e5;
     z-index: 100;
