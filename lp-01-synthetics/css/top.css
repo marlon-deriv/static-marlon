@@ -1,29 +1,28 @@
 /*  TOP BAR STYLES  */
     #top{
-        background-color: #000;
         width: 100%;
+        min-height: 70vh;
+        background-color: #000;
         margin: auto;
         float: left;
-        min-height: 70vh;
         z-index: 10;
     }
 
     #top-bar{
-        background-color: #000;
         width: 100%;
         min-height: 70px;
-        z-index: 100;
+        background-color: #000;
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 100;
     }
 
     #logo-top-bar-area{
-        text-align: right;
         width: 49%;
         padding: 20px 0px;
+        text-align: right;
         float: left;
-        z-index: 20;
     }
 
     #logo-top-bar-area img{
@@ -33,16 +32,16 @@
     }
 
     #get-trading-top-bar-area{
-        text-align: left;
         width: 49%;
         padding: 20px 0px;
+        text-align: left;
         float: left;
     }
 
     #get-trading-top-bar-area img{
+        width: 140px;
         padding-top: 4px;
         padding-left: 10px;
-        width: 140px;
     }
 /* ==== END OF TOP BAR STYLES ==== */
 
@@ -56,23 +55,21 @@
     } 
 
     #video-background{
-        left: 0;
         width: 120%; 
         max-height: 80vh; 
         height: auto;
+        left: 0;
     } 
 
 /* ==== HERO STYLES: ==== */
     #hero-signup{
-        height: auto;
+        max-width: 1000px;
+        margin: auto; 
         position: absolute; 
         left: 0; 
         right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        max-width: 1000px;
-        z-index: 30;
         float: left;
+        z-index: 10;
     }
     #hero{
         max-width: 65%;
@@ -95,12 +92,12 @@
     #signup-area{
         width: 30%;
         height: 40vh;
-        float: left;
         background: linear-gradient(to right, #600000 0%, #990000 100%);
+        margin: 15vh 1vw;
         opacity: 0.8;
         color: #F8FAFB;
-        margin: 15vh 1vw;
         border-radius: 10px;
+        float: left;
     }
 
     #signup-area form{
@@ -113,9 +110,9 @@
     #signup-area input{
         width: 100%;
         height: 2em;
-        border: 0;
         margin: auto;
         margin-bottom: 30px;
+        border: 0;
     }
 
     #signup-btn{

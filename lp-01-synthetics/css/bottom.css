@@ -1,26 +1,27 @@
-footer{
-    width: 100%;
-    float: left;
-    padding-top: 30px;
-    min-height: 50vh;
-    color: #333;
-    background-color: #F8FAFB;
-}
-
 #live-chat{
+    padding: 1.2rem;
     position: fixed;
-    z-index: 999;
     bottom: 9rem;
     right: 1.6rem;
     display: flex;
     box-shadow: rgb(0 0 0 / 5%) 0px 16px 20px 0px, rgb(0 0 0 / 5%) 0px 0px 20px 0px;
+    box-sizing: border-box;
+    border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
-    padding: 1.2rem;
     display: flex;
     cursor: pointer;
-    border-radius: 50%;
-    box-sizing: border-box;
+    z-index: 999;
+}
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #F8FAFB;
+    padding-top: 30px;
+    color: #333;
+    float: left;
+    z-index: 10;
 }
 
 /* TODO: Change img 
@@ -30,9 +31,9 @@ footer{
 */
 
 #footer-area{
-    padding: 20px 15px;
     max-width: 1000px;
     margin: auto;
+    padding: 20px 15px;
 }
 
 .flex-container-main {
@@ -42,13 +43,13 @@ footer{
     justify-content: space-between;
 }
 .flex-container-derivlogo {
-    padding: 50px 30px 30px 0;
     max-width: 40%;
+    padding: 50px 30px 30px 0;
     float: left;
 }
 .flex-container-socials {
-    padding: 50px 30px 30px 0;
     max-width: 60%;
+    padding: 50px 30px 30px 0;
     float: right;
 }
 .flex-container-socials img{
@@ -60,11 +61,11 @@ footer{
 }
 #disclaimer{
     width: 100%;
-    float: left;
-    line-height: 1.5em;
-    border-top: 1px solid #ccc;
     margin-bottom: 4em;
     padding-bottom: 1em;
+    border-top: 1px solid #ccc;
+    line-height: 1.5em;
+    float: left;
 }
 #disclaimer p, #disclaimer li{
     font-size: 0.85em;
@@ -72,27 +73,25 @@ footer{
     padding: 0.8em 0;
 }
 #disclaimer ul{
-    list-style-type: none;
-    padding-left: 25px;
-    border-left: #f8a2a8 solid 5px;
     background-color: #eff2f5;
+    padding-left: 25px;
+    list-style-type: none;
+    border-left: #f8a2a8 solid 5px;
 }
 
 #fixed-p{
-    background-color: #f9fafc;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: fit-content;
-    /* position: fixed; */
-    bottom: 0px;
+    background-color: #f9fafc;
+    background-size: cover;
     box-shadow: inset 0 1px 0 0 #e5e5e5;
-    z-index: 100;
+    bottom: 0px;
     font-size: 0.85em;
     font-weight: 300;
     line-height: 1.5em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #fixed-p-content{
@@ -101,17 +100,18 @@ footer{
 }
 
 .h-line-100vw{
-    height: 1px;
     width: 100%;
-    margin-top: 20px;
+    height: 1px;
     background-color: #ccc;
+    margin-top: 20px;
     position: absolute;
     left: 0;
 }
 
 #p-ps{
-    bottom: 0;
     padding: 1.2em;
+    bottom: 0;
+    
 }
 
 /* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
@@ -133,8 +133,8 @@ footer{
 /* SETTING FOR RESOLUTIONS UNDER 780PX */
 @media only screen and (max-width: 780px) {
     #disclaimer p, #disclaimer li{
-        font-size: 0.85em;
         padding: 0.5em 0;
+        font-size: 0.85em;
     }
     #disclaimer{
         line-height: 1.3em;
@@ -153,8 +153,8 @@ footer{
         padding-top: 10px;
     }
     #disclaimer p, #disclaimer li{
-        font-size: 0.8em;
         padding: 0.5em 0;
+        font-size: 0.8em;
     }
     #disclaimer{
         line-height: 1.1em;
@@ -163,13 +163,13 @@ footer{
         font-size: 0.75em;
     }
     .flex-container-derivlogo {
-        padding: 15px 10px 10px 0;
         max-width: 70%;
+        padding: 15px 10px 10px 0;
         float: left;
     }
     .flex-container-socials {
-        padding: 10px 20px 20px 0;
         max-width: 70%;
+        padding: 10px 20px 20px 0;
         float: left;
     }
     .flex-container-socials img{
@@ -187,8 +187,8 @@ footer{
 /* SETTING FOR RESOLUTIONS UNDER 600PX */
 @media only screen and (max-width: 450px) {
     #disclaimer p, #disclaimer li{
-        font-size: 0.75em;
         padding: 0.4em 0;
+        font-size: 0.75em;
     }
     #disclaimer{
         line-height: 1em;

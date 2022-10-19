@@ -1,12 +1,13 @@
 #section-2{
     width: 100%;
-    float: left;
-    margin: auto;
     min-height: 65vh;
     background-color: #fbfbfb;
+    margin: auto;
+    padding: 50px 0;
     color: #333;
     display: block;
-    padding: 50px 0;
+    float: left;
+    z-index: 10;
 }
 
 #section-2 h3{
@@ -14,16 +15,17 @@
 }
 
 #tab-area{
-    padding: 0px 15px;
-    padding-top: 50px;
     max-width: 1000px;
     margin: auto;
+    padding: 0px 15px;
+    padding-top: 50px;
 }
+
 /* Style the tab */
 .tab {
-    overflow: hidden;
     border: 0px;
     border-radius: 8px 16px 0px 0px;
+    overflow: hidden;
   }
 
   /* Create an active/current tablink class */
@@ -34,15 +36,15 @@
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: #fbfbfb;
-    border-radius: 8px 16px 0px 0px;
-    float: left;
+    padding: 25px;
     border: none;
+    border-radius: 8px 16px 0px 0px;
     outline: none;
     cursor: pointer;
-    padding: 25px;
     font-size: 1.5em;
     font-weight: 800;
     transition: 0.3s;
+    float: left;
   }
 
   .tab-cab-img{
@@ -56,25 +58,25 @@
   }
 
   .tab-cab-txt{
-    margin-left: 10px;
     max-width: 150px;
+    margin-left: 10px;
     float: left;
   }
 
   /* Style the tab content */
   .tab-content {
     background-color: white;
-    display: none;
     padding: 20px 70px 50px 20px;
     border: 0px;
     box-shadow: 10px 10px 30px #e5e5e5;
+    display: none;
   }
 
   .tab-content p{
+    padding: 20px;
+    text-align: center;
     font-size: 1em;
     line-height: 1.5em;
-    text-align: center;
-    padding: 20px;
   }
 
 .h-line{
@@ -89,33 +91,33 @@
     min-height: 3.5em;
     margin: auto;
     margin-top: 30px;
-    display: block;
     border: 1px solid #eaeced;
     border-radius: 10px 10px 0px 0px;
+    display: block;
 }
 
 .dda-cel{
-    float: left;
     height: 3.5em;
     margin: auto;
     text-align: center;
+    float: left;
 }
 
 .dda-cel-icon{
-    height: 100%;
     max-width: 40px;
+    height: 100%;
     float: left;
 }
 
 .dda-cel-icon img{
-    margin: 10px 15px;
     max-height: 32px;
+    margin: 10px 15px;
 }
 
 .dda-cel-txt{
-    font-size: 0.9em;
-    margin: 20px 15px;
     max-height: 32px;
+    margin: 20px 15px;
+    font-size: 0.9em;
 }
 
 .dda-cel p{
@@ -146,39 +148,39 @@
 }
 
 .drop-down-asset button {
-    background-color: transparent;
-    float: none;
-    padding: 0;
     width: 100%;
+    background-color: transparent;
+    padding: 0;
     border: none;
     cursor: pointer;
     outline: none;
     transition: 0.3s;
+    float: none;
   }
 
 .dd-arrow{
     max-width: 20px;
-    transform: rotate(180deg);
     margin-top: 1em;
+    transform: rotate(180deg);
 }
 
 .asset-description{
     width: 100%;
-    font-size: 0.9em;
-    font-weight: 350;
+    background-color: #fbfbfb;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #fbfbfb;
     border: 1px solid #eaeced;
     border-top: 0;
     border-radius: 0px 0px 10px 10px;
+    font-size: 0.9em;
+    font-weight: 350;
     display: none;
 }
 
 .asset-description p{
+    padding: 0 20px;
     text-align: left;
     line-height: 1.5em;
-    padding: 0 20px;
 }
 
 /* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
@@ -200,8 +202,8 @@
         margin-top: 5px;
     }
     .dda-cel-icon img{
-        margin: 15px 15px;
         max-height: 25px;
+        margin: 15px 15px;
     }
     .dda-cel-txt{
         font-size: 0.9em;
@@ -210,12 +212,12 @@
         padding: 60px;
     }
     .tab-content p{
-        font-size: 0.9em !important;
         padding: 12px;
+        font-size: 0.9em !important;
     }
     .tab button{
-        font-size: 1.3em;
         padding: 20px;
+        font-size: 1.3em;
     }
 }
 
@@ -241,8 +243,8 @@
         max-width: 35px;
     }
     .dda-cel-icon img{
-        margin: 15px 5px;
         max-height: 25px;
+        margin: 15px 5px;
     }
     .dda-cel-txt{
         font-size: 0.8em;
@@ -251,12 +253,12 @@
         padding: 40px;
     }
     .tab-content p{
-        font-size: 0.8em !important;
         padding: 10px;
+        font-size: 0.8em !important;
     }
     .tab button{
-        font-size: 1.15em;
         padding: 20px;
+        font-size: 1.15em;
     }
 }
 
@@ -273,8 +275,8 @@
         max-width: 30px;
     }
     .dda-cel-icon img{
-        margin: 15px 5px;
         max-height: 25px;
+        margin: 15px 5px;
     }
     .dda-cel-txt{
         font-size: 0.7em;
@@ -283,8 +285,8 @@
         padding: 5px;
     }
     .tab-content p{
-        font-size: 0.9em;
         padding: 10px;
+        font-size: 0.9em;
     }
     .dda-cel p{
         font-size: 0.8em;
@@ -297,5 +299,4 @@
     .dda-action{
         width: 30px;
     }
-    
 }

@@ -5,19 +5,14 @@
 
 html {
     scroll-behavior: smooth;
-    width: 100vw;
-  }
+}
 
 body{
-    font-family: "IBM Plex Sans", sans-serif;
-    width: 100%;
-    min-width: 350px;
-    z-index: 1;
+    min-width: 100vw;
+    margin: 0;
     padding: 0;
-    margin-right: 0;
-    /* position: fixed; */
-    left: 0;
-    top: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    z-index: 1;
 }
 
 h1{

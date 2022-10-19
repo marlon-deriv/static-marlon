@@ -1,14 +1,15 @@
 #section-3{
     width: 100%;
-    margin: auto;
-    float: left;
     min-height: 50vh;
-    margin-top: 10vh;
     background-image: url("../img/bg-1.png");
     background-repeat: repeat;
+    margin: auto;
+    margin-top: 10vh;
+    padding-bottom: 60px;
     color: #333;
     display: block;
-    padding-bottom: 60px;
+    float: left;
+    z-index: 10;
 }
 
 #section-3 h3{
@@ -16,7 +17,6 @@
 }
 
 .grid-area{
-    /* padding: 2vh 2vw; */
     max-width: 1000px;
     margin: auto;
     margin-top: 8vh;
@@ -27,12 +27,12 @@
     width: 30%;
     min-width: 240px;
     height: 22vh;
-    margin: 0;
-    float: left;
     background-color: white;
+    margin: 0;
+    margin-left: 1.5vw;
     border-radius: 4px;
     box-shadow: rgb(14 14 14 / 10%) 0px 4px 8px 0px;
-    margin-left: 1.5vw;
+    float: left;
 }
 
 .grid-item-3 p, .grid-item-3 .grid-title{

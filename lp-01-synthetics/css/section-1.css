@@ -1,19 +1,19 @@
 #section-1{
     width: 100%;
-    margin: auto;
     min-height: 65vh;
     background-color: rgb(200, 214, 215, 0.22);
+    margin: auto;
+    padding-bottom: 60px;
     color: #333;
     display: block;
-    padding-bottom: 60px;
-    z-index: 5;
     float: left;
+    z-index: 10;
 }
 
 #text-section-1{
-    padding: 0 15px;
     max-width: 1000px;
     margin: auto;
+    padding: 0 15px;
 }
 
 #section-1 p{
@@ -24,20 +24,20 @@
 }
 
 #grid-area-5{
-    margin: auto;
-    padding: 2vh 0;
     max-width: 1000px;
     width: 100%;
     min-height: 15vh;
+    margin: auto;
+    padding: 2vh 0;
     display: block;
 }
 
 .grid-item-5{
     width: 20%;
     min-width: 100px;
+    height: 15vh;
     float: left;
     text-align: center;
-    height: 15vh;
 }
 
 .grid-item-5 p{
@@ -52,17 +52,17 @@
 .cta-area{
     width: 100%;
     min-width: 350px;
-    text-align: center;
     margin: auto;
+    text-align: center;
     float: left;
 }
 
 .cta-btn{
+    background-color: #ff444f; 
     margin-top: 20px;
     padding: 12px; 
-    border-radius: 8px; 
-    background-color: #ff444f; 
     border: 0; 
+    border-radius: 8px; 
     color: #fff; 
     font-size: 14px; 
     line-height: 20px; 
