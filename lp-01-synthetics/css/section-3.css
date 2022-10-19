@@ -2,7 +2,7 @@
     width: 100%;
     margin: auto;
     float: left;
-    min-height: 65vh;
+    min-height: 50vh;
     margin-top: 10vh;
     background-image: url("../img/bg-1.png");
     background-repeat: repeat;
@@ -12,28 +12,27 @@
 }
 
 #section-3 h3{
-    padding: 30px 15px;
+    padding: 2vh 2vw 0;
 }
 
 .grid-area{
-    padding: 20px 15px;
+    /* padding: 2vh 2vw; */
     max-width: 1000px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 8vh;
     line-height: 1.5em;
 }
 
 .grid-item-3{
     width: 30%;
-    min-width: 140px;
-    margin: 20px 0;
+    min-width: 240px;
+    height: 22vh;
+    margin: 0;
     float: left;
     background-color: white;
     border-radius: 4px;
     box-shadow: rgb(14 14 14 / 10%) 0px 4px 8px 0px;
-    margin-left: 3%;
-    height: 20vh;
-    min-width: 300px;
+    margin-left: 1.5vw;
 }
 
 .grid-item-3 p, .grid-item-3 .grid-title{
@@ -74,10 +73,14 @@
 }
 
 /* SETTING FOR RESOLUTIONS UNDER 780PX */
-@media only screen and (max-width: 780px) {    
-    .grid-item-3 p{
-        font-size: 0.85em;
-        font-weight: 300;
+@media only screen and (max-width: 780px) {
+    .grid-area{
+        margin-top: 5vh;
+    }
+    .grid-item-3{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 3vh;
     }
 }
 
@@ -87,19 +90,19 @@
         margin-top: 5vh;
     }
     #section-3 h3{
-        padding: 20px 15px;
+        padding: 1vh 2vh;
     }
     .grid-area{
-        padding: 0px 15px;
+        padding: 0 2vh;
     }
     .grid-item-3{
         width: 80%;
-        margin: auto;
-        margin-top: 30px;
+        margin-left: 10%;
+        margin-top: 2vh;
         float: left;
     }
     .grid-item-3 p, .grid-item-3 .grid-title{
-        font-size: 0.8em;
-        padding: 0 10px;
+        /* font-size: 0.8em; */
+        padding: 0 2vh;
     }
 }

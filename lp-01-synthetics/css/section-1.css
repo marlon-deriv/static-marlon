@@ -1,17 +1,17 @@
 #section-1{
     width: 100%;
     margin: auto;
-    min-height: 75vh;
+    min-height: 65vh;
     background-color: rgb(200, 214, 215, 0.22);
     color: #333;
     display: block;
     padding-bottom: 60px;
     z-index: 5;
+    float: left;
 }
 
 #text-section-1{
-    padding: 0px 15px;
-    padding-top: 40px;
+    padding: 0 15px;
     max-width: 1000px;
     margin: auto;
 }
@@ -25,10 +25,10 @@
 
 #grid-area-5{
     margin: auto;
-    padding: 30px 0;
+    padding: 2vh 0;
     max-width: 1000px;
     width: 100%;
-    min-height: 120px;
+    min-height: 15vh;
     display: block;
 }
 
@@ -36,12 +36,12 @@
     width: 20%;
     min-width: 100px;
     float: left;
-    height: 100px;
     text-align: center;
+    height: 15vh;
 }
 
 .grid-item-5 p{
-    padding: 6px !important;
+    padding: 1vh !important;
     font-size: 0.85em !important;
 }
 
@@ -85,35 +85,24 @@
     #section-1 p{
         font-size: 0.8em;
     }
-    .grid-item-5 p{
-        font-size: 0.65em !important;
+    .grid-item-5{
+        width: 30%;
     }
-    .tab-content{
-        padding: 40px;
+    #grid-area-5{
+        margin-left: 5vw;
     }
 }
 
-/* SETTING FOR RESOLUTIONS UNDER 600PX */
-@media only screen and (max-width: 600px) {
-    #grid-area-5{
-        margin: auto;
-        padding: 20px 0;
-        min-height: 120px;
-    }
+/* SETTING FOR RESOLUTIONS UNDER 480PX */
+@media only screen and (max-width: 480px) {
     .grid-item-5{
-        width: 30%;
-        min-width: 100px;
-        float: left;
-        height: 180px;
-        text-align: center;
+        width: 33%;
+        height: 20vh;
     }
-    
+    #grid-area-5{
+        margin-left: 0;
+    }
     .grid-item-5 p{
-        padding: 6px !important;
-        font-size: 0.85em !important;
-    }
-    
-    .grid-icon-5{
-        max-width: 80%;
+        font-size: 0.6em;
     }
 }

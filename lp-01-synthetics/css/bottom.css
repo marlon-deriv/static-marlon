@@ -13,6 +13,7 @@ footer{
     z-index: 999;
     bottom: 9rem;
     right: 1.6rem;
+    display: flex;
     box-shadow: rgb(0 0 0 / 5%) 0px 16px 20px 0px, rgb(0 0 0 / 5%) 0px 0px 20px 0px;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
@@ -20,11 +21,14 @@ footer{
     display: flex;
     cursor: pointer;
     border-radius: 50%;
+    box-sizing: border-box;
 }
 
-#live-chat img:hover{
-        -webkit-filter: invert(100%) !important;
-}
+/* TODO: Change img 
+#live-chat :hover{
+    
+} 
+*/
 
 #footer-area{
     padding-top: 20px;
@@ -114,6 +118,7 @@ footer{
 
 /* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
 @media only screen and (max-width: 1080px) {
+    /*
     #disclaimer p, #disclaimer li{
         font-size: 0.75em;
         padding: 0.6em 0;
@@ -124,19 +129,20 @@ footer{
     #fixed-p{
         font-size: 0.8em;
     }
+    */
 }
 
 /* SETTING FOR RESOLUTIONS UNDER 780PX */
 @media only screen and (max-width: 780px) {
     #disclaimer p, #disclaimer li{
-        font-size: 0.7em;
-        padding: 0.4em 0;
+        font-size: 0.85em;
+        padding: 0.5em 0;
     }
     #disclaimer{
-        line-height: 1.2em;
+        line-height: 1.3em;
     }
     #fixed-p{
-        font-size: 0.75em;
+        font-size: 0.8em;
     }
 }
 
@@ -149,15 +155,14 @@ footer{
         padding-top: 10px;
     }
     #disclaimer p, #disclaimer li{
-        font-size: 0.7em;
-        padding: 0.4em 0;
+        font-size: 0.8em;
+        padding: 0.5em 0;
     }
     #disclaimer{
-        line-height: 1em;
-        margin-bottom: 6em;
+        line-height: 1.1em;
     }
     #fixed-p{
-        font-size: 0.7em;
+        font-size: 0.75em;
     }
     .flex-container-derivlogo {
         padding: 15px 10px 10px 0;
@@ -178,5 +183,19 @@ footer{
     }
     #disclaimer ul{
         padding-left: 10px;
+    }
+}
+
+/* SETTING FOR RESOLUTIONS UNDER 600PX */
+@media only screen and (max-width: 450px) {
+    #disclaimer p, #disclaimer li{
+        font-size: 0.75em;
+        padding: 0.4em 0;
+    }
+    #disclaimer{
+        line-height: 1em;
+    }
+    #fixed-p{
+        font-size: 0.7em;
     }
 }

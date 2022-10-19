@@ -67,7 +67,7 @@
     display: none;
     padding: 20px 70px 50px 20px;
     border: 0px;
-    box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 30px #e5e5e5;
   }
 
   .tab-content p{
