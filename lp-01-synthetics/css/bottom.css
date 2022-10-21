@@ -4,7 +4,7 @@
     bottom: 9rem;
     right: 1.6rem;
     display: flex;
-    box-shadow: rgb(0 0 0 / 5%) 0px 16px 20px 0px, rgb(0 0 0 / 5%) 0px 0px 20px 0px;
+    box-shadow: rgb(0 0 0 / 5%) 0 3rem 2rem 0, rgb(0 0 0 / 5%) 0 0 2rem 0;
     box-sizing: border-box;
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
@@ -18,7 +18,6 @@ footer{
     width: 100%;
     min-height: 50vh;
     background-color: #F8FAFB;
-    padding-top: 30px;
     color: #333;
     float: left;
     z-index: 10;
@@ -33,7 +32,7 @@ footer{
 #footer-area{
     max-width: 1000px;
     margin: auto;
-    padding: 20px 15px;
+    padding: 2rem;
 }
 
 .flex-container-main {
@@ -44,20 +43,20 @@ footer{
 }
 .flex-container-derivlogo {
     max-width: 40%;
-    padding: 50px 30px 30px 0;
+    padding: 2.5rem 2rem 2.5rem 0;
     float: left;
 }
 .flex-container-socials {
     max-width: 60%;
-    padding: 50px 30px 30px 0;
+    padding: 2.5rem 3rem 2rem 0;
     float: right;
 }
 .flex-container-socials img{
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 2.6rem;
+    max-height: 2.6rem;
 }
 .img-logo{
-    max-width: 160px;
+    max-width: 10rem;
 }
 #disclaimer{
     width: 100%;
@@ -74,7 +73,7 @@ footer{
 }
 #disclaimer ul{
     background-color: #eff2f5;
-    padding-left: 25px;
+    padding-left: 2rem;
     list-style-type: none;
     border-left: #f8a2a8 solid 5px;
 }
@@ -103,7 +102,7 @@ footer{
     width: 100%;
     height: 1px;
     background-color: #ccc;
-    margin-top: 20px;
+    margin-top: 2rem;
     position: absolute;
     left: 0;
 }
@@ -147,10 +146,10 @@ footer{
 /* SETTING FOR RESOLUTIONS UNDER 600PX */
 @media only screen and (max-width: 600px) {
     footer{
-        padding-top: 10px;
+        padding-top: .5rem;
     }
     #footer-area{
-        padding-top: 10px;
+        padding: .5rem .5rem;
     }
     #disclaimer p, #disclaimer li{
         padding: 0.5em 0;
@@ -164,23 +163,19 @@ footer{
     }
     .flex-container-derivlogo {
         max-width: 70%;
-        padding: 15px 10px 10px 0;
+        padding: 1rem .8rem .8rem 0;
         float: left;
     }
     .flex-container-socials {
         max-width: 70%;
-        padding: 10px 20px 20px 0;
+        padding: .8rem .8rem .8rem 0;
         float: left;
     }
     .flex-container-socials img{
-        max-width: 30px;
-        max-height: 30px;
-    }
-    .img-logo{
-        max-width: 100px;
+        max-width: 1.8rem;
     }
     #disclaimer ul{
-        padding-left: 10px;
+        padding-left: 1rem;
     }
 }
 

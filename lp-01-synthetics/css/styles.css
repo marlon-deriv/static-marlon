@@ -36,6 +36,13 @@ h3{
     line-height: 1.5em;
 }
 
+h4{
+    padding: 1.5vh 0;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 550;
+}
+
 h5{
     padding: 3vh 0 2vh 0;
     font-size: 1.4em;
@@ -51,6 +58,10 @@ h5{
     }
     h3{
         font-size: 1.75em; 
+    }
+    h4{
+        padding: .8vh 0;
+        font-size: 1.1em;
     }
     h5{
         font-size: 1.2em; 

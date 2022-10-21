@@ -1,6 +1,6 @@
 /*  TOP BAR STYLES  */
     #top{
-        width: 100%;
+        width: 100vw;
         min-height: 70vh;
         background-color: #000;
         margin: auto;
@@ -9,8 +9,8 @@
     }
 
     #top-bar{
-        width: 100%;
-        min-height: 70px;
+        width: 100vw;
+        min-height: 2rem;
         background-color: #000;
         position: fixed;
         top: 0;
@@ -20,28 +20,28 @@
 
     #logo-top-bar-area{
         width: 49%;
-        padding: 20px 0px;
+        padding: 1.2rem 0;
         text-align: right;
         float: left;
     }
 
     #logo-top-bar-area img{
-        width: 160px;
-        padding-right: 10px;
-        border-right: 2px solid #F8FAFB;
+        width: 10rem;
+        padding-right: .6rem;
+        border-right: .2rem solid #F8FAFB;
     }
 
     #get-trading-top-bar-area{
         width: 49%;
-        padding: 20px 0px;
+        padding: 1.2rem 0;
         text-align: left;
         float: left;
     }
 
     #get-trading-top-bar-area img{
-        width: 140px;
-        padding-top: 4px;
-        padding-left: 10px;
+        width: 9rem;
+        margin-top: .3rem;
+        padding-left: .6rem;
     }
 /* ==== END OF TOP BAR STYLES ==== */
 
@@ -49,8 +49,8 @@
         max-width: 70vw;
         max-height: 80vh;
         position: absolute;
-        left: -50px;
-        top: -100px;
+        left: -5vw;
+        top: -13vh;
         z-index: 5;
     } 
 
@@ -72,17 +72,17 @@
         z-index: 10;
     }
     #hero{
-        max-width: 65%;
+        max-width: 50%;
         color: #F8FAFB;
         float: left;
     }
     #hero h1{
         margin: auto;
-        padding-right: 10px;
+        padding-right: 1.5rem;
     }
     #hero p{
         margin: 0 auto;
-        padding-right: 10px;
+        padding-right: 1.5rem;
         text-align: center;
         font-size: 1.5em;
         line-height: 1.5em;
@@ -90,42 +90,100 @@
 
     /* SignUp area styles: */
     #signup-area{
-        width: 30%;
-        height: 40vh;
+        width: 45%;
+        max-height: 55vh;
         background: linear-gradient(to right, #600000 0%, #990000 100%);
-        margin: 15vh 1vw;
+        margin: 12vh 1vw;
         opacity: 0.8;
         color: #F8FAFB;
-        border-radius: 10px;
+        border-radius: 1rem;
         float: left;
     }
 
-    #signup-area form{
+    #signup-area-content{
         width: 90%;
         height: 100%;
         margin: auto;
-        margin-top: 30px;
     }
 
-    #signup-area input{
+    #signup-area form{
         width: 100%;
-        height: 2em;
+        height: 100%;
         margin: auto;
-        margin-bottom: 30px;
+        margin: 2.5vh 0;
+    }
+
+    #signup-area input[type=text]{
+        width: 100%;
+        height: 1.6em;
+        margin: auto;
+        margin-bottom: 2.5vh;
         border: 0;
+        font-size: .9em;
+    }
+
+    #signup-area input[type=text]::placeholder{
+        padding-left: 1rem;
+    }
+
+    #form-terms-checkbox{
+        width: 100%;
+        height: 1.8em;
+    }
+
+    #form-terms-checkbox label{
+        padding-left: 1vw;
+        padding-bottom: 3px;
+    }
+
+    #signup-area input[type=checkbox]{
+        width: 1.3em;
+        height: 1.3em;
+        margin: 1vh 0 0 0;
+        vertical-align: baseline;
+        line-height: 1.3em;
     }
 
     #signup-btn{
-       min-height: 3em;
+        width: 80%;
+        min-height: 3em;
+        margin: 2vh 10%;
+        padding: .6rem 0;
+    }
+
+    #signup-area h5{
+        padding: 1.5vh 0 1vh 0;
+        font-size: 1.2em;
+        font-weight: 450;
+    }
+
+    #signup-area p{
+        padding-top: 1vh;
+        line-height: 1.3em;
+        font-size: 0.85em;
+        font-weight: 300;
+    }
+
+    #form-terms-checkbox label{
+        line-height: 1.3em;
+        font-size: 0.8em;
+    }
+
+    .form-info{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 1.3em;
+        font-size: 0.7em;
+        font-weight: 300;
     }
 
     @media only screen and (max-width: 1080px) {
         #video-div {
-            top: -30px;
-            max-height: 60vh;
+            top: -2vh;
         }
         #video-background{
-            max-height: 60vh;
+            max-height: 70vh;
         } 
         #hero p{
             font-size: 1.25em;
@@ -135,46 +193,72 @@
             margin: auto;
         }
         #hero h1{
-            padding-top: 10vh;
+            padding-top: 7vh;
         }
         #hero p{
-            padding: 3vh 10vw;
+            padding: 1.5vh 10vw;
             text-align: center;
         }
-
-        #signup-area{
-            width: 60%;
-            margin: 2vh 20%;
-            max-height: 30vh;
+        #signup-area-content{
+            width: 95%;
         }
-        #signup-area h3{
-            padding-top: 3vh;
+        #signup-area{
+            width: 84%;
+            margin: 0 8%;
+            max-height: 40vh;
+        }
+        #signup-area h5{
+            padding: .8vh 0 .2vh 0;
+            font-size: 1em;
+        }
+        #signup-area p{
+            padding-top: .8vh;
+            line-height: 1.2em;
+            font-size: 0.8em;
         }
         #signup-area form{
             margin-top: 1vh;
+        }
+        #signup-area input[type=text]{
+            height: 1.4em;
+            margin-bottom: 1vh;
+            font-size: .9em;
+        }
+        #signup-area input[type=checkbox]{
+            width: 1em;
+            height: 1em;
+            margin: .5vh 0 0 0;
+            line-height: 1em;
         }
     }
     @media only screen and (max-width: 780px) {
         #hero p{
             font-size: 1.1em;
         }
+        #signup-area{
+            max-height: 43vh;
+        }
     }
     @media only screen and (max-width: 600px) {
         #hero p{
             font-size: 1em;
-            padding: 25px 50px;
+            padding: 2vh 1vw;
         }
         #video-div {
-            top: 50px;
+            top: 15vh;
             max-height: 50vh;
         }
         #video-background{
             max-height: 50vh;
         }
         #signup-area{
+            max-height: 43vh;
+        }
+        #signup-btn{
             width: 80%;
-            margin: 2vh 10%;
-            max-height: 25vh;
+        }
+        #signup-btn{
+            margin: .2vh 10%;
         }
     }
 /* ==== END OF HERO STYLES ==== */
