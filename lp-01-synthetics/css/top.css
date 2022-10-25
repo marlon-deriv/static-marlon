@@ -33,7 +33,7 @@
 
     #get-trading-top-bar-area{
         width: 49%;
-        padding: 1.2rem 0;
+        padding: 1.2rem 0 0 0;
         text-align: left;
         float: left;
     }
@@ -193,7 +193,8 @@
             margin: auto;
         }
         #hero h1{
-            padding-top: 7vh;
+            padding-bottom: 1vh;
+            padding-top: 8vh;
         }
         #hero p{
             padding: 1.5vh 10vw;
@@ -232,6 +233,10 @@
         }
     }
     @media only screen and (max-width: 780px) {
+        h1{
+            margin-top: 1vh;
+            padding-bottom: .5vh;
+        }
         #hero p{
             font-size: 1.1em;
         }

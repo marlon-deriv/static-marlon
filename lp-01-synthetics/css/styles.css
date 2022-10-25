@@ -16,10 +16,10 @@ body{
 }
 
 h1{
-    padding: 15vh 0 0 0;
+    padding: 15vh 0 4vh 0;
     text-align: center;
     font-size: 4em;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 h2{
@@ -51,7 +51,7 @@ h5{
 
 @media only screen and (max-width: 1080px) {
     h1{
-        font-size: 3em; 
+        font-size: 3em;
     }
     h2{
         font-size: 2.4em; 
@@ -70,7 +70,7 @@ h5{
 
 @media only screen and (max-width: 780px) {
     h1{
-        font-size: 2.4em; 
+        font-size: 2.4em;
     }
     h2{
         font-size: 2em; 
@@ -86,7 +86,6 @@ h5{
 /* SETTING FOR RESOLUTIONS UNDER 600PX */
 @media only screen and (max-width: 600px) {
     h1{
-        padding: 15vh 0 0 0;
         font-size: 2.2em; 
     }
     h2{
