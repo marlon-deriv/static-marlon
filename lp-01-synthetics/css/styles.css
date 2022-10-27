@@ -15,6 +15,18 @@ body{
     z-index: 1;
 }
 
+a{
+    color: inherit;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff444f;
+    font-weight: 550;
+    text-decoration: none;
+}
+
 h1{
     padding: 15vh 0 4vh 0;
     text-align: center;
