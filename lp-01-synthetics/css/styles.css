@@ -111,3 +111,11 @@ h5{
         font-size: 1em; 
     }
 }
+
+/* SETTING FOR RESOLUTIONS UNDER 480PX */
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 1.8em;
+        padding: 0px 15px;
+    }
+}

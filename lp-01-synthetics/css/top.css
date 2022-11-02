@@ -249,6 +249,30 @@
         }
     }
     @media only screen and (max-width: 600px) {
+        #top-bar{
+            max-height: 50px;
+        }
+        #logo-top-bar-area{
+            width: 110px;
+            padding-left: 1rem;
+            text-align: left;
+            float: left;
+        }
+        #logo-top-bar-area img{
+            width: 100px;
+            padding-right: 6px;
+            border-right: .15rem solid #F8FAFB;
+        }
+        #get-trading-top-bar-area{
+            width: 110px;
+            text-align: left;
+            float: left;
+        }
+        #get-trading-top-bar-area img{
+            width: 80px;
+            margin-top: .3rem;
+            padding-left: 5px;
+        }
         #hero p{
             font-size: 1em;
             padding: 2vh 1vw;
@@ -265,20 +289,36 @@
         }
         #signup-btn{
             width: 80%;
-        }
-        #signup-btn{
             margin: .2vh 10%;
         }
     }
-/* ==== END OF SETTINGS FOR SCREEN MAX-WIDTH ==== */
-
-/* ==== SETTINGS FOR SCREEN MAX-HEIGHT ==== */
-    @media only screen and (max-height: 750px) {
-        #top{
-            min-height: 80vh;
-        }
+    @media only screen and (max-width: 480px) {
         #signup-area{
-            max-height: 70vh;
+            width: 90%;
+            margin-left: 10px;
         }
-    
+        #signup-btn{
+            width: 80%;
+            min-height: 1.5em;
+            padding: .3rem 0;
+        }
     }
+    @media only screen and (max-width: 400px) {
+        #hero p{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 0.9em;
+            text-align: left;
+        }
+        #signup-area h5{
+            font-size: 0.9em;
+        }
+        #signup-area h4{
+            font-size: 1em;
+            padding-bottom: 0.3rem;
+        }
+        #signup-area p{
+            font-size: 0.75em;
+        }
+    }
+/* ==== END OF SETTINGS FOR SCREEN MAX-WIDTH ==== */
