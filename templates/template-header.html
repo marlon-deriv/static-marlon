@@ -33,7 +33,7 @@
         <!-- Styles for Outlook: -->
         <!--[if mso]>
             <style type="text/css">
-                *, a, p, h1, h2, h3, td {font-family: Arial, sans-serif !important;}
+                *, a, p, h1, h2, h3, td {font-family: Arial, sans-serif;}
                 table {border-collapse: collapse;}
                 a {color: #ff444f; font-family: Arial, sans-serif;}
             </style>
@@ -171,7 +171,7 @@
                     .mb-font-size{ font-size: 24px; }
                 }
                 /* Dark mode scheme: */
-                @media (prefers-color-scheme: dark ) {
+                @media (prefers-color-scheme: dark) {
                     /* Shows Dark Mode-Only Content, Like Images */
                     .dark-img { 
                         width: auto;
@@ -179,7 +179,7 @@
                         max-height: inherit;
                         line-height: auto;
                         margin-top: 0px;
-                        visibility:inherit;
+                        visibility: inherit;
                         display: block;
                         overflow: visible;
                         float: none;
@@ -198,12 +198,12 @@
                     /* Hides Light Mode-Only Content, Like Images */
                     .light-img { display: none; }
                      /* Custom Dark Mode Font Colors */
-                     h1, h2, p, span, a, b { color: #ffffff; }
+                     h1, h2, p, span, a, b { color: #ffffff !important; }
                     /* Custom Dark Mode Background Color */
-                    .darkmodeblack { background-color:#0e0e0e; }
-                    .darkmodelowblack { background-color: #202020; }
-                    .darkmodegray { color: #6e6e6e; }
-                    .darkcolor-subtext{ color: #c2c2c2; }
+                    .darkmodeblack { background-color:#0e0e0e !important; }
+                    .darkmodelowblack { background-color: #202020 !important; }
+                    .darkmodegray { color: #6e6e6e !important; }
+                    .darkcolor-subtext{ color: #c2c2c2 !important; }
 
                     /* Custom Dark Mode Text Link Color */
                     .link { color: #91ADD4 !important; }
@@ -257,21 +257,21 @@
                     float: none;
                 }
                 /* Hides Light Mode-Only Content for Outlook */
-                [data-ogsc] .light-img { display: none; }
+                [data-ogsc] .light-img { display: none !important;; }
                 /* Custom Dark Mode Font Colors for Outlook */
                 [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { 
-                    color: #ffffff;
+                    color: #ffffff !important;;
                 }
-                [data-ogsc] .darkmodeblack { background-color:#0e0e0e; }
-                [data-ogsc] .darkmodelowblack { background-color: #202020; }
-                [data-ogsc] .darkmodegray { color: #6e6e6e; }
-                [data-ogsc] .darkcolor-subtext{ color: #c2c2c2; }
+                [data-ogsc] .darkmodeblack { background-color:#0e0e0e !important;; }
+                [data-ogsc] .darkmodelowblack { background-color: #202020 !important;; }
+                [data-ogsc] .darkmodegray { color: #6e6e6e !important;; }
+                [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important;; }
                 /* Custom Dark Mode Text Link Color for Outlook */
-                [data-ogsc] .link { color: #91ADD4; }
+                [data-ogsc] .link { color: #91ADD4 !important;; }
             /* ==== END OF [data-ogsc] ==== */
         </style>
     </head>
-    <body style="background-color: #eeeeee; margin: 0 !important; padding: 0 !important;">
+    <body style="background-color: #eeeeee; margin: 0; padding: 0;">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">    
              <!-- Email body -->
             <tr>
@@ -326,7 +326,7 @@
                         </tr>
                         <tr>
                             <td align="left" style="padding: 20px 30px 50px; background-color: #ffffff;" class="mobile-side darkmodeblack">
-                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">If you have any questions, <a href="https://deriv.com/?is_livechat_open=true" style="color: #ff444f !important">contact us via live chat</a>.</p>
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">If you have any questions, <a href="https://deriv.com/?is_livechat_open=true" style="color: #ff444f">contact us via live chat</a>.</p>
                             </td>
                         </tr>                            
                     </table>
@@ -366,8 +366,8 @@
                         </tr>
                         <tr>
                             <td bgcolor="#fff" align="center" style="color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="darkmodeblack">
-                                <p style="padding: 0px 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #646464; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a href="https://www.deriv.com/help-centre" style="color: #ff444f !important">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/" style="color: #ff444f !important">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important">Security and privacy</a></p>
-                                <p style="padding: 0 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 5px 0px;" class="darkmodegray">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details" style="mso-hide:all; color: #ff444f !important;" class="darkcolor-subtext">Unsubscribe</a></p>
+                                <p style="padding: 0px 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #646464; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a href="https://www.deriv.com/help-centre" style="color: #ff444f">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/" style="color: #ff444f">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f">Security and privacy</a></p>
+                                <p style="padding: 0 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 5px 0px;" class="darkmodegray">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details" style="mso-hide:all; color: #ff444f;" class="darkcolor-subtext">Unsubscribe</a></p>
                             </td>
                         </tr>                        
                         <tr>
