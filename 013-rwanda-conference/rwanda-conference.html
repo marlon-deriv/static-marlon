@@ -167,6 +167,50 @@
                 text-align: justify;
                 text-justify: inter-word;
             }
+            /*
+            .social-media-3 table{
+                width: 100%;
+            }
+            .td-margin{
+                width: 5%;
+            }
+            .td-icon{
+                width: 12%;
+                min-width: 12%;
+            }
+            .td-icon input{
+                width: 90%;
+                display: block;
+                outline: none;
+                border-radius: 10px;
+                float: left;
+                padding-left: 4px;
+            }
+            .td-text{
+                width: 18%;
+                min-width: 18%;
+                font-size: 14px;
+            }
+            */
+            .sm-logo-3{
+                width: 13%;
+                float: left;
+            }
+            .sm-logo-3 input{
+                width: 80%;
+                margin: auto;
+            }
+            .sm-name-3{
+                width: 20%;
+                float: left;
+                padding-top: 12px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: 450px)  {
+                .sm-name-3{
+                    font-size: 12px;
+                }
+            }
 
             @media screen and (max-width: 590px)  {
                 .button, .button-secondary {
@@ -233,6 +277,16 @@
                 }
                 .mb-font-size{
                     font-size: 24px !important;
+                }
+                .td-margin{
+                    width: 0%;
+                }
+                .td-icon{
+                    width: 13%;
+                }
+                .td-text{
+                    width: 20%;
+                    font-size: 12px;
                 }
             }
             @media (prefers-color-scheme: dark ) {
@@ -360,30 +414,50 @@
                                 <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext">For more pictures from the conference and to stay updated on our latest events and initiatives for you, follow us on:</p>
                             </td>
                         </tr>
-                        <tr>
+
+                        <tr id="social-media-3">
                             <td align="left" style="padding: 10px 30px; background-color: #ffffff;" class="mobile-side darkmodeblack">
-                                <table style="width: 100%;">
+                                <div class="sm-logo-3">
+                                    <a href="https://www.facebook.com/Derivaffiliates" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/facebook-blue.png" style="border-radius: 10px;"/></a>
+                                </div>
+                                <div class="sm-name-3">
+                                    <strong>Facebook</strong>
+                                </div>
+                                <div class="sm-logo-3">
+                                    <a href="https://www.instagram.com/deriv_official/?hl=en" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/instagram-colorful.png" style="border-radius: 10px;"/></a>
+                                </div>
+                                <div class="sm-name-3">
+                                    <strong>Instagram</strong>
+                                </div>
+                                <div class="sm-logo-3">
+                                    <a href="https://twitter.com/derivdotcom" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/twitter-blue.png" style="border-radius: 10px;"/></a>
+                                </div>
+                                <div class="sm-name-3">
+                                    <strong>Twitter</strong>
+                                </div>
+                                <!-- <table>
                                     <tr>
-                                        <td width="12%">
-                                            <a href="https://www.facebook.com/Derivaffiliates" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/facebook-blue.png" width="50px" height="50px" style="display: block; outline: none; border-radius: 10px; float: left;"/></a>
+                                        <td class="td-margin"></td>
+                                        <td class="td-icon">
+                                            <a href="https://www.facebook.com/Derivaffiliates" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/facebook-blue.png" style="display: block; outline: none; border-radius: 10px; float: left;"/></a>
                                         </td>
-                                        <td style="width: 18%; font-size: 12px;">
+                                        <td class="td-text">
                                             <strong>Facebook</strong>
                                         </td>
-                                        <td width="12%">
-                                            <a href="https://www.instagram.com/deriv_official/?hl=en" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/instagram-colorful.png" width="50px" height="50px" style="display: block; outline: none; border-radius: 10px; float: left;padding-left: 4px;"/></a>
+                                        <td class="td-icon">
+                                            <a href="https://www.instagram.com/deriv_official/?hl=en" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/instagram-colorful.png"/></a>
                                         </td>
-                                        <td style="width: 18%; font-size: 12px;">
+                                        <td class="td-text">
                                             <strong>Instagram</strong>
                                         </td>
-                                        <td width="12%">
-                                            <a href="https://twitter.com/derivdotcom" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/twitter-blue.png" width="50px" height="50px" style="display: block; outline: none; border-radius: 10px; float: left; padding-left: 4px;"/></a>
+                                        <td class="td-icon">
+                                            <a href="https://twitter.com/derivdotcom" target="_blank"><input type="image" src="https://static.deriv.com/email/images/icons/twitter-blue.png" style="display: block; outline: none; border-radius: 10px; float: left; padding-left: 4px;"/></a>
                                         </td>
-                                        <td style="width: 18%; font-size: 12px;">
+                                        <td class="td-text">
                                             <strong>Twitter</strong>
                                         </td>
                                     </tr>
-                                </table>
+                                </table> -->
                             </td>
                         </tr>
                         <tr>
