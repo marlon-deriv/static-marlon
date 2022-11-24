@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Character encoding -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <!-- Set 100% scale, allow zoom -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Remove default blue colour from links so you can style your own -->
+        <meta name="format-detection" content="address=no">
+        <meta name="format-detection" content="date=no">
+        <meta name="format-detection" content="email=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="x-apple-disable-message-reformatting">
+
+        <!-- Prevent iOS 11 from automatically scaling your email -->
+        <meta name="x-apple-disable-message-reformatting">
+
+        <!-- Enable CSS3 and media queries in Windows Phone 7.5 and higher -->
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+
+        <!-- Styles for Outlook: -->
+        <!--[if mso]>
+            <style type="text/css">
+                *, a, p, h1, h2, h3, td {font-family: Arial, sans-serif;}
+                table {border-collapse: collapse;}
+                a {color: #ff444f; font-family: Arial, sans-serif;}
+            </style>
+        <![endif]-->
+        <style type="text/css">
+            /* ==== Fonts ==== */
+                @media screen {
+                    /* latin */
+                    @font-face {
+                    font-family: 'IBM Plex Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                    }
+                    /* latin */
+                    @font-face {
+                    font-family: 'IBM Plex Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-display: swap;
+                    src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdP3pBms.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                    }
+                    /* latin */
+                    @font-face {
+                    font-family: 'IBM Plex Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdP3pBms.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                    }
+                }
+            /* ==== END OF Fonts ==== */
+
+            /* ==== HTML Tags ==== */
+                *{ margin: 0; padding: 0; }
+                body {
+                    width: 100%;
+                    height: 100%;
+                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                }
+                h1 {
+                    margin: 0;
+                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                    font-size: 48px;
+                    font-weight: bold;
+                    line-height: 60px;
+                }
+                h2 {
+                    margin: 0;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                a, a:visited {
+                    color: #ff444f;
+                    text-decoration: none;
+                }
+                a:hover { text-decoration: underline; }
+                a.button {
+                    padding: 10px 16px;
+                    background: #ff444f;
+                    color: #ffffff;
+                    border: 0;
+                    border-radius: 4px;
+                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 20px;
+                    text-decoration: none;
+                    display: inline-block;
+                    overflow: visible;
+                }
+                a.button-secondary {
+                    padding: 8px 14px;
+                    background: transparent;
+                    border: 0;
+                    border: 2px solid #ffffff;
+                    border-radius: 4px;
+                    color: #ffffff;
+                    font-family: 'IBM Plex Sans', Arial, sans-serif; 
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 20px;
+                    display: inline-block;
+                    overflow: visible;
+                }
+                /* iOS blue links */
+                a[x-apple-data-detectors] {
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: inherit;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                }
+                /* END OF iOS blue links */
+                img {
+                    height: auto;
+                    border: 0;
+                    line-height: 100%;
+                    outline: none;
+                    text-decoration: none;
+                }
+                table { border-collapse: collapse; }
+                table, td {
+                    /* Get rid of the spaces Outlook can sometimes add on the left and right side of a <table>*/
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                }
+                /* Deriv */
+                .button:hover { background-color: #d43e47; }
+            /* ==== END OF HTML Tags ==== */
+
+            /* ==== @media queries ==== */
+                /* Max-with 590px */
+                @media screen and (max-width: 590px)  {
+                    .button { margin: 5px 0; }
+                }
+                /* Max-width 620px */
+                @media screen and (max-width: 620px) {
+                    .mobile-hide { display: none; }
+                    .mb-lowwidth { width: 70px; } /* Used for Deriv logo */
+                    .mobile-visible-block { display: block; }
+                    .mobile-nopadding { padding: 0; }
+                    .mobile-side {
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+                    .mb-font-size{ font-size: 24px; }
+                }
+                /* Dark mode scheme: */
+                @media (prefers-color-scheme: dark) {
+                    /* Shows Dark Mode-Only Content, Like Images */
+                    .dark-img { 
+                        width: auto;
+                        max-width: inherit;
+                        max-height: inherit;
+                        line-height: auto;
+                        margin-top: 0px;
+                        visibility: inherit;
+                        display: block;
+                        overflow: visible;
+                        float: none;
+                    }
+                    .dark-imglow {
+                        width: 100px;
+                        max-width: inherit;
+                        max-height: inherit;
+                        margin-top: 0px;
+                        line-height: auto;
+                        display: block;
+                        visibility: inherit;
+                        overflow: visible;
+                        float: none;
+                    }
+                    /* Hides Light Mode-Only Content, Like Images */
+                    .light-img { display: none; }
+                     /* Custom Dark Mode Font Colors */
+                     h1, h2, p, span, a, b { color: #ffffff !important; }
+                    /* Custom Dark Mode Background Color */
+                    .darkmodeblack { background-color:#0e0e0e !important; }
+                    .darkmodelowblack { background-color: #202020 !important; }
+                    .darkmodegray { color: #6e6e6e !important; }
+                    .darkcolor-subtext{ color: #c2c2c2 !important; }
+
+                    /* Custom Dark Mode Text Link Color */
+                    .link { color: #91ADD4 !important; }
+                }
+                @media (prefers-color-scheme: dark ) and (max-width: 620px)  {
+                    .dark-lowwidth-m{
+                        width: 70px;
+                        max-width: inherit;
+                        max-height: inherit;
+                        margin-top: 0px;
+                        line-height: auto;
+                        visibility: inherit;
+                        display: block;
+                        overflow: visible;
+                        float: none;
+                    }
+                    [data-ogsc].dark-lowwidth-m{
+                        width: 70px;
+                        max-width: inherit;
+                        max-height: inherit;
+                        margin-top: 0px;
+                        line-height: auto;
+                        visibility: inherit;
+                        display: block;
+                        overflow: visible;
+                        float: none;
+                    }
+                }
+            /* ==== END OF @media queries ==== */
+            /* ==== [data-ogsc] Shows Dark Mode-Only Content for Outlook ==== */
+                [data-ogsc] .dark-img { 
+                    width: auto;
+                    max-width: inherit;
+                    max-height: inherit;
+                    margin-top: 0px;
+                    line-height: auto;
+                    visibility: inherit;
+                    display: block;
+                    overflow: visible;
+                    float: none;
+                }
+                [data-ogsc] .dark-imglow { 
+                    width: 100px; 
+                    max-width: inherit; 
+                    max-height: inherit; 
+                    margin-top: 0px;
+                    line-height: auto; 
+                    visibility: inherit;
+                    display: block;
+                    overflow: visible;
+                    float: none;
+                }
+                /* Hides Light Mode-Only Content for Outlook */
+                [data-ogsc] .light-img { display: none !important;; }
+                /* Custom Dark Mode Font Colors for Outlook */
+                [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { 
+                    color: #ffffff !important;;
+                }
+                [data-ogsc] .darkmodeblack { background-color:#0e0e0e !important;; }
+                [data-ogsc] .darkmodelowblack { background-color: #202020 !important;; }
+                [data-ogsc] .darkmodegray { color: #6e6e6e !important;; }
+                [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important;; }
+                /* Custom Dark Mode Text Link Color for Outlook */
+                [data-ogsc] .link { color: #91ADD4 !important;; }
+            /* ==== END OF [data-ogsc] ==== */
+        </style>
+    </head>
+    <body style="background-color: #eeeeee; margin: 0; padding: 0;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">    
+             <!-- Email body -->
+            <tr>
+                <td bgcolor="#eeeeee" align="center" style="padding: 10px 0 0;" class="mobile-nopadding">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" ><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
+                    <![endif]-->
+                    <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; max-width: 600px;" class="darkmodeblack">
+                        <!-- START HERO -->
+                        <tr>
+                            <td  align="center" style="padding: 30px 30px 15px;" class="darkmodeblack">
+                                <a href="https://www.deriv.com">
+                                    <img class="light-img mb-lowwidth" src="https://static.deriv.com/logos/deriv-black.png" width="100" style="display: block;" alt="Deriv.com">
+                                    <div class="dark-imglow" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+                                        <img src="https://static.deriv.com/logos/deriv-white.png" width="100" height="18" class="dark-lowwidth-m" alt="Deriv.com" style="color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; text-align:center; font-weight:bold; font-size:36px; line-height:40px; text-decoration: none; margin: 0 auto; padding: 0;" border="0" />
+                                    </div>                                   
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="mobile-hide">
+                            <td bgcolor="#fff" align="center"  class="darkmodeblack">
+                                <input type="image" class="g-img" src="https://static.deriv.com/images/orange-speaker.png" style="display: block; outline: none; border-radius: 10px;"/>
+                            </td>
+                        </tr>   
+                        <div>
+                            <tr style="display: none; mso-hide:all;" class="mobile-visible-block">
+                                <td bgcolor="#fff" align="center" class="darkmodeblack" >
+                                    <input type="image" class="g-img" src="https://static.deriv.com/images/orange-speaker.png"  width= "90%" style="display: block; outline: none; border-radius: 10px;"/><div></div>
+                                </td>
+                            </tr>  
+                        </div>
+                        <!-- END HERO --> 
+                        <tr>
+                            <td align="center" style="padding: 15px 20px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #333333; font-weight: 700;margin:0;" class="darkcolor-subtext mb-font-size">TITLE</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 20px 28px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">We’re merging both Deriv X Financial and Synthetic demo accounts into a single account on 22 Sep 2022.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 30px 0; background-color: #ffffff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">Scheduled maintenance will start at [time in GMT], during which your Deriv X demo account(s) and dashboard won’t be available. The maintenance is expected to take 1 to 2 hours to complete.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 20px 30px 0; background-color: #ffffff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">After the maintenance, you’ll see a single Deriv X demo account on your dashboard, with which you’ll be able to trade both financial and synthetic assets with virtual funds.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 20px 30px 50px; background-color: #ffffff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">If you have any questions, <a href="https://deriv.com/?is_livechat_open=true" style="color: #ff444f">contact us via live chat</a>.</p>
+                            </td>
+                        </tr>                            
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                    <![endif]-->
+                </td>
+            </tr>   
+            <!-- End Email body-->                                                       
+            <!-- FOOTER -->
+            <tr>
+                <td bgcolor="#eeeeee" align="center" style="padding: 0 0 10px;" class="mobile-nopadding">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
+                    <![endif]-->
+                    <table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" class="darkmodeblack">
+                        <!-- SOCIAL -->
+                        <tr>
+                            <td align="center" style="padding: 20px 20px 35px; color: #ffffff; font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;" class="darkmodeblack">
+                                <p style="margin: 0;">
+                                    <a href="https://twitter.com/derivdotcom" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/twitter.png" height="32" width="32" alt="Deriv.com on Twitter" title="Deriv.com on Twitter" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://www.facebook.com/derivdotcom" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/facebook.png" height="32" width="32" alt="Deriv.com on Facebook" title="Deriv.com on Facebook" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://www.instagram.com/deriv_official/" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/instagram.png" height="32" width="32" alt="Deriv.com on Instagram" title="Deriv.com on Instagram" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://t.me/derivdotcomofficial" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/telegram.png" height="32" width="32" alt="Deriv.com on Telegram" title="Deriv.com on Telegram" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://www.youtube.com/c/Derivdotcom" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/youtube.png" height="32" width="32" alt="Deriv.com on Youtube" title="Deriv.com on Youtube" />
+                                    </a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="center" style="color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="darkmodeblack">
+                                <p style="padding: 0px 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #646464; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a href="https://www.deriv.com/help-centre" style="color: #ff444f">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/" style="color: #ff444f">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f">Security and privacy</a></p>
+                                <p style="padding: 0 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 5px 0px;" class="darkmodegray">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details" style="mso-hide:all; color: #ff444f;" class="darkcolor-subtext">Unsubscribe</a></p>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td  align="center" style="padding: 30px;" class="darkmodeblack">
+                                <a href="https://www.deriv.com">
+                                    <img src="https://static.deriv.com/logos/deriv-gray.png" width="66" height="12"  style="display: block;" alt="Deriv.com">                                   
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td></tr></table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </table>
+    </body>
+    <!-- end message template -->
+</html>

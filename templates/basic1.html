@@ -70,7 +70,7 @@
                     /* webkit: Safari and Chrome */
                     -webkit-text-size-adjust: 100%;
                 }
-                table{ width: 100%; }
+                /* table{ width: 100%; } */
                 table, td {
                     border: 0;
                     border-collapse: collapse;
@@ -89,6 +89,29 @@
                     text-decoration: none;
                 }
                 /* Deriv styles */
+                a, a:visited {
+                        color: #ff444f;
+                        text-decoration: none;
+                    }
+                    a:hover { text-decoration: underline; }
+                    a.button {
+                        padding: 10px 16px;
+                        background: #ff444f;
+                        color: #ffffff;
+                        border: 0;
+                        border-radius: 4px;
+                        font-family: 'IBM Plex Sans', Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-align: center;
+                        line-height: 20px;
+                        display: inline-block;
+                        overflow: visible;
+                    }
+                    .button:hover { background-color: #d43e47; }
+
+                    /* Deriv styles */
                     a, a:visited {
                         color: #ff444f;
                         text-decoration: none;
@@ -110,104 +133,22 @@
                         overflow: visible;
                     }
                     .button:hover { background-color: #d43e47; }
-                /* MOBILE STYLES */
-                @media screen and (max-width: 620px) {
-                    .mb-lowwidth {
-                        /* Applied on hero - Deriv logo */
-                        width: 70px !important;
-                    }
-                    .mobile-hide {
-                        /* Hide desktop content on mobile */
-                        display:none !important;
-                    }
-                    .mobile-visible-block {
-                        /* Shows mobile content */
-                        display: block !important;
-                    }
-                    .mobile-side {
-                        /* Decrease padding on mobile */
-                        padding-right: 15px !important;
-                        padding-left: 15px !important;
-                    }
-                    .title-1 {
-                        /* Applied on email title */
-                        font-size: 24px !important;
-                    }
-                }
-                @media (prefers-color-scheme: dark) {
-                    /* Shows header Deriv logo on Dark Mode-Only */
-                    .dark-imglow {
-                        width: 100px !important;
-                        max-width: inherit !important;
-                        max-height: inherit !important;
-                        margin-top: 0px !important;
-                        line-height: auto !important;
-                        display: block !important;
-                        overflow: visible !important;
-                        float: none !important;
-                        visibility: inherit !important;
-                    }
-                    /* Hides Light Mode-Only Content */
-                    .hide-light-content { display: none !important; }
-                    /* Custom Dark Mode Background Color */
-                    .dark-mode-bg { background-color: #0e0e0e !important; }
-                    /* Custom Dark Mode Font Colors */
-                    h1, h2, p, span, a, b { color: #ffffff !important; }
-                    /* Format footer text */
-                    .darkmodegray { color: #6e6e6e !important; }
-                    /* Format body paragraphs */
-                    .darkcolor-subtext { color: #c2c2c2 !important; }
-                    /* Custom Dark Mode Text Link Color */
-                    .link { color: #91ADD4 !important; }
-                } 
-                /* Shows header Deriv logo on Dark Mode-Only - Outlook version */
-                [data-ogsc] .dark-imglow { 
-                    width: 100px !important;
-                    max-width: inherit !important;
-                    max-height: inherit !important;
-                    margin-top: 0px !important;
-                    line-height: auto !important;
-                    display: block !important;
-                    overflow: visible !important;
-                    float: none !important;
-                    visibility: inherit !important;
-                }
-                 /* Hides Light Mode-Only Content - Outlook version */
-                [data-ogsc] .hide-light-content { display:none !important; }
-                /* Custom Dark Mode Background Color */
-                [data-ogsc] .dark-mode-bg { background-color: #0e0e0e !important;}
-                /* Custom Dark Mode Font Colors */
-                [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
-                /* Format footer text - Outlook version */
-                [data-ogsc] .darkmodegray { color: #6e6e6e !important; }
-                /* Format body paragraphs */
-                [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important; }
-                /* Custom Dark Mode Text Link Color */
-                [data-ogsc] .link { color: #91ADD4 !important; }
-                @media (prefers-color-scheme: dark) and (max-width: 620px)  {
-                    /* Shows header Deriv logo dark mode and mobile */
-                    .dark-lowwidth-m { display: block !important; width: 70px !important; overflow: visible !important; float: none !important; max-height: inherit !important; max-width: inherit !important; line-height: auto !important; margin-top: 0px !important; visibility: inherit !important; }
-                    /* Shows header Deriv logo dark mode and mobile - outlook version */
-                    [data-ogsc] .dark-lowwidth-m { display: block !important; width: 70px !important; overflow: visible !important; float: none !important; max-height: inherit !important; max-width: inherit !important; line-height: auto !important; margin-top: 0px !important; visibility: inherit !important; }
-                }
-            </style>
-        <!-- ==== END OF STYLES ==== -->
+        </style>
     </head>
-    <body>
-        <table>    
+    <body style="background-color: #eeeeee; margin: 0 !important; padding: 0 !important;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">    
              <!-- Email body -->
             <tr>
-                <td bgcolor="#eeeeee" align="center">
+                <td bgcolor="#eeeeee" align="center" style="padding: 10px 0 0;" class="mobile-nopadding">
                     <!--[if (gte mso 9)|(IE)]>
                     <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" ><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
-
                     <![endif]-->
-                    <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; max-width: 600px;" class="dark-mode-bg">
+                    <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; max-width: 600px;" class="darkmodeblack">
                         <!-- START HERO -->
                         <tr>
-                            <td  align="center" style="padding: 30px 30px 15px;" class="dark-mode-bg">
+                            <td  align="center" style="padding: 30px 30px 15px;" class="darkmodeblack">
                                 <a href="https://www.deriv.com">
-                                    <img class="hide-light-content mb-lowwidth" src="https://static.deriv.com/logos/deriv-black.png" width="100" style="display: block;" alt="Deriv.com">
+                                    <img class="light-img mb-lowwidth" src="https://static.deriv.com/logos/deriv-black.png" width="100" style="display: block;" alt="Deriv.com">
                                     <div class="dark-imglow" style="display: none; overflow: hidden; float: left; width: 0px; max-height: 0px; max-width: 0px; line-height: 0px; visibility: hidden;" align="center">
                                         <img src="https://static.deriv.com/logos/deriv-white.png" width="100" height="18" class="dark-lowwidth-m" alt="Deriv.com" style="color: #ffffff; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; text-align: center; font-weight: bold; font-size: 36px; line-height: 40px; text-decoration: none; margin: 0 auto; padding: 0;" border="0" />
                                     </div>                                   
@@ -215,47 +156,35 @@
                             </td>
                         </tr>
                         <tr class="mobile-hide">
-                            <td bgcolor="#fff" align="center"  class="dark-mode-bg">
-                                <input type="image" src="https://static.deriv.com/email/images/header/pt-webinars-dtrader-dmt5.png" width= "90%" style="display: block; outline: none; border-radius: 10px;"/>
+                            <td bgcolor="#fff" align="center"  class="darkmodeblack">
+                                <input type="image" src="https://static.deriv.com/email/images/header/laptop.png" width= "90%" style="display: block; outline: none; border-radius: 10px;"/>
                             </td>
                         </tr>   
                         <div>
                             <tr style="display: none; mso-hide:all;" class="mobile-visible-block">
-                                <td bgcolor="#fff" align="center" class="dark-mode-bg" >
-                                    <input type="image" src="https://static.deriv.com/email/images/header/pt-webinars-dtrader-dmt5-m.png"  width= "90%" style="display: block; outline: none; border-radius: 10px;"/><div></div>
+                                <td bgcolor="#fff" align="center" class="darkmodeblack" >
+                                    <input type="image" src="https://static.deriv.com/email/images/header/laptop.png"  width= "90%" style="display: block; outline: none; border-radius: 10px;"/><div></div>
                                 </td>
                             </tr>  
                         </div>
                         <!-- END HERO --> 
                         <tr>
-                            <td align="center" style="padding: 20px 50px 20px; background-color: #fff;" class="mobile-side dark-mode-bg">
-                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #333333; font-weight: 700; margin: 0;" class="darkcolor-subtext title-1">Primeiro webinar com Dtrader e DMT5</p>
+                            <td align="center" style="padding: 20px 50px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #333333; font-weight: 700; margin: 0;" class="darkcolor-subtext mb-font-size title-1">Primeiro webinar com Dtrader e DMT5</p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" style="padding: 40px 30px 20px 30px; background-color: #fff;" class="mobile-side dark-mode-bg">
+                            <td align="left" style="padding: 40px 30px 20px 30px; background-color: #fff;" class="mobile-side darkmodeblack">
                                 <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext">Caro parceiro [client's name],</p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" style="padding: 10px 30px 20px 30px; background-color: #ffffff;" class="mobile-side dark-mode-bg">
+                            <td align="left" style="padding: 10px 30px 20px 30px; background-color: #ffffff;" class="mobile-side darkmodeblack">
                                 <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext">Esperamos você no nosso primeiro webinar de novembro! Falaremos sobre os diferentes tipos de negociações e explicaremos como você pode conseguir ter maior vantagem na DTrader e Deriv MT5, com respostas a perguntas como:</p>
                             </td>
                         </tr>
-                        <tr class="mobile-hide">
-                            <td bgcolor="#fff" align="center"  class="dark-mode-bg">
-                                <input type="image" class="g-img" src="https://static.deriv.com/email/images/design/vietnam-awards-1.png" width= "85%" style="display: block; outline: none; border-radius: 10px;"/>
-                            </td>
-                        </tr>   
-                        <div>
-                            <tr style="display: none; mso-hide:all;" class="mobile-visible-block">
-                                <td bgcolor="#fff" align="center" class="dark-mode-bg" >
-                                    <input type="image" class="g-img" src="https://static.deriv.com/email/images/design/vietnam-awards-1-m.png"  width= "85%" style="display: block; outline: none; border-radius: 10px;"/><div></div>
-                                </td>
-                            </tr>  
-                        </div>
                         <tr>
-                            <td align="left" style="padding: 0 30px 0; background-color: #fff;" class="mobile-side dark-mode-bg">
+                            <td align="left" style="padding: 0 30px 0; background-color: #fff;" class="mobile-side darkmodeblack">
                                 <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext">
                                     <ul class="darkcolor-subtext">
                                         <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 0; margin: 5px;" class="darkcolor-subtext">Quais são os tipos de negociações disponíveis na Deriv?</p></li>
@@ -266,7 +195,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style="padding: 50px 30px 20px 30px; background-color: #ffffff;" class="mobile-side dark-mode-bg">
+                            <td align="center" style="padding: 50px 30px 20px 30px; background-color: #ffffff;" class="mobile-side darkmodeblack">
                                 <div style="width: 100%; height: 100%; margin: auto; border-radius: 10px; background: rgba(242, 243, 244, 0.3);">
                                     <p style="padding-top: 10px; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext"><strong>Quando?</strong></p>
                                     <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext">10 de novembro de 2022, às 16h00 de Angola / 17h00 de Moçambique</p>
@@ -276,7 +205,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 30px 30px;" class="dark-mode-bg">
+                            <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 30px 30px;" class="darkmodeblack">
                                 <!--[if (gte mso 9)|(IE)]>
                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.zoom.us/webinar/register/WN_01BDKcXBSZ2bEj_neANAQA" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="10%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
@@ -287,7 +216,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" style="padding: 10px 30px 50px; background-color: #ffffff;" class="mobile-side dark-mode-bg">
+                            <td align="left" style="padding: 10px 30px 50px; background-color: #ffffff;" class="mobile-side darkmodeblack">
                                 <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333333; font-weight: 400; margin: 0;" class="darkcolor-subtext">Caso tenha alguma dúvida, contacte-nos através do <a href="https://deriv.com/contact_us/?is_livechat_open=true" style="color: #ff444f !important">live chat</a>.</p>
                             </td>
                         </tr>
@@ -303,10 +232,10 @@
                     <!--[if (gte mso 9)|(IE)]>
                         <table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
                     <![endif]-->
-                    <table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" class="dark-mode-bg">
+                    <table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" class="darkmodeblack">
                         <!-- SOCIAL -->
                         <tr>
-                            <td align="center" style="padding: 20px 20px 35px; color: #ffffff; font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;" class="dark-mode-bg">
+                            <td align="center" style="padding: 20px 20px 35px; color: #ffffff; font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;" class="darkmodeblack">
                                 <p style="margin: 0;">
                                     <a href="https://twitter.com/derivdotcom" style="text-decoration: none;">
                                         <img src="https://static.deriv.com/email/images/icons/twitter.png" height="32" width="32" alt="Deriv.com on Twitter" title="Deriv.com on Twitter" />
@@ -327,13 +256,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td bgcolor="#fff" align="center" style="color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="dark-mode-bg">
+                            <td bgcolor="#fff" align="center" style="color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="darkmodeblack">
                                 <p style="padding: 0px 10px; font-family: 'IBM Plex Sans', Arial, sans-serif; color: #646464; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a href="https://www.deriv.com/help-centre" style="color: #ff444f !important">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/" style="color: #ff444f !important">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important">Security and privacy</a></p>
                                 <p style="padding: 0 10px; font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 5px 0px;" class="darkmodegray">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details" style="mso-hide:all; color: #ff444f !important;" class="darkcolor-subtext">Unsubscribe</a></p>
                             </td>
                         </tr>                        
                         <tr>
-                            <td  align="center" style="padding: 30px;" class="dark-mode-bg">
+                            <td  align="center" style="padding: 30px;" class="darkmodeblack">
                                 <a href="https://www.deriv.com">
                                     <img src="https://static.deriv.com/logos/deriv-gray.png" width="66" height="12"  style="display: block;" alt="Deriv.com">                                   
                                 </a>
