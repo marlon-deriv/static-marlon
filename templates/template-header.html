@@ -22,14 +22,18 @@
         <!-- ==== END OF META TAGS ==== -->
         <title></title>
         <!-- ==== STYLES ==== -->
-        <!-- Styles for Outlook: -->
-            <!--[if mso]>
-                <style type="text/css">
-                    *, a, p, h1, h2, h3, td {font-family: Arial, sans-serif;}
-                    table {border-collapse: collapse;}
-                    a {color: #ff444f; font-family: Arial, sans-serif;}
-                </style>
-            <![endif]-->
+            <!-- Styles for Outlook: -->
+                <!--[if mso]>
+                    <style type="text/css">
+                        *, a, p, h1, h2, h3, td {font-family: Arial, sans-serif;}
+                        table {border-collapse: collapse;}
+                        a {color: #ff444f; font-family: Arial, sans-serif; }
+                        #ol-int-table{ border: 0; padding: 0; width: 600px; }
+                        #ol-int-td{ width: 600px; margin: 0; background-color: #fff; vertical-align: top; }
+                        }
+                    </style>
+                <![endif]-->
+            <!-- End of styles for Outlook: -->
             <style type="text/css">
                 /* FONTS */
                 @media screen {
@@ -105,7 +109,7 @@
                     line-height: inherit;
                 }
                 /* Deriv styles */
-                a, a:visited {
+                    a, a:visited {
                         color: #ff444f;
                         text-decoration: none;
                     }
@@ -126,109 +130,126 @@
                         overflow: visible;
                     }
                     .button:hover { background-color: #d43e47; }
-            
-            /* MOBILE STYLES */
-            @media screen and (max-width: 620px) {
-                .mb-lowwidth{
-                    width: 70px !important; 
-                }
-                .mobile-hide {
-                    display:none !important;
-                }
-                .mobile-nopadding {
-                    padding: 0 !important;
-                }
-                .mobile-side {
-                    padding-right: 15px !important;
-                    padding-left: 15px !important;
-                }
-                .mobile-visible-block {
-                    display: block !important;
-                }
-                .mb-font-size{
-                    font-size: 24px !important;
-                }
-            }
-            @media (prefers-color-scheme: dark ) {
-                /* Shows Dark Mode-Only Content, Like Images */
-
-                .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
-                .dark-imglow { display:block !important; width: 100px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
-
-                /* Hides Light Mode-Only Content, Like Images */
-                .light-img { display:none; display:none !important; }
-
-                /* Custom Dark Mode Background Color */
-                .darkmodeblack { background-color:#0e0e0e !important; }
-                .darkmodelowblack { background-color: #202020 !important; }
-
-                /* Custom Dark Mode Font Colors */
-                 h1, h2, p, span, a, b { color: #ffffff !important; }
-                 .darkmodegray { color: #6e6e6e !important; }
-                 .darkcolor-subtext{ color: #c2c2c2 !important; }
-                 .darkcolor-white{ color: #ffffff !important; }
-                 .darkborder{ border-color: #6e6e6e !important; }
-
-                /* Custom Dark Mode Text Link Color */
-                .link { color: #91ADD4 !important; }
-            } 
-            /* Shows Dark Mode-Only Content, Like Images */
-            [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
-            [data-ogsc] .dark-imglow { display:block !important; width: 100px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
-
-            /* Hides Light Mode-Only Content, Like Images */
-            [data-ogsc] .light-img { display:none; display:none !important; }
-
-            /* Custom Dark Mode Background Color */
-            [data-ogsc] .darkmodeblack { background-color: #0e0e0e !important;}
-            [data-ogsc] .darkmodelowblack { background-color: #202020 !important; }
-
-            /* Custom Dark Mode Font Colors */
-            [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
-            [data-ogsc] .darkmodegray { color: #6e6e6e !important; }
-            [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important; }
-            [data-ogsc] .darkcolor-white{ color: #ffffff !important; }
-            [data-ogsc] .darkborder{ border-color: #6e6e6e !important; }
-
-            /* Custom Dark Mode Text Link Color */
-            [data-ogsc] .link { color: #91ADD4 !important; }
-
-            @media (prefers-color-scheme: dark ) and (max-width: 620px)  {
-                .dark-lowwidth-m{ display:block !important;width: 70px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
-                [data-ogsc].dark-lowwidth-m{ display:block !important;width: 70px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
-            }
-
-        </style>
+                /* End of Deriv styles */
+                /* Classes */
+                    #ext-table{ margin: auto; }
+                    #ext-td{
+                        background-color: #eee;
+                        padding: 10px 0 0;
+                    }
+                    #int-table{
+                        width: 100%;
+                        max-width: 600px !important;
+                        background-color: #ffffff;
+                        border:0;
+                        border-spacing: 0px;
+                        padding: 0;
+                    }
+                    #int-td{ padding: 30px 30px 15px; }
+                    #logo-black-h, #logo-white-h{ width: 100px; height: 18px; margin: 0 auto; padding: 0; }
+                /* End of classes */
+                /* Mobile styles */
+                    @media screen and (max-width: 620px) {
+                        .mb-lowwidth{
+                            /* Applied on hero - Deriv logo */
+                            width: 70px !important;
+                            height: 13px !important;
+                        }
+                        .mobile-hide {
+                            /* Hide desktop content on mobile */
+                            display: none !important;
+                        }
+                        .mobile-nopadding {
+                            /* Remove padding on external td from mobile */
+                            padding: 0 !important;
+                        }
+                        .mobile-side {
+                            /* Decrease padding on mobile */
+                            padding-right: 15px !important;
+                            padding-left: 15px !important;
+                        }
+                        .mobile-visible-block {
+                            /* Shows mobile content */
+                            display: block !important;
+                        }
+                        .mb-font-size{
+                            /* Applied on email title */
+                            font-size: 24px !important;
+                        }
+                    }
+                /* End of mobile styles */
+                /* Dark mode styles */
+                    @media (prefers-color-scheme: dark ) {
+                        /* Shows header Deriv logo on Dark Mode-Only */
+                        .dark-imglow {
+                            width: 100px !important;
+                            max-width: inherit !important;
+                            max-height: inherit !important;
+                            margin-top: 0px !important;
+                            line-height: auto !important;
+                            display: block !important;
+                            visibility: inherit !important;
+                            overflow: visible !important;
+                            float: none !important;
+                        }
+                        /* Hides light mode-only content */
+                        .light-img { display: none !important; }
+                        /* Applies dark background if dark mode is selected */
+                        .darkmodeblack { background-color: #0e0e0e !important; }
+                        /* Custom dark mode font colors */
+                        h1, h2, p, span, a, b { color: #ffffff !important; }
+                        .darkmodegray { color: #6e6e6e !important; }
+                        .darkcolor-subtext{ color: #c2c2c2 !important; }
+                    }
+                    /* Shows header Deriv logo on Dark Mode-Only */
+                    [data-ogsc] .dark-imglow { width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
+                    /* Hides light mode-only content */
+                    [data-ogsc] .light-img { display: none !important; }
+                    /* Applies dark background if dark mode is selected */
+                    [data-ogsc] .darkmodeblack { background-color: #0e0e0e !important; }
+                    /* Custom dark mode font colors */
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
+                    [data-ogsc] .darkmodegray { color: #6e6e6e !important; }
+                    [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important; }
+                    @media (prefers-color-scheme: dark ) and (max-width: 620px)  {
+                        .dark-lowwidth-m{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
+                        [data-ogsc].dark-lowwidth-m{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
+                        .mb-lowwidth{ width: 70px !important; height: 13px !important; }
+                        [data-ogsc].mb-lowwidth{ width: 70px !important; height: 13px !important; }
+                    }
+                /* End of dark mode styles */
+            </style>
+        <!-- ==== END OF STYLES ==== -->
     </head>
-    <body style="background-color: #eeeeee; margin: 0 !important; padding: 0 !important;">
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">    
+    <body>
+        <table id="ext-table" align="center">
              <!-- Email body -->
             <tr>
-                <td bgcolor="#eeeeee" align="center" style="padding: 10px 0 0;" class="mobile-nopadding">
+                <td id="ext-td" class="mobile-nopadding" align="center">
                     <!--[if (gte mso 9)|(IE)]>
-                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" ><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
+                    <table id="ol-int-table" align="center"><tr><td id="ol-int-td" align="center">
                     <![endif]-->
-                    <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; max-width: 600px;" class="darkmodeblack">
+                    <table id="int-table" class="darkmodeblack">
                         <!-- START HERO -->
                         <tr>
-                            <td  align="center" style="padding: 30px 30px 15px;" class="darkmodeblack">
+                            <td id="int-td" align="center" class="darkmodeblack">
                                 <a href="https://www.deriv.com">
-                                    <img class="light-img mb-lowwidth" src="https://static.deriv.com/logos/deriv-black.png" width="100" style="display: block;" alt="Deriv.com">
-                                    <div class="dark-imglow" style="display: none; overflow: hidden; float: left; width: 0px; max-height: 0px; max-width: 0px; line-height: 0px; visibility: hidden;" align="center">
-                                        <img src="https://static.deriv.com/logos/deriv-white.png" width="100" height="18" class="dark-lowwidth-m" alt="Deriv.com" style="color: #ffffff; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; text-align: center; font-weight: bold; font-size: 36px; line-height: 40px; text-decoration: none; margin: 0 auto; padding: 0;" border="0" />
-                                    </div>                                   
+                                    <img id="logo-black-h" class="light-img mb-lowwidth" src="https://static.deriv.com/logos/deriv-black.png" alt="Deriv.com">
+                                    <div class="dark-imglow" style="display: none;" align="center">
+                                        <img src="https://static.deriv.com/logos/deriv-white.png" id="logo-white-h" class="dark-lowwidth-m" alt="Deriv.com"/>
+                                    </div>
                                 </a>
                             </td>
                         </tr>
                         <tr class="mobile-hide">
                             <td bgcolor="#fff" align="center"  class="darkmodeblack">
-                                <input type="image" class="g-img" src="https://static.deriv.com/images/orange-speaker.png" style="display: block; outline: none"/>
+                                <input type="image" src="https://static.deriv.com/images/orange-speaker.png" width="90%"/>
                             </td>
                         </tr>   
                         <div>
                             <tr style="display: none; mso-hide:all;" class="mobile-visible-block">
                                 <td bgcolor="#fff" align="center" class="darkmodeblack" >
-                                    <input type="image" class="g-img" src="https://static.deriv.com/images/orange-speaker.png"  width= "90%" style="display: block; outline: none"/><div></div>
+                                    <input type="image" src="https://static.deriv.com/images/orange-speaker.png"  width= "90%"/>
                                 </td>
                             </tr>  
                         </div>
