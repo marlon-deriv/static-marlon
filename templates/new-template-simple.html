@@ -71,9 +71,7 @@
                     }
                 }
                 /* Applied to all tags */
-                *{
-                    font-family: 'IBM Plex Sans', Arial, sans-serif;
-                }
+                *{ font-family: 'IBM Plex Sans', Arial, sans-serif; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -135,7 +133,6 @@
                         color: #fff !important;
                         border: 0;
                         border-radius: 4px;
-                        font-family: 'IBM Plex Sans', Arial, sans-serif;
                         font-size: 14px;
                         font-weight: bold;
                         text-decoration: none;
@@ -160,10 +157,14 @@
                         border:0;
                         border-spacing: 0px;
                     }
-                    #h-logo-td{ padding: 30px 0px 15px 0px; }
-                    #h-logo-black, #h-logo-white{
-                        width: 100px;
-                        height: 18px;
+                    #h-logo-td{
+                        background-color: #000;
+                        padding: 35px 30px 30px;
+                        text-align: center;
+                    }
+                    #h-logo{
+                        width: 140px;
+                        height: 25px;
                         margin: 0 auto;
                         padding: 0;
                     }
@@ -173,12 +174,13 @@
                         border-radius: 15px;
                     }
                     .list-ul{ padding: 0px 30px 0px 60px; }
-                    #title-td p{
-                        margin: 0;
-                        color: #333;
+                    #h-logo-td p{
+                        margin: auto;
+                        padding: 60px 20px 0px;
+                        color: #fff;
                         font-size: 32px;
-                        font-weight: 700;
-                        line-height: 1.5;
+                        font-weight: 600;
+                        line-height: 1.25;
                     }
                     #greeting-td p, .paragraph-td p{
                         margin: 0;
@@ -211,7 +213,7 @@
                         border-spacing: 0px;
                     }
                     #footer-social-td{
-                        padding: 20px 20px 35px;
+                        padding: 20px 20px 25px;
                         color: #fff;
                         font-size: 14px;
                         font-weight: 400;
@@ -249,7 +251,7 @@
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
                         #h-logo-td{ padding: 10px 0; }
-                        #h-logo-black{
+                        #h-logo{
                             width: 70px !important;
                             max-width: inherit !important;
                             height: 13px !important;
@@ -291,7 +293,7 @@
                             text-decoration: none;
                         }
                         /* Shows header Deriv logo on Dark Mode-Only */
-                        .h-logo-white-div{
+                        .h-logo{
                             width: 100px !important;
                             max-width: inherit !important;
                             max-height: inherit !important;
@@ -337,52 +339,39 @@
     </head>
     <body>
         <table id="ext-table" align="center">
-             <!-- Email body -->
+            <!-- Email body -->
             <tr>
                 <td id="ext-td" class="mb-no-padding" align="center">
                     <!--[if (gte mso 9)|(IE)]>
-                    <table id="ol-int-table" align="center"><tr><td id="ol-int-td" align="center">
+                        <table id="ol-int-table" align="center"><tr><td id="ol-int-td" align="center">
                     <![endif]-->
                     <table id="int-table" class="dark-black">
                         <!-- START HERO -->
                         <tr>
                             <td id="h-logo-td" align="center" class="dark-black">
                                 <a href="https://www.deriv.com">
-                                    <img id="h-logo-black" class="hide-dark-h-logo dark-h-logo-low-width" src="https://static.deriv.com/logos/deriv-black.png" alt="Deriv.com">
-                                    <div class="h-logo-white-div" style="display: none;" align="center">
-                                        <img src="https://static.deriv.com/logos/deriv-white.png" id="h-logo-white" class="white-h-logo-low-width" alt="Deriv.com"/>
-                                    </div>
+                                    <img src="https://static.deriv.com/html/images/deriv-logo-white.png" id="h-logo" alt="Deriv.com">
                                 </a>
-                            </td>
-                        </tr>
-                        <tr class="mobile-hide">
-                            <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red.png"/>
-                            </td>
-                        </tr> 
-                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red-m.png"/>
-                            </td>
-                        </tr>
-                        <!-- END HERO -->
-                        <tr>
-                            <td id="title-td" align="center" style="padding: 15px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext mb-title">TITLE</p>
+                                <p id="title-p">TITLE HERE</p>
                             </td>
                         </tr>
                         <tr>
-                            <td id="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                            <td id="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">{% if customer.firstName != blank %}
+                                    Hello {{customer.firstName | titlecase }},
+                                    {% else %}
+                                    Hello trader,
+                                    {% endif %}
+                                </p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                            <td align="left" style="padding: 7px 30px 10px;" class="paragraph-td dark-black">
                                 <p class="dark-subtext">Paragraph here</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                            <td align="left" style="padding: 7px 30px 10px; background-color: #fff;" class="paragraph-td dark-black">
                                 <p class="dark-subtext">Paragraph here</p>
                             </td>
                         </tr>
@@ -390,8 +379,8 @@
                     <!--[if (gte mso 9)|(IE)]></td></tr></table>
                     <![endif]-->
                 </td>
-            </tr>   
-            <!-- End Email body-->                                                       
+            </tr>
+            <!-- END HERO -->
             <!-- FOOTER -->
             <tr>
                 <td align="center" class="mb-no-padding">
@@ -440,4 +429,5 @@
             </tr>
         </table>
     </body>
+    <!-- end message template -->
 </html>
