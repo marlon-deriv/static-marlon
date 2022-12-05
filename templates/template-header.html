@@ -28,10 +28,10 @@
                         *, a, p, h1, h2, h3, td { font-family: Arial, sans-serif; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
-                        a.button{ padding: 10px 16px; color: #ffffff !important; border: 0; border-radius: 4px; font-size: 14px;text-decoration: none; text-align: center; }
+                        a.button{ padding: 10px 16px; color: #ffffff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
                         .button:hover{ background-color: #d43e47; }
-                        #ol-int-table, #ol-footer-table { border: 0; padding: 0; width: 600px; background-color: #fff; }
-                        #ol-int-td { width: 600px; margin: 0; background-color: #fff; vertical-align: top; }
+                        #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
+                        #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         .h-img-td input{ width: 90%; max-width: 520px; border-radius: 15px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
                         #greeting-td p, .paragraph-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
@@ -88,10 +88,10 @@
                     -webkit-text-size-adjust: 100%;
                 }
                 table, td{
+                    padding: 0;
                     border: 0;
                     border-collapse: collapse;
                     border-spacing: 0px;
-                    padding: 0;
                     /* Remove spaces Outlook can sometimes add in a table */
                     mso-table-lspace: 0pt;
                     mso-table-rspace: 0pt;
@@ -155,10 +155,10 @@
                     #int-table{
                         width: 100%;
                         max-width: 600px !important;
-                        background-color: #ffffff;
+                        padding: 0;
+                        background-color: #fff;
                         border:0;
                         border-spacing: 0px;
-                        padding: 0;
                     }
                     #h-logo-td{ padding: 30px 0px 15px 0px; }
                     #h-logo-black, #h-logo-white{
@@ -172,11 +172,10 @@
                         width: 90%;
                         border-radius: 15px;
                     }
-                    .ul-list{ padding: 0px 30px 0px 60px; }
+                    .list-ul{ padding: 0px 30px 0px 60px; }
                     #title-td p{
                         margin: 0;
                         color: #333;
-                        font-family: 'IBM Plex Sans', Arial, sans-serif;
                         font-size: 32px;
                         font-weight: 700;
                         line-height: 1.5;
@@ -184,7 +183,6 @@
                     #greeting-td p, .paragraph-td p{
                         margin: 0;
                         color: #333;
-                        font-family: 'IBM Plex Sans', Arial, sans-serif;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
@@ -202,20 +200,19 @@
                         .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
                         .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
                         .columns-2-b-text{ font-size: 14px; font-weight: 400; }
-                        .td-no-padding p{ margin: 7px; }
+                        .no-padding-td p{ margin: 7px; }
                     /* End of table inside table */
                     #footer-table{
                         width: 100%;
                         max-width: 600px;
                         background-color: #fff;
+                        padding: 0;
                         border: 0;
                         border-spacing: 0px;
-                        padding: 0;
                     }
                     #footer-social-td{
                         padding: 20px 20px 35px;
-                        color: #ffffff;
-                        font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+                        color: #fff;
                         font-size: 14px;
                         font-weight: 400;
                         line-height: 18px;
@@ -224,7 +221,6 @@
                     #footer-social-td img{ width: 32px; height: 32px; }
                     #footer-links-td{
                         color: #646464;
-                        font-family: 'IBM Plex Sans', Arial, sans-serif;
                         font-size: 12px;
                         font-weight: 500;
                         line-height: 16px;
@@ -239,9 +235,9 @@
                         font-weight: 400;
                     }
                     #unsubscribe-p{
-                        color: #999999;
-                        font-weight: 400;
                         margin: 0px 0px 5px 0px;
+                        color: #999;
+                        font-weight: 400;
                     }
                     #f-logo{ padding: 30px; }
                     #f-logo img{
@@ -260,7 +256,7 @@
                             max-height: 13px !important;
                             margin-top: 0px !important;
                         }
-                        .ul-list{ padding: 0px 10px 0px 15px; }
+                        .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
                         .columns-2-a img{ margin: auto !important; }
@@ -269,15 +265,15 @@
                             /* Hide desktop content on mobile */
                             display: none !important;
                         }
-                        .mobile-nopadding{
+                        .mb-no-padding{
                             /* Remove padding on external td from mobile */
                             padding: 0 !important;
                         }
-                        .mobile-visible-block{
+                        .mb-visible-block{
                             /* Shows mobile content */
                             display: block !important;
                         }
-                        .mobile-title{
+                        .mb-title{
                             /* Applied on email title */
                             font-size: 24px !important;
                         }
@@ -324,7 +320,7 @@
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #ffffff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #fff !important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
@@ -343,7 +339,7 @@
         <table id="ext-table" align="center">
              <!-- Email body -->
             <tr>
-                <td id="ext-td" class="mobile-nopadding" align="center">
+                <td id="ext-td" class="mb-no-padding" align="center">
                     <!--[if (gte mso 9)|(IE)]>
                     <table id="ol-int-table" align="center"><tr><td id="ol-int-td" align="center">
                     <![endif]-->
@@ -364,7 +360,7 @@
                                 <input type="image" src="https://static.deriv.com/email/images/header/astropay-red.png"/>
                             </td>
                         </tr> 
-                        <tr style="display: none; mso-hide:all;" class="mobile-visible-block">
+                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
                             <td class="h-img-td" align="center">
                                 <input type="image" src="https://static.deriv.com/email/images/header/astropay-red-m.png"/>
                             </td>
@@ -372,7 +368,7 @@
                         <!-- END HERO --> 
                         <tr>
                             <td id="title-td" align="center" style="padding: 15px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext mobile-title">TITLE</p>
+                                <p class="dark-subtext mb-title">TITLE</p>
                             </td>
                         </tr>
                         <tr>
@@ -398,7 +394,7 @@
             <!-- End Email body-->                                                       
             <!-- FOOTER -->
             <tr>
-                <td align="center" class="mobile-nopadding">
+                <td align="center" class="mb-no-padding">
                     <!--[if (gte mso 9)|(IE)]>
                         <table id="ol-footer-table" align="center">
                     <![endif]-->
