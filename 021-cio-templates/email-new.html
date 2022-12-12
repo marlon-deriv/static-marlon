@@ -106,6 +106,15 @@
                     color: #ff444f !important;
                     text-decoration: none;
                 }
+                /* iOS BLUE LINKS */
+                a[x-apple-data-detectors]{
+                    color: inherit !important;
+                    text-decoration: none !important;
+                    font-size: inherit !important;
+                    font-family: inherit !important;
+                    font-weight: inherit !important;
+                    line-height: inherit !important;
+                }
                 /* Deriv styles */
                     a, a:visited {
                         color: #ff444f !important;
@@ -115,7 +124,7 @@
                     a.button {
                         padding: 10px 16px;
                         background: #ff444f;
-                        color: #ffffff;
+                        color: #fff !important;
                         border: 0;
                         border-radius: 4px;
                         font-family: 'IBM Plex Sans', Arial, sans-serif;
@@ -268,7 +277,7 @@
                         .h-img-td{ background-color: #0e0e0e !important; }
                     }
                     /* Shows header Deriv logo on Dark Mode-Only */
-                    [data-ogsc] a, a:visited { color: #ff444f !important; text-decoration: none; }
+                    [data-ogsc] a, a:visited { color: #ff444f; text-decoration: none; }
                     [data-ogsc] .h-logo-white-div { width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo { display: none !important; }
@@ -335,7 +344,7 @@
                     <![endif]-->
                 </td>
             </tr>   
-            <!-- End Email body-->                                                       
+            <!-- End Email body-->
             <!-- FOOTER -->
             <tr>
                 <td align="center">
@@ -372,7 +381,7 @@
                         <tr>
                             <td id="footer-logo-td" align="center" class="darkmodeblack">
                                 <a href="https://www.deriv.com">
-                                    <img src="https://static.deriv.com/logos/deriv-gray.png" alt="Deriv.com">                                   
+                                    <img src="https://static.deriv.com/logos/deriv-gray.png" alt="Deriv.com">
                                 </a>
                             </td>
                         </tr>

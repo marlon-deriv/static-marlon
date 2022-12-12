@@ -101,25 +101,43 @@
                     outline: none;
                     text-decoration: none;
                 }
+                ul{ padding-left: 25px; }
+                li{
+                    padding: 2px 0 0 5px;
+                    list-style-type: disc;
+                    font-family: inherit;
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
                 /* iOS BLUE LINKS */
                 a[x-apple-data-detectors] {
                     color: #ff444f !important;
                     text-decoration: none;
                 }
+                /* iOS BLUE LINKS */
+                a[x-apple-data-detectors]{
+                    color: inherit !important;
+                    text-decoration: none !important;
+                    font-size: inherit !important;
+                    font-family: inherit !important;
+                    font-weight: inherit !important;
+                    line-height: inherit !important;
+                }
                 /* Deriv styles */
-                    a, a:visited {
+                a, a:visited{
                         color: #ff444f !important;
                         text-decoration: none;
                     }
-                    a:hover { text-decoration: underline; }
-                    a.button {
-                        padding: 10px 16px;
+                    a:hover{ text-decoration: underline; }
+                    a.button{
                         background: #ff444f;
-                        color: #ffffff;
+                        padding: 10px 16px;
                         border: 0;
                         border-radius: 4px;
-                        font-family: 'IBM Plex Sans', Arial, sans-serif;
                         font-size: 14px;
+                        color: #fff !important;
                         font-weight: bold;
                         text-decoration: none;
                         text-align: center;
@@ -127,7 +145,7 @@
                         display: inline-block;
                         overflow: visible;
                     }
-                    .button:hover { background-color: #d43e47; }
+                    .button:hover{ background-color: #d43e47; }
                 /* End of Deriv styles */
                 /* Classes */
                     #ext-table{ margin: auto; }
@@ -163,15 +181,7 @@
                         font-weight: 600;
                         line-height: 1.25;
                     }
-                    #greetings-p{
-                        margin: 0;
-                        color: #fff;
-                        font-family: 'IBM Plex Sans', Arial, sans-serif;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 1.25;
-                    }
-                    .content-td { background-color: #eee; padding: 20px; }
+                    .content-td { background-color: #eee; }
                     .content-td p{
                         margin: 0;
                         color: #333;
@@ -183,7 +193,6 @@
                     #content-table{
                         width: 100%;
                         max-width: 600px;
-                        padding: 20px;
                         table-layout: fixed;
                     }
                     #footer-table{
@@ -220,7 +229,7 @@
                         padding: 0px 10px;
                         font-weight: 400;
                     }
-                    #copyright-p{
+                    #p-copyright{
                         margin: 0px 0px 5px 0px;
                         padding: 0px 30px 0px 30px;
                         font-family: 'IBM Plex Sans', Arial, sans-serif;
@@ -272,7 +281,6 @@
                         }
                         /* Hides light mode-only content */
                         .hide-dark-h-logo { display: none !important; }
-                        .content-td { background-color: #202020 !important; }
                         /* Applies dark background if dark mode is selected */
                         .darkmodelowblack { background-color: #202020 !important; }
                         /* Custom dark mode font colors */
@@ -282,7 +290,7 @@
                         .h-img-td{ background-color: #0e0e0e !important; }
                     }
                     /* Shows header Deriv logo on Dark Mode-Only */
-                    [data-ogsc] a, a:visited { color: #ff444f !important; text-decoration: none; }
+                    [data-ogsc] a, a:visited { color: #ff444f; text-decoration: none; }
                     [data-ogsc] .h-logo-white-div { width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo { display: none !important; }
@@ -298,7 +306,7 @@
                         .white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                         [data-ogsc].white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                         .dark-h-logo-low-width{ width: 70px !important; height: 13px !important; }
-                        [data-ogsc].dark-h-logo-low-width{ width: 70px !important; height: 13px !important; }
+                        [data-ogsc].dark-h-logo-low-width{ width: 70px !important; height: ≈13px !important; }
                     }
                 /* End of dark mode styles */
             </style>
@@ -343,7 +351,7 @@
                     <!--[if (gte mso 9)|(IE)]>
                         <table align="center" width="600px"><tr><td align="center" valign="top" width="600px">
                     <![endif]-->
-                    <table id="content-table darkmodelowblack">
+                    <table id="content-table">
                         {{content}}
                     </table>
                     <!--[if (gte mso 9)|(IE)]></td></tr></table>
