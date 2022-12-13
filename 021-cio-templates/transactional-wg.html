@@ -101,14 +101,15 @@
                     outline: none;
                     text-decoration: none;
                 }
-                ul{ padding-left: 25px; }
+                ul { list-style-type: disc; }
+                ul, ol{ padding-left: 25px; }
                 li{
                     padding: 2px 0 0 5px;
-                    list-style-type: disc;
                     font-family: inherit;
                     color: #333;
                     font-size: 16px;
                     font-weight: 400;
+                    text-align: left;
                     line-height: 24px;
                 }
                 /* iOS BLUE LINKS */
@@ -181,7 +182,7 @@
                         font-weight: 600;
                         line-height: 1.25;
                     }
-                    .content-td { background-color: #eee; }
+                    .content-td { max-width: 600px; background-color: #eee;}
                     .content-td p{
                         margin: 0;
                         color: #333;
@@ -205,7 +206,7 @@
                     }
                     #footer-social-td{
                         padding: 20px 20px 35px;
-                        color: #ffffff;
+                        color: #fff;
                         font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
                         font-size: 14px;
                         font-weight: 400;
@@ -266,9 +267,10 @@
                             color: #ff444f !important;
                             text-decoration: none;
                         }
+                        li { color: #fff !important; }
                         /* Shows header Deriv logo on Dark Mode-Only */
                         .h-logo-white-div {
-                            width: 100px !important;
+                            width: 150px !important;
                             max-width: inherit !important;
                             max-height: inherit !important;
                             margin-top: 0px !important;
@@ -279,6 +281,7 @@
                             overflow: visible !important;
                             float: none !important;
                         }
+                        .darkmodeblack{ background-color: #0e0e0e !important; }
                         /* Hides light mode-only content */
                         .hide-dark-h-logo { display: none !important; }
                         /* Applies dark background if dark mode is selected */
@@ -291,10 +294,12 @@
                     }
                     /* Shows header Deriv logo on Dark Mode-Only */
                     [data-ogsc] a, a:visited { color: #ff444f; text-decoration: none; }
-                    [data-ogsc] .h-logo-white-div { width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
+                    [data-ogsc] li { color: #fff !important; }
+                    [data-ogsc] .h-logo-white-div { width: 150px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo { display: none !important; }
                     /* Applies dark background if dark mode is selected */
+                    [data-ogsc] .darkmodeblack{ background-color: #0e0e0e !important; }
                     [data-ogsc] .darkmodelowblack { background-color: #202020 !important; }
                     /* Custom dark mode font colors */
                     [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b { color: #ffffff !important; }
@@ -340,7 +345,7 @@
                         <table align="center" width="600px"><tr><td align="center" valign="top" width="600px">
                     <![endif]-->
                     <table id="content-table">
-                        {{content}}
+                        {{ content }}
                     </table>
                     <!--[if (gte mso 9)|(IE)]></td></tr></table>
                     <![endif]-->
@@ -371,7 +376,7 @@
                         </tr>
                         <!-- SOCIAL -->
                         <tr>
-                            <td id="footer-social-td" align="center" class="darkmodeblack">
+                            <td id="footer-social-td" align="center" class="darkmodelowblack">
                                 <a href="https://twitter.com/derivdotcom">
                                     <img src="https://static.deriv.com/html/images/social/dark/twitter-dark.png" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
