@@ -72,7 +72,7 @@
                 }
                 /* Applied to all tags */
                 *{
-                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                    font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333;
                 }
                 body{
                     width: 100%;
@@ -175,11 +175,6 @@
                         font-size: 32px;
                         font-weight: 700;
                         line-height: 1.5;
-                    }
-                    .subtitle-td p{
-                        margin: 0;
-                        font-size: 26px;
-                        font-weight: 700;
                     }
                     #greeting-td p, .paragraph-td p{
                         margin: 0;
@@ -287,6 +282,7 @@
                 /* End of mobile styles */
                 /* Dark mode styles */
                     @media (prefers-color-scheme: dark ){
+                        *{ color: #c2c2c2; }
                         a, a:visited{
                             color: #ff444f !important;
                             text-decoration: none;
@@ -435,7 +431,7 @@
                                 <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">Read Deriv P2P FAQs</center>
                                 </v:roundrect>
                                 <![endif]-->
-                                <a class="button" href="https://deriv.com/help-centre/deriv-p2p/#what-is-deriv-p2p" style="mso-hide:all;"><span>Read Deriv P2P FAQs</span></a>
+                                <a class="button" href="https://deriv.com/help-centre/deriv-p2p/#what-is-deriv-p2p" style="mso-hide:all;">Read Deriv P2P FAQs</a>
                             </td>
                         </tr>
                         <tr>

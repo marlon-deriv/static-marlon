@@ -72,7 +72,7 @@
                 }
                 /* Applied to all tags */
                 *{
-                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                    font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333;
                 }
                 body{
                     width: 100%;
@@ -109,7 +109,6 @@
                 li{
                     padding: 2px 0 0 5px;
                     font-family: inherit;
-                    color: #333;
                     font-size: 16px;
                     font-weight: 400;
                     text-align: left;
@@ -283,11 +282,11 @@
                 /* End of mobile styles */
                 /* Dark mode styles */
                     @media (prefers-color-scheme: dark ){
+                        *{ color: #c2c2c2; }
                         a, a:visited{
                             color: #ff444f !important;
                             text-decoration: none;
                         }
-                        li { color: #fff !important; }
                         /* Shows header Deriv logo on Dark Mode-Only */
                         .h-logo-white-div{
                             width: 100px !important;
@@ -312,7 +311,6 @@
                         .h-img-td{ background-color: #0e0e0e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
-                    [data-ogsc] li { color: #fff !important; }
                     [data-ogsc] .h-logo-white-div{ width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo{ display: none !important; }
@@ -413,7 +411,7 @@
                                 <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">Watch video now</center>
                                 </v:roundrect>
                                 <![endif]-->
-                                <a class="button" href="https://www.youtube.com/watch?v=zf9flqE94Ek" style="mso-hide:all;"><span>Watch video now</span></a>
+                                <a class="button" href="https://www.youtube.com/watch?v=zf9flqE94Ek" style="mso-hide:all;">Watch video now</a>
                             </td>
                         </tr>
                         <tr>

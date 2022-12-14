@@ -71,9 +71,7 @@
                     }
                 }
                 /* Applied to all tags */
-                *{
-                    font-family: 'IBM Plex Sans', Arial, sans-serif;
-                }
+                *{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -282,6 +280,7 @@
                 /* End of mobile styles */
                 /* Dark mode styles */
                     @media (prefers-color-scheme: dark ){
+                        *{ color: #c2c2c2; }
                         a, a:visited{
                             color: #ff444f !important;
                             text-decoration: none;
