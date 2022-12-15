@@ -20,7 +20,7 @@
             <!-- Prevent iOS 11 from automatically scaling your email -->
             <meta name="x-apple-disable-message-reformatting"/>
         <!-- ==== END OF META TAGS ==== -->
-        <title></title>
+        <title>Cambios en la API: cambio en la estructura set_settings</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -71,7 +71,9 @@
                     }
                 }
                 /* Applied to all tags */
-                *{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333; }
+                *{
+                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                }
                 body{
                     width: 100%;
                     height: 100%;
@@ -102,14 +104,14 @@
                     outline: none;
                     text-decoration: none;
                 }
-                ul { list-style-type: disc; }
-                ul, ol{ padding-left: 25px; }
+                ul{ padding-left: 25px; }
                 li{
                     padding: 2px 0 0 5px;
+                    list-style-type: disc;
                     font-family: inherit;
+                    color: #333;
                     font-size: 16px;
                     font-weight: 400;
-                    text-align: left;
                     line-height: 24px;
                 }
                 /* iOS BLUE LINKS */
@@ -279,8 +281,7 @@
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
-                    @media (prefers-color-scheme: dark){
-                        *{ color: #c2c2c2; }
+                    @media (prefers-color-scheme: dark ){
                         a, a:visited{
                             color: #ff444f !important;
                             text-decoration: none;
@@ -352,33 +353,33 @@
                         </tr>
                         <tr class="mobile-hide">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header/dark-blue-api.png"/>
                             </td>
                         </tr> 
                         <tr style="display: none; mso-hide:all;" class="mb-visible-block">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red-m.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header/dark-blue-api-m.png"/>
                             </td>
                         </tr>
                         <!-- END HERO -->
                         <tr>
-                            <td id="title-td" align="center" style="padding: 15px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext mb-title">TITLE</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                            <td id="greeting-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">¡Hola!</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                                <p class="dark-subtext">Vamos a cambiar la estructura de respuesta de la API <strong>set_settings</strong> de <strong>integer</strong> a <strong>object</strong>. Este cambio no es compatible con versiones anteriores. Por favor, realiza los cambios necesarios en tu(s) aplicación(es) antes de 19/12/2022.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                                <p class="dark-subtext">Para más detalles, visita nuestra comunidad de desarrolladores: <a href="https://binary.vanillacommunity.com/discussion/839/api-changes-set-settings-structure-change#latest">link</a>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Si tienes alguna duda, escríbenos a <a href="mailto:api-support@deriv.com">api-support@deriv.com</a>.</p>
                             </td>
                         </tr>
                     </table>
@@ -397,13 +398,13 @@
                         <!-- SOCIAL -->
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
-                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                <a href="https://twitter.com/DerivEspanol" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/twitter.png" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                                <a href="https://www.facebook.com/derivespanol" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/facebook.png" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                                <a href="https://www.instagram.com/deriv_espanol/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/instagram.png" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://t.me/derivdotcomofficial" target="_blank">
@@ -416,14 +417,14 @@
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
+                                <p><a href="https://deriv.com/es/help-centre/">Centro de ayuda</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/es/terms-and-conditions">Términos y condiciones</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Seguridad y privacidad</a></p>
+                                <p id="unsubscribe-p" class="dark-gray dark-subtext">¿Ya no desea recibir estos e-mails? <a href="https://app.deriv.com/account/personal-details">Darse de baja</a>.</p>
                             </td>
                         </tr>                        
                         <tr>
                             <td id="f-logo" align="center" class="dark-black">
                                 <a href="https://www.deriv.com">
-                                    <img src="https://static.deriv.com/logos/deriv-gray.png" alt="Deriv.com" title="Deriv.com">                                   
+                                    <img src="https://static.deriv.com/logos/deriv-gray.png" alt="Deriv.com" title="Deriv.com">
                                 </a>
                             </td>
                         </tr>

@@ -20,7 +20,7 @@
             <!-- Prevent iOS 11 from automatically scaling your email -->
             <meta name="x-apple-disable-message-reformatting"/>
         <!-- ==== END OF META TAGS ==== -->
-        <title></title>
+        <title>Изменения API: структура set_settings</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -71,7 +71,9 @@
                     }
                 }
                 /* Applied to all tags */
-                *{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333; }
+                *{
+                    font-family: 'IBM Plex Sans', Arial, sans-serif;
+                }
                 body{
                     width: 100%;
                     height: 100%;
@@ -102,14 +104,14 @@
                     outline: none;
                     text-decoration: none;
                 }
-                ul { list-style-type: disc; }
-                ul, ol{ padding-left: 25px; }
+                ul{ padding-left: 25px; }
                 li{
                     padding: 2px 0 0 5px;
+                    list-style-type: disc;
                     font-family: inherit;
+                    color: #333;
                     font-size: 16px;
                     font-weight: 400;
-                    text-align: left;
                     line-height: 24px;
                 }
                 /* iOS BLUE LINKS */
@@ -279,8 +281,7 @@
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
-                    @media (prefers-color-scheme: dark){
-                        *{ color: #c2c2c2; }
+                    @media (prefers-color-scheme: dark ){
                         a, a:visited{
                             color: #ff444f !important;
                             text-decoration: none;
@@ -352,33 +353,33 @@
                         </tr>
                         <tr class="mobile-hide">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header/dark-blue-api.png"/>
                             </td>
                         </tr> 
                         <tr style="display: none; mso-hide:all;" class="mb-visible-block">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red-m.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header/dark-blue-api-m.png"/>
                             </td>
                         </tr>
                         <!-- END HERO -->
                         <tr>
-                            <td id="title-td" align="center" style="padding: 15px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext mb-title">TITLE</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                            <td id="greeting-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Привет!</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                                <p class="dark-subtext">Мы меняем структуру ответа API <strong>set_settings</strong> с <strong>integer</strong> на <strong>object</strong>. Это обновление не имеет обратной совместимости. Пожалуйста, внесите необходимые изменения в свои приложения до 19/12/2022.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                                <p class="dark-subtext">Более подробно в нашем сообществе разработчиков <a href="https://binary.vanillacommunity.com/discussion/839/api-changes-set-settings-structure-change#latest">по этой ссылке</a>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Если у вас есть вопросы, напишите нам на <a href="mailto:api-support@deriv.com">api-support@deriv.com</a>.</p>
                             </td>
                         </tr>
                     </table>
