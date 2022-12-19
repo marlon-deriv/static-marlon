@@ -1,1 +1,8 @@
-test-email@deriv.com, maria.semashko@regentmarkets.com
+test-email@deriv.com, compliance@deriv.com, gabriel.garcia@regentmarkets.com, alejandro.acosta@regentmarkets.com
+
+
+Email 1:
+{% if customer.firstName != blank %} {{customer.firstName | titlecase }},{% else %} Trader,{% endif %} multiplique os seus ganhos potenciais e limite as suas perdas com Multiplicadores
+
+Email 2:
+{% if customer.firstName != blank %} {{customer.firstName | titlecase }},{% else %} Trader,{% endif %} já experimentou os Multiplicadores?
