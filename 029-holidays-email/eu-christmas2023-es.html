@@ -109,7 +109,7 @@
                     padding: 2px 0 0 5px;
                     font-family: inherit;
                     font-size: 16px;
-                    font-weight: 400;
+                    font-weight: 700;
                     text-align: left;
                     line-height: 24px;
                 }
@@ -179,13 +179,6 @@
                         margin: 0;
                         color: #333;
                         font-size: 16px;
-                        font-weight: 400;
-                        line-height: 1.5;
-                    }
-                    .paragraph-td-discl p{
-                        margin: 0;
-                        color: #999999;
-                        font-size: 12px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
@@ -284,13 +277,6 @@
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
-                        .paragraph-td-discl p{
-                        margin: 0;
-                        color: #999999;
-                        font-size: 12px;
-                        font-weight: 400;
-                        line-height: 1.5;
-                    }
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
@@ -300,6 +286,8 @@
                             color: #ff444f !important;
                             text-decoration: none;
                         }
+                        a.button{ color: #fff !important; }
+                        li { color: #c2c2c2 !important; }
                         /* Shows header Deriv logo on Dark Mode-Only */
                         .h-logo-white-div{
                             width: 100px !important;
@@ -324,6 +312,7 @@
                         .h-img-td{ background-color: #0e0e0e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
+                    [data-ogsc] li { color: #c2c2c2 !important; }
                     [data-ogsc] .h-logo-white-div{ width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo{ display: none !important; }
@@ -335,6 +324,7 @@
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
+                        li { color: #c2c2c2 !important; }
                         #h-logo-td{ padding: 10px 0 !important; }
                         .white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                         [data-ogsc].white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
@@ -389,10 +379,10 @@
                         <tr>
                             <td align="left" class="list-ul dark-black">
                                 <ul>
-                                    <li class="dark-subtext"><strong>Aumento de las comisiones</strong></li>
-                                    <li class="dark-subtext"><strong>Aplicación de límites de volumen</strong></li>
-                                    <li class="dark-subtext"><strong>Interrupción de determinados instrumentos</strong></li>
-                                    <li class="dark-subtext"><strong>Restricciones en la duración mínima de contratos y en las horas de operación</strong></li>
+                                    <li class="dark-subtext">Aumento de las comisiones</li>
+                                    <li class="dark-subtext">Aplicación de límites de volumen</li>
+                                    <li class="dark-subtext">Interrupción de determinados instrumentos</li>
+                                    <li class="dark-subtext">Restricciones en la duración mínima de contratos y en las horas de operación</li>
                                 </ul>
                             </td>
                         </tr>
