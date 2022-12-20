@@ -2,7 +2,7 @@ test-email@deriv.com, tiago@regentmarkets.com, lydia@regentmarkets.com
 
 
 {% if customer.name != blank %}
-Hi {{customer.name | titlecase }},
+Olá {{customer.name | titlecase }},
 {% else %}
-Hello trader,
+Olá trader,
 {% endif %}
