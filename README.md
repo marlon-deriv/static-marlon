@@ -10,7 +10,7 @@ Updates:
   
 # Templates
 ## template-header.html
-This template was created to become a stable version of the email standards used by the Digital Marketing team at Deriv. We strongly encourage you to keep this document as well as the base file `template-header.html` up to date.
+This template was created to become a stable version of the email standards used by the Digital Marketing team at Deriv. We strongly encourage you to keep this document as well as the files `template-header.html`, `0-list.html`, `footer-en.html`, ... up to date.
 ### Naming and ordering
 - The area for `Outlook styles` comes first as they're a comment inside the `<head>`
 - Inside the styles areas, the definition of html tags preceeds the CSS classes/ elements.
@@ -20,4 +20,8 @@ This template was created to become a stable version of the email standards used
   - Ex. `* { ... }`, `body { ... }`, `ul { ... }`, `li { ... }`... `#ext-table { ... }`, `#ext-td { ... }`, `#int-table { ... }`, `#footer-table { ... }`, `#footer-links-td { ... }`. As shown, the html tags definition (`body`, `ul`, `li`) are ordered from the most generic to the most specific and they come before the classes/ ids defined (also ordered from the most generic to the most specific).
 - The CSS properties used must be ordered considering the impact they have on the layout. We suggest box model first (`width`, `height`, `background-color`, `margin`, `padding` ...) than typography (`font-size`, `font-weight`, `line-height`, ...).
 ### Do's and Don'ts
- - 
+ - Test changes before updating the template.
+ - Check the previous styles (there are a few listed above in this manual) to see the best place to add your changes. Sometimes you just need to modify an existing style.
+ - When you update a template, don't forget to update the related ones as well, e.g. all versions of the footer (EN, ID, TH, ...).
+ - Avoid `!important` when it's not mandatory. If there are no style conflicts, it should not be applied.
+ 
