@@ -6,3 +6,17 @@ Olá {{customer.name | titlecase }},
 {% else %}
 Olá trader,
 {% endif %}
+
+
+
+
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Great news! We've just launched the IB commission plan for Deriv X, our next generation CFD trading platform.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Start promoting Deriv X to your clients now and get them to trade on their favourite markets such as forex, cryptocurrencies, stocks and indices, commodities, and derived indices. You'll potentially earn commissions of up to USD 15 for each 100,000 of trade volume, which will be credited to your Deriv account daily.</p>
+                            </td>
+                        </tr>

@@ -28,11 +28,14 @@
                         *, a, p, h1, h2, h3, td { font-family: Arial, sans-serif; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
+                        a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
+                        .button:hover{ background-color: #d43e47; }
                         #ol-int-table, #ol-footer-table { border: 0; padding: 0; width: 600px; background-color: #fff; }
                         #ol-int-td { width: 600px; margin: 0; background-color: #fff; vertical-align: top; }
                         .h-img-td input{ width: 90%; border-radius: 15px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
                         #greeting-td p, .paragraph-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        .body-img{ width: 90%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
             <!-- End of styles for Outlook: -->
@@ -68,9 +71,7 @@
                     }
                 }
                 /* Applied to all tags */
-                * {
-                    font-family: 'IBM Plex Sans', Arial, sans-serif;
-                }
+                *{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333; }
                 body {
                     width: 100%;
                     height: 100%;
@@ -112,11 +113,6 @@
                     line-height: 24px;
                 }
                 /* iOS BLUE LINKS */
-                a[x-apple-data-detectors] {
-                    color: #ff444f !important;
-                    text-decoration: none;
-                }
-                /* iOS BLUE LINKS */
                 a[x-apple-data-detectors]{
                     color: inherit !important;
                     text-decoration: none !important;
@@ -126,7 +122,7 @@
                     line-height: inherit !important;
                 }
                 /* Deriv styles */
-                a, a:visited{
+                    a, a:visited{
                         color: #ff444f !important;
                         text-decoration: none;
                     }
@@ -149,10 +145,7 @@
                 /* End of Deriv styles */
                 /* Classes */
                     #ext-table{ margin: auto; }
-                    #ext-td{
-                        background-color: #eee;
-                        /* padding: 10px 0 0; */
-                    }
+                    #ext-td{ background-color: #eee; }
                     #int-table{
                         width: 100%;
                         max-width: 600px !important;
@@ -242,6 +235,7 @@
                 /* Mobile styles */
                     @media screen and (max-width: 620px) {
                         #h-logo-td{ padding: 10px 0; }
+                        .list-ul{ padding: 0px 10px 0px 15px; }
                         .mobile-hide {
                             /* Hide desktop content on mobile */
                             display: none !important;
@@ -262,10 +256,13 @@
                 /* End of mobile styles */
                 /* Dark mode styles */
                     @media (prefers-color-scheme: dark ) {
+                        *{ color: #c2c2c2; }
                         a, a:visited {
                             color: #ff444f !important;
                             text-decoration: none;
                         }
+                        a.button{ color: #fff !important; }
+                        li { color: #c2c2c2 !important; }
                         /* Shows header Deriv logo on Dark Mode-Only */
                         .h-logo-white-div {
                             width: 150px !important;
@@ -292,6 +289,7 @@
                     }
                     /* Shows header Deriv logo on Dark Mode-Only */
                     [data-ogsc] a, a:visited { color: #ff444f; text-decoration: none; }
+                    [data-ogsc] li { color: #c2c2c2 !important; }
                     [data-ogsc] .h-logo-white-div { width: 150px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo { display: none !important; }
@@ -304,6 +302,8 @@
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px)  {
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
+                        a.button{ color: #fff !important; }
+                        li { color: #c2c2c2 !important; }
                         #h-logo-td{ padding: 10px 0 !important; }
                         .white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                         [data-ogsc].white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
