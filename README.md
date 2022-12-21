@@ -3,10 +3,8 @@
 Projects history repository
 - Contains the files developed to collaborate with deriv-static-content
 
-Updates:
-- 007: Waiting the requesters;
-- 021: 4 templates, 4 concluded. Waiting for checks;
-- 027: 8 emails, 8 updated. Waiting FE check;
+Pendencies:
+- 007: Rahvin is reviewing;
   
 # Templates
 ## template-header.html
@@ -25,6 +23,26 @@ This template was created to become a stable version of the email standards used
  - When you update a template, don't forget to update the related ones as well, e.g. all versions of the footer (EN, ID, TH, ...).
  - Avoid `!important` when it's not mandatory. If there are no style conflicts, it should not be applied.
  ### Styles
-> - `ext-table`: First element of the body. Sets the area of the email.
-> - `ext-td`: The td where all the content of the email will be included. Defines the background-color of the email.
-> - `int-table`: 
+> - `#ext-table`: First element of the body. Sets the area of the email.
+> - `#ext-td`: First tr of the `#ext-table`. This td has the internal table content. Defines the background color of the email.
+> - `#int-table`/`#ol-int-table`: Defines the area that contains the email itself.
+> - `#ol-int-td`: Defines the email area for Outlook.
+> - `#h-logo-td`: td in hero where we add Deriv logo.
+> - `#h-logo-black`/`#h-logo-white`: Define styles for both logos (light and dark modes).
+> - `.h-img-td`: td where we add the header image of an email.
+> - `.h-img-td input`: Styles for the header image.
+> - `#title-td p`: Formatting the text of the title.
+> - `.list-ul`: Applied to `0-list.html` to set up the td where it's included.
+> - `#greeting-td p`/`#paragraph-td`: Generic styles for paragraphs in the email.
+> - `.body-img`: Applied to `0-image1.html` and `0-image2.html` to set up the images included in the body of the email.
+> - `0-table-inside-table.html` styles:
+>   - `.columns-2-ext-td`: Defines the external td of the external table.
+>   - `.columns-2-a`: Left td of the table where we usually insert an icon.
+>   - `.columns-2-a img`: Styles for the icon.
+>   - `.columns-2-b`: Right td of the table where we usually insert another table with 2 tr's.
+>   - `.columns-2-b-title`: Contains the text of the upper tr of the internal table. Frequently used for subtitles.
+>   - `.columns-2-b-text`: Contains the text of the lower tr of the internal table. Frequently used for descriptions.
+>   - `.no-padding-td p`: Description paragraph.
+> - `footer` styles:
+>   - `footer-table`: Second line of the `#ext-table`. Defines styles for the footer.
+>   
