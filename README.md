@@ -4,7 +4,7 @@ Projects history repository
 - Contains the files developed to collaborate with deriv-static-content
 
 Pendencies:
-- 007: Rahvin is reviewing;
+- 007: Rahvin is reviewing
   
 # Templates
 ## template-header.html
