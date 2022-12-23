@@ -22,7 +22,7 @@ This template was created to become a stable version of the email standards used
  - Check the previous styles (there are a few listed above in this manual) to see the best place to add your changes. Sometimes you just need to modify an existing style.
  - When you update a template, don't forget to update the related ones as well, e.g. all versions of the footer (EN, ID, TH, ...).
  - Avoid `!important` when it's not mandatory. If there are no style conflicts, it should not be applied.
- ### Styles
+ ### Basic styles
 > - `#ext-table`: First element of the body. Sets the area of the email.
 > - `#ext-td`: First tr of the `#ext-table`. This td has the internal table content. Defines the background color of the email.
 > - `#int-table`/`#ol-int-table`: Defines the area that contains the email itself.
@@ -34,6 +34,7 @@ This template was created to become a stable version of the email standards used
 > - `#title-td p`: Formatting the text of the title.
 > - `.list-ul`: Applied to `0-list.html` to set up the td where it's included.
 > - `#greeting-td p`/`#paragraph-td`: Generic styles for paragraphs in the email.
+> - `.paragraph-td-discl p`: Styles for disclaimers used in EU versions of emails.
 > - `.body-img`: Applied to `0-image1.html` and `0-image2.html` to set up the images included in the body of the email.
 > - `0-table-inside-table.html` styles:
 >   - `.columns-2-ext-td`: Defines the external td of the external table.
@@ -44,5 +45,22 @@ This template was created to become a stable version of the email standards used
 >   - `.columns-2-b-text`: Contains the text of the lower tr of the internal table. Frequently used for descriptions.
 >   - `.no-padding-td p`: Description paragraph.
 > - `footer` styles:
->   - `footer-table`: Second line of the `#ext-table`. Defines styles for the footer.
->   
+>   - `#footer-table`: Second line of the `#ext-table`. Defines styles for the footer.
+>   - `#footer-social-td`: Area where we include the social media image links.
+>   - `#footer-links-td`: Area containing the utility links for the help centre, Security and privacy, etc.
+>   - `#unsubscribe-p`: Defines styles for the unsubscribe paragraph as it has specific formatting.
+>   - `#f-logo`: Defines styles for the gray logo in the footer.
+### Mobile specific styles
+> - `.mobile-hide`: Hides content when the client uses a mobile device.
+> - `.mb-no-padding`: Remove 100% of the paddings of an element on mobile devices.
+> - `.mb-visible-block`: Applied to the blocks that must be shown on mobile devices in opposition to `.mobile-hide`.
+> - `.mb-title`: Defines styles for the `#title-td` on mobile devices.
+### Dark mode specific styles
+> - `.h-logo-white-div`: Styles for the header white logo used on dark mode.
+> - `.hide-dark-h-logo`: Hides the dark logo on dark mode.
+> - `.dark-black`: Applies black background for dark mode.
+> - `.dark-gray`: Applies gray background for dark mode.
+> - `.dark-subtext`: Converts the text to dark mode formatting.
+### Mobile & dark mode specific styles
+> - `.white-h-logo-low-width`: Decreases the size of the header white logo on dark mode.
+> - `.dark-h-logo-low-width`: Decreases the size of the header black logo on dark mode.
