@@ -35,6 +35,8 @@
                         .h-img-td input{ width: 90%; max-width: 520px; border-radius: 15px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
                         #greeting-td p, .paragraph-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        #ola-td p{ font-family: Arial, sans-serif; font-size: 28px; margin-top: -180px; }
+                        #subtitle-td p{ font-family: Arial, sans-serif; margin-top: -100px; font-size: 16px; }
                         .body-img{ width: 90%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
@@ -163,26 +165,38 @@
                     }
                     .h-img-td{ background-color: #fff; }
                     .h-img-td input{
-                        width: 90%;
+                        width: 50%;
                         border-radius: 15px;
                     }
                     .list-ul{ padding: 0px 30px 0px 60px; }
-                    #title-td p{
-                        margin: 0;
-                        color: #333;
-                        font-size: 32px;
+                    #ola-td p{
+                        font-size: 40px;
                         font-weight: 700;
-                        line-height: 1.5;
+                        color: #FF444F;
+                        margin-top: -240px;
                     }
-                    #greeting-td p, .paragraph-td p{
+                    #subtitle-td p, .paragraph-td p{
                         margin: 0;
                         color: #333;
-                        font-size: 16px;
-                        font-weight: 400;
+                    }
+                    #subtitle-td p{
+                        margin-top: -80px;
+                        font-size: 20px;
+                        line-height: 25px;
+                        font-weight: 700;
+                    }
+                    .paragraph-td p{
+                        font-size: 24px;
+                        line-height: 25px;
+                        font-weight: 500;
+                    }
+                    .chat-td p{
+                        font-size: 20px;
                         line-height: 1.5;
+                        font-weight: 400;
                     }
                     .body-img{
-                        width: 90%;
+                        width: 80%;
                         display: block;
                         outline: none;
                         border-radius: 10px;
@@ -250,6 +264,18 @@
                             max-height: 13px !important;
                             margin-top: 0px !important;
                         }
+                        #ola-td p{
+                            font-size: 28px;
+                            margin-top: -180px;
+                        }
+                        #subtitle-td p{
+                            margin-top: -100px;
+                            font-size: 16px;
+                        }
+                        #subtitle-td, .paragraph-td, #chat-td { padding: 20px 30px !important;}
+                        .paragraph-td p{ font-size: 18px; }
+                        #chat-td p{ font-size: 14px; }
+                        .social-btn{ padding-bottom: 6px; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -272,11 +298,6 @@
                         .mb-title{
                             /* Applied on email title */
                             font-size: 24px !important;
-                        }
-                        #greeting-td, .paragraph-td{
-                            /* Decrease padding on mobile */
-                            padding-left: 15px !important;
-                            padding-right: 15px !important;
                         }
                     }
                 /* End of mobile styles */
@@ -314,6 +335,8 @@
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
+                    [data-ogsc] #ola-td p{ font-size: 28px; margin-top: -180px; }
+                    [data-ogsc] #subtitle-td p{ margin-top: -100px; font-size: 16px; }
                     [data-ogsc] .h-logo-white-div{ width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo{ display: none !important; }
@@ -358,39 +381,74 @@
                             </td>
                         </tr>
                         <tr class="mobile-hide">
-                            <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/dark-blue-api.png"/>
+                            <td class="h-img-td dark-black" align="center">
+                                <input type="image" src="https://static.deriv.com/email/images/header/latin-america-map.png"/>
                             </td>
                         </tr> 
                         <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/dark-blue-api-m.png"/>
-                            </td>
-                        </tr>
-                        <!-- END HERO -->
-                        <tr>
-                            <td id="greeting-td" align="left" style="padding: 40px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Olá!,</p>
+                            <td class="h-img-td dark-black" align="center">
+                                <input type="image" src="https://static.deriv.com/email/images/header/latin-america-map.png"/>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Estamos removendo o gamstop_company da resposta da API landing_company. A atualização será lançada no dia 12/01/2023.</p>
+                            <td id="subtitle-td" align="center" style="padding: 0px 100px 50px 100px;" class="dark-black">
+                                <p class="dark-subtext">Convidamos você a seguir as nossas novas contas oficiais no Instagram, Facebook e Twitter em português.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Esta atualização não é compatível com versões anteriores. Faça as alterações necessárias no(s) seu(s) aplicativo(s) antes da data de lançamento.</p>
+                            <td align="center"  class="dark-black" style="padding-bottom: 10px;">
+                                <a href="https://www.instagram.com/deriv_portugues/" target="_blank">
+                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/instagram-button-pt.png" style="width: 50%;"/>
+                                </a>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Para mais informações, visite a nossa <a href="https://binary.vanillacommunity.com/discussion/841/api-changes-removal-of-gamstop-company#latest" target="_blank">comunidade de desenvolvedores</a>.</p>
+                            <td align="center"  class="dark-black" style="padding-bottom: 10px;">
+                                <a href="https://www.facebook.com/derivportugues" target="_blank">
+                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/facebook-button-pt.png" style="width: 50%;"/>
+                                </a>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
-                                <p class="dark-subtext">Se você tiver alguma dúvida, envie um e-mail para <a href="https://deriv.com/?is_livechat_open=true">api-support@deriv.com</a>.</p>
+                            <td align="center"  class="dark-black" style="padding-bottom: 10px;">
+                                <a href="https://twitter.com/DerivPortugues" target="_blank">
+                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/twitter-button-pt.png" style="width: 50%;"/>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="center" style="padding: 60px 100px 40px 100px;" class="dark-black">
+                                <p class="dark-subtext">Conheça mais sobre os <br/>nossos principais produtos</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"  class="dark-black">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/design/welcome-platforms.png"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="center" style="padding: 20px 100px 0px 100px;" class="dark-black">
+                                <p class="dark-subtext">Aproveite o nosso conteúdo <br/>educativo atualizado</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"  class="dark-black">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/design/welcome-trade-sp.png"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="center" style="padding: 20px 100px 0px 100px;" class="dark-black">
+                                <p class="dark-subtext">Receba novidades <br/>do mercado financeiro</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"  class="dark-black">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/design/welcome-monitor.png"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="chat-td" align="center" style="padding: 10px 100px 50px 100px;" class="dark-black">
+                                <p class="dark-subtext">O nosso <a href="https://deriv.com/pt/?is_livechat_open=true" target="_blank">live chat</a> está disponível <br/>para suas consultas 24 horas por dia.</p>
                             </td>
                         </tr>
                     </table>
