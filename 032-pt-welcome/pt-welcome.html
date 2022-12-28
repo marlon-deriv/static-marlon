@@ -35,6 +35,8 @@
                         .h-img-td input{ width: 90%; max-width: 520px; border-radius: 15px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
                         #greeting-td p, .paragraph-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        #ola-td p{ font-family: Arial, sans-serif; font-size: 28px; margin-top: -180px; }
+                        #subtitle-td p{ font-family: Arial, sans-serif; margin-top: -100px; font-size: 16px; }
                         .body-img{ width: 90%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
@@ -163,16 +165,22 @@
                     }
                     .h-img-td{ background-color: #fff; }
                     .h-img-td input{
-                        width: 90%;
+                        width: 80%;
                         border-radius: 15px;
                     }
                     .list-ul{ padding: 0px 30px 0px 60px; }
+                    #ola-td p{
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: #FF444F;
+                        margin-top: -240px;
+                    }
                     #subtitle-td p, .paragraph-td p{
                         margin: 0;
                         color: #333;
                     }
                     #subtitle-td p{
-                        margin-top: -180px;
+                        margin-top: -80px;
                         font-size: 20px;
                         line-height: 25px;
                         font-weight: 700;
@@ -192,10 +200,6 @@
                         display: block;
                         outline: none;
                         border-radius: 10px;
-                    }
-                    .social-btn{
-                        width: 50%;
-                        padding-bottom: 10px;
                     }
                     /* Table inside table */
                         .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
@@ -260,11 +264,15 @@
                             max-height: 13px !important;
                             margin-top: 0px !important;
                         }
-                        #subtitle-td p{
+                        #ola-td p{
+                            font-size: 28px;
                             margin-top: -180px;
+                        }
+                        #subtitle-td p{
+                            margin-top: -100px;
                             font-size: 16px;
                         }
-                        #subtitle-td, .paragraph-td, #chat-td { padding: 20px 50px !important;}
+                        #subtitle-td, .paragraph-td, #chat-td { padding: 20px 30px !important;}
                         .paragraph-td p{ font-size: 18px; }
                         #chat-td p{ font-size: 14px; }
                         .social-btn{ padding-bottom: 6px; }
@@ -327,6 +335,8 @@
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
+                    [data-ogsc] #ola-td p{ font-size: 28px; margin-top: -180px; }
+                    [data-ogsc] #subtitle-td p{ margin-top: -100px; font-size: 16px; }
                     [data-ogsc] .h-logo-white-div{ width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     /* Hides light mode-only content */
                     [data-ogsc] .hide-dark-h-logo{ display: none !important; }
@@ -371,38 +381,38 @@
                             </td>
                         </tr>
                         <tr class="mobile-hide">
-                            <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/latin-america-map-pt.png"/>
+                            <td class="h-img-td dark-black" align="center">
+                                <input type="image" src="https://static.deriv.com/email/images/header/latin-america-map.png"/>
                             </td>
                         </tr> 
                         <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/latin-america-map-pt-m.png"/>
+                            <td class="h-img-td dark-black" align="center">
+                                <input type="image" src="https://static.deriv.com/email/images/header/latin-america-map.png"/>
                             </td>
                         </tr>
                         <tr>
-                            <td id="subtitle-td" align="center" style="padding: 0px 100px 20px 100px;" class="dark-black">
+                            <td id="subtitle-td" align="center" style="padding: 0px 100px 50px 100px;" class="dark-black">
                                 <p class="dark-subtext">Convidamos você a seguir as nossas novas contas oficiais no Instagram, Facebook e Twitter em português.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center"  class="dark-black">
+                            <td align="center"  class="dark-black" style="padding-bottom: 10px;">
                                 <a href="https://www.instagram.com/deriv_portugues/" target="_blank">
-                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/instagram-button-pt.png"/>
+                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/instagram-button-pt.png" style="width: 50%;"/>
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center"  class="dark-black">
+                            <td align="center"  class="dark-black" style="padding-bottom: 10px;">
                                 <a href="https://www.facebook.com/derivportugues" target="_blank">
-                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/facebook-button-pt.png"/>
+                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/facebook-button-pt.png" style="width: 50%;"/>
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center"  class="dark-black">
+                            <td align="center"  class="dark-black" style="padding-bottom: 10px;">
                                 <a href="https://twitter.com/DerivPortugues" target="_blank">
-                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/twitter-button-pt.png"/>
+                                    <input class="social-btn" type="image" src="https://static.deriv.com/email/images/design/twitter-button-pt.png" style="width: 50%;"/>
                                 </a>
                             </td>
                         </tr>
