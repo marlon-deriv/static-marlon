@@ -1,0 +1,7 @@
+{% if customer.name != blank %}
+Hi {{customer.name | titlecase }}
+{% else %}
+Hello trader
+{% endif %}!
+
+test-email@deriv.com, alejandro.acosta@regentmarkets.com, aline@regentmarkets.com, ignacio@regentmarkets.com
