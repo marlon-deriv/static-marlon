@@ -1,7 +1,30 @@
-{% if customer.name != blank %}
-Hi {{customer.name | titlecase }}
-{% else %}
-Hello trader
-{% endif %}!
+== : tests the value
+=== : tests value + type (recomended)
 
-test-email@deriv.com, alejandro.acosta@regentmarkets.com, aline@regentmarkets.com, ignacio@regentmarkets.com
+Falsy values
+  1. ""
+  2. 0
+  3. 0n
+  4. NaN
+  5. undefined
+  6. null
+  7. false
+
+  let : block scope
+  var : function scope
+
+  this : points to the current execution context
+
+  Object.keys : shows fields inside the object referred
+  Object.values : shows the values inside the object
+  Object.entries : shows a combination of values and keys
+  Object.assign : sets keys and values of an object inside another object. Commonly used to make copies of object
+
+  - Arrays
+  array.push(param) : insert param in the array
+  array.pop() : remove and return last index of the array
+  array.splice(p1, p2, p3) : add and/or remove and return elements of an array. p1 = start index, p2 = number of elements to remove, p3+ = elements to add
+  array.indexOf(param) : return the index of an element in an array. When the array doesn't have it, returns -1
+  array.find(function(param)) : Returns the first element based on the function. Ex. return numbers greater than, lower than etc..
+  array.filter(function(param)) : Returns all elements that fit the return of the function. Ex. even numbers
+  array.map(function(params)) : Apply the rules inside the function to the elements of the array. Ex. double all elements, etc.
