@@ -194,12 +194,12 @@
                         outline: none;
                         border-radius: 10px;
                     }
-                    #details-tb, #details-tb-lk { width: 90%; max-width: 540px; background-color: #333; margin: 0px 30px; border-radius: 10px;}
-                    #details-tb td, #details-tb-lk td{ color:#fff; font-size: 14px;}
+                    .details-tb{ width: 90%; max-width: 540px; background-color: #333; margin: 0px 30px; border-radius: 10px;}
+                    .details-tb td{ color:#fff; font-size: 14px;}
                     #details-speaker-td, #details-date-td, #details-time-td{ padding: 40px 10px 20px 30px; font-weight: 700; }
                     #details-speaker-td, #details-time-td{ width: 30%; }
                     #details-date-td{ width: 40%; }
-                    #details-tb .details-content-td, #details-tb-lk .details-content-td { padding: 0 10px 40px 30px; }
+                    .details-tb .details-content-td{ padding: 0 10px 40px 30px; }
                     /* Table inside table */
                         .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
                         .columns-2-a{ width: 71px; }
@@ -271,9 +271,9 @@
                         .columns-2-b-title{ font-size: 14px; font-weight: 550; }
                         .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
                         .details-content-td{ font-size: 13px;}
-                        #details-tb, #details-tb-lk{ width: 100%; margin: 0px; }
+                        .details-tb{ width: 100%; margin: 0px; }
                         #details-speaker-td, #details-date-td, #details-time-td{ padding: 15px 5px; }
-                        #details-tb .details-content-td, #details-tb-lk .details-content-td{ padding: 15px 5px; }
+                        .details-tb .details-content-td{ padding: 15px 5px; }
                         .mobile-hide{
                             /* Hide desktop content on mobile */
                             display: none !important;
@@ -323,8 +323,8 @@
                         .hide-dark-h-logo{ display: none !important; }
                         .dark-hide{ display: none !important; }
                         .dark-visible-block{ display: block !important; }
-                        #details-tb, #details-tb-lk{ background-color: #c2c2c2 !important;}
-                        #details-tb td, #details-tb-lk td{ color:#333 !important; }
+                        .details-tb{ background-color: #c2c2c2 !important;}
+                        .details-tb td{ color:#333 !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
@@ -406,7 +406,7 @@
                         </tr>
                         <tr class="dark-hide">
                             <td align="center" width="600px">
-                                <table align="center" id="details-tb-lk" style="width: 90%; max-width: 540px; background-color: #333; margin: 0px auto; border-radius: 10px;">
+                                <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #333; margin: 0px auto; border-radius: 10px;">
                                     <tr>
                                         <td id="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">සංවිධායක:</td>
                                         <td id="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">දිනය:</td>
@@ -422,7 +422,7 @@
                         </tr>
                         <tr style="display: none; mso-hide:all;" class="dark-visible-block">
                             <td align="center" width="600px">
-                                <table align="center" id="details-tb-lk" style="width: 90%; max-width: 540px; background-color: #c2c2c2; margin: 0px auto; border-radius: 10px;">
+                                <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #c2c2c2; margin: 0px auto; border-radius: 10px;">
                                     <tr style="display: none; mso-hide:all;" class="dark-visible-block">
                                         <td id="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">සංවිධායක:</td>
                                         <td id="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">දිනය:</td>
@@ -497,23 +497,23 @@
                         </tr>
                         <tr class="dark-hide">
                             <td align="center" width="600px">
-                                <table align="center" id="details-tb" style="width: 90%; max-width: 540px; background-color: #333; margin: 0px auto; border-radius: 10px;">
+                                <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #333; margin: 0px auto; border-radius: 10px;">
                                     <tr>
                                         <td id="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">Speaker</td>
                                         <td id="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">Date</td>
                                         <td id="details-time-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">Time</td>
                                     </tr>
                                     <tr>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">Janan Jayakumar</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">17th January 2023 (Tuesday)</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
+                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">Janan Jayakumar</td>
+                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">17th January 2023 (Tuesday)</td>
+                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
                         <tr style="display: none; mso-hide:all;" class="dark-visible-block">
                             <td align="center" width="600px">
-                                <table align="center" id="details-tb" style="width: 90%; max-width: 540px; background-color: #c2c2c2; margin: 0px auto; border-radius: 10px;">
+                                <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #c2c2c2; margin: 0px auto; border-radius: 10px;">
                                     <tr style="display: none; mso-hide:all;" class="dark-visible-block">
                                         <td id="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">Speaker</td>
                                         <td id="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">Date</td>
