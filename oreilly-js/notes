@@ -30,3 +30,5 @@ Falsy values
   array.map(function(params)) : Apply the rules inside the function to the elements of the array. Ex. double all elements, etc.
 
   test-email@deriv.com
+
+  
