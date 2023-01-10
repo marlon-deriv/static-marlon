@@ -196,10 +196,8 @@
                     }
                     .details-tb{ width: 90%; max-width: 540px; background-color: #333; margin: 0px 30px; border-radius: 10px;}
                     .details-tb td{ color:#fff; font-size: 14px;}
-                    .details-speaker-td, .details-date-td, .details-time-td{ padding: 40px 10px 20px 30px; font-weight: 700; }
-                    .details-speaker-td, .details-time-td{ width: 30%; }
-                    .details-date-td{ width: 40%; }
-                    .details-tb .details-content-td{ padding: 0 10px 40px 30px; }
+                    .details-speaker-td, .details-time-td{ width: 162px; }
+                    .details-date-td{ width: 216px; }
                     /* Table inside table */
                         .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
                         .columns-2-a{ width: 71px; }
@@ -270,10 +268,9 @@
                         .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
                         .columns-2-b-title{ font-size: 14px; font-weight: 550; }
                         .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
-                        .details-content-td{ font-size: 13px;}
-                        .details-tb{ width: 100%; margin: 0px; }
-                        .details-speaker-td, .details-date-td, .details-time-td{ padding: 15px 5px; }
-                        .details-tb .details-content-td{ padding: 15px 5px; }
+                        .details-tb{ width: 100% !important; margin: 0px !important; }
+                        .details-speaker-td, .details-date-td, .details-time-td, .details-tb .details-content-td{ padding: 10px 8px 0px 8px !important; }
+                        .details-tb td{ font-size: 13px;}
                         .mobile-hide{
                             /* Hide desktop content on mobile */
                             display: none !important;
@@ -295,6 +292,9 @@
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
+                    }
+                    @media screen and (max-width: 480px){
+                        .details-tb td{ font-size: 12px;}
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
@@ -323,8 +323,10 @@
                         .hide-dark-h-logo{ display: none !important; }
                         .dark-hide{ display: none !important; }
                         .dark-visible-block{ display: block !important; }
-                        .details-tb{ background-color: #c2c2c2 !important;}
+                        .details-tb{ width: 90% !important; max-width: 540px !important; background-color: #c2c2c2 !important; margin: 0px 30px !important; border-radius: 10px !important;}
                         .details-tb td{ color:#333 !important; }
+                        .details-speaker-td, .details-time-td{ width: 162px !important; }
+                        .details-date-td{ width: 216px !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
@@ -408,14 +410,14 @@
                             <td align="center" width="600px">
                                 <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #333; margin: 0px auto; border-radius: 10px;">
                                     <tr>
-                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">සංවිධායක:</td>
-                                        <td class="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">දිනය:</td>
-                                        <td class="details-time-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">වේලාව:</td>
+                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #fff;">සංවිධායක:</td>
+                                        <td class="details-date-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #fff;">දිනය:</td>
+                                        <td class="details-time-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #fff;">වේලාව:</td>
                                     </tr>
                                     <tr>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">Janan Jayakumar</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">17th January 2023 (Tuesday)</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
+                                        <td class="details-speaker-td" style="padding: 0 10px 40px 20px; color: #fff;">Janan Jayakumar</td>
+                                        <td class="details-date-td" style="padding: 0 10px 40px 20px; color: #fff;">17th January 2023 (Tuesday)</td>
+                                        <td class="details-time-td" style="padding: 0 10px 40px 20px; color: #fff;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
                                     </tr>
                                 </table>
                             </td>
@@ -424,14 +426,14 @@
                             <td align="center" width="600px">
                                 <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #c2c2c2; margin: 0px auto; border-radius: 10px;">
                                     <tr style="display: none; mso-hide:all;" class="dark-visible-block">
-                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">සංවිධායක:</td>
-                                        <td class="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">දිනය:</td>
-                                        <td class="details-time-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">වේලාව:</td>
+                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #333;">සංවිධායක:</td>
+                                        <td class="details-date-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #333;">දිනය:</td>
+                                        <td class="details-time-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #333;">වේලාව:</td>
                                     </tr>
                                     <tr style="display: none; mso-hide:all;" class="dark-visible-block">
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">Janan Jayakumar</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">17th January 2023 (Tuesday)</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
+                                        <td class="details-speaker-td" style="padding: 0 10px 40px 20px; color: #333;">Janan Jayakumar</td>
+                                        <td class="details-date-td" style="padding: 0 10px 40px 20px; color: #333;">17th January 2023 (Tuesday)</td>
+                                        <td class="details-time-td" style="padding: 0 10px 40px 20px; color: #333;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
                                     </tr>
                                 </table>
                             </td>
@@ -499,14 +501,14 @@
                             <td align="center" width="600px">
                                 <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #333; margin: 0px auto; border-radius: 10px;">
                                     <tr>
-                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">Speaker</td>
-                                        <td class="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">Date</td>
-                                        <td class="details-time-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #fff;">Time</td>
+                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #fff;">Speaker</td>
+                                        <td class="details-date-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #fff;">Date</td>
+                                        <td class="details-time-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #fff;">Time</td>
                                     </tr>
                                     <tr>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">Janan Jayakumar</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">17th January 2023 (Tuesday)</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #fff;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
+                                        <td class="details-speaker-td" style="padding: 0 10px 40px 20px; color: #fff;">Janan Jayakumar</td>
+                                        <td class="details-date-td" style="padding: 0 10px 40px 20px; color: #fff;">17th January 2023 (Tuesday)</td>
+                                        <td class="details-time-td" style="padding: 0 10px 40px 20px; color: #fff;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
                                     </tr>
                                 </table>
                             </td>
@@ -515,14 +517,14 @@
                             <td align="center" width="600px">
                                 <table align="center" class="details-tb" style="width: 90%; max-width: 540px; background-color: #c2c2c2; margin: 0px auto; border-radius: 10px;">
                                     <tr style="display: none; mso-hide:all;" class="dark-visible-block">
-                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">Speaker</td>
-                                        <td class="details-date-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">Date</td>
-                                        <td class="details-time-td" style="padding: 40px 10px 20px 30px; font-weight: 700; color: #333;">Time</td>
+                                        <td class="details-speaker-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #333;">Speaker</td>
+                                        <td class="details-date-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #333;">Date</td>
+                                        <td class="details-time-td" style="padding: 40px 10px 20px 20px; font-weight: 700; color: #333;">Time</td>
                                     </tr>
                                     <tr style="display: none; mso-hide:all;" class="dark-visible-block">
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">Janan Jayakumar</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">17th January 2023 (Tuesday)</td>
-                                        <td class="details-content-td" style="padding: 0 10px 40px 30px; color: #333;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
+                                        <td class="details-speaker-td" style="padding: 0 10px 40px 20px; color: #333;">Janan Jayakumar</td>
+                                        <td class="details-date-td" style="padding: 0 10px 40px 20px; color: #333;">17th January 2023 (Tuesday)</td>
+                                        <td class="details-time-td" style="padding: 0 10px 40px 20px; color: #333;">6:30PM, Colombo (1:00PM, GMT +5:30)</td>
                                     </tr>
                                 </table>
                             </td>
