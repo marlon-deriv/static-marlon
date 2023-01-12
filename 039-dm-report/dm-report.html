@@ -56,9 +56,10 @@
                 *{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333; margin: 0; padding: 0;}
                 body{
                     width: 100%;
+                    max-width: 1000px;
                     height: 100%;
                     background-color: #fff;
-                    margin: 0;
+                    margin: 0 auto;
                     padding: 0;
                 }
                 h1, h2, h3, h4, h5{ text-align: center; }
@@ -81,10 +82,21 @@
                     width: 33%;
                     float: left;
                 }
+                #charts-3 img{ width: 60%; margin: auto; }
+                #charts-3-imgs, #charts-3-labels{ width: 100%; margin: auto; margin-top: 10px; margin-bottom: 20px;}
                 #charts-3-left, #charts-3-center, #charts-3-right{
                     margin-top: 50px;
                     text-align: center;
+                    float: left;
                 }
+                #charts-3-left{
+                    background-image: url(img/row-chart.png);
+                }
+                #row-p1, #row-p2, #row-p3{ width: 100px; font-size: 0.7rem; font-weight: 600; padding-left: 0px;}
+                #row-p1{ margin-top: 10px; float: left;}
+                #row-p2{ margin-top: 90px; }
+                #row-p3{ margin-top: -170px; }
+
                 .side-borders{ border-left: 2px solid #e9e9e9; border-right: 2px solid #e9e9e9; }
                 .bottom-border{ width: 100%; float: left; }
                 .right-border{ border-right: 2px solid #e9e9e9;}
@@ -104,6 +116,7 @@
                     text-align: center;
                 }
                 #followers-2-right{ border-left: 2px solid #e9e9e9; }
+                #followers-2-left img { width: 80%; margin: auto; margin-top: 20px;;}
                 .title-red{
                     width: 90%;
                     background-color: #ffdcdc;
@@ -145,18 +158,22 @@
                 .ongoing-left-p{ width: 80%; font-size: 1.2rem; font-weight: 700; float: left; }
                 .ongoing-right-p{ width: 95%; font-size: 1rem; float: right; }
 
+                #initiatives-area{ width: 90%; margin: auto;}
                 #initiatives-left{ width: 38%; float: left; }
+                #initiatives-left img{ width: 90%; margin: auto; margin-top: 60px; }
                 #initiatives-right{ width: 60%; float: left; }
-                #initiatives-1, #initiatives-2, #initiatives-3, #initiatives-4, #initiatives-5{ 
+                .initiatives-1, .initiatives-2, .initiatives-3, .initiatives-4, .initiatives-5{ 
                     background-color: #ededed;
-                    padding: 20px 10px;
+                    padding: 17px 10px;
                     border: 1px solid #d7d7d7;
                     border-radius: 18px;
                  }
                  .initiatives-item{ width: 90%; float: left; margin-top: 20px; }
-                 #initiatives-1 p, #initiatives-2 p, #initiatives-3 p, #initiatives-4 p, #initiatives-5 p{
+                 .initiatives-1 p, .initiatives-2 p, .initiatives-3 p, .initiatives-4 p, .initiatives-5 p{
                     width: 95%; font-size: 1.1rem;
                 }
+                .initiatives-1{ margin-left: -120px; }
+                .initiatives-4{ margin-left: -60px; }
 
                 #challenges-3{ width: 90%; margin: auto; margin-top: 40px;}
                 .challenges-3-item{ width: 33%; float: left; }
@@ -172,45 +189,48 @@
         <h2>Publish 3 marketing campaigns per month</h2>
 
         <section id="charts-3">
-            <div id="charts-3-left">
-                Chart left
+            <div id="charts-3-imgs">
+                <div id="charts-3-left">
+                    <p id="row-p1">DBot<br/>8 posts</p>
+                    <p id="row-p2">Deriv GO<br/>4 posts</p>
+                    <p id="row-p3">Forex<br/>15 posts</p>
+                </div>
+                <div id="charts-3-center">
+                    <div class="side-borders"><img src="img/eu-chart.png"/></div>
+                </div>
+                <div id="charts-3-right">
+                    <img src="img/latam-chart.png"/>
+                </div>
             </div>
-            <div id="charts-3-center">
-                <div class="side-borders">Chart center</div>
-            </div>
-            <div id="charts-3-right">
-                Chart right
-            </div>
-            <div id="charts-3-left-note">
-                <p>Note chart left</p>
-            </div>
-            <div id="charts-3-center-note">
-                <p>Note chart center</p>
-            </div>
-            <div id="charts-3-right-note">
-                <p>Note chart right</p>
-            </div>
+            <div id="charts-3-labels">            
+                <div id="charts-3-center-note">
+                    <p>* Report not available for the ongoing multipliers campaign on EU social media</p>
+                </div>
+                <div id="charts-3-right-note">
+                    <p>* Reports not available for the newly created social media channels in LATAM</p>
+                </div>
+        </div>
         </section>
 
         <section id="followers-2">
             <div id="followers-2-left">
                 <h3>Increase social media followers</h3>
-                <p>Chart left</p>
+                <img src="img/followers-chart.png"/>
             </div>
             <div id="followers-2-right">
                 <div class="title-red"><p>Top creatives</p></div>
                 <div class="grid">
                     <div class="img-thumbs">
-                        <img src="dbot1.png"/>
+                        <img src="img/dbot-1.png"/>
                     </div>
                     <div class="img-thumbs">
-                        <img src="dbot1.png"/>
+                        <img src="img/fifa-wc.png"/>
                     </div>
                     <div class="img-thumbs">
-                        <img src="dbot1.png"/>
+                        <img src="img/dbot-2.png"/>
                     </div>
                     <div class="img-thumbs">
-                        <img src="dbot1.png"/>
+                        <img src="img/dbot-3.png"/>
                     </div>
                 </div>
             </div>
@@ -306,25 +326,26 @@
         </div>
 
         <section id="initiatives">
-            
-            <div id="initiatives-left">
-                .
-            </div>
-            <div id="initiatives-right">
-                <div class="initiatives-item">
-                    <div id="initiatives-1"><p>Fifa World Cup campaign on social media</p></div>
+            <div id="initiatives-area">
+                <div id="initiatives-left">
+                    <img src="img/initiatives-graph.png"/>
                 </div>
-                <div class="initiatives-item">
-                    <div id="initiatives-4"><p>Christmas survey to know more from our clients</p></div>
-                </div>
-                <div class="initiatives-item">
-                    <div id="initiatives-3"><p>'Deriv Answers' Instagram stories to educate our followers</p></div>
-                </div>
-                <div class="initiatives-item">
-                    <div id="initiatives-4"><p>Cross-marketing campaigns with the PayOps team</p></div>
-                </div>
-                <div class="initiatives-item">
-                    <div id="initiatives-5"><p>Holiday trading and New Years wishes on social media</p></div>
+                <div id="initiatives-right">
+                    <div class="initiatives-item">
+                        <div class="initiatives-1"><p>Fifa World Cup campaign on social media</p></div>
+                    </div>
+                    <div class="initiatives-item">
+                        <div class="initiatives-4"><p>Christmas survey to know more from our clients</p></div>
+                    </div>
+                    <div class="initiatives-item">
+                        <div class="initiatives-3"><p>'Deriv Answers' Instagram stories to educate our followers</p></div>
+                    </div>
+                    <div class="initiatives-item">
+                        <div class="initiatives-4"><p>Cross-marketing campaigns with the PayOps team</p></div>
+                    </div>
+                    <div class="initiatives-item">
+                        <div class="initiatives-1"><p>Holiday trading and New Years wishes on social media</p></div>
+                    </div>
                 </div>
             </div>
         </section>
