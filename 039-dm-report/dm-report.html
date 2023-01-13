@@ -57,6 +57,7 @@
                 body{
                     width: 100%;
                     max-width: 1000px;
+                    min-width: 875px;
                     height: 100%;
                     background-color: #fff;
                     margin: 0 auto;
@@ -97,13 +98,16 @@
                     background-position-y: top;
                 }
                 #charts-3-left{ background-image: url("https://static.deriv.com/email/images/report-2022/row-chart.png"); }
-                #charts-3-center{ background-image: url("https://static.deriv.com/email/images/report-2022/eu-chart.png"); }
-                #charts-3-right{ background-image: url("https://static.deriv.com/email/images/report-2022/latam-chart.png"); }
-
-                #row-p1, #row-p2, #row-p3, #eu-p1, #eu-p2, #eu-p3, #latam-p1, #latam-p2, #latam-p3{ width: 80px; font-size: 0.7rem; font-weight: 600; padding-left: 0px;}
-                #row-p1, #eu-p1, #latam-p1{ margin-top: 10px; margin-left: 30px; float: left;}
-                #row-p2, #eu-p2, #latam-p2{ margin-top: 150px; margin-left: 20px; }
-                #row-p3, #eu-p3, #latam-p3{ margin-top: -170px; margin-right: 20px; float: right;}
+                #charts-3-center{ 
+                    background-image: url("https://static.deriv.com/email/images/report-2022/eu-chart.png");
+                    border-left: 2px solid #e9e9e9;
+                    border-right: 2px solid #e9e9e9;
+                }
+                #charts-3-right{
+                    background-image: url("https://static.deriv.com/email/images/report-2022/latam-chart.png");
+                    background-size: 80%;
+                    background-position-x: 60% !important;
+                }
 
                 .side-borders{ height: 100%; width: 100%; border-left: 2px solid #e9e9e9; border-right: 2px solid #e9e9e9; }
                 .bottom-border{ width: 100%; float: left; }
@@ -123,6 +127,10 @@
                     float: left;
                     text-align: center;
                 }
+                .tb-charts-labels{ width: 100%; height: 100%; font-size: 0.8rem; font-weight: 600; }
+                .td-left{ text-align: left; padding-left: 20px; padding-top: 20px;}
+                .td-right{ text-align: left; padding-left: 160px; padding-top: 20px;}
+
                 #followers-2-right{ border-left: 2px solid #e9e9e9; }
                 #followers-2-left img { width: 80%; margin: auto; margin-top: 20px;;}
                 .title-red{
@@ -185,7 +193,7 @@
 
                 #challenges-3{ width: 90%; margin: auto; margin-top: 40px;}
                 .challenges-3-item{ width: 33%; float: left; }
-                .challenge-3-item-area{ width: 80%; padding: 10px; background-color: #ededed; border: 1px solid #d7d7d7; border-radius: 50px; }
+                .challenge-3-item-area{ width: 80%; height: 350px; padding: 10px; background-color: #ededed; border: 1px solid #d7d7d7; border-radius: 50px; }
                 .challenge-title{ padding: 15px; font-size: 1.2rem; font-weight: 600; text-align: center; }
                 .challenge-description{ padding: 10px; font-size: 1.1rem; font-weight: 400; text-align: center; }
 
@@ -199,24 +207,43 @@
         <section id="charts-3">
             <div id="charts-3-imgs">
                 <div id="charts-3-left">
-                    <p id="row-p1">DBot<br/>8 posts</p>
-                    <p id="row-p2">Deriv GO<br/>4 posts</p>
-                    <p id="row-p3">Forex<br/>15 posts</p>
+                    <table class="tb-charts-labels">
+                        <tr>
+                            <td class="td-left"><a href="https://docs.google.com/spreadsheets/d/19JEqcXu6ketBivTd8NzJ0za91OfESomBeo6Vd65Rgnw/edit#gid=31033365" target="_blank">DBot<br/>8 posts</a></td>
+                            <td class="td-right"><a href="https://docs.google.com/spreadsheets/d/1kdW6jC7CxXMr9ediiijLLUvUyM7C1F0XVTy06AoalbU/edit#gid=0" target="_blank">Forex<br/>15 posts</a></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><a href="https://docs.google.com/spreadsheets/d/1Z6BoJqBx006FTqiY1oo6tHRa_NI5uB1VB9NNvkNLBJU/edit#gid=0" target="_blank">Deriv GO<br/>4 posts</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
                 </div>
                 <div id="charts-3-center">
-                    <!-- <div class="side-borders"> -->
-                        <p id="eu-p1">Forex<br/>8 posts</p>
-                        <p id="eu-p2">Multipliers<br/>7 posts</p>
-                        <p id="eu-p3">Multi-asset<br/>15 posts</p>
-                    <!-- </div> -->
+                    <table class="tb-charts-labels">
+                        <tr>
+                            <td class="td-left"><a href="https://docs.google.com/spreadsheets/d/17XhjFbQowl5A2ehLHGatA7hMxfm-l353a_oBRFeJZDU/edit#gid=0" target="_blank">Forex<br/>8 posts</a></td>
+                            <td class="td-right">Multipliers<br/>7 posts</td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><a href="https://docs.google.com/spreadsheets/d/15rcJ7AMqw4VbCo933DLqz3K13iL3cyaEbW8RMw2ug5k/edit#gid=0" target="_blank">Multi-asset<br/>15 posts</a></td>
+                        </tr>
+                    </table>
                 </div>
                 <div id="charts-3-right">
-                    <p id="latam-p1">Partnership programmes<br/>9 posts</p>
-                    <p id="latam-p2">Products<br/>12 posts</p>
-                    <p id="latam-p3">Trade types<br/>12 posts</p>
+                    <table class="tb-charts-labels">
+                        <tr>
+                            <td class="td-left" style="font-size: 0.7rem;">Partnership programmes<br/>9 posts</td>
+                            <td class="td-right">Products<br/>12 posts</td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">Trade types<br/>12 posts</td>
+                            <td></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <div id="charts-3-labels">            
+            <div id="charts-3-labels">
+                <div id="charts-3-left-note"></div>
                 <div id="charts-3-center-note">
                     <p>* Report not available for the ongoing multipliers campaign on EU social media</p>
                 </div>
@@ -281,10 +308,8 @@
                     </div>
                 </div>
                 <div id="communications-5-5">
-                    <div class="right-border">
                         <p class="comms-data">0.4%</p>
                         <p class="comms-label">Click rate</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -299,7 +324,7 @@
                     <div class="ongoing-left-p">Deriv University</div>
                 </div>
                 <div class="ongoing-right">
-                    <div class="ongoing-right-p">In Progress. A survey has been sent to affiliates to gain some insight on their areas of interest. The first course will be based on their response.</div>
+                    <div class="ongoing-right-p">In Progress. A <a href="https://sharing.clickup.com/20696747/t/h/3xjfa3h/CHLHC4K19L94UOI" target="_blank">survey</a> has been sent to affiliates to gain some insight on their areas of interest. The first course will be based on their response.</div>
                 </div>
             </div>
             <div class="ongoing-proj">
@@ -307,7 +332,7 @@
                     <div class="ongoing-left-p">Client educational videos</div>
                 </div>
                 <div class="ongoing-right">
-                    <div class="ongoing-right-p">In Progress. The first video is released. <br/>Other educational videos are being worked on in several languages.</div>
+                    <div class="ongoing-right-p"><a href="https://sharing.clickup.com/20696747/t/h/32h9k9t/T4QT51SRONL9EGY" target="_blank">In Progress</a>. The first video is released. <br/>Other educational videos are being worked on in several languages.</div>
                 </div>
             </div>
             <div class="ongoing-proj">
@@ -331,7 +356,7 @@
                     <div class="ongoing-left-p">Launch campaigns</div>
                 </div>
                 <div class="ongoing-right">
-                    <div class="ongoing-right-p">In Progress. Deriv EZ | Accumulators</div>
+                    <div class="ongoing-right-p">In Progress. <a href="https://sharing.clickup.com/20696747/t/h/32bn473/MEMR2Z637RSQ8R2" target="_blank">Deriv EZ</a> | <a href="https://sharing.clickup.com/20696747/t/h/3tmjxtp/B9W123JSSK2VJZI" target="_blank">Accumulators</a></div>
                 </div>
             </div>
         </section>
@@ -355,7 +380,7 @@
                         <div class="initiatives-3"><p>'Deriv Answers' Instagram stories to educate our followers</p></div>
                     </div>
                     <div class="initiatives-item">
-                        <div class="initiatives-4"><p>Cross-marketing campaigns with the PayOps team</p></div>
+                        <div class="initiatives-4"><p><a href="https://docs.google.com/spreadsheets/d/1QEBwU3KJM8u7bHMxliMaFo8togUkTC3GOOUXb6fZV7w/edit#gid=0" target="_blank">Cross-marketing campaigns</a> with the PayOps team</p></div>
                     </div>
                     <div class="initiatives-item">
                         <div class="initiatives-1"><p>Holiday trading and New Years wishes on social media</p></div>
