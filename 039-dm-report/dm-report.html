@@ -78,7 +78,26 @@
                     font-size: 1.5rem;
                     font-weight: 400;
                 }
-                section{ width: 100%; padding-bottom: 20px; float: left; }
+                section{ width: 100%; max-width: 1000px; min-width: 875px; padding-bottom: 20px; float: left; }
+                /* iOS BLUE LINKS */
+                a[x-apple-data-detectors]{
+                    color: inherit !important;
+                    text-decoration: none !important;
+                    font-size: inherit !important;
+                    font-family: inherit !important;
+                    font-weight: inherit !important;
+                    line-height: inherit !important;
+                }
+                a, a:visited{ color: #000 !important; }
+
+                #greeting-p, .paragraph-p{
+                    margin: 0;
+                    color: #333;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+
                 #charts-3-left, #charts-3-center, #charts-3-right, #charts-3-left-note, #charts-3-center-note, #charts-3-right-note{
                     width: 33%;
                     float: left;
@@ -110,7 +129,7 @@
                 }
 
                 .side-borders{ height: 100%; width: 100%; border-left: 2px solid #e9e9e9; border-right: 2px solid #e9e9e9; }
-                .bottom-border{ width: 100%; float: left; }
+                .bottom-border{ width: 100%; float: left; padding-top: 20px; }
                 .right-border{ border-right: 2px solid #e9e9e9;}
                 .gray-line{ width: 85%; height: 2px; background-color:  #e9e9e9; margin: auto;}
                 #charts-3-left-note, #charts-3-center-note, #charts-3-right-note{
@@ -132,14 +151,16 @@
                 .td-right{ text-align: left; padding-left: 160px; padding-top: 20px;}
 
                 #followers-2-right{ border-left: 2px solid #e9e9e9; }
-                #followers-2-left img { width: 80%; margin: auto; margin-top: 20px;;}
+                #followers-2-left img { width: 80%; margin: auto; margin-top: 20px;}
                 .title-red{
-                    width: 90%;
+                    width: 100%;
+                    height: 60px;
                     background-color: #ffdcdc;
                     margin: auto;
                     border: 2px solid #ff666d;
                     border-radius: 18px;
                     color: #000;
+                    float: left;
                 }
                 .title-red p{
                     padding: 0.6rem 0;
@@ -161,11 +182,12 @@
                 .comms-data{ padding: 20px 15px 0; font-size: 1.8rem; font-weight: 500; }
                 .comms-label{ padding: 20px; font-size: 1.2rem; }
 
-                .ongoing-proj{ width: 80%; height: 17vh; margin: auto;}
+                .ongoing-proj{ width: 90%; height: 100px; margin: auto;}
                 .ongoing-left, .ongoing-right{ margin-top: 30px; float: left; text-align: center; }
                 .ongoing-left{ width: 30%; }
                 .ongoing-right{ width: 70%; }
                 .ongoing-left-p, .ongoing-right-p{
+                    height: 50px;
                     background-color: #ededed;
                     padding: 20px 10px;
                     border: 1px solid #d7d7d7;
@@ -191,16 +213,21 @@
                 .initiatives-1{ margin-left: -120px; }
                 .initiatives-4{ margin-left: -60px; }
 
-                #challenges-3{ width: 90%; margin: auto; margin-top: 40px;}
+                #challenges-3{ width: 100%; margin-top: 40px; float: left; }
                 .challenges-3-item{ width: 33%; float: left; }
-                .challenge-3-item-area{ width: 80%; height: 350px; padding: 10px; background-color: #ededed; border: 1px solid #d7d7d7; border-radius: 50px; }
+                .challenge-3-item-area{ width: 80%; min-height: 350px; margin-left: 40px; background-color: #ededed; border: 1px solid #d7d7d7; border-radius: 50px; }
                 .challenge-title{ padding: 15px; font-size: 1.2rem; font-weight: 600; text-align: center; }
-                .challenge-description{ padding: 10px; font-size: 1.1rem; font-weight: 400; text-align: center; }
+                .challenge-description{ padding: 10px; font-size: 1rem; font-weight: 400; text-align: center; }
 
-                #footer-notes{ width: 90%; margin: auto; margin-top: 20px; margin-bottom: 20px; font-size: 0.8rem; }
+                #notes{ width: 100%; height: 70px; float: left;}
+                #footer-notes{ width: 90%; margin: auto; padding-top: 30px; margin-bottom: 20px; font-size: 0.8rem; float: left;}
         </style>
     </head>
     <body>
+        <p id="greeting-p" style="padding-top: 30px;">Hi all,</p>
+        <p class="paragraph-p" style="padding-top: 20px;">Hope 2023 is treating you well.</p>
+        <p class="paragraph-p" style="padding-top: 20px;">Here is an overview of the Digital Marketing team in Q4 2022</p>
+
         <h1>Digital Marketing - Q4</h1>
         <h2>Publish 3 marketing campaigns per month</h2>
 
@@ -259,7 +286,9 @@
                 <img src="https://static.deriv.com/email/images/report-2022/followers-chart.png"/>
             </div>
             <div id="followers-2-right">
-                <div class="title-red"><p>Top creatives</p></div>
+                <div style="width: 90%; margin: auto;">
+                    <div class="title-red"><p>Top creatives</p></div>
+                </div>
                 <div class="grid">
                     <div class="img-thumbs">
                         <img src="https://static.deriv.com/email/images/report-2022/dbot-1.png"/>
@@ -353,7 +382,7 @@
             </div>
             <div class="ongoing-proj">
                 <div class="ongoing-left">
-                    <div class="ongoing-left-p">Launch campaigns</div>
+                    <div class="ongoing-left-p">New product marketing campaigns</div>
                 </div>
                 <div class="ongoing-right">
                     <div class="ongoing-right-p">In Progress. <a href="https://sharing.clickup.com/20696747/t/h/32bn473/MEMR2Z637RSQ8R2" target="_blank">Deriv EZ</a> | <a href="https://sharing.clickup.com/20696747/t/h/3tmjxtp/B9W123JSSK2VJZI" target="_blank">Accumulators</a></div>
@@ -424,4 +453,3 @@
         </section>
     </body>
 </html>
-    
