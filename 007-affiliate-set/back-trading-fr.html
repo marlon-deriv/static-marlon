@@ -188,11 +188,11 @@
                         border-radius: 10px;
                     }
                     /* Table inside table */
-                        .columns-2-ext-td{ width: 100%; padding: 0 80px 20px 50px; }
+                        .columns-2-ext-td{ width: 100%; padding: 0 40px 20px 30px; }
                         .columns-2-a{ width: 71px; }
                         .columns-2-a img{ margin: auto !important; border: 0; display: block; }
                         .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
-                        .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1.5; }
+                        .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
                         .columns-2-b-text{ font-size: 14px; font-weight: 400; }
                         .no-padding-td p{ margin: 7px; }
                     /* End of table inside table */
@@ -363,7 +363,11 @@
                         <!-- END HERO -->
                         <tr>
                             <td id="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Bonjour [Affiliate name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Bonjour {{customer.name | titlecase }},
+                                    {% else %}
+                                    Bonjour trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>

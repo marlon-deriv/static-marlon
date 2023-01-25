@@ -363,7 +363,11 @@
                         <!-- END HERO -->
                         <tr>
                             <td id="greeting-td" align="left" style="padding: 40px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Affiliate name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hi {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hi trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
