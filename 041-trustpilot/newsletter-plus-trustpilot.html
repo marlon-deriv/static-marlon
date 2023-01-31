@@ -163,24 +163,27 @@
                     }
                     .h-img-td{ background-color: #fff; }
                     .h-img-td input{
-                        width: 90%;
+                        width: 85%;
                         border-radius: 15px;
                     }
+                    #title-td{ padding: 15px 30px 0px 30px; }
+                    #subtitle-td{ padding: 5px 30px 20px; }
                     #title-td p{
                         margin: 0;
                         color: #333;
-                        font-size: 32px;
+                        font-size: 24px;
                         font-weight: 700;
                         line-height: 1.5;
                     }
                     .list-ul{ padding: 0px 30px 0px 60px; }
-                    #greeting-td p, .paragraph-td p{
+                    #greeting-td p, .paragraph-td p, #subtitle-td p{
                         margin: 0;
-                        color: #333;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
+                    #greeting-td p, .paragraph-td p{ color: #333; }
+                    #subtitle-td p{ color: #999; font-style: italic; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -189,7 +192,7 @@
                         line-height: 1.5;
                     }
                     .body-img{
-                        width: 90%;
+                        width: 85%;
                         display: block;
                         outline: none;
                         border-radius: 10px;
@@ -260,6 +263,10 @@
                             max-height: 13px !important;
                             margin-top: 0px !important;
                         }
+                        #title-td{ padding: 10px 0 0 0; }
+                        #subtitle-td{ padding: 5px 0px 0px 0px; }
+                        #title-td p{ font-size: 20px; line-height: 1.2; }
+                        #subtitle-td p{ font-size: 16px; line-height: 1; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -278,10 +285,6 @@
                         .mb-visible-block{
                             /* Shows mobile content */
                             display: block !important;
-                        }
-                        .mb-title{
-                            /* Applied on email title */
-                            font-size: 24px !important;
                         }
                         #greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
@@ -313,11 +316,12 @@
                             float: none !important;
                         }
                         /* Hides light mode-only content */
-                        .hide-dark-h-logo{ display: none !important; }
+                        .hide-dark-h-logo, .hide-light{ display: none !important; }
+                        .show-dark{ display: block !important; overflow: visible !important; visibility:inherit !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b{ color: #fff !important; }
+                        h1, h2, p, span, b, strong { color: #fff !important; }
                         .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         .h-img-td{ background-color: #0e0e0e !important; }
@@ -330,9 +334,10 @@
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #fff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong { color: #fff !important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
+                    [data-ogsc] .hide-dark-h-logo, .hide-light{ display: none !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
@@ -369,33 +374,60 @@
                         </tr>
                         <tr class="mobile-hide">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header-2023/mn-gold-rise.png"/>
                             </td>
                         </tr> 
                         <tr style="display: none; mso-hide:all;" class="mb-visible-block">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red-m.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header-2023/mn-gold-rise.png"/>
                             </td>
                         </tr>
                         <!-- END HERO -->
                         <tr>
-                            <td id="title-td" align="center" style="padding: 15px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext mb-title">TITLE</p>
+                            <td id="title-td" align="center" class="dark-black">
+                                <p class="dark-subtext">Gold continues to rise</p>
                             </td>
                         </tr>
                         <tr>
-                            <td id="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                            <td id="subtitle-td" align="center" class="dark-black">
+                                <p class="dark-subtext">Market news (23 - 29 Jan)</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                            <td id="greeting-td" align="left" style="padding: 15px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">{% if customer.firstName != blank %}
+                                    Hi {{customer.firstName | titlecase }},
+                                    {% else %}
+                                    Hi trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                            <td class="paragraph-td" align="left" style="padding: 10px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Last week, gold prices were on the up as investors put their faith in the precious metal amidst market uncertainties. Here are the highlights:</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding-bottom: 30px;" class="list-ul dark-black">
+                                <ul>
+                                    <li class="dark-subtext"><strong>Forex:</strong> The euro rose again after a volatile week for the EUR/USD pair.</li>
+                                    <li class="dark-subtext"><strong>Commodities:</strong> Gold prices registered a fifth straight week in the green.</li>
+                                    <li class="dark-subtext"><strong>Cryptocurrencies:</strong> Bitcoin breached the 23,000 USD mark on Saturday, 21 Jan.</li>
+                                    <li class="dark-subtext"><strong>US stocks market:</strong> Major indices underwent their first negative week of 2023.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding-bottom: 40px;" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/academy/blog/posts/market-news-23-01-2023-29-01-2023" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="10%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Take me to the report</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="https://deriv.com/academy/blog/posts/market-news-23-01-2023-29-01-2023" target="_blank">Take me to the report</a>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                     </table>
@@ -411,6 +443,38 @@
                         <table id="ol-footer-table" align="center">
                     <![endif]-->
                     <table id="footer-table" class="dark-black">
+                        <!-- Trustpilot light -->
+                        <tr>
+                            <td align="center" class="trustpilot-td mobile-side hide-light dark-black">
+                                <!-- TrustBox widget - Micro Combo -->
+                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="20px" data-style-width="100%" data-theme="light">
+                                    <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text1@2x.png" border="0" height="18" alt="Human score"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/stars@2x.png" border="0" height="18" alt="Trustpilot Stars"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text2@2x.png" border="0" height="18" alt="number of reviews"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/brand/n/1/logo.png" border="0" height="18" alt="Trustpilot Logo"/>
+                                    </a>
+                                </div>
+                                <!-- End of TrustBox widget -->
+                            </td>
+                        </tr>
+                        <!-- End of Trustpilot light -->
+                        <!-- Trustpilot dark --> 
+                        <tr>
+                            <td align="center" style="display: none;" class="trustpilot-td mobile-side show-dark dark-black">
+                                <!-- TrustBox widget - Micro Combo -->
+                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="20px" data-style-width="100%" data-theme="dark">
+                                    <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text1_dark@2x.png" border="0" height="18" alt="Human score"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/stars@2x.png" border="0" height="18" alt="Trustpilot Stars"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text2_dark@2x.png" border="0" height="18" alt="number of reviews"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/brand/n/1/logo_dark.png" border="0" height="18" alt="Trustpilot Logo"/>
+                                    </a>
+                                </div>
+                                <!-- End TrustBox widget -->
+                            </td>
+                        </tr>
+                        <!-- End of Trustpilot dark -->
                         <!-- SOCIAL -->
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
