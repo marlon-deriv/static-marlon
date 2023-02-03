@@ -32,10 +32,10 @@
                         .button:hover{ background-color: #d43e47; }
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
-                        .h-img-td input{ width: 90%; max-width: 520px; border-radius: 15px; }
+                        .h-img-td input{ width: 85%; max-width: 520px; border-radius: 15px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
-                        #greeting-td p, .paragraph-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
-                        .body-img{ width: 90%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
+                        #greeting-td p, .paragraph-td p, #subtitle-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
             <!-- End of styles for Outlook: -->
@@ -112,6 +112,8 @@
                     text-align: left;
                     line-height: 24px;
                 }
+                #title-td{ padding: 15px 30px 0px 30px; }
+                #subtitle-td{ padding: 5px 30px 20px; }
                 /* iOS BLUE LINKS */
                 a[x-apple-data-detectors]{
                     color: inherit !important;
@@ -163,7 +165,7 @@
                     }
                     .h-img-td{ background-color: #fff; }
                     .h-img-td input{
-                        width: 90%;
+                        width: 85%;
                         border-radius: 15px;
                     }
                     #title-td p{
@@ -173,14 +175,15 @@
                         font-weight: 700;
                         line-height: 1.5;
                     }
-                    .list-ul{ padding: 0px 30px 0px 60px; }
-                    #greeting-td p, .paragraph-td p{
+                    .list-ul{ padding: 0px 30px 0px 40px; }
+                    #greeting-td p, .paragraph-td p, #subtitle-td p{
                         margin: 0;
-                        color: #333;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
+                    #greeting-td p, .paragraph-td p{ color: #333; }
+                    #subtitle-td p{ color: #999; font-style: italic; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -189,7 +192,7 @@
                         line-height: 1.5;
                     }
                     .body-img{
-                        width: 90%;
+                        width: 85%;
                         display: block;
                         outline: none;
                         border-radius: 10px;
@@ -246,6 +249,9 @@
                         height: 12px;
                         display: block;
                     }
+                    .trustpilot-td{ padding: 40px 30px 30px; background-color: #ddd; }
+                    .trustpilot-widget a{ text-decoration: none; }
+                    .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
                 /* End of classes */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
@@ -278,7 +284,7 @@
                         }
                         .mb-title{
                             /* Applied on email title */
-                            font-size: 24px !important;
+                            font-size: 20px !important;
                         }
                         #greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
@@ -310,11 +316,12 @@
                             float: none !important;
                         }
                         /* Hides light mode-only content */
-                        .hide-dark-h-logo{ display: none !important; }
+                        .hide-dark-h-logo, .hide-light{ display: none !important; }
+                        .show-dark{ display: block !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong { color: #fff !important; }
+                        h1, h2, p, span, b{ color: #fff !important; }
                         .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         .h-img-td{ background-color: #0e0e0e !important; }
@@ -327,7 +334,7 @@
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b , [data-ogsc] strong { color: #fff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #fff !important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
@@ -408,6 +415,38 @@
                         <table id="ol-footer-table" align="center">
                     <![endif]-->
                     <table id="footer-table" class="dark-black">
+                        <!-- Trustpilot light -->
+                        <tr>
+                            <td align="center" class="trustpilot-td hide-light dark-black">
+                                <!-- TrustBox widget - Micro Combo -->
+                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="20px" data-style-width="100%" data-theme="light">
+                                    <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text1@2x.png" border="0" height="18" alt="Human score"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/stars@2x.png" border="0" height="18" alt="Trustpilot Stars"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text2@2x.png" border="0" height="18" alt="number of reviews"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/brand/n/1/logo.png" border="0" height="18" alt="Trustpilot Logo"/>
+                                    </a>
+                                </div>
+                                <!-- End of TrustBox widget -->
+                            </td>
+                        </tr>
+                        <!-- End of Trustpilot light -->
+                        <!-- Trustpilot dark --> 
+                        <tr>
+                            <td align="center" style="display: none;" class="trustpilot-td show-dark dark-black">
+                                <!-- TrustBox widget - Micro Combo -->
+                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="20px" data-style-width="100%" data-theme="dark">
+                                    <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text1_dark@2x.png" border="0" height="18" alt="Human score"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/stars@2x.png" border="0" height="18" alt="Trustpilot Stars"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text2_dark@2x.png" border="0" height="18" alt="number of reviews"/>&nbsp;&nbsp;
+                                        <img src="https://emailsignature.trustpilot.com/brand/n/1/logo_dark.png" border="0" height="18" alt="Trustpilot Logo"/>
+                                    </a>
+                                </div>
+                                <!-- End TrustBox widget -->
+                            </td>
+                        </tr>
+                        <!-- End of Trustpilot dark -->
                         <!-- SOCIAL -->
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
