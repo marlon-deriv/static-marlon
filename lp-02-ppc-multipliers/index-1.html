@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css"> <!-- Generic HTML tags -->
+        <link rel="stylesheet" href="css/top.css"> <!-- Top of the page (bar, menu, hero) -->
+        <link rel="stylesheet" href="css/section-1.css"> <!-- Section 1 -->
+        <link rel="stylesheet" href="css/section-2.css"> <!-- Section 2 -->
+        <link rel="stylesheet" href="css/section-3.css"> <!-- Section 3 -->
+        <link rel="stylesheet" href="css/bottom.css"> <!-- Footer, disclaimer, social media -->
+
+
+        <title>PPC Multipliers Landing page| Deriv</title>
+
+        
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <section id="top">
+            <div id="top-bar">
+                <div id="logo-top-bar-area">
+                    <a href="https://www.deriv.com"><img src="https://static.deriv.com/logos/deriv-horizontal-print-light.png" alt="Deriv.com" title="Deriv.com"/></a>
+                </div>
+                <div id="get-trading-top-bar-area">
+                    <img src="img/get-trading.svg" alt="Deriv.com" title="Deriv.com"/>
+                </div>
+            </div>
+            <div id="page-title"><h1>Multipliers</h1></div>
+            <div id="hero-signup">
+                <div id="hero">
+                    <h2>What are Multipliers?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae amet architecto explicabo excepturi vel maiores aspernatur nemo deleniti velit asperiores cupiditate iure dolore laboriosam autem, repudiandae quo nam! Incidunt, maxime!</p>
+                </div>
+                <div id="signup-area">
+                    <div id="signup-area-content">
+                        <h5>Your free guide</h5>
+                        <h4>How to trade the forex market</h4>
+                        <p>Claim your Free E-Book Now!<br/>Plus a free demo account to practice with.</p>
+                        <p>This eBook is brought to you by Vince Stanzione, an experienced online trader and New York Times bestselling author.</p>
+                        <form id="form-signup">
+                            <input type="text" id="input-email" size="80" placeholder="Email Address"/>
+                            <div class="form-info">
+                                *Get your free eBook now!" By pressing, you confirm that you are 18 years of age or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can unsubscribe from these emails at any time by going to your account settings. For more information, please take a look at Deriv's security and privacy.<br/>
+                                <a href="https://deriv.com/tnc/security-and-privacy.pdf" target="_blank">Security and privacy</a>
+                            </div>
+                            <div id="form-terms-checkbox"><input type="checkbox" id="terms" name="terms" value="y">
+                                <label for="terms">I agree to the terms and conditions</label></div>
+                            <input type="submit" value="Get your free eBook now!" class="cta-btn" id="signup-btn"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-1">
+            <div id="text-section-1">
+                <h2>Why trade synthetic indices on Deriv</h2>
+                <p>Deriv's proprietary synthetic indices simulate real-world market movements. Backed by a cryptographically secure random number generator, these indices are available to trade 24/7 and are unaffected by regular market hours, global events, or market and liquidity risks.</p>
+            </div>
+            <div id="grid-area-5">
+                <div class="grid-item-5">
+                    <img class="grid-icon-5" src="https://static.deriv.com/email/images/icons/24-7-3.png"/>
+                    <p>24/7 trading, including weekends and public holidays</p>
+                </div>
+                <div class="grid-item-5">
+                    <img class="grid-icon-5" src="https://static.deriv.com/email/images/icons/limited-risk.png"/>
+                    <p>Free from real-world market and liquidity risks</p>
+                </div>
+                <div class="grid-item-5">
+                    <img class="grid-icon-5" src="https://static.deriv.com/email/images/icons/arrow.png"/>
+                    <p>Responsive, easy-to-use platforms</p>
+                </div>
+                <div class="grid-item-5">
+                    <img class="grid-icon-5" src="https://static.deriv.com/email/images/icons/market.png"/>
+                    <p>Exclusive access to innovative trade types</p> 
+                </div>
+                <div class="grid-item-5">
+                    <img class="grid-icon-5" src="img/friendly-support-new.svg"/>
+                    <p>Smart and friendly support, 7 days a week</p>
+                </div>
+            </div>
+            <div class="cta-area">
+                <div>
+                    <a href="#hero"><button class="cta-btn">Create free demo account</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="section-2">
+            <h3>Synthetic indices trades available on Deriv</h3>
+            <div id="tab-area">
+                <div class="tab">
+                    <button class="tab-links" onclick="openTab(event, 'tab-cfd')" id="defaultOpen">
+                        <div class="tab-cab-img"><img src="img/percentage.svg"/></div>
+                        <div class="tab-cab-txt">CFDs</div>
+                    </button>
+                    <button class="tab-links" onclick="openTab(event, 'tab-mult')">
+                        <div class="tab-cab-img"><img src="img/multipliers.svg"/></div>
+                        <div class="tab-cab-txt">Multipliers</div>
+                    </button>
+                </div>
+                <div id="tab-cfd" class="tab-content">
+                    <p>CFD trading allows you to make a potential profit from the price movement of the underlying asset without purchasing it.</p>
+                    <p>On Deriv, trading CFDs on leverage lets you pay only a small fraction of the contract's value and amplify your potential profit, similarly increasing your potential loss.</p>
+                    <div class="h-line"></div>
+                    <h4>Instruments available for CFD trading</h4>
+                    <div class="drop-down-asset">
+                        <div class="dda-type dda-cel">
+                            <p>Volatility indices</p>
+                        </div>
+                        <div class="dda-item-1 dda-cel">
+                            <div class="dda-cel-icon"><img src="img/vol-200.png"/></div>
+                            <div class="dda-cel-txt">Volatility 200 (1s) Index</div>
+                        </div>
+                        <div class="dda-item-2 dda-cel">
+                            <div class="dda-cel-icon"><img src="img/vol-300.png"/></div>
+                            <div class="dda-cel-txt">Volatility 300 (1s) Index</div>
+                        </div>
+                        <div class="dda-action dda-cel">
+                            <button class="dd-arrow" onclick="openDescription(event, 'cfd-vol', this)"><img src="img/arrow.svg"/></button>
+                        </div>
+                    </div>
+                    <div class="asset-description" id="cfd-vol">
+                        <p>These indices correspond to simulated markets with <strong>constant volatilities of 200% and 300%</strong>.</p>
+                        <p><strong>One tick</strong> is generated <strong>every second</strong> for volatility indices <strong>200(1s) and 300(1s)</strong>.</p>
+                    </div>
+                    <div class="drop-down-asset">
+                        <div class="dda-type dda-cel">
+                            <p>Crash/ Boom</p>
+                        </div>
+                        <div class="dda-item-1 dda-cel">
+                            <div class="dda-cel-icon"><img src="img/crash-300.png"/></div>
+                            <div class="dda-cel-txt">Crash 300 Index</div>
+                        </div>
+                        <div class="dda-item-2 dda-cel">
+                            <div class="dda-cel-icon"><img src="img/boom-300.png"/></div>
+                            <div class="dda-cel-txt">Boom 300 Index</div>
+                        </div>
+                        <div class="dda-action dda-cel">
+                            <button class="dd-arrow" onclick="openDescription(event, 'cfd-cb', this)"><img src="img/arrow.svg"/></button>
+                        </div>
+                    </div>
+                    <div class="asset-description" id="cfd-cb">
+                        <p>These indices correspond to simulated markets with <strong>constant volatilities of 200% and 300%</strong>.</p>
+                        <p><strong>One tick</strong> is generated <strong>every second</strong> for volatility indices <strong>200(1s) and 300(1s)</strong>.</p>
+                    </div>
+                </div>
+                <div id="tab-mult" class="tab-content">
+                    <p>Multipliers allow you to trade on leverage while limiting downside risk to your investment. You can maximise your potential profit by several multiples of any market movement without risking more than your initial investment.</p>
+                    <div class="h-line"></div>
+                    <h4>Instruments available for multipliers trading</h4>
+                    <div class="dd-area">
+                        <div class="drop-down-asset">
+                            <div class="dda-type dda-cel">
+                                <p>Volatility indices</p>
+                            </div>
+                            <div class="dda-item-1 dda-cel">
+                                <div class="dda-cel-icon"><img src="img/vol-200.png"/></div>
+                                <div class="dda-cel-txt">Volatility 200 (1s) Index</div>
+                            </div>
+                            <div class="dda-item-2 dda-cel">
+                                <div class="dda-cel-icon"><img src="img/vol-300.png"/></div>
+                                <div class="dda-cel-txt">Volatility 300 (1s) Index</div>
+                            </div>
+                            <div class="dda-action dda-cel">
+                                <button class="dd-arrow" onclick="openDescription(event, 'mult-vol', this)"><img src="img/arrow.svg"/></button>
+                            </div>
+                        </div>
+                        <div class="asset-description" id="mult-vol">
+                            <p>These indices correspond to simulated markets with <strong>constant volatilities of 200% and 300%</strong>.</p>
+                            <p><strong>One tick</strong> is generated <strong>every second</strong> for volatility indices <strong>200(1s) and 300(1s)</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-3">
+            <h3>Start trading synthetic indices on Deriv in 3 simple steps</h3>
+            <div class="grid-area">
+                <div class="grid-item-3">
+                    <div class="grid-title">
+                        <h5>Practise</h5>
+                        <div class="grid-icon"><img src="img/practice.png"/></div>
+                    </div>
+                    <p>Open a demo account and practise with an unlimited amount of virtual funds.</p>
+                </div>
+                <div class="grid-item-3">
+                    <div class="grid-title">
+                        <h5>Trade</h5>
+                        <div class="grid-icon"><img src="img/trade.svg"/></div>
+                    </div>     
+                    <p>Open a real account, make a deposit, and start trading synthetic indices and other markets.</p>
+                </div>
+                <div class="grid-item-3">
+                    <div class="grid-title">
+                        <h5>Withdraw</h5>
+                        <div class="grid-icon"><img src="img/withdraw.png"/></div>
+                    </div>
+                    <p>Conveniently withdraw your funds through any of our supported withdrawal methods.</p>
+                </div>
+            </div>
+            <div class="cta-area">
+                <div>
+                    <a href="#hero"><button class="cta-btn">Sign up now</button></a>
+                </div>
+            </div>
+        </section>
+        <a href="#">
+            <div id="live-chat">
+                <img src="img/live-chat.svg"/>
+            </div>
+        </a>
+        <footer>
+            <div id="footer-area">
+                <div class="flex-container-main">
+                    <div class="flex-container-derivlogo">
+                        <a href="https://www.deriv.com"><img class="img-logo" src="https://static.deriv.com/logos/deriv-horizontal-web-dark.png" alt="Deriv.com" title="Deriv.com" /></a>
+                    </div>
+                    <div class="flex-container-socials">
+                        <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank"><img src="https://static.deriv.com/logos/linkedin.png" alt="Deriv.com on linkedin" title="Deriv.com on linkedin" /></a>
+                        <a href="https://www.instagram.com/deriv_official/" target="_blank"><img src="https://static.deriv.com/logos/instagram.png" alt="Deriv.com on Instagram" title="Deriv.com on Instagram" /></a>
+                        <a href="https://twitter.com/derivdotcom/" target="_blank"><img src="https://static.deriv.com/logos/twitter.png" alt="Deriv.com on Twitter" title="Deriv.com on Twitter" /></a>
+                        <a href="https://www.facebook.com/derivdotcom" target="_blank"><img src="https://static.deriv.com/logos/facebook.png" alt="Deriv.com on Facebook" title="Deriv.com on Facebook" /></a>
+                        <a href="https://t.me/derivdotcomofficial" target="_blank"><img src="https://static.deriv.com/logos/telegram.png" alt="Deriv.com on Telegram" title="Deriv.com on Telegram" /></a>
+                        <a href="https://www.reddit.com/user/Deriv_official/" target="_blank"><img src="https://static.deriv.com/logos/reddit.png" alt="Deriv.com on Reddit" title="Deriv.com on Reddit" /></a>
+                    </div>
+                </div>
+                <div id="disclaimer">
+                    <p>In the EU, financial products are offered by Deriv Investments (Europe) Limited, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, licensed in Malta (<strong>licence no. IS/70156</strong>) and regulated by the Malta Financial Services Authority, Triq l-Imdina, Zone 1, Central Business District, Birkirkara CBD 1010, Malta, under the Investments Services Act.</p>
+                    <p>Deriv Limited - 13 Castle Street, St. Helier, JE2 3BT, Jersey - is the holding company for the above subsidiaries.</p>
+                    <p>This website's services are not available in certain countries, including the USA, Canada, and Hong Kong, or to persons below 18.</p>
+                    <ul>
+                        <li>CFDs are considered complex derivatives and may not be suitable for retail clients.</li>
+                        <li>CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</li>
+                        <li>The products mentioned here may be affected by changes in currency exchange rates. If you invest in these products, you may lose some or all of your investment, and the value of your investment may fluctuate. You should never invest money that you cannot afford to lose and never trade with borrowed money.</li>
+                    </ul>
+                </div>
+            </div>
+            <section id="fixed-p">
+                <div id="fixed-p-content">
+                    <p id="p-ps">CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. <strong>70% of retail investor accounts lose money when trading CFDs with this provider</strong>. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</p>
+                </div>
+            </section>
+        </footer>
+        <script src="js/functions.js"></script>
+    </body>
+</html>

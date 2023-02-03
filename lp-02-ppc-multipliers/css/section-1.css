@@ -1,0 +1,152 @@
+#section-1{
+    width: 100%;
+    min-height: 50vh;
+    background-color: rgb(200, 214, 215, 0.22);
+    margin: auto;
+    color: #333;
+    /* display: block; */
+    float: left;
+    /* z-index: 10; */
+}
+
+.grid-2, .grid-3{
+    width: 100%;
+    color: #333;
+}
+
+.grid-2-left, .grid-2-right{
+    width: 50%;
+    float: left;
+}
+
+.grid-2-left h3, .grid-2-right h3{
+    margin: 2vh 3vw;
+}
+
+.grid-2-left{
+    background-color: #ddd;
+}
+
+.grid-2-right{
+    background-color: #cec;
+}
+
+.cta-area{
+    width: 100%;
+    min-width: 320px;
+    margin: 3vh auto;
+    text-align: center;
+    float: left;
+    background-color: #fdd;
+}
+
+.cta-btn{
+    background-color: #ff444f;
+    padding: 1rem; 
+    border: 0; 
+    border-radius: .6rem; 
+    color: #fff; 
+    font-size: 0.9rem; 
+    line-height: 1.4rem; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.grid-3-left, .grid-3-center, .grid-3-right{
+    width: 33.3%;
+    float: left;
+}
+
+.grid-3-left h4, .grid-3-center h4, .grid-3-right h4{
+    margin: 2vh 3vw;
+}
+
+.grid-3-left{
+    background-color: #eef;
+}
+
+.grid-3-center{
+    background-color: #ddf;
+}
+
+.grid-3-right{
+    background-color: #ccf;
+}
+
+/* #text-section-1{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+#section-1 p{
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+#grid-area-5{
+    max-width: 1000px;
+    width: 100%;
+    min-height: 15vh;
+    margin: auto;
+    padding: 2vh 0;
+    display: block;
+}
+
+.grid-item-5{
+    width: 20%;
+    min-width: 100px;
+    height: 15vh;
+    float: left;
+    text-align: center;
+}
+
+.grid-item-5 p{
+    padding: 1vh !important;
+    font-size: 0.85em !important;
+}
+
+.grid-icon-5{
+    max-width: 80%;
+}
+
+
+
+/* SETTINGS FOR RESOLUTIONS UNDER 1080PX */
+/* @media only screen and (max-width: 1080px) {
+    #section-1 p{
+        font-size: 1em;
+    }
+    .grid-item-5 p{
+        font-size: 0.75em !important;
+    }
+} */
+
+/* SETTING FOR RESOLUTIONS UNDER 780PX */
+/* @media only screen and (max-width: 780px) {
+    #section-1 p{
+        font-size: 0.8em;
+    }
+    .grid-item-5{
+        width: 30%;
+    }
+    #grid-area-5{
+        margin-left: 5vw;
+    }
+} */
+
+/* SETTING FOR RESOLUTIONS UNDER 480PX */
+/* @media only screen and (max-width: 480px) {
+    .grid-item-5{
+        width: 33%;
+        height: 20vh;
+    }
+    #grid-area-5{
+        margin-left: 0;
+    }
+    .grid-item-5 p{
+        font-size: 0.6em;
+    }
+} */
