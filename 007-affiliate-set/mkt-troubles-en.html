@@ -20,7 +20,7 @@
             <!-- Prevent iOS 11 from automatically scaling your email -->
             <meta name="x-apple-disable-message-reformatting"/>
         <!-- ==== END OF META TAGS ==== -->
-        <title></title>
+        <title>Let's level up your marketing!</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -35,7 +35,7 @@
                         .h-img-td input{ width: 90%; max-width: 520px; border-radius: 15px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
                         #greeting-td p, .paragraph-td p{ margin: 0; color: #333; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
-                        .body-img{ width: 90%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
+                        .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
             <!-- End of styles for Outlook: -->
@@ -163,7 +163,7 @@
                     }
                     .h-img-td{ background-color: #fff; }
                     .h-img-td input{
-                        width: 90%;
+                        width: 85%;
                         border-radius: 15px;
                     }
                     #title-td p{
@@ -366,33 +366,65 @@
                         </tr>
                         <tr class="mobile-hide">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header/affiliates-mkt-materials.png"/>
                             </td>
                         </tr> 
                         <tr style="display: none; mso-hide:all;" class="mb-visible-block">
                             <td class="h-img-td" align="center">
-                                <input type="image" src="https://static.deriv.com/email/images/header/astropay-red-m.png"/>
+                                <input type="image" src="https://static.deriv.com/email/images/header/affiliates-mkt-materials-m.png"/>
                             </td>
                         </tr>
                         <!-- END HERO -->
                         <tr>
                             <td id="title-td" align="center" style="padding: 15px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext mb-title">TITLE</p>
+                                <p class="dark-subtext mb-title">Your marketing troubles are over</p>
                             </td>
                         </tr>
                         <tr>
                             <td id="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hi {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hello partner,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                                <p class="dark-subtext">Not getting conversions from your leads? Or your network hasn't started trading yet?</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Paragraph here</p>
+                                <p class="dark-subtext">Let's switch things up a little and approach your marketing in a more strategic way. How?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">We've designed new and improved marketing materials to get you back on track. For starters, you can watch our affiliate marketing video tutorials that will help broaden your reach and educate your existing and prospective clients.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.link/2XKsEJX" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="10%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Watch videos now</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="https://deriv.link/2XKsEJX" target="_blank">Watch videos now</a>
+                                <!--<![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">In addition, we'll be sending you emails with tips and tricks covering the common challenges our affiliates face, like no hits on ads, no signups, and inactive clients.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
+                                <p class="dark-subtext">Make sure you check your inbox regularly!</p>
                             </td>
                         </tr>
                     </table>
