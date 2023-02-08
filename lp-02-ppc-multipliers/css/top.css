@@ -10,7 +10,7 @@
 
     #top-bar{
         width: 100vw;
-        height: 60px;
+        height: 70px;
         background-color: #000;
         position: fixed;
         top: 0;
@@ -20,7 +20,7 @@
 
     #logo-top-bar-area{
         width: 49%;
-        padding: 1.2rem 0;
+        margin: 1.5rem 0;
         text-align: right;
         float: left;
     }
@@ -33,7 +33,7 @@
 
     #get-trading-top-bar-area{
         width: 49%;
-        padding: 1.2rem 0 0 0;
+        margin: 1.5rem 0 0 0;
         text-align: left;
         float: left;
     }
@@ -41,7 +41,7 @@
     #get-trading-top-bar-area img{
         width: 9rem;
         margin-top: .3rem;
-        padding-left: .6rem;
+        margin-left: .6rem;
     }
 /* ==== END OF TOP BAR STYLES ==== */
 
@@ -54,7 +54,7 @@
     #header{
         width: 100%;
         background-color: #ed6;
-        margin: 60px auto 0;
+        margin: 70px auto 0;
         min-height: 20vw;
         padding-bottom: 25px;
     }
@@ -80,259 +80,52 @@
         margin-bottom: 2vh;
     }
 
-     /* Hero styles: */
-    /* #hero-signup{
-        max-width: 1000px;
-        margin: auto; 
-        position: absolute; 
-        left: 0; 
-        right: 0; 
-        float: left;
-        z-index: 10;
-    }
-    #hero{
-        width: 40%;
-        float: left;
-    }
-    #hero p, #hero h2{ padding-right: 2rem; }
-    #hero p{
-        margin: 1.2rem auto;
-        text-align: center;
-        font-size: 1.4em;
-        font-weight: 300;
-        line-height: 1.8rem;
-    } */
-
-    /* SignUp area styles: */
-    /* #signup-area{
-        width: 60%;
-        max-height: 63vh;
-        background: linear-gradient(to right, #600000 0%, #990000 100%);
-        margin: 10vh 0 0 0;
-        opacity: 0.8;
-        border-radius: 1rem;
-        float: left;
-    }
-
-    #signup-area-content{
-        width: 90%;
-        height: 100%;
-        margin: auto;
-    }
-
-    #signup-area form{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        margin: 2.5vh 0;
-    }
-
-    #signup-area input[type=text]{
-        width: 100%;
-        height: 1.6em;
-        margin: auto;
-        margin-bottom: 2.5vh;
-        padding-left: 1rem;
-        border: 0;
-        border-radius: 0.4rem;
-        letter-spacing: 0.08rem;
-        font-size: .9em;
-    } */
-
-    /* Signup-area form styles: */
-    /* #form-terms-checkbox{
-        width: 100%;
-        height: 1.8em;
-    }
-
-    #form-terms-checkbox label{
-        padding-left: 1vw;
-        padding-bottom: 3px;
-    }
-
-    #signup-area input[type=checkbox]{
-        width: 1.3em;
-        height: 1.3em;
-        margin: 1vh 0 0 0;
-        vertical-align: baseline;
-        line-height: 1.3em;
-    }
-
-    #signup-btn{
-        width: 80%;
-        min-height: 2em;
-        margin: 2vh 10%;
-        padding: .4rem 0;
-    }
-
-    #signup-area h5{
-        padding: 1.5vh 0 0 0;
-        font-size: 1.2em;
-        font-weight: 450;
-    }
-
-    #signup-area p{
-        padding-top: 1vh;
-        line-height: 1.3em;
-        font-size: 0.85em;
-        font-weight: 300;
-    }
-
-    #form-terms-checkbox label{
-        line-height: 1.3em;
-        font-size: 0.8em;
-    }
-
-    .form-info{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        line-height: 1.3em;
-        font-size: 0.7em;
-        font-weight: 300;
-    } */
-/* ==== END OF HERO-SIGNUP STYLES: ==== */
-
-/* Reviewed */
-
-/* ==== SETTINGS FOR SCREEN MAX-WIDTH ==== */
-    /* @media only screen and (max-width: 1080px) {
-        #video-div {
-            top: -2vh;
-        }
-        #video-background{
-            max-height: 70vh;
-        } 
-        #hero p{
-            font-size: 1.25em;
-        }
-        #hero{
-            max-width: 1000px;
-            margin: auto;
-        }
-        #hero h1{
-            padding-bottom: 1vh;
-            padding-top: 9vh;
-        }
-        #hero p{
-            padding: 1.5vh 10vw;
-            text-align: center;
-        }
-        #signup-area-content{
-            width: 95%;
-        }
-        #signup-area{
-            width: 84%;
-            margin: 0 8%;
-            max-height: 40vh;
-        }
-        #signup-area h5{
-            padding: .8vh 0 .2vh 0;
-            font-size: 1em;
-        }
-        #signup-area p{
-            padding-top: .8vh;
-            line-height: 1.2em;
-            font-size: 0.8em;
-        }
-        #signup-area form{
-            margin-top: 1vh;
-        }
-        #signup-area input[type=text]{
-            height: 1.4em;
-            margin-bottom: 1vh;
-            font-size: .9em;
-        }
-        #signup-area input[type=checkbox]{
-            width: 1em;
-            height: 1em;
-            margin: .5vh 0 0 0;
-            line-height: 1em;
+    @media only screen and (max-width: 1080px) {
+        #content {
+            width: 840px;
         }
     }
-    @media only screen and (max-width: 780px) {
-        h1{
-            margin-top: 1vh;
-            padding-bottom: .5vh;
-        }
-        #hero p{
-            font-size: 1.1em;
-        }
-        #signup-area{
-            max-height: 43vh;
+
+    @media only screen and (max-width: 880px) {
+        #content {
+            width: 680px;
         }
     }
-    @media only screen and (max-width: 600px) {
+
+    @media only screen and (max-width: 720px) {
+        #content {
+            width: 520px;
+        }
+    }
+
+    @media only screen and (max-width: 550px) {
         #top-bar{
-            max-height: 50px;
+            height: 60px;
         }
-        #logo-top-bar-area{
-            width: 110px;
-            padding-left: 1rem;
-            text-align: left;
-            float: left;
+
+        #content {
+            width: 415px;
         }
+    
         #logo-top-bar-area img{
-            width: 100px;
-            padding-right: 6px;
+            width: 6rem;
+            margin: 0.3rem .6rem;
             border-right: .15rem solid #F8FAFB;
         }
-        #get-trading-top-bar-area{
-            width: 110px;
-            text-align: left;
-            float: left;
-        }
+    
         #get-trading-top-bar-area img{
-            width: 80px;
-            margin-top: .3rem;
-            padding-left: 5px;
+            width: 5rem;
+            margin-top: .5rem;
+            margin-left: .2rem;
         }
-        #hero p{
-            font-size: 1em;
-            padding: 2vh 1vw;
-        }
-        #video-div {
-            top: 15vh;
-            max-height: 50vh;
-        }
-        #video-background{
-            max-height: 50vh;
-        }
-        #signup-area{
-            max-height: 43vh;
-        }
-        #signup-btn{
-            width: 80%;
-            margin: .2vh 10%;
+
+        #header{
+            margin: 60px auto 0;
         }
     }
-    @media only screen and (max-width: 480px) {
-        #signup-area{
-            width: 90%;
-            margin-left: 10px;
-        }
-        #signup-btn{
-            width: 80%;
-            min-height: 1.5em;
-            padding: .3rem 0;
+
+    @media only screen and (max-width: 450px) {
+        #content {
+            width: 310px;
         }
     }
-    @media only screen and (max-width: 400px) {
-        #hero p{
-            padding-left: 10px;
-            padding-right: 10px;
-            font-size: 0.9em;
-            text-align: left;
-        }
-        #signup-area h5{
-            font-size: 0.9em;
-        }
-        #signup-area h4{
-            font-size: 1em;
-            padding-bottom: 0.3rem;
-        }
-        #signup-area p{
-            font-size: 0.75em;
-        }
-    } */
-/* ==== END OF SETTINGS FOR SCREEN MAX-WIDTH ==== */
