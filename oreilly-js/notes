@@ -29,4 +29,4 @@ Falsy values
   array.filter(function(param)) : Returns all elements that fit the return of the function. Ex. even numbers
   array.map(function(params)) : Apply the rules inside the function to the elements of the array. Ex. double all elements, etc.
 
-  test-email@deriv.com
+  test-email@deriv.com, compliance@deriv.com, alejandro.acosta@regentmarkets.com
