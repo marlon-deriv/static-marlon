@@ -42,27 +42,24 @@
                 <!--[if mso]>
                     <style type="text/css">
                         *, a, p, h1, h2, h3, td { font-family: 'Ubuntu', Arial, sans-serif; }
+                        h1{ font-family: 'Ubuntu', Arial, sans-serif; font-size: 27px; font-weight: 700; padding: 0 0 20px 20px; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
                         a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
                         .button:hover{ background-color: #d43e47; }
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
-
-
-                        #header-td{ width: 600px; height: 200px; margin: 0; padding: 0; }
-                        #title-img-tb{ width: 600px; }
-                        #logo-title-tb{ width: 300px; height: 200px; margin: 0; }
-                        
-
-
+                        #ol-title-img-tb{ width: 600px; }
+                        #ol-logo-title-tb{ width: 300px; height: 200px; margin: 0; }
+                        #ol-logo-img-td{ width: 300px; height: 55px; }
+                        #ol-logo-img-td img{ height: 28px; padding: 24px 0 0 24px; }
                         #title-td p{ margin: 0; color: #333; font-family: 'Ubuntu', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
-                        #greeting-td p, .paragraph-td p, #subtitle-td p{ margin: 0; color: #333; font-family: 'Ubuntu', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        .greeting-td p, .paragraph-td p, .subtitle-td p{ margin: 0; color: #333; font-family: 'Ubuntu', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
             <!-- End of styles for Outlook: -->
-            <style type="text/css">                
+            <style type="text/css">
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #333; }
                 body{
@@ -151,27 +148,21 @@
                     }
                     #header-td{ width: 600px; height: 200px; margin: 0; padding: 0; }
                     #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
-                    #logo-title-td{ width: 50%; height: 35px; }
-                    #logo-title-td img{ height: 28px; padding: 24px 0 0 24px; }
-                    #text-title-td h1{ font-size: 27px; font-weight: 700; padding: 0 0 20px 20px;}
+                    #logo-img-td{ width: 50%; vertical-align: top; }
+                    #logo-img-td img{ height: 25px; padding: 24px 0 0 25px; }
+                    #title-text-td{ height: 100%; vertical-align: top; }
+                    #title-text-td h1{ padding: 10px 10px 10px 25px; margin-top: 15px; font-size: 25px; font-weight: 700; }
                     #image-title-td{ width: 50%; vertical-align: top;}
-                    #image-title-td img{ width: 100%; height: 100%; max-width: 300px;}
-                    #title-td p{
-                        margin: 0;
-                        color: #333;
-                        font-size: 32px;
-                        font-weight: 700;
-                        line-height: 1.5;
-                    }
+                    #image-title-td img{ width: 100%; max-width: 300px; object-fit: none; object-position: 0 100%;}
                     .list-ul{ padding: 0px 30px 0px 40px; }
-                    #greeting-td p, .paragraph-td p, #subtitle-td p{
+                    .greeting-td p, .paragraph-td p, .subtitle-td p{
                         margin: 0;
                         font-size: 13px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
-                    #greeting-td p, .paragraph-td p{ color: #333; }
-                    #subtitle-td p{ color: #999; font-style: italic; }
+                    .greeting-td p, .paragraph-td p{ color: #333; }
+                    .subtitle-td p{ color: #999; font-style: italic; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -242,14 +233,13 @@
                 /* End of classes */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
-                        #h-logo-td{ padding: 10px 0; }
-                        #h-logo-black{
-                            width: 70px !important;
-                            max-width: inherit !important;
-                            height: 13px !important;
-                            max-height: 13px !important;
-                            margin-top: 0px !important;
-                        }
+                        #header-td{ max-width: 600px; }
+                        #header-td, #title-img-tb, #title-img-tb td, #logo-title-tb, #logo-img-td{ margin: 0; padding: 0;}
+                        #logo-img-td img{ height: 20px; padding: 20px 0 0 20px; }
+                        #title-text-td h1{ padding: 10px 10px 10px 20px; margin-top: 10px; font-size: 20px; font-weight: 600; }
+                        #image-title-td{ width: 45%; height: 160px; vertical-align: top;}
+                        #image-title-td img{ height: 180px; }
+
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -269,15 +259,20 @@
                             /* Shows mobile content */
                             display: block !important;
                         }
-                        .mb-title{
-                            /* Applied on email title */
-                            font-size: 20px !important;
-                        }
-                        #greeting-td, .paragraph-td{
+                        .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
+                    }
+                    @media screen and (max-width: 460px){
+                        #logo-img-td img{ height: 20px; padding: 15px 0 0 15px; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-weight: 600; }
+                        #image-title-td{ width: 40%; height: 160px; vertical-align: top;}
+                        #image-title-td img{ height: 180px; }
+                    }
+                    @media screen and (max-width: 380px){ 
+                        #title-text-td h1{ font-size: 16px; }
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
@@ -289,21 +284,8 @@
                         }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
-                        /* Shows header Deriv logo on Dark Mode-Only */
-                        .h-logo-white-div{
-                            width: 100px !important;
-                            max-width: inherit !important;
-                            max-height: inherit !important;
-                            margin-top: 0px !important;
-                            padding: 10px 0 !important;
-                            line-height: auto !important;
-                            display: block !important;
-                            visibility: inherit !important;
-                            overflow: visible !important;
-                            float: none !important;
-                        }
                         /* Hides light mode-only content */
-                        .hide-dark-h-logo, .hide-light{ display: none !important; }
+                        .hide-light{ display: none !important; }
                         .show-dark{ display: block !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
@@ -314,9 +296,6 @@
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
-                    [data-ogsc] .h-logo-white-div{ width: 100px !important; max-width: inherit !important; max-height: inherit !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
-                    /* Hides light mode-only content */
-                    [data-ogsc] .hide-dark-h-logo{ display: none !important; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     /* Custom dark mode font colors */
@@ -327,11 +306,6 @@
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
-                        #h-logo-td{ padding: 10px 0 !important; }
-                        .white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
-                        [data-ogsc].white-h-logo-low-width{ width: 70px !important; max-width: inherit !important; height: 13px !important; max-height: 13px !important; margin-top: 0px !important; line-height: auto !important; display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
-                        .dark-h-logo-low-width{ width: 70px !important; height: 13px !important; }
-                        [data-ogsc].dark-h-logo-low-width{ width: 70px !important; height: 13px !important; }
                     }
                 /* End of dark mode styles */
             </style>
@@ -349,33 +323,63 @@
                         <!-- START HERO -->
                         <tr>
                             <td id="header-td">
+                                <!--[if (gte mso 9)|(IE)]>
+                                    <table id="ol-title-img-tb" align="center"><tr><td align="center">
+                                <![endif]-->
                                 <table id="title-img-tb">
                                     <tr>
                                         <td align="left">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table width="300" height="200" margin="0">
+                                                    <tr>
+                                                        <td style="padding-left: 25px;">
+                                                            <a href="https://www.deriv.com">
+                                                            <img id="h-logo-red" class="dark-h-logo-low-width" src="https://static.deriv.com/logos/deriv-red-2023.png" title="Deriv.com">
+                                                        </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-left: 25px; padding-top: 25px;">
+                                                            <h1 class="dark-subtext mb-title">MT5 unavailable on Apple App Store</h1>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            <![endif]-->
+                                            <!--[if !gte mso 9]><!-- -->
                                             <table id="logo-title-tb">
                                                 <tr>
-                                                    <td id="logo-title-td">
+                                                    <td id="logo-img-td">
                                                         <a href="https://www.deriv.com">
-                                                            <img id="h-logo-red" class="dark-h-logo-low-width" src="https://static.deriv.com/logos/deriv-red-2023.png" title="Deriv.com">
+                                                            <img id="h-logo-red" src="https://static.deriv.com/logos/deriv-red-2023.png" title="Deriv.com">
                                                         </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td id="text-title-td">
-                                                        <h1 class="dark-subtext mb-title">MT5 unavailable on Apple App Store</h1>
+                                                    <td id="title-text-td">
+                                                        <h1 class="dark-subtext">MT5 unavailable on Apple App Store</h1>
                                                     </td>
                                                 </tr>
                                             </table>
+                                            <!--<![endif]-->
                                         </td>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                            <td width="300">
+                                                <img src="https://static-marlon.vercel.app/templates/rebranding/img/red-rectangle.png" width="290" height="180"/>
+                                            </td>
+                                        <![endif]-->
+                                        <!--[if !gte mso 9]><!-- -->
                                         <td id="image-title-td" align="center">
                                             <img src="https://static-marlon.vercel.app/templates/rebranding/img/red-rectangle.png" alt=""/>
                                         </td>
+                                        <!--<![endif]-->
                                     </tr>
                                 </table>
+                                <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                                <![endif]-->
                             </td>
                         </tr>
                         <tr>
-                            <td id="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                            <td class="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
                                 <p class="dark-subtext">Dear [insert name],</p>
                             </td>
                         </tr>
@@ -397,7 +401,7 @@
                         <tr>
                             <td align="center" class="dark-black" style="padding: 10px 30px 30px;">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="10%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="40%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
                                 <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Learn more about Deriv</center>
                                 </v:roundrect>
