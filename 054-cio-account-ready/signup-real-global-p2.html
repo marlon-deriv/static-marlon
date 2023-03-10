@@ -131,7 +131,7 @@
                 /* Deriv styles */
                     a, a:visited{
                         color: #ff444f !important;
-                        text-decoration: none;
+                        text-decoration: none !important;
                     }
                     a:hover{ text-decoration: underline; }
                     a.button{
@@ -149,7 +149,6 @@
                         overflow: visible;
                     }
                     .button:hover{ background-color: #d43e47; }
-
                     a.button-payment {
                         padding: 10px 16px;
                         border: 0;
@@ -221,22 +220,22 @@
                         outline: none;
                         border-radius: 10px;
                     }
-                    #cols-3-tb-ext{
-                        width: 100%; max-width: 540px; margin: 0;
-                    }
-                    .col-3-td{ width: 33.3%; height: 280px; }
+                    #cols-3-tb-ext{ width: 100%; max-width: 540px; margin: 0; }
+                    .col-3-td{ width: 33.3%; }
                     .col-3-td-mb{ width: 100%; }
                     .col-3-td-mb table{ width: 100%; }
                     .col-3-td table{ width: 100%; margin-top: 20px; }
                     .session-title-td{ border-top: 1px solid #eee; }
+                    .step-img-td{ height: 100px; vertical-align: middle;}
                     .step-img{ height: 80px; display: block; margin: 0px;}
-                    .step-number{ width: 35px; vertical-align: top; padding-top: 20px; }
+                    .step-number{ width: 35px; height: 100px; vertical-align: top; padding-top: 20px; margin-top: 0px;}
                     .step-number-mb{ max-width: 50px; vertical-align: top; padding: 20px 10px; }
-                    .step-number img{ border: 0px; display: block; margin: 0px; }
+                    .step-number img{ border: 0px; display: block; margin-top: 0px; }
                     .step-text{ height: 150px; padding: 0px 5px; vertical-align: top; }
+                    .step-text p{ margin-right: 5px; font-size: 13px; font-weight: 350; line-height: 20px; text-align: left; }
                     .step-text-mb{ padding: 0px 10px; vertical-align: top; }
                     .step-text-mb p{ font-size: 14px; font-weight: 400; line-height: 21px; text-align: left; }
-                    .payments-td, .payments-td-nb{ background-color: #f7f7f7; padding-bottom: 20px; padding-top: 15px;}
+                    .payments-td, .payments-td-nb{ max-width: 600px; margin: auto; background-color: #f7f7f7; padding-bottom: 20px; padding-top: 15px;}
                     .payments-td{ border-top: 1px solid #eee;}
                     .payment-tb{ width: 100%; max-width: 540px; margin: auto; }
                     .item-tb-mb{ max-width: 90%; margin: auto;}
@@ -344,10 +343,7 @@
                             padding-right: 15px !important;
                         }
                         #client-td p, #account-td p, .paragraph-td p, #subtitle-td p{ font-size: 14px; }
-
-
                         .item-tb-mb{ width: 100% !important; }
-
                         .payments-td{padding-top: 5px; padding-bottom: 15px;}
                         .payment-td-icon{ width: 100%; max-height: 20px;}
                         .payment-td-icon img{ width: 120px;}
@@ -416,7 +412,7 @@
             </style>
         <!-- ==== END OF STYLES ==== -->
     </head>
-    <body>
+    <body id="body">
         <table id="ext-table" align="center">
              <!-- Email body -->
             <tr>
@@ -467,184 +463,214 @@
                             </td>
                         </tr>
                         <!-- End of Headlilne -->
-                        <!-- How to fund your account: DESKTOP VERSION -->
+                        
+
+                        <!-- Payment methods Desktop -->
                         <tr>
-                            <td align="center" style="padding: 20px 60px 0;" class="session-title-td dark-black">
-                                <h2>How to fund your account in 3 easy steps</h2>
+                            <td align="center" style="padding: 40px 60px;" class="payments-td dark-gray">
+                                <h2>Payment methods to fund your account</h2>
                             </td>
                         </tr>
+                        <!-- Pyament method 2 col -->
                         <tr class="mobile-hide">
-                            <td align="left" style="padding: 0 30px 20px;" class="dark-black">
-                                <!--[if (gte mso 9)|(IE)]><table width="540" align="center">
+                            <td>
+                                <table style="width: 100%; max-width: 600px;">
                                     <tr>
-                                        <td>
-                                <![endif]-->
-                                <table id="cols-3-tb-ext" align="center" class="dark-black">
-                                    <tr>
-                                        <td align="center" class="col-3-td dark-black">
+                                        <td align="center" class="payments-td-nb dark-gray">
                                             <!--[if (gte mso 9)|(IE)]>
-                                            <table width="540">
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
                                                 <tr>
-                                                    <td align="left" valign="top" width="152">
-                                            <![endif]-->
-                                            <img src="https://static.deriv.com/email/images/marketing/real-acc/step-1.png" class="step-img" alt="Add a real money account">
-                                            <table align="left">
-                                                <tr>
-                                                    <td class="step-number dark-black">
-                                                        <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/1.png" alt="1">
-                                                        <div class="dark-img" style="display: none;" align="center">
-                                                            <img class="dark-img" src="https://static.deriv.com/email/images/icons/1-gray.png" alt="1"/>
-                                                        </div>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/skrill.png"/>
                                                     </td>
-                                                    <td class="step-text dark-black">
-                                                        <p style="font-size: 14px; font-weight: 400; line-height: 21px; text-align: left;" class="dark-subtext">Open the Cashier or click on the Deposit button on the top right.</p>
+                                                    <td class="payment-td-desc">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-name-td">
+                                                                    Skrill
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td">
+                                                                    Quick, simple to use, and available anywhere, anytime. Used by millions of clients worldwide.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td">
+                                                                    Min-max deposit: 10-10,000  |  Processing time: Instant
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
-                                                </tr>
-                                            </table>
-                                            <!--[if mso]></td></tr></table><![endif]-->
-                                        </td>
-                                        <td align="center" class="col-3-td dark-black">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                            <table width="540">
-                                                <tr>
-                                                    <td align="left" valign="top" width="152">
-                                            <![endif]-->
-                                            <img src="https://static.deriv.com/email/images/marketing/launch/step-visa.png" class="step-img" alt="Add a real money account">
-                                            <table align="left">
-                                                <tr>
-                                                    <td class="step-number dark-black">
-                                                        <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/2.png" alt="2">
-                                                        <div class="dark-img" style="display: none;" align="center">
-                                                            <img class="dark-img" src="https://static.deriv.com/email/images/icons/2-gray.png" alt="2"/>
-                                                        </div>
-                                                    </td>
-                                                    <td class="step-text dark-black">
-                                                        <p style="font-size: 14px; font-weight: 400; line-height: 21px; text-align: left;" class="dark-subtext">Choose your payment method.</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!--[if mso]></td></tr></table><![endif]-->
-                                        </td>
-                                        <td align="center" class="col-3-td dark-black">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                            <table width="540">
-                                                <tr>
-                                                    <td align="left" valign="top" width="152">
-                                            <![endif]-->
-                                            <img src="https://static.deriv.com/email/images/marketing/launch/step3.png" class="step-img" alt="Add a real money account">
-                                            <table align="left">
-                                                <tr>
-                                                    <td class="step-number dark-black">
-                                                        <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/3.png" alt="3">
-                                                        <div class="dark-img" style="display: none;" align="center">
-                                                            <img class="dark-img" src="https://static.deriv.com/email/images/icons/3-gray.png" alt="3"/>
-                                                        </div>
-                                                    </td>
-                                                    <td class="step-text dark-black">
-                                                        <p style="font-size: 14px; font-weight: 400; line-height: 21px; text-align: left;" class="dark-subtext">Specify the amount you want to deposit, fill out details, and follow the on-screen prompts to confirm payment.</p>
+                                                    <td class="payment-td-link">
+                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
                                                     </td>
                                                 </tr>
                                             </table>
                                             <!--[if mso]></td></tr></table><![endif]-->
                                         </td>
                                     </tr>
-                                </table><!--[if mso]></td></tr></table><![endif]-->
-                            </td>
-                        </tr>
-                        <!-- End of How to fund your account: DESKTOP VERSION -->
-                        <!-- How to fund your account: MOBILE VERSION -->
-                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td align="left" class="dark-black">
-                                <table>
                                     <tr>
-                                        <td style="padding: 20px 0px;">
-                                            <table class="item-tb-mb">
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
                                                 <tr>
-                                                    <td align="center" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/step-1.png" class="step-img" alt="Add a real money account">
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/icons/perfectmoney-dark.png"/>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="col-3-td-mb dark-black">
+                                                    <td class="payment-td-desc">
                                                         <table>
                                                             <tr>
-                                                                <td class="step-number-mb dark-black">
-                                                                    <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/1.png" alt="1">
-                                                                    <div class="dark-img" style="display: none;" align="center">
-                                                                        <img class="dark-img" src="https://static.deriv.com/email/images/icons/1-gray.png" alt="1"/>
-                                                                    </div>
+                                                                <td class="payment-name-td">
+                                                                    Perfect Money
                                                                 </td>
-                                                                <td class="step-text-mb dark-black">
-                                                                    <p class="dark-subtext">Open the Cashier or click on the Deposit button on the top right.</p>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td">
+                                                                    An affordable and easy method for deposits and withdrawals. Features auto payments, annual interest, and real-time statements.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td">
+                                                                    Min-max deposit: 5-10,000 | Processing time: Instant
                                                                 </td>
                                                             </tr>
                                                         </table>
                                                     </td>
+                                                    <td class="payment-td-link">
+                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
+                                                    </td>
                                                 </tr>
-                                            </table>
+                                            </table><!--[if mso]></td></tr></table><![endif]-->
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-bottom: 20px;">
-                                            <table class="item-tb-mb">
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
                                                 <tr>
-                                                    <td align="center" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/launch/step-visa.png" class="step-img" alt="Add a real money account">
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/neteller.png"/>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="col-3-td-mb dark-black">
+                                                    <td class="payment-td-desc">
                                                         <table>
                                                             <tr>
-                                                                <td class="step-number-mb dark-black">
-                                                                    <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/2.png" alt="2">
-                                                                    <div class="dark-img" style="display: none;" align="center">
-                                                                        <img class="dark-img" src="https://static.deriv.com/email/images/icons/2-gray.png" alt="2"/>
-                                                                    </div>
+                                                                <td class="payment-name-td">
+                                                                    Neteller
                                                                 </td>
-                                                                <td class="step-text-mb dark-black">
-                                                                    <p class="dark-subtext">Choose your payment method.</p>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td">
+                                                                    Used by over 20 million clients worldwide. Enjoy instant access, free withdrawals, and reward points that you can redeem for cash.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td">
+                                                                    Min-max deposit: 5-10,000 | Processing time: Instant
                                                                 </td>
                                                             </tr>
                                                         </table>
                                                     </td>
+                                                    <td class="payment-td-link">
+                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
+                                                    </td>
                                                 </tr>
-                                            </table>
+                                            </table><!--[if mso]></td></tr></table><![endif]-->
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-bottom: 20px;">
-                                            <table class="item-tb-mb">
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
                                                 <tr>
-                                                    <td align="center" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/launch/step3.png" class="step-img" alt="Add a real money account">
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/visa-icon.png"/>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="col-3-td-mb dark-black">
+                                                    <td class="payment-td-desc">
                                                         <table>
                                                             <tr>
-                                                                <td class="step-number-mb dark-black">
-                                                                    <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/3.png" alt="3">
-                                                                    <div class="dark-img" style="display: none;" align="center">
-                                                                        <img class="dark-img" src="https://static.deriv.com/email/images/icons/3-gray.png" alt="3"/>
-                                                                    </div>
+                                                                <td class="payment-name-td">
+                                                                    VISA
                                                                 </td>
-                                                                <td class="step-text-mb dark-black">
-                                                                    <p class="dark-subtext">Specify the amount you want to deposit, fill out details, and follow the on-screen prompts to confirm payment.</p>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td">
+                                                                    Make a deposit using your Visa credit or debit card. Charges and interest rates apply.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td">
+                                                                    Min-max deposit: 10-10,000 | Processing time: Instant
                                                                 </td>
                                                             </tr>
                                                         </table>
                                                     </td>
+                                                    <td class="payment-td-link">
+                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
+                                                    </td>
                                                 </tr>
-                                            </table>
+                                            </table><!--[if mso]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/master-icon.png"/>
+                                                    </td>
+                                                    <td class="payment-td-desc">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-name-td">
+                                                                    Mastercard
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td">
+                                                                    Make a deposit using your Mastercard credit or debit card. Charges and interest rates apply.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td">
+                                                                    Min-max deposit: 10-10,000 | Processing time: Instant
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="payment-td-link">
+                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
+                                                    </td>
+                                                </tr>
+                                            </table><!--[if mso]></td></tr></table><![endif]-->
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
-                        <!-- End of How to fund your account: MOBILE VERSION -->
-                        <!-- End of How to fund your account -->
+
+
                         <tr>
                             <td align="center" class="dark-black" style="padding: 20px 0px 40px;">
                                 <!--[if (gte mso 9)|(IE)]>
@@ -658,414 +684,7 @@
                                 <!--<![endif]-->
                             </td>
                         </tr>
-                        <!-- Payment methods Desktop -->
-                        <tr>
-                            <td align="center" style="padding: 40px 60px;" class="payments-td dark-gray">
-                                <h2>Payment methods to fund your account</h2>
-                            </td>
-                        </tr>
-                        <!-- Pyament method 2 col -->
-                        <tr class="mobile-hide">
-                            <td>
-                                <table style="width: 100%;">
-                                    <tr>
-                                        <td align="center" class="payments-td-nb dark-gray">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center"">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table class="payment-tb" align="center">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/skrill.png"/>
-                                                    </td>
-                                                    <td class="payment-td-desc">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Skrill
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Quick, simple to use, and available anywhere, anytime. Used by millions of clients worldwide.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 10-10,000  |  Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                    <td class="payment-td-link">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" class="payments-td dark-gray">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center"">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table class="payment-tb" align="center">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/icons/perfectmoney-dark.png"/>
-                                                    </td>
-                                                    <td class="payment-td-desc">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Perfect Money
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    An affordable and easy method for deposits and withdrawals. Features auto payments, annual interest, and real-time statements.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 5-10,000 | Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                    <td class="payment-td-link">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" class="payments-td dark-gray">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center"">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table class="payment-tb" align="center">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/neteller.png"/>
-                                                    </td>
-                                                    <td class="payment-td-desc">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Neteller
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Used by over 20 million clients worldwide. Enjoy instant access, free withdrawals, and reward points that you can redeem for cash.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 5-10,000 | Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                    <td class="payment-td-link">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" class="payments-td dark-gray">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center"">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table class="payment-tb" align="center">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/visa-icon.png"/>
-                                                    </td>
-                                                    <td class="payment-td-desc">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    VISA
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Make a deposit using your Visa credit or debit card. Charges and interest rates apply.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 10-10,000 | Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                    <td class="payment-td-link">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" class="payments-td dark-gray">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center"">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table class="payment-tb" align="center">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/master-icon.png"/>
-                                                    </td>
-                                                    <td class="payment-td-desc">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Mastercard
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Make a deposit using your Mastercard credit or debit card. Charges and interest rates apply.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 10-10,000 | Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                    <td class="payment-td-link">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!-- Payment methods Mobile -->
-                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td class="dark-gray">
-                                <table style="width: 100%;">
-                                    <tr>
-                                        <td class="payments-td-nb dark-gray">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/skrill.png"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="payment-td-desc dark-gray">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Skrill
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Quick, simple to use, and available anywhere, anytime. Used by millions of clients worldwide.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 10-10,000  |  Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="payment-link-td">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="payments-td dark-gray">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/icons/perfectmoney-dark.png"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="payment-td-desc dark-gray">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Perfect Money
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    An affordable and easy method for deposits and withdrawals. Features auto payments, annual interest, and real-time statements.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 5-10,000  |  Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="payment-link-td">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="payments-td dark-gray">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/neteller.png"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="payment-td-desc dark-gray">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Neteller
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Used by over 20 million clients worldwide. Enjoy instant access, free withdrawals, and reward points that you can redeem for cash.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 5-10,000  |  Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="payment-link-td">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="payments-td dark-gray">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/visa-icon.png"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="payment-td-desc dark-gray">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    VISA
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Make a deposit using your Visa credit or debit card. Charges and interest rates apply.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 10-10,000  |  Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="payment-link-td">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="payments-td dark-gray">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/master-icon.png"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" class="payment-td-desc dark-gray">
-                                                        <table>
-                                                            <tr>
-                                                                <td class="payment-name-td">
-                                                                    Mastercard
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-desc-td">
-                                                                    Make a deposit using your Mastercard credit or debit card. Charges and interest rates apply.
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="payment-limits-td">
-                                                                    Min-max deposit: 10-10,000  |  Processing time: Instant
-                                                                </td>
-                                                            </tr>
-                                                        </table><!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="payment-link-td">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!-- End of Payment methods Mobile -->
-                        <tr>
-                            <td align="center" class="payments-td-nb dark-gray" style="padding: 20px 0px 40px;">
-                                <!--[if (gte mso 9)|(IE)]>
-                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/cashier/deposit" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="15%" stroke="f" fillcolor="#ff444f">
-                                    <w:anchorlock/>
-                                    <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">View all payment options</center>
-                                    </v:roundrect>
-                                <![endif]-->
-                                <a class="button-payment" href="https://app.deriv.com/cashier/deposit" style="mso-hide:all;">View all payment options</a>
-                            </td>
-                        </tr>
-                        <!-- End of Payment methods Desktop -->
+                        
                         <tr>
                             <td align="center" style="padding: 30px;" class="mobile-lowsidepadding dark-black">
                                 <p class="dark-subtext">Once approved, the deposit amount will appear in your Deriv {{event.currency}} balance and you can begin trading.</p>
@@ -1082,7 +701,7 @@
                                 <a class="button" href="https://app.deriv.com/cashier/deposit" style="mso-hide:all;">Make a deposit now</a>
                             </td>
                         </tr>
-                        
+                        <!--<![endif]-->
                     </table>
                     <!--[if (gte mso 9)|(IE)]></td></tr></table>
                     <![endif]-->
