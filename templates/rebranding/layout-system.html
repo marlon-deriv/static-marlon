@@ -41,8 +41,9 @@
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
                     <style type="text/css">
-                        *, a, p, h1, h2, h3, td { font-family: 'Ubuntu', Arial, sans-serif; }
-                        h1{ font-family: 'Ubuntu', Arial, sans-serif; font-size: 27px; font-weight: 700; padding: 0 0 20px 20px; }
+                        *, h1, h2, h3, td, { font-family: 'Ubuntu', Arial, sans-serif; }
+                        p, a, .greeting-td p, .paragraph-td p{ font-family: 'IBM Plex Sans', Arial, sans-serif; }
+                        h1{ font-size: 27px; font-weight: 700; padding: 0 0 20px 20px; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
                         a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
@@ -50,18 +51,48 @@
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
-                        #ol-logo-title-tb{ width: 300px; height: 200px; margin: 0; }
-                        #ol-logo-img-td{ width: 300px; height: 55px; }
-                        #ol-logo-img-td img{ height: 28px; padding: 24px 0 0 24px; }
-                        #title-td p{ margin: 0; color: #414652; font-family: 'Ubuntu', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.5; }
-                        .greeting-td p, .paragraph-td p, .subtitle-td p{ margin: 0; color: #414652; font-family: 'Ubuntu', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        #ol-logo-img-td{ background-color: #ff444f; width: 300px; height: 55px; }
+                        .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
+                        .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 16px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
             <!-- End of styles for Outlook: -->
             <style type="text/css">
+                /* FONTS */
+                    @media screen{
+                        /* latin */
+                        @font-face {
+                        font-family: 'IBM Plex Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-display: swap;
+                        src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2) format('woff2');
+                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                        }
+                        /* latin */
+                        @font-face {
+                        font-family: 'IBM Plex Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-display: swap;
+                        src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdP3pBms.woff2) format('woff2');
+                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                        }
+                        /* latin */
+                        @font-face {
+                        font-family: 'IBM Plex Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-display: swap;
+                        src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdP3pBms.woff2) format('woff2');
+                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                        }
+                    }
+                /* END OF FONTS */
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
+                p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -92,18 +123,6 @@
                     outline: none;
                     text-decoration: none;
                 }
-                ul { list-style-type: disc; }
-                ul, ol{ padding-left: 25px; }
-                li{
-                    padding: 2px 0 0 5px;
-                    font-family: inherit;
-                    font-size: 16px;
-                    font-weight: 400;
-                    text-align: left;
-                    line-height: 24px;
-                }
-                #title-td{ padding: 15px 30px 0px 30px; }
-                #subtitle-td{ padding: 5px 30px 20px; }
                 /* iOS BLUE LINKS */
                 a[x-apple-data-detectors]{
                     color: inherit !important;
@@ -126,7 +145,7 @@
                         border-radius: 16px;
                         font-size: 13px;
                         color: #fff !important;
-                        font-weight: 500;
+                        font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
                         line-height: 20px;
@@ -135,7 +154,7 @@
                     }
                     .button:hover{ background-color: #d43e47; }
                 /* End of Deriv styles */
-                /* Classes */
+                /* Layout structure classes */
                     #ext-table{ margin: auto; }
                     #ext-td{ background-color: #eee; }
                     #int-table{
@@ -147,32 +166,25 @@
                         border-spacing: 0px;
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
-                    #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
+                    #title-img-tb{ width: 100%; height: 100%; margin: 0; }
                     #logo-img-td{ background-color: #ff444f; width: 50%; height: 50px; vertical-align: top;}
-                    #logo-img-td img{ height: 21px; padding: 24px 0 0 25px; }
+                    #logo-img-td img{ height: 21px; max-height: 21px; padding: 24px 0 0 25px; }
                     #slash-td{ margin: 0; padding: 0; }
                     #slash-td img{ width: 100%; margin: 0; padding: 0; }
                     #title-text-td{ vertical-align: top; }
-                    #title-text-td h1{ padding: 0px 80px; margin-top: -15px; font-size: 30px; font-weight: 700; text-align: center; line-height: 40px;}
-
-
+                    #title-text-td h1{ padding: 0px 60px; margin-top: -15px; font-size: 30px; font-weight: 700; text-align: center; line-height: 40px;}
                     .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
                     .data-property-td{ width: 35%; }
                     .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
                     .data-value-td{ font-weight: 500; }
-                    .link-td{ }
                     .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 10px 0;}
-
-
-                    .list-ul{ padding: 0px 30px 0px 40px; }
-                    .greeting-td p, .paragraph-td p, .subtitle-td p, .data-property-td{
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 15px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
                     .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
-                    .subtitle-td p{ color: #999; font-style: italic; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -186,15 +198,30 @@
                         outline: none;
                         border-radius: 10px;
                     }
-                    /* Table inside table */
-                        .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
-                        .columns-2-a{ width: 71px; }
-                        .columns-2-a img{ margin: auto !important; border: 0; display: block; }
-                        .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
-                        .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
-                        .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
-                        .no-padding-td p{ margin: 7px; }
-                    /* End of table inside table */
+                /* End of layout structure classes */
+                /* List styles */
+                    ul { list-style-type: disc; }
+                    ul, ol{ padding-left: 25px; }
+                    li{
+                        padding: 2px 0 0 5px;
+                        font-family: inherit;
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: left;
+                        line-height: 24px;
+                    }
+                    .list-ul{ padding: 0px 30px 0px 40px; }
+                /* End of list styles */
+                /* Table inside table styles */
+                    .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
+                    .columns-2-a{ width: 71px; }
+                    .columns-2-a img{ margin: auto !important; border: 0; display: block; }
+                    .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
+                    .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
+                    .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
+                    .no-padding-td p{ margin: 7px; }
+                /* End of table inside table styles */
+                /* Footer styles */
                     #footer-table{
                         width: 100%;
                         max-width: 600px;
@@ -233,23 +260,26 @@
                         font-weight: 400;
                     }
                     #f-logo{ padding: 30px; }
-                    #f-logo img{
-                        height: 16px;
-                        display: block;
-                    }
+                    #f-logo img{ height: 16px; display: block; }
                     .trustpilot-td{ padding: 40px 30px 30px; background-color: #ddd; }
                     .trustpilot-widget a{ text-decoration: none; }
                     .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
-                /* End of classes */
+                /* End of footer styles */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
                         #header-td{ max-width: 600px; }
-                        #header-td, #title-img-tb, #title-img-tb td, #logo-title-tb, #logo-img-td{ margin: 0; padding: 0;}
-                        #logo-img-td img{ height: 20px; padding: 20px 0 0 20px; }
+                        #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
+                        #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                         #title-text-td h1{ padding: 10px 10px 10px 20px; margin-top: 10px; font-size: 20px; font-weight: 600; }
-                        #image-title-td{ width: 45%; height: 160px; vertical-align: top;}
-                        #image-title-td img{ height: 180px; }
-
+                        #slash-td{ margin: 0; padding: 0; }
+                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 14px; }
+                        .greeting-td, .paragraph-td{
+                            /* Decrease padding on mobile */
+                            padding-left: 15px !important;
+                            padding-right: 15px !important;
+                        }
+                        .email-data-tb{ width: 94%; }
+                        .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -269,17 +299,13 @@
                             /* Shows mobile content */
                             display: block !important;
                         }
-                        .greeting-td, .paragraph-td{
-                            /* Decrease padding on mobile */
-                            padding-left: 15px !important;
-                            padding-right: 15px !important;
-                        }
                     }
                     @media screen and (max-width: 460px){
-                        #logo-img-td img{ height: 20px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-weight: 600; }
-                        #image-title-td{ width: 40%; height: 160px; vertical-align: top;}
-                        #image-title-td img{ height: 180px; }
+                        #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        .email-data-tb{ width: 98%; }
+                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
+                        .link-div{ font-size: 12px; }
                     }
                     @media screen and (max-width: 380px){ 
                         #title-text-td h1{ font-size: 16px; }
@@ -303,13 +329,16 @@
                         h1, h2, p, span, b, strong { color: #fff !important; }
                         .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
+                        .email-data-tb, .link-div{ background-color: #2e2e2e;}
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
-                    /* Applies dark background if dark mode is selected */
-                    [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     /* Custom dark mode font colors */
                     [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #fff !important; }
+                    [data-ogsc] #logo-img-td{ background-color: #ff444f !important; }
+                    [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
+                    /* Applies dark background if dark mode is selected */
+                    [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
@@ -339,10 +368,12 @@
                                 <table id="title-img-tb">
                                         <!--[if (gte mso 9)|(IE)]>
                                             <tr>
-                                                <td style="padding-left: 25px;">
-                                                    <a href="https://www.deriv.com">
-                                                        <img class="dark-h-logo-low-width" src="https://static-marlon.vercel.app/templates/rebranding/img/deriv-white-2023.png" title="Deriv.com"/>
-                                                    </a>
+                                                <td id="ol-logo-img-td">
+                                                    <div style="margin-left: 30px;">
+                                                        <a href="https://www.deriv.com">
+                                                            <img src="https://static-marlon.vercel.app/templates/rebranding/img/deriv-white-2023.png" height="21" title="Deriv.com"/>
+                                                        </a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -351,7 +382,7 @@
                                                 </td>
                                             </tr>
                                     </table>
-                                        <![endif]-->
+                                    <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
                                         <td id="logo-img-td">
@@ -366,6 +397,7 @@
                                         </td>
                                     </tr>
                                 </table>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
@@ -388,26 +420,26 @@
                             <td align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
                                 <table class="email-data-tb">
                                     <tr>
-                                        <td class="data-property-td">
+                                        <td class="data-property-td dark-subtext">
                                             Order ID:
                                         </td>
-                                        <td class="data-value-td">
+                                        <td class="data-value-td dark-subtext">
                                             321
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="data-property-td">
+                                        <td class="data-property-td dark-subtext">
                                             Amount:
                                         </td>
-                                        <td class="data-value-td">
+                                        <td class="data-value-td dark-subtext">
                                             10
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="data-property-td" style="padding-bottom: 20px;">
+                                        <td class="data-property-td dark-subtext" style="padding-bottom: 20px;">
                                             Buyer's name:
                                         </td>
-                                        <td class="data-value-td" style="padding-bottom: 20px;">
+                                        <td class="data-value-td dark-subtext" style="padding-bottom: 20px;">
                                             bobby_buyer
                                         </td>
                                     </tr>
@@ -434,7 +466,7 @@
                         </tr>
                         <tr>
                             <td class="link-td" align="center" style="padding: 0px 30px 40px 30px;">
-                                <div class="link-div">http://www.verify.com?code=1234</div>
+                                <div class="link-div"><a href="#">http://www.verify.com?code=1234</a></div>
                             </td>
                         </tr>
                     </table>
@@ -480,7 +512,12 @@
                         <tr>
                             <td id="f-logo" align="center" class="dark-black">
                                 <a href="https://www.deriv.com">
-                                    <img src="https://static-marlon.vercel.app/templates/rebranding/img/deriv-gray.png" alt="Deriv.com" title="Deriv.com">                                   
+                                    <!--[if (gte mso 9)|(IE)]>
+                                        <img src="https://static-marlon.vercel.app/templates/rebranding/img/deriv-gray.png" alt="Deriv.com" height="16" title="Deriv.com">
+                                    <![endif]-->
+                                    <!--[if !gte mso 9]><!-- -->
+                                        <img src="https://static-marlon.vercel.app/templates/rebranding/img/deriv-gray.png" alt="Deriv.com" title="Deriv.com">
+                                    <!--[endif]-->
                                 </a>
                             </td>
                         </tr>
