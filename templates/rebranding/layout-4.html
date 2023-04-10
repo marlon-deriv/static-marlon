@@ -167,12 +167,12 @@
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
                     #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
-                    #logo-img-td{ width: 50%; vertical-align: top; }
-                    #logo-img-td img{ height: 25px; padding: 24px 0 0 25px; }
+                    #image-title-td{ width: 55%; height: 180px; vertical-align: top;}
+                    #image-title-td img{ width: 100%; max-width: 360px; height: 180px; object-fit: none; object-position: 0 100%;}
+                    #logo-img-td{ width: 45%; vertical-align: top; }
+                    #logo-img-td img{ height: 20px; padding: 15px 0 0 15px; }
                     #title-text-td{ height: 100%; vertical-align: top; }
-                    #title-text-td h1{ padding: 10px 10px 10px 25px; margin-top: 15px; font-size: 25px; font-weight: 700; }
-                    #image-title-td{ width: 50%; vertical-align: top;}
-                    #image-title-td img{ width: 100%; max-width: 300px; object-fit: none; object-position: 0 100%;}
+                    #title-text-td h1{ padding: 10px 15px; margin-top: 15px; font-size: 25px; font-weight: 700; text-align: center;}
                     .greeting-td p, .paragraph-td p, .subtitle-td p{
                         margin: 0;
                         font-size: 13px;
@@ -357,6 +357,16 @@
                                 <![endif]-->
                                 <table id="title-img-tb">
                                     <tr>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                            <td width="300">
+                                                <img src="https://static-marlon.vercel.app/templates/rebranding/img/header-layout-4.png" width="360" height="180"/>
+                                            </td>
+                                        <![endif]-->
+                                        <!--[if !gte mso 9]><!-- -->
+                                        <td id="image-title-td" align="center">
+                                            <img src="https://static-marlon.vercel.app/templates/rebranding/img/header-layout-4.png" style="width: 360px; height: 180px;" alt=""/>
+                                        </td>
+                                        <!--<![endif]-->
                                         <td align="left">
                                             <!--[if (gte mso 9)|(IE)]>
                                                 <table width="300" height="200" margin="0">
@@ -379,7 +389,7 @@
                                                 <tr>
                                                     <td id="logo-img-td">
                                                         <a href="https://www.deriv.com">
-                                                            <img src="https://static.deriv.com/logos/deriv-red-2023.png" style="height: 25px;" title="Deriv.com">
+                                                            <img src="https://static.deriv.com/logos/deriv-red-2023.png" style="height: 20px;" title="Deriv.com">
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -391,16 +401,6 @@
                                             </table>
                                             <!--<![endif]-->
                                         </td>
-                                        <!--[if (gte mso 9)|(IE)]>
-                                            <td width="300">
-                                                <img src="https://static-marlon.vercel.app/templates/rebranding/img/red-rectangle.png" width="290" height="180"/>
-                                            </td>
-                                        <![endif]-->
-                                        <!--[if !gte mso 9]><!-- -->
-                                        <td id="image-title-td" align="center">
-                                            <img src="https://static-marlon.vercel.app/templates/rebranding/img/red-rectangle.png" alt=""/>
-                                        </td>
-                                        <!--<![endif]-->
                                     </tr>
                                 </table>
                                 <!--[if (gte mso 9)|(IE)]></td></tr></table>
@@ -408,7 +408,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                            <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
                                 <p class="dark-subtext">Dear [insert name],</p>
                             </td>
                         </tr>
