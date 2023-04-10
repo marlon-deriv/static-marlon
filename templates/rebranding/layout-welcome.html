@@ -92,6 +92,9 @@
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                h1{ font-size: 30px; font-weight: 700; line-height: 40px; text-align: center; }
+                h2{ font-size: 24px; font-weight: 700; line-height: 30px; text-align: center; }
+                h3{ font-size: 18px; font-weight: 550; line-height: 20px; text-align: center; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -154,8 +157,8 @@
                     }
                     .button:hover{ background-color: #d43e47; }
                 /* End of Deriv styles */
-                /* Classes */
-                #ext-table{ margin: auto; }
+                /* Layout structure classes */
+                    #ext-table{ margin: auto; }
                     #ext-td{ background-color: #eee; }
                     #int-table{
                         width: 100%;
@@ -166,25 +169,52 @@
                         border-spacing: 0px;
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
-                    #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
-                    #logo-img-td{ width: 50%; vertical-align: top; }
-                    #logo-img-td img{ height: 25px; padding: 24px 0 0 25px; }
-                    #title-text-td{ height: 100%; vertical-align: top; }
-                    #title-text-td h1{ padding: 10px 10px 10px 25px; margin-top: 15px; font-size: 25px; font-weight: 700; }
-                    #image-title-td{ width: 50%; vertical-align: top;}
-                    #image-title-td img{ width: 100%; max-width: 300px; object-fit: none; object-position: 0 100%;}
-                    .greeting-td p, .paragraph-td p, .subtitle-td p{
+                    #header-td img{ width: 100%; max-width: 600px;}
+                    #title-img-tb{ width: 100%; height: 100%; margin: 0; }
+                    #logo-img-td{
+                        background-color: #fff;
+                        width: 100%;
+                        height: 50px;
+                        vertical-align: top;
+                    }
+                    #logo-img-td img{ height: 21px; max-height: 21px; padding: 15px 0 10px 25px; }
+                    #title-text-td h1{ padding: 0px 60px; font-size: 30px; font-weight: 700; text-align: center; line-height: 40px; }
+                    #title-text-td h3{ padding: 0px 60px;}
+                    .columns-2-table{ width: 600px; max-width: 600px; }
+                    .col-60{ width: 60%; max-width: 360px;}
+                    .col-40{ width: 40%; max-width: 240px;}
+                    .col-40 img{ width: 200px; margin: auto; padding: 10px 20px; }
+                    .col-60 p{ padding: 10px 20px; font-size: 14px;}
+                    .products-table{ width: 100%; max-width: 600px; }
+                    .td-odd .product-desc td { padding: 10px 20px 10px 30px; }
+                    .td-even .product-desc td { padding: 10px 30px 10px 20px; }
+                    .product-img{ width: 50%; max-width: 300px; }
+                    .product-img img{ width: 90%; max-width: 280px; margin: auto; padding: 20px 10px; }
+                    .td-odd{ background-color: rgba(65, 70, 82, 0.03); }
+                    .td-even{ background-color: rgba(65, 70, 82, 0.06); }
+                    .step-img{ padding: 5px 0px 0px 30px; height: 20px; }
+                    .step-number{ width: 55px; max-width: 55px; vertical-align: top; padding: 5px 30px 0px 0; margin-top: 0px;}
+                    .step-number img{ width: 25px; border: 0px; display: block; margin-left: 25px; }
+                    .step-text{ padding: 0px 5px; vertical-align: top; }
+                    .step-text p{ margin-right: 5px; padding: 5px 0px 0px 0px; font-size: 13px; font-weight: 350; text-align: left; }
+
+                    /*  */
+                    .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
+                    .data-property-td{ width: 35%; }
+                    .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
+                    .data-value-td{ font-weight: 500; }
+                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 10px 0;}
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
-                        font-size: 13px;
+                        font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
-                    .greeting-td p, .paragraph-td p{ color: #333; }
-                    .subtitle-td p{ color: #999; font-style: italic; }
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
-                        font-size: 11px;
+                        font-size: 12px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
@@ -194,30 +224,30 @@
                         outline: none;
                         border-radius: 10px;
                     }
-                    /* End of layout structure classes */
-                    /* List styles */
-                        ul { list-style-type: disc; }
-                        ul, ol{ padding-left: 25px; }
-                        li{
-                            padding: 2px 0 0 5px;
-                            font-family: inherit;
-                            font-size: 16px;
-                            font-weight: 400;
-                            text-align: left;
-                            line-height: 24px;
-                        }
-                        .list-ul{ padding: 0px 30px 0px 40px; }
-                    /* End of list styles */
-                    /* Table inside table */
-                        .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
-                        .columns-2-a{ width: 71px; }
-                        .columns-2-a img{ margin: auto !important; border: 0; display: block; }
-                        .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
-                        .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
-                        .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
-                        .no-padding-td p{ margin: 7px; }
-                    /* End of table inside table */
-                    /* Footer styles */
+                /* End of layout structure classes */
+                /* List styles */
+                    ul { list-style-type: disc; }
+                    ul, ol{ padding-left: 25px; }
+                    li{
+                        padding: 2px 0 0 5px;
+                        font-family: inherit;
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: left;
+                        line-height: 24px;
+                    }
+                    .list-ul{ padding: 0px 30px 0px 40px; }
+                /* End of list styles */
+                /* Table inside table styles */
+                    .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
+                    .columns-2-a{ width: 71px; }
+                    .columns-2-a img{ margin: auto !important; border: 0; display: block; }
+                    .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
+                    .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
+                    .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
+                    .no-padding-td p{ margin: 7px; }
+                /* End of table inside table styles */
+                /* Footer styles */
                     #footer-table{
                         width: 100%;
                         max-width: 600px;
@@ -259,21 +289,21 @@
                     .trustpilot-widget a{ text-decoration: none; }
                     .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
                 /* End of footer styles */
-                /* End of classes */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
                         #header-td{ max-width: 600px; }
-                        #header-td, #title-img-tb, #title-img-tb td, #logo-title-tb, #logo-img-td{ margin: 0; padding: 0;}
-                        #logo-img-td img{ height: 20px; padding: 20px 0 0 20px; }
+                        #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
+                        #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                         #title-text-td h1{ padding: 10px 10px 10px 20px; margin-top: 10px; font-size: 20px; font-weight: 600; }
-                        #image-title-td{ width: 45%; height: 160px; vertical-align: top;}
-                        #image-title-td img{ height: 180px; }
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 12px; }
+                        #slash-td{ margin: 0; padding: 0; }
+                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 14px; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
+                        .email-data-tb{ width: 94%; }
+                        .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -281,6 +311,7 @@
                         .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
                         .columns-2-b-title{ font-size: 14px; font-weight: 550; }
                         .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
+                        #footer-social-td img{ height: 20px; }
                         .mobile-hide{
                             /* Hide desktop content on mobile */
                             display: none !important;
@@ -297,8 +328,9 @@
                     @media screen and (max-width: 460px){
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
                         #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
-                        #image-title-td{ width: 40%; height: 160px; vertical-align: top;}
-                        #image-title-td img{ height: 180px; }
+                        .email-data-tb{ width: 98%; }
+                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
+                        .link-div{ font-size: 12px; }
                     }
                     @media screen and (max-width: 380px){ 
                         #title-text-td h1{ font-size: 16px; }
@@ -322,19 +354,22 @@
                         h1, h2, p, span, b, strong { color: #fff !important; }
                         .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
+                        .email-data-tb, .link-div{ background-color: #2e2e2e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
+                    /* Custom dark mode font colors */
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #fff !important; }
+                    [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
-                    /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #fff !important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
+                        .email-data-tb, .link-div{ background-color: #2e2e2e !important;}
                     }
                 /* End of dark mode styles */
             </style>
@@ -352,91 +387,186 @@
                         <!-- START HERO -->
                         <tr>
                             <td id="header-td">
-                                <!--[if (gte mso 9)|(IE)]>
-                                    <table id="ol-title-img-tb" align="center"><tr><td align="center">
-                                <![endif]-->
-                                <table id="title-img-tb">
+                                <img src="./img/welcome/welcome-row.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="title-text-td">
+                                <h3 class="dark-subtext">Welcome to Deriv</h3>
+                                <h1 class="dark-subtext">Ready. Set. Trade.</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="columns-60-40">
+                                <table class="columns-2-table">
                                     <tr>
-                                        <td align="left">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                <table width="300" height="200" margin="0">
-                                                    <tr>
-                                                        <td id="logo-img-td" style="padding-left: 25px;">
-                                                            <a href="https://www.deriv.com">
-                                                            <img src="https://static.deriv.com/logos/deriv-red-2023.png" height="25px" title="Deriv.com">
-                                                        </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="title-text-td" style="padding-left: 25px; padding-top: 25px;">
-                                                            <h1 class="dark-subtext mb-title">MT5 unavailable on Apple App Store</h1>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            <![endif]-->
-                                            <!--[if !gte mso 9]><!-- -->
-                                            <table id="logo-title-tb">
+                                        <td class="col-60">
+                                            <p class="dark-subtext">Your risk-free demo account is loaded with $10K in virtual funds so you can explore any of Deriv platforms and sharpen your trading skills.</p>
+                                        </td>
+                                        <td class="col-40">
+                                            <img src="./img/welcome/10k.png"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" style="padding: 10px 30px 30px;">
+                                <h3 class="dark-subtext">Good things come in threes</h2>
+                                <p class="dark-subtext">Three great platforms that give you the tools to trade simply, felixibly, and reliably. Available on desktop, mobile, and tablet.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-odd">
+                                <table class="products-table">
+                                    <tr>
+                                        <td class="product-desc">
+                                            <table>
                                                 <tr>
-                                                    <td id="logo-img-td">
-                                                        <a href="https://www.deriv.com">
-                                                            <img src="https://static.deriv.com/logos/deriv-red-2023.png" style="height: 25px;" title="Deriv.com">
-                                                        </a>
+                                                    <td>
+                                                        <img src="./img/welcome/deriv-trader.png" alt=""/>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td id="title-text-td">
-                                                        <h1 class="dark-subtext">MT5 unavailable on Apple App Store</h1>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Trade in the moment with powerful, inline charts and indicators of your choice</li>
+                                                            <li>Trade options on financial or synthetic markets</li>
+                                                            <li>New multipliers offer you the simplicity of options trading with the upside of margin trading</li>
+                                                        </ul>
+
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <!--<![endif]-->
                                         </td>
-                                        <!--[if (gte mso 9)|(IE)]>
-                                            <td width="300">
-                                                <img src="https://static-marlon.vercel.app/templates/rebranding/img/red-rectangle.png" width="290" height="180"/>
-                                            </td>
-                                        <![endif]-->
-                                        <!--[if !gte mso 9]><!-- -->
-                                        <td id="image-title-td" align="center">
-                                            <img src="https://static-marlon.vercel.app/templates/rebranding/img/red-rectangle.png" alt=""/>
+                                        <td class="product-img">
+                                            <img src="./img/welcome/deriv-trader-screen.png" alt="">
                                         </td>
-                                        <!--<![endif]-->
                                     </tr>
                                 </table>
-                                <!--[if (gte mso 9)|(IE)]></td></tr></table>
-                                <![endif]-->
                             </td>
                         </tr>
                         <tr>
-                            <td class="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Dear [insert name],</p>
+                            <td class="td-even">
+                                <table class="products-table">
+                                    <tr>
+                                        <td class="product-img">
+                                            <img src="./img/welcome/dbot-screen.png" alt="">
+                                        </td>
+                                        <td class="product-desc">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./img/welcome/deriv-bot.png" alt=""/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Automate your trading ideas without writing code</li>
+                                                            <li>Build a bot visually by moving and connecting blocks - a bit like playing with Lego</li>
+                                                            <li>Don't start from scratch, Load, customise, and test pre-builtt strategies like Martingale, D'Alembert, and Oscar's Grind</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">It was a pleasure meeting you at iFX EXPO Dubai 2022. We hope the business opportunities we explored were valuable to you.</p>
+                            <td class="td-odd">
+                                <table class="products-table">
+                                    <tr>
+                                        <td class="product-desc">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./img/welcome/metatrader.png" alt=""/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>All-in-one, FX, and CFD trading platform for professionals worldwide</li>
+                                                            <li>Choose a Financial or Derived account to trade the way you want</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="product-img">
+                                            <img src="./img/welcome/metatrader-screen.png" alt="">
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Check our website to recap the programmes and opportunities we discussed at the expo.</p>
+                            <td class="paragraph-td" style="padding: 10px 30px 30px;">
+                                <h3 class="dark-subtext">Not sure where to start?</h2>
+                                <p class="dark-subtext">Start with DTrader and your demo account. Make your first trade in 3 easy steps.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Meanwhile, remember to follow our social media handles to find out if you won the 13-inch MacBook Air.</p>
+                            <td class="columns-60-40" style="padding-bottom: 40px;">
+                                <table class="columns-2-table">
+                                    <tr>
+                                        <td class="col-40">
+                                            <table>
+                                                <tr>
+                                                    <td class="step-number">
+                                                        <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/1.png" alt="1">
+                                                        <div style="display: none;" align="center">
+                                                            <img src="https://static.deriv.com/email/images/icons/1-gray.png" alt="1"/>
+                                                        </div>
+                                                    </td>
+                                                    <td class="step-text dark-black">
+                                                        <p class="dark-subtext">Select an asset.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="step-number">
+                                                        <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/2.png" alt="2">
+                                                        <div style="display: none;" align="center">
+                                                            <img src="https://static.deriv.com/email/images/icons/2-gray.png" alt="2"/>
+                                                        </div>
+                                                    </td>
+                                                    <td class="step-text dark-black">
+                                                        <p class="dark-subtext">Follow the chart.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="step-number">
+                                                        <img class="light-img" src="https://static.deriv.com/email/images/marketing/real-acc/3.png" alt="3">
+                                                        <div style="display: none;" align="center">
+                                                            <img src="https://static.deriv.com/email/images/icons/3-gray.png" alt="3"/>
+                                                        </div>
+                                                    </td>
+                                                    <td class="step-text dark-black">
+                                                        <p class="dark-subtext">Purchase a contract.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="col-60">
+                                            <img src="./img/welcome/monitor-chart.png" alt="">
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="dark-black" style="padding: 10px 30px 30px;">
+                            <td align="center" class="dark-black" style="padding-bottom: 50px;">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="40%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="10%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Learn more about Deriv</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Trade now</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://deriv.com/" target="_blank">Learn more about Deriv</a>
+                                <a class="button" href="https://deriv.com/" target="_blank">Trade now</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
@@ -444,7 +574,7 @@
                     <!--[if (gte mso 9)|(IE)]></td></tr></table>
                     <![endif]-->
                 </td>
-            </tr>   
+            </tr>
             <!-- End Email body-->
             <!-- FOOTER -->
             <tr>
@@ -458,19 +588,19 @@
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
                                 <a href="https://twitter.com/derivdotcom" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/twitter-gray.png" style="height: 20px;" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
+                                    <img src="https://static.deriv.com/email/images/icons/twitter-gray.png" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://www.facebook.com/derivdotcom" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" style="height: 20px;" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
+                                    <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://www.instagram.com/deriv_official/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" style="height: 20px;" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
+                                    <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://t.me/derivdotcomofficial" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" style="height: 20px;" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
+                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/youtube-gray.png" style="height: 20px;" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/>
+                                    <img src="https://static.deriv.com/email/images/icons/youtube-gray.png" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/>
                                 </a>
                             </td>
                         </tr>
@@ -484,10 +614,10 @@
                             <td id="f-logo" align="center" class="dark-black">
                                 <a href="https://www.deriv.com">
                                     <!--[if (gte mso 9)|(IE)]>
-                                        <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" height="20" title="Deriv.com">
+                                        <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" height="16" title="Deriv.com">
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
-                                        <img src="https://static.deriv.com/logos/deriv-gray-2023.png" style="height: 20px;" alt="Deriv.com" title="Deriv.com">
+                                        <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" title="Deriv.com">
                                     <!--[endif]-->
                                 </a>
                             </td>

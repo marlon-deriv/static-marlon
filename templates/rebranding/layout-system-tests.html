@@ -50,7 +50,7 @@
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
-                        #ol-logo-img-td{ background-color: #ff444f; width: 300px; height: 55px; }
+                        #ol-logo-img-td{ background-image: url("https://static.deriv.com/email/images/general/bg.png"); background-repeat: repeat; width: 300px; height: 55px; }
                         .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
                         .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 16px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
@@ -168,8 +168,9 @@
                     #header-td{ width: 600px; margin: 0; padding: 0; }
                     #title-img-tb{ width: 100%; height: 100%; margin: 0; }
                     #logo-img-td{ 
-                        background-image: url("https://static.deriv.com/email/images/general/bg.png");
-                        background-repeat: repeat;
+                        /* background-image: url("https://static.deriv.com/email/images/general/bg.png");
+                        background-repeat: repeat; */
+                        background-image: linear-gradient(#ff444f,#ff444f);
                         width: 50%;
                         height: 50px;
                         vertical-align: top;
@@ -341,7 +342,6 @@
                     [data-ogsc] li { color: #c2c2c2 !important; }
                     /* Custom dark mode font colors */
                     [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b{ color: #fff !important; }
-                    [data-ogsc] #logo-img-td{ background-color: #ff444f !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
@@ -490,17 +490,6 @@
                         <!-- Insert Trustpilot widget here -->
                         <!-- SOCIAL -->
                         <tr>
-                            <td id="footer-social-td" align="center" class="dark-black">
-                                <a href="https://twitter.com/deriv_eu/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/twitter.png" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
-                                </a>&nbsp;&nbsp;
-                                <a href="https://www.facebook.com/DerivEU/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/facebook.png" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
-                                </a>&nbsp;&nbsp;
-                                <a href="https://instagram.com/deriv_eu/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/instagram.png" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
-                                </a>
-                            </td>
                             <td id="footer-social-td" align="center" class="dark-black">
                                 <a href="https://twitter.com/deriv_eu/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/twitter-gray.png" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
