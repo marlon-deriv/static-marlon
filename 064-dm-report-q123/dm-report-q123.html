@@ -116,16 +116,17 @@
                     background-position-x: center;
                     background-position-y: top;
                 }
-                #charts-3-left{ background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-row.png"); }
+                #charts-3-left{ background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-row.png"); background-position:  50% 20% !important; }
                 #charts-3-center{ 
                     background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-eu.png");
                     border-left: 2px solid #e9e9e9;
                     border-right: 2px solid #e9e9e9;
+                    background-position:  50% 20% !important;
                 }
                 #charts-3-right{
                     background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-latam.png");
-                    /* background-size: 60%; */
-                    /* background-position-x: 60% !important; */
+                    /* background-size: 60% auto; */
+                    background-position:  55% 20% !important;
                 }
 
                 .side-borders{ height: 100%; width: 100%; border-left: 2px solid #e9e9e9; border-right: 2px solid #e9e9e9; }
@@ -146,9 +147,9 @@
                     float: left;
                     text-align: center;
                 }
-                .tb-charts-labels{ width: 100%; height: 100%; font-size: 0.8rem; font-weight: 500; }
+                .tb-charts-labels{ width: 100%; height: 100%; font-size: 0.8rem; font-weight: 500; text-shadow: 1px 1px #ddd; }
                 .td-left{ text-align: left; padding-left: 20px; padding-top: 20px;}
-                .td-right{ text-align: left; padding-left: 150px;}
+                .td-right{ text-align: left; padding-left: 100px; }
 
                 #followers-2-right{ border-left: 2px solid #e9e9e9; }
                 #followers-2-left img, #followers-2-right img { height: 350px; margin: auto; margin-top: 20px;}
@@ -282,12 +283,12 @@
                 <div id="charts-3-right">
                     <table class="tb-charts-labels">
                         <tr>
-                            <td class="td-left" style="width: 33%;">Deriv Trade<br/>Types<br/>5 posts</td>
+                            <td class="td-left" style="width: 33%; text-align: center;">Deriv Trade<br/>Types<br/>5 posts</td>
                             <td style="width: 33%;"></td>
                             <td style="width: 33%;"></td>
                         </tr>
                         <tr>
-                            <td style="vertical-align: bottom;">DBot 3<br/>posts</td>
+                            <td class="td-left" style="vertical-align: bottom; text-align: center;">DBot 3<br/>posts</td>
                             <td></td>
                             <td>DMT5<br/>9 posts</td>
                         </tr>
