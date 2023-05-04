@@ -109,7 +109,7 @@
                     font-weight: inherit !important;
                     line-height: inherit !important;
                 }
-                a, a:visited{ color: #ff5758 !important; }
+                a, a:visited{ color: #ff5758; }
 
                 #greeting-p, .paragraph-p{
                     margin: 0;
@@ -137,18 +137,22 @@
 
                 /* Followers 1 */
                 #followers-1{ margin-top: 20px; }
+                #followers-1 a{ color: #4b4f6b; font-size: 1.1rem; font-weight: 500; }
                 #followers-chart{ width: 80%; margin: auto; }
                 #followers-chart img{ width: 100%; margin-top: 10px; }
+                .pt-es{ width: 100%; }
+                .deriv-es, .deriv-pt{ width: 50%; float: left; text-align: center; margin-top: 20px; font-size: 1.5rem;}
+                .deriv-es{ color: #ff5758;}
+                .deriv-pt{ color: #4b4f6b;}
+                .posts-3{ width: 25%; float: left; text-align: left; }
 
-
+                /* Creatives 4 */
+                #creatives-4{ margin-top: 20px; }
                 .img-thumbs{ width: 24%; float: left;}
                 .img-thumbs img { width: 85%; padding-top: 20px;}
-                .img-thumbs-center{ width: 3%; height: 150px; margin-top: 40px; float: left; border-left: #ff444f 3px solid;}
+                .img-thumbs-center{ width: 3%; height: 150px; margin-top: 40px; float: left; border-left: #ff444f 3px solid; }
                 
-                #pt-es{ width: 100%; }
-                #deriv-es, #deriv-pt{ width: 50%; float: left; text-align: center; margin-top: 20px; font-size: 1.5rem;}
-                #deriv-es{ color: #ff5758;}
-                #deriv-pt{ color: #4b4f6b;}
+                
 
                 /* PPC 1 */
                 #campaigns-tb{ width: 95%; margin: 20px auto 30px; }
@@ -181,120 +185,6 @@
 
 /* END OF REVIEWED */
 
-                #charts-3-left, #charts-3-center, #charts-3-right, #charts-3-left-note, #charts-3-center-note, #charts-3-right-note{
-                    width: 33%;
-                    float: left;
-                }
-                /* #charts-3 img{ width: 60%; margin: auto; } */
-                #charts-3-imgs, #charts-3-labels{ width: 100%; margin: auto; margin-top: 10px; margin-bottom: 20px;}
-                #charts-3-left, #charts-3-center, #charts-3-right{
-                    margin-top: 50px;
-                    text-align: center;
-                    float: left;
-                }
-                #charts-3-left, #charts-3-center, #charts-3-right{
-                    height: 250px;
-                    background-repeat: no-repeat, no-repeat;
-                    background-size: contain;
-                    background-position-x: center;
-                    background-position-y: top;
-                }
-                #charts-3-left{
-                    background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-row.png");
-                    background-size: 55% auto;
-                    background-position:  55% 40% !important;
-                }
-                #charts-3-center{ 
-                    background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-eu.png");
-                    background-size: 55% auto;
-                    background-position:  55% 40% !important;
-                    border-left: 2px solid #e9e9e9;
-                    border-right: 2px solid #e9e9e9;
-                }
-                #charts-3-right{
-                    background-image: url("https://static.deriv.com/email/images/reports/q1-2023/pie-latam.png");
-                    background-size: 60% auto;
-                    background-position:  55% 35% !important;
-                }
-
-                .side-borders{ height: 100%; width: 100%; border-left: 2px solid #e9e9e9; border-right: 2px solid #e9e9e9; }
-                .bottom-border{ width: 100%; float: left; padding-top: 20px; }
-                .right-border{ border-right: 2px solid #e9e9e9;}
-                .gray-line{ width: 85%; height: 2px; background-color:  #e9e9e9; margin: auto;}
-                #charts-3-left-note, #charts-3-center-note, #charts-3-right-note{
-                    margin-top: 10px;
-                    text-align: left;
-                }
-                #charts-3-left-note p, #charts-3-center-note p, #charts-3-right-note p{
-                    font-size: 0.8rem;
-                    padding-left: 20px;
-                }
-                #followers-2-left, #followers-2-right{
-                    height: 380px;
-                    width: 49%;
-                    margin-top: 50px;
-                    float: left;
-                    text-align: center;
-                    position: relative;
-                }
-                .tb-charts-labels{ width: 100%; height: 100%; font-size: 0.8rem; font-weight: 500; text-shadow: 1px 1px #ddd; }
-                .td-left{ text-align: left; padding-left: 20px; padding-top: 20px;}
-                .td-right{ text-align: right; padding-right: 8px; }
-
-                #followers-2-right{ border-left: 2px solid #e9e9e9; }
-                #followers-2-left img, #followers-2-right img { max-width: 80%; max-height: 300px; margin: 30px auto; vertical-align: bottom; align-items: flex-end; position: absolute; bottom: 0; left: 60px;}
-                
-                .grid{ width: 90%; margin: auto;}
-                
-
-                #communications-5, #ongoing-2, #initiatives-2{ width: 100%; margin: auto; margin-top: 30px; padding-bottom: 20px; float: left; }
-                #communications-5-1, #communications-5-2, #communications-5-3, #communications-5-4, #communications-5-5{
-                    width: 20%;
-                    float: left;
-                    text-align: center;
-                }
-                #mkt-comms .title-red, #ongoing .title-red, #challenges .title-red{ margin-top: 40px; }
-                .comms-data{ padding: 20px 15px 0; font-size: 1.8rem; font-weight: 500; }
-                .comms-label{ padding: 20px; font-size: 1.2rem; }
-
-                .ongoing-proj{ width: 90%; height: 100px; margin: auto;}
-                .ongoing-left, .ongoing-right{ margin-top: 30px; float: left; text-align: center; }
-                .ongoing-left{ width: 30%; }
-                .ongoing-right{ width: 70%; }
-                .ongoing-left-p, .ongoing-right-p{
-                    height: 50px;
-                    background-color: #ededed;
-                    padding: 20px 10px;
-                    border: 1px solid #d7d7d7;
-                    border-radius: 18px;
-                }
-                .ongoing-left-p{ width: 80%; font-size: 1.2rem; font-weight: 700; float: left; }
-                .ongoing-right-p{ width: 95%; font-size: 1rem; float: right; }
-
-                #initiatives-area{ width: 90%; margin: auto;}
-                #initiatives-left{ width: 38%; float: left; }
-                #initiatives-left img{ width: 100%; margin: auto; margin-top: 60px; }
-                #initiatives-right{ width: 60%; float: left; }
-                .initiatives-1, .initiatives-2, .initiatives-3, .initiatives-4, .initiatives-5{ 
-                    background-color: #ededed;
-                    padding: 17px 10px;
-                    border: 1px solid #d7d7d7;
-                    border-radius: 18px;
-                 }
-                 .initiatives-item{ width: 90%; float: left; margin-top: 20px; }
-                 .initiatives-1 p, .initiatives-2 p, .initiatives-3 p, .initiatives-4 p, .initiatives-5 p{
-                    width: 95%; font-size: 1.1rem;
-                }
-                .initiatives-1{ margin-left: -100px; margin-top: 20px; }
-                .initiatives-4{ margin-left: -60px; }
-
-                #challenges-3{ width: 100%; margin-top: 40px; float: left; }
-                .challenges-3-item{ width: 33%; float: left; }
-                .challenge-3-item-area{ width: 80%; min-height: 350px; margin-left: 40px; background-color: #ededed; border: 1px solid #d7d7d7; border-radius: 50px; }
-                .challenge-title{ padding: 15px; font-size: 1.2rem; font-weight: 600; text-align: center; }
-                .challenge-description{ padding: 10px; font-size: 1rem; font-weight: 400; text-align: center; }
-
-                #notes{ width: 100%; height: 70px; float: left;}
                 #footer-notes{ width: 90%; margin: auto; padding-top: 30px; margin-bottom: 20px; font-size: 0.8rem; float: left;}
         </style>
     </head>
@@ -303,33 +193,45 @@
         <h2>Q3/22 - Q1/23</h2>
         <section id="followers-1">
             <div class="title-red"><p>Social media followers</p></div>
+            <div style="width: 60%; margin: auto;">
+                <div class="pt-es">
+                    <div class="deriv-es">&#9679; deriv_espanol</div>
+                    <div class="deriv-pt">&#9679; deriv_portugues</div>
+                </div>
+            </div>
             <div id="followers-chart">
                 <img src="https://static-marlon.vercel.app/065-dm-latam-report/followers-chart.png"/>
+            </div>
+            <div style="width: 90%; margin: auto;">
+                <div class="posts-3"><p>&nbsp;</p></div>
+                <div class="posts-3"><p><a href="https://docs.google.com/spreadsheets/d/1zr2igTspKlyi6Odsa9jH33i4S8gVL8hzvjrY8slWo6M/edit#gid=1250739291" target="_blank">30 posts</a></p></div>
+                <div class="posts-3"><p><a href="https://docs.google.com/spreadsheets/d/1zr2igTspKlyi6Odsa9jH33i4S8gVL8hzvjrY8slWo6M/edit#gid=1836739611" target="_blank">239 posts</a></p></div>
+                <div class="posts-3"><p><a href="https://docs.google.com/spreadsheets/d/1zr2igTspKlyi6Odsa9jH33i4S8gVL8hzvjrY8slWo6M/edit#gid=31033365" target="_blank">289 posts</a></p></div>
             </div>
         </section>
 
         <section id="creatives-4">
             <div class="title-red"><p>Top creatives</p></div>
-            <div id="pt-es">
-                <div id="deriv-es">deriv_espanol</div>
-                <div id="deriv-pt">deriv_portugues</div>
+            <div class="pt-es">
+                <div class="deriv-es">deriv_espanol</div>
+                <div class="deriv-pt">deriv_portugues</div>
             </div>
             <div class="grid-5">
                 <div class="img-thumbs">
-                    <img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/>
+                    <a href="https://www.instagram.com/p/CopjNT6IlFp/" target="_blank"><img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/></a>
                 </div>
                 <div class="img-thumbs">
-                    <img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/>
+                    <a href="https://www.instagram.com/p/Cki20-DO2iD/" target="_blank"><img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/></a>
                 </div>
                 <div class="img-thumbs-center">
                     <div id="grid-border"></div>
                 </div>
                 </div>
                 <div class="img-thumbs">
-                    <img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/>
+                    <a href="https://www.instagram.com/p/CpXyadPouap/" target="_blank"><img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/></a>
                 </div>
                 <div class="img-thumbs">
-                    <img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/>
+                    <a href="https://www.instagram.com/p/CltwOmjAEPV/" target="_blank"><img src="https://static.deriv.com/email/images/reports/q1-2023/creatives-3.png"/></a>
                 </div>
             </div>
         </section>
