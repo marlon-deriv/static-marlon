@@ -33,6 +33,13 @@ Olá {{customer.name | titlecase }},
 Olá Parceiro,
 {% endif %}
 
+-- TH --
+{% if customer.name != blank %}
+สวัสดี คุณ {{customer.name | titlecase }},
+{% else %}
+สวัสดี คุณ partner,
+{% endif %}
+
 -- VN --
 {% if customer.name != blank %}
 Xin chào {{customer.name | titlecase }},
