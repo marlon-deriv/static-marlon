@@ -1,0 +1,49 @@
+                        <tr>
+                            <td id="title-text-td">
+                                <h1 class="dark-subtext">Your MT5 Derived real account is ready.</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="greeting-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">{% if {{event.client_first_name}} != blank % %} Hello  {{event.client_first_name | capitalize_all}}!
+                                    {% else %} Hello! {% endif %}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Your MT5 Derived real account is ready.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Your login ID for the Deriv MT5 platform is <strong>{{event.mt5_integer_id}}</strong>. Your server is {{event.mt5_server_environment}}, located in {{event.mt5_server_region}}.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">To get trading, head to your Deriv MT5 dashboard and transfer funds into your new account.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/mt5/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Go to Deriv MT5 dashboard</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="https://app.deriv.com/mt5/" target="_blank">Go to Deriv MT5 dashboard</a>
+                                <!--<![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Need help? Please <a href="https://deriv.com/help-centre" target="_blank">let us know.</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
+                                <p class="dark-subtext">Thank you for choosing us!</p>
+                            </td>
+                        </tr>
