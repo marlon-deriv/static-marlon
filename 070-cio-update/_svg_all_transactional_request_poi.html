@@ -185,16 +185,15 @@
                     .data-property-td{ width: 35%; }
                     .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
                     .data-value-td{ font-weight: 500; }
-                    .data-value-td-1{ padding: 20px 30px 20px; line-height: 1.5; text-align: center;}
                     .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
                     .property-box{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .data-value-td-1{
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .data-value-td-1{ color: #414652; }
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -289,7 +288,6 @@
                         }
                         .email-data-tb{ width: 94%; }
                         .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
-                        .data-value-td-1{ padding: 15px 30px 15px; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -316,7 +314,6 @@
                         #title-text-td h1{ padding: 10px 10px 10px 15px !important; margin-top: 5px; font-size: 18px !important; font-weight: 600; line-height: 26px !important; }
                         .email-data-tb{ width: 98%; }
                         .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px !important; }
-                        .data-value-td-1{ padding: 10px; }
                         .link-div, .property-box{ font-size: 12px !important; padding: 10px 15px !important; }
                     }
                     @media screen and (max-width: 380px){ 
@@ -418,75 +415,35 @@
                         </tr>
                         <tr>
                             <td id="title-text-td">
-                                <h1 class="dark-subtext">One more step to complete your Deriv P2P exchange</h1>
+                                <h1 class="dark-subtext">Thank you for creating your Deriv account!</h1>
                             </td>
                         </tr>
                         <tr>
-                            <td class="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Dear [insert name],</p>
+                            <td class="paragraph-td" align="left" style="padding: 10px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">To enable trading, deposits, and withdrawals on your account, we'll need to authenticate your identity and address.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="property-box dark-subtext" style="padding: 10px 70px 10px;">
-                              We have closed your account and refunded any balance you might have had in your account.
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 0px 30px;" class="dark-black">
+                                <p class="dark-subtext">Please prepare</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" class="list-ul dark-black">
+                                <ol>
+                                    <li class="dark-subtext">Your valid passport, driving licence, or national ID card</li>
+                                    <li class="dark-subtext">Your bank statement or utility bill showing your name and address (not more than 6 months old)</li>
+                                </ol>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">We just wanted to double-check that you confirmed this P2P exchange.</p>
+                                <p class="dark-subtext">Once you have these documents ready, go to the <a href="{{ event.authentication_url }}" target="_blank">Verification page</a> under Settings to upload them.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
-                                <table class="email-data-tb">
-                                    <tr>
-                                        <td class="data-property-td dark-subtext">
-                                            Order ID:
-                                        </td>
-                                        <td class="data-value-td dark-subtext">
-                                            321
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="data-property-td dark-subtext">
-                                            Amount:
-                                        </td>
-                                        <td class="data-value-td dark-subtext">
-                                            10
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="data-property-td dark-subtext" style="padding-bottom: 20px;">
-                                            Buyer's name:
-                                        </td>
-                                        <td class="data-value-td dark-subtext" style="padding-bottom: 20px;">
-                                            bobby_buyer
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" class="dark-black">
-                                <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
-                                <w:anchorlock/>
-                                <center style="color:#fff;Como font-size:14px;font-weight:bold;">Yes, all good</center>
-                                </v:roundrect>
-                                <![endif]-->
-                                <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://deriv.com/" target="_blank">Yes, all good</a>
-                                <!--<![endif]-->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">If the button doesn't work, copy and paste the link below into a new browser window.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="center" style="padding: 0px 30px 40px 30px;">
-                                <div class="link-div"><a href="#">http://www.verify.com?code=1234</a></div>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
+                                <p class="dark-subtext">Need help? Talk to us via <a href="{{ event.live_chat_url }}" target="_blank">live chat</a>.</p>
                             </td>
                         </tr>
                     </table>

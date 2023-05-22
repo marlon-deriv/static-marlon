@@ -180,21 +180,20 @@
                     #slash-td{ margin: 0; padding: 0; }
                     #slash-td img{ width: 100%; margin: 0; padding: 0; }
                     #title-text-td{ vertical-align: top; }
-                    #title-text-td h1{ padding: 0px 40px; margin-top: -15px; font-size: 28px; font-weight: 700; text-align: center; line-height: 36px;}
+                    #title-text-td h1{ padding: 0px 40px; margin-top: -15px; font-size: 32px; font-weight: 700; text-align: center; line-height: 36px;}
                     .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
-                    .data-property-td{ width: 35%; }
                     .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
+                    .data-value-td-1{ padding: 20px 30px 20px; line-height: 1.5;}
                     .data-value-td{ font-weight: 500; }
-                    .data-value-td-1{ padding: 20px 30px 20px; line-height: 1.5; text-align: center;}
                     .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
-                    .property-box{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .data-value-td-1{
+                    .property-box{ width: 90%; background-color: rgba(65, 70, 82, 0.05); margin: auto; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .data-value-td-1{ color: #414652; }
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -274,13 +273,12 @@
                     .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
                 /* End of footer styles */
                 /* Mobile styles */
-                    @media screen and (max-width: 620px){
-                        #header-td{ max-width: 600px; }
+                    @media screen and (max-width: 580px){
+                        #header-td{ max-width: 580px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        #title-text-td h1{ padding: 10px 20px !important; margin-top: 10px; font-size: 20px !important; font-weight: 600; line-height: 28px !important; }
                         #slash-td{ margin: 0; padding: 0; }
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div, .property-box{ font-size: 14px !important; }
+                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div, .property-box p{ font-size: 14px !important; }
                         .link-div, .property-box{ padding: 10px 25px !important; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
@@ -289,7 +287,7 @@
                         }
                         .email-data-tb{ width: 94%; }
                         .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
-                        .data-value-td-1{ padding: 15px 30px 15px; }
+                        .data-value-td-1{ padding: 20px 30px 20px; line-height: 1.5; text-align: center;}
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
@@ -302,6 +300,14 @@
                             /* Hide desktop content on mobile */
                             display: none !important;
                         }
+                        .mb-title{
+                            /* Applied on email title */
+                            font-size: 20px !important;
+                            font-weight: 600;
+                            line-height: 25px !important;
+                            padding: 10px 20px !important;
+                            margin-top: 10px;
+                        }
                         .mb-no-padding{
                             /* Remove padding on external td from mobile */
                             padding: 0 !important;
@@ -313,14 +319,12 @@
                     }
                     @media screen and (max-width: 460px){
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 10px 10px 15px !important; margin-top: 5px; font-size: 18px !important; font-weight: 600; line-height: 26px !important; }
                         .email-data-tb{ width: 98%; }
                         .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px !important; }
                         .data-value-td-1{ padding: 10px; }
                         .link-div, .property-box{ font-size: 12px !important; padding: 10px 15px !important; }
                     }
                     @media screen and (max-width: 380px){ 
-                        #title-text-td h1{ font-size: 16px !important; line-height: 25px !important;  padding: 10px !important;}
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
@@ -337,6 +341,7 @@
                         .show-dark{ display: block !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
+                        .darkmode-low-black { background-color: #1a1a1a !important; }
                         /* Custom dark mode font colors */
                         h1, h2, p, span, b, strong { color: #fff !important; }
                         .dark-gray{ color: #6e6e6e !important; }
@@ -345,7 +350,7 @@
                             background-image: linear-gradient(#ff444f,#ff444f);
                             background-color: #ff444f;
                         }
-                        .email-data-tb, .link-div{ background-color: #2e2e2e !important; }
+                        .email-data-tb, .link-div, .property-box{ background-color: #2e2e2e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
@@ -354,13 +359,12 @@
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
+                    [data-ogsc] .darkmode-low-black{ background-color: #1a1a1a!important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
-                    @media (prefers-color-scheme: dark ) and (max-width: 620px){
+                    @media (prefers-color-scheme: dark ) and (max-width: 580px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
-                        li { color: #c2c2c2 !important; }
-                        .email-data-tb, .link-div, .property-box{ background-color: #2e2e2e !important;}
                     }
                 /* End of dark mode styles */
             </style>
@@ -418,7 +422,7 @@
                         </tr>
                         <tr>
                             <td id="title-text-td">
-                                <h1 class="dark-subtext">One more step to complete your Deriv P2P exchange</h1>
+                                <h1 class="dark-subtext mb-title">One more step to complete your Deriv P2P exchange</h1>
                             </td>
                         </tr>
                         <tr>
@@ -427,8 +431,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="property-box dark-subtext" style="padding: 10px 70px 10px;">
-                              We have closed your account and refunded any balance you might have had in your account.
+                            <td class="paragraph-td" align="center" style="padding: 0px 30px 40px 30px;">
+                                <div class="property-box"><p class="dark-subtext">We have closed your account and refunded any balance you might have had in your account.</p></div>
                             </td>
                         </tr>
                         <tr>

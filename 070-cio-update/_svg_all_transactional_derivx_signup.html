@@ -35,20 +35,20 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title></title>
+        <title>Welcome</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
                     <style type="text/css">
-                        *, h1, h2, h3, td, { font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; }
+                        *, h1, h2, h3, td, { font-family: 'Ubuntu', Arial, sans-serif; }
                         body{ background-color: #eee;}
                         p, a, .greeting-td p, .paragraph-td p{ font-family: 'IBM Plex Sans', Arial, sans-serif; }
-                        h1{ font-size: 22px; font-weight: 700; padding: 0 0 20px 20px; }
+                        h1{ font-size: 27px; font-weight: 700; padding: 0 0 20px 20px; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
                         a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
                         .button:hover{ background-color: #d43e47; }
-                        #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
+                        #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; overflow-wrap: anywhere; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
                         #ol-logo-img-td{ background-color:#ff444f; width: 300px; height: 55px; }
@@ -91,7 +91,7 @@
                     }
                 /* END OF FONTS */
                 /* Applied to all tags */
-                *{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
                 body{
                     width: 100%;
@@ -179,22 +179,23 @@
                     #logo-img-td img{ height: 21px; max-height: 21px; padding: 24px 0 0 25px; }
                     #slash-td{ margin: 0; padding: 0; }
                     #slash-td img{ width: 100%; margin: 0; padding: 0; }
-                    #title-text-td{ vertical-align: top; }
-                    #title-text-td h1{ padding: 0px 40px; margin-top: -15px; font-size: 28px; font-weight: 700; text-align: center; line-height: 36px;}
+                    #title-text-td{ vertical-align: top; max-width: 540px; }
+                    #title-text-td h1{ padding: 0px 60px; font-size: 30px; font-weight: 700; text-align: center; line-height: 40px;}
                     .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
                     .data-property-td{ width: 35%; }
-                    .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
+                    .data-property-td, .data-value-td{ padding: 20px 30px 5px; overflow-wrap: anywhere; }
                     .data-value-td{ font-weight: 500; }
-                    .data-value-td-1{ padding: 20px 30px 20px; line-height: 1.5; text-align: center;}
-                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
-                    .property-box{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; font-size: 15px; font-weight: 400; padding: 15px; border-radius: 16px; line-height: 1.5;}
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .data-value-td-1{
+                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 10px 0;}
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
+                        max-width: 540px;
                         margin: 0;
+                        color: #414652;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
+                        overflow-wrap: anywhere;
                     }
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .data-value-td-1{ color: #414652; }
+                    .greeting-td p{ margin-top: -15px !important; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -278,10 +279,9 @@
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        #title-text-td h1{ padding: 10px 20px !important; margin-top: 10px; font-size: 20px !important; font-weight: 600; line-height: 28px !important; }
+                        #title-text-td h1{ padding: 10px 10px 10px 20px; margin-top: 10px; font-size: 20px; font-weight: 600; }
                         #slash-td{ margin: 0; padding: 0; }
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div, .property-box{ font-size: 14px !important; }
-                        .link-div, .property-box{ padding: 10px 25px !important; }
+                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 14px; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
@@ -289,14 +289,13 @@
                         }
                         .email-data-tb{ width: 94%; }
                         .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
-                        .data-value-td-1{ padding: 15px 30px 15px; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
                         .columns-2-a{ width: 50px; }
                         .columns-2-a img{ width: 60px; margin: auto !important; }
                         .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
-                        .columns-2-b-title{ font-size: 14px !important; font-weight: 550; }
-                        .columns-2-b-text{ font-size: 13px !important; line-height: 1.5; }
+                        .columns-2-b-title{ font-size: 14px; font-weight: 550; }
+                        .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
                         #footer-social-td img{ height: 20px; }
                         .mobile-hide{
                             /* Hide desktop content on mobile */
@@ -313,14 +312,13 @@
                     }
                     @media screen and (max-width: 460px){
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 10px 10px 15px !important; margin-top: 5px; font-size: 18px !important; font-weight: 600; line-height: 26px !important; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
                         .email-data-tb{ width: 98%; }
-                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px !important; }
-                        .data-value-td-1{ padding: 10px; }
-                        .link-div, .property-box{ font-size: 12px !important; padding: 10px 15px !important; }
+                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
+                        .link-div{ font-size: 12px; }
                     }
                     @media screen and (max-width: 380px){ 
-                        #title-text-td h1{ font-size: 16px !important; line-height: 25px !important;  padding: 10px !important;}
+                        #title-text-td h1{ font-size: 16px; }
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
@@ -360,13 +358,13 @@
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
-                        .email-data-tb, .link-div, .property-box{ background-color: #2e2e2e !important;}
+                        .email-data-tb, .link-div{ background-color: #2e2e2e !important;}
                     }
                 /* End of dark mode styles */
             </style>
         <!-- ==== END OF STYLES ==== -->
     </head>
-    <body style="background-color: #eee;">
+    <body>
         <table id="ext-table" align="center">
              <!-- Email body -->
             <tr>
@@ -417,76 +415,60 @@
                             </td>
                         </tr>
                         <tr>
+                            <td class="greeting-td" align="center" style="padding: 0px 30px 0px 30px;" class="dark-black">
+                                <p class="dark-subtext">{% if {{event.first_name}} != blank % %} Hello  {{event.first_name | titlecase}}!
+                                    {% else %} Hello!
+                                {% endif %}</p>
+                            </td>
+                        </tr>
+                        <tr>
                             <td id="title-text-td">
-                                <h1 class="dark-subtext">One more step to complete your Deriv P2P exchange</h1>
+                                <h1 class="dark-subtext">Your Deriv X 
+                                    {% if {{event.account_type}} contains 'demo' %} demo 
+                                    {% else %} real 
+                                    {% endif %} account is ready</h1>
                             </td>
                         </tr>
                         <tr>
-                            <td class="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Dear [insert name],</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" class="property-box dark-subtext" style="padding: 10px 70px 10px;">
-                              We have closed your account and refunded any balance you might have had in your account.
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">You can now trade with your Deriv X {% if {{event.account_type}} contains 'demo' %} demo
+                                    {% else %} real
+                                {% endif %} account.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">We just wanted to double-check that you confirmed this P2P exchange.</p>
+                                <p class="dark-subtext">Your username for the Deriv X platform is <strong>{{event.login}}</strong>.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
-                                <table class="email-data-tb">
-                                    <tr>
-                                        <td class="data-property-td dark-subtext">
-                                            Order ID:
-                                        </td>
-                                        <td class="data-value-td dark-subtext">
-                                            321
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="data-property-td dark-subtext">
-                                            Amount:
-                                        </td>
-                                        <td class="data-value-td dark-subtext">
-                                            10
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="data-property-td dark-subtext" style="padding-bottom: 20px;">
-                                            Buyer's name:
-                                        </td>
-                                        <td class="data-value-td dark-subtext" style="padding-bottom: 20px;">
-                                            bobby_buyer
-                                        </td>
-                                    </tr>
-                                </table>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Your Deriv X {% if {{event.account_type}} contains 'demo' %} demo
+                                    {% else %} real
+                                {% endif %} account ID is <strong>{{event.account_id}}</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">To start trading, head to the Deriv X dashboard.</p>
                             </td>
                         </tr>
                         <tr>
                             <td align="center" class="dark-black">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/derivx" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;Como font-size:14px;font-weight:bold;">Yes, all good</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Go to Deriv X dashboard</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://deriv.com/" target="_blank">Yes, all good</a>
+                                <a class="button" href="https://app.deriv.com/derivx" target="_blank">Go to Deriv X dashboard</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">If the button doesn't work, copy and paste the link below into a new browser window.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="center" style="padding: 0px 30px 40px 30px;">
-                                <div class="link-div"><a href="#">http://www.verify.com?code=1234</a></div>
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 40px 30px;" class="dark-black">
+                                <p class="dark-subtext">Need help? <a href="https://deriv.com/help-centre">Contact us</a> via live chat.</p>
                             </td>
                         </tr>
                     </table>
@@ -550,6 +532,7 @@
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
                                 <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? {{snippets.custom_unsubscribe_link}}</a></p>
                             </td>
                         </tr>
                         <tr>
