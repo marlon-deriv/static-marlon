@@ -91,8 +91,8 @@
                     }
                 /* END OF FONTS */
                 /* Applied to all tags */
-                *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
-                p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                *{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                p, a{ font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color: #414652; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -162,7 +162,7 @@
                     }
                     .title-cta{ padding: 10px 30px; }
                     .button:hover{ background-color: #d43e47; }
-                    h2{ padding: 0px 60px; font-family: 'Ubuntu', Arial, sans-serif; color: #414652; font-size: 18px; line-height: 1.5;}
+                    h2{ padding: 0px 60px; font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; font-size: 18px; line-height: 1.5;}
                 /* End of Deriv styles */
                 /* Classes */
                 #ext-table{ margin: auto; }
@@ -180,7 +180,7 @@
                     .top-right-td{ height: 180px; max-height: 180px; background-image: linear-gradient(#ff444f,#ff444f); background-color: #ff444f; }
                     #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
                     #title-text-td{ height: 100%; max-height: 180px; background-color: #ff444f; vertical-align: top;}
-                    #title-text-td h1{ padding: 10px 15px; margin-top: 35px; color: #fff; font-size: 25px; font-weight: 700; text-align: center;}
+                    #title-text-td h1{ padding: 10px 15px; margin-top: 35px; color: #fff; font-size: 22px; font-weight: 700; text-align: center;}
                     .greeting-td p, .paragraph-td p, .subtitle-td p{
                         margin: 0;
                         font-size: 13px;
@@ -223,7 +223,7 @@
                         .col-3-td-mb table{ width: 100%; }
                         .col-3-td table, .col-3-td-1 table{ width: 100%; margin-top: 20px; }
 
-                        .col-3-td-1, .item-tb-mb{ background-color: #ffffff; box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.1); }
+                        .col-3-td-1, .item-tb-mb{ height: 300px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.1); }
 
                         .session-title-td{ border-top: 1px solid #eee; }
                         .step-img-td{ height: 100px; vertical-align: middle;}
@@ -306,7 +306,7 @@
                         h2{ padding: 0px 40px; font-size: 16px;}
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-title-tb, .logo-img-td{ margin: 0; padding: 0;}
-                        #title-text-td h1{ margin-top: 35px !important; font-size: 20px !important; font-weight: 600; }
+                        #title-text-td h1{ margin-top: 60px !important; font-size: 20px !important; font-weight: 600; }
                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 12px; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
@@ -320,6 +320,7 @@
                         .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
                         .columns-2-b-title{ font-size: 14px; font-weight: 550; }
                         .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
+                        .col-3-td-1, .item-tb-mb{ height: 100% !important; }
                         .mobile-hide{
                             /* Hide desktop content on mobile */
                             display: none !important;
@@ -409,7 +410,7 @@
                                                 <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" width="330" height="180" valign="top"/>
                                             </td>
                                             <td height="150" id="title-text-td" style="background-color: #ff444f; border: 0;"border="0">
-                                                <h1 style="margin: 10px 15px 10px 15px; font-family: Ubuntu, 'IBM Plex Sans', Arial, sans-serif;">MT5 unavailable on Apple App Store</h1>
+                                                <h1 style="margin: 10px 15px 10px 15px; font-family: Ubuntu, 'IBM Plex Sans', Arial, sans-serif; color: #fff !important;">color: #fff !important;</h1>
                                             </td>
                                         <![endif]-->
                                         <!--[if !gte mso 9]><!-- -->
@@ -417,7 +418,7 @@
                                             <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" alt="" style="width: 100%; height: 180px; background-color: #ff444f; vertical-align: top; border: 0;"/>
                                         </td>
                                         <td id="title-text-td" align="left" style=" width: 45%; background-color: #ff444f; border: 0;">
-                                            <h1 style="color: #fff;">Your Deriv account is ready</h1>
+                                            <h1 style="color: #fff !important;">Your Deriv account is ready</h1>
                                         </td>
                                         <!--<![endif]-->
                                     </tr>
