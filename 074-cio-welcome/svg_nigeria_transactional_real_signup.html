@@ -178,7 +178,7 @@
                         overflow-wrap: anywhere;
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
-                    #header-table{ border: 0 !important; border-collapse: collapse !important; }
+                    #header-table{ width: 100%; border: 0 !important; border-collapse: collapse !important; }
                     #title-img-td{ max-height: 180px; }
                     #title-img-td img{ width: 100%; max-height: 180px; vertical-align: top; background-image: linear-gradient(#ff444f,#ff444f); }
                     #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
@@ -221,12 +221,14 @@
                         .list-ul{ padding: 0px 30px 0px 40px; }
                     /* End of list styles */
                     /* Template specific */
-                        #cols-3-tb-ext{ width: 100%; max-width: 540px; margin: 0; }
+                        #cols-3-tb-ext, #cols-2-tb-ext{ width: 100%; max-width: 540px; margin: 0; }
                         .col-3-td, .col-3-td-1{ width: 33.3%; }
-                        .col-3-td-mb{ width: 100%; }
+                        .col-3-td-mb, .col-2-td-mb{ width: 100%; }
                         .col-3-td-mb table{ width: 100%; }
                         .col-3-td table, .col-3-td-1 table{ width: 100%; margin-top: 20px; }
                         .col-3-td-1, .item-tb-mb{ height: 300px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.1); }
+                        .cols-2-text{ width: 80%;}
+                        .cols-2-text p{ margin-right: 5px; font-size: 14px; font-weight: 350; line-height: 1.5; text-align: left; }
                         .session-title-td{ border-top: 1px solid #eee; }
                         .step-img-td{ height: 100px; vertical-align: middle;}
                         .step-img{ height: 80px; display: block; margin: 0px;}
@@ -311,7 +313,7 @@
                         #title-text-td{ padding: 10px !important; }
                         #title-text-td h1{ margin-top: 40px !important; font-size: 20px !important; font-weight: 600 !important;} 
                         h2{ padding: 0px 40px; font-size: 16px;}
-                        #header-td{ width: 100%; }
+                        #header-td{ width: 100%; max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-title-tb, .logo-img-td{ margin: 0; padding: 0;}
                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 12px; }
                         .greeting-td, .paragraph-td{
@@ -419,16 +421,16 @@
                                             <td height="180" width="330" style="background-color: #ff444f; border: 0;" border="0">
                                                 <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" width="330" height="180" valign="top"/>
                                             </td>
-                                            <td height="150" id="title-text-td" style="background-color: #ff444f; border: 0;"border="0">
-                                                <h1 style="margin: 10px 15px 10px 15px; font-family: Ubuntu, 'IBM Plex Sans', Arial, sans-serif; color: #fff !important;">color: #fff !important;</h1>
+                                            <td height="180" id="title-text-td" style="background-color: #ff444f; border: 0;"border="0">
+                                                <h1 style="margin: 40px 15px 10px 15px; font-family: Ubuntu, 'IBM Plex Sans', Arial, sans-serif; color: #fff !important;">Your Deriv {{event.currency}} account is ready.</h1>
                                             </td>
                                         <![endif]-->
                                         <!--[if !gte mso 9]><!-- -->
                                         <td id="title-img-td" style="width: 330px; border: 0 !important;">
-                                            <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" alt="" style="background-color: #ff444f; width: 330px;"/>
+                                            <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" alt="" style="background-color: #ff444f; width: 330px; height: 180px;"/>
                                         </td>
-                                        <td id="title-text-td" align="center" style=" width: 270px; background-color: #ff444f; border: 0 !important;">
-                                            <h1 style="color: #fff !important;">Your Deriv account is ready</h1>
+                                        <td id="title-text-td" align="center" style="width: 270px; height: 180px; background-color: #ff444f; border: 0 !important;">
+                                            <h1 style="color: #fff !important;">Your Deriv {{event.currency}} account is ready.</h1>
                                         </td>
                                         <!--<![endif]-->
                                     </tr>
@@ -445,166 +447,25 @@
                         </tr>
                         <tr>
                             <td align="center" style="padding: 20px 30px 0;" class="session-title-td dark-black">
-                                <h2 class="dark-subtext">Trade on world markets with your new Deriv account</h2>
+                                <h2 class="dark-subtext">Fund your account via the Deriv cashier and start trading for real</h2>
                             </td>
                         </tr>
-                        <tr class="mobile-hide">
-                            <td align="left" style="padding: 0 30px 20px; max-width: 600px;" class="dark-black">
+                        <tr>
+                            <td align="center" class="dark-black" style="padding: 20px 30px 30px;">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <table width="570" cellpadding="0" cellspacing="0" valign="top" align="center">
-                                    <tr>
-                                        <td>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/cashier/deposit" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="40%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Take me to the cashier</center>
+                                </v:roundrect>
                                 <![endif]-->
-                                <table id="cols-3-tb-ext" align="center" class="dark-black">
-                                    <tr>
-                                        <!--[if (gte mso 9)|(IE)]>
-                                            <td align="left" cellpadding="0" cellspacing="0" valign="top" width="190">
-                                        <![endif]-->
-                                        <td align="center" class="col-3-td-1 dark-black">
-                                            <table>
-                                                <tr>
-                                                    <td class="dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/forex.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Benefit from round-the-clock trading (Monday to Friday), high liquidity, low barriers to entry, a wide range of  offerings, and opportunities to trade on world events.</p>
-                                                        <p>
-                                                            <a href="https://deriv.com/markets#forex">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td align="center" class="col-3-td-1 dark-black">
-                                            <table>
-                                                <tr>
-                                                    <td class="dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/stock-indices.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Sourced from over-the-counter (OTC) markets, our stock indices offer competitively priced asset baskets and allow you to trade outside the regular hours of major stock markets.</p>
-                                                        <p class="dark-subtext">
-                                                            <a href="https://deriv.com/markets#stock">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td align="center" class="col-3-td-1 dark-black">
-                                            <table>
-                                                <tr>
-                                                    <td class="dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/commodities.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Speculate on the price movements of silver, gold, oil, and more. Profit from the price difference when the market moves in the direction that you have predicted.</p>
-                                                        <p class="dark-subtext">
-                                                            <a href="https://deriv.com/markets#commodities">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!--[if mso]></td></tr></table><![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="https://app.deriv.com/cashier/deposit" target="_blank">Take me to the cashier</a>
+                                <!--<![endif]-->
                             </td>
                         </tr>
-                        <!-- End of How to fund your account: DESKTOP VERSION -->
-                        <!-- How to fund your account: MOBILE VERSION -->
-                        <!--[if !gte mso 9]><!-- -->
-                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td align="left" class="dark-black">
-                                <table>
-                                    <tr>
-                                        <td style="padding: 20px 0px;">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="left" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/forex.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text-mb dark-black">
-                                                        <p class="dark-subtext"><strong>Forex</strong><br/>
-                                                            Open the Cashier or click on the Deposit button on the top right.
-                                                        </p>
-                                                        <p class="dark-subtext" style="padding: 15px 10px;">
-                                                            <a href="https://deriv.com/markets#forex">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" align="right" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-bottom: 20px;">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="left" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/stock-indices.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text-mb dark-black">
-                                                        <p class="dark-subtext"><strong>Stock indices</strong><br/>
-                                                            Sourced from over-the-counter (OTC) markets, our stock indices offer competitively priced asset baskets and allow you to trade outside the regular hours of major stock markets.
-                                                        </p>
-                                                        <p class="dark-subtext" style="padding: 15px 10px;">
-                                                            <a href="https://deriv.com/markets#stock">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" align="right" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-bottom: 20px;">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="left" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/commodities.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text-mb dark-black">
-                                                        <p class="dark-subtext"><strong>Commodities</strong><br/>
-                                                            Speculate on the price movements of silver, gold, oil, and more. Profit from the price difference when the market moves in the direction that you have predicted.
-                                                        </p>
-                                                        <p class="dark-subtext" style="padding: 15px 10px;">
-                                                            <a href="https://deriv.com/markets#commodities">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" align="right" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!--<![endif]-->
-                        <!-- End of How to fund your account: MOBILE VERSION -->
                         <tr>
                             <td align="center" class="payments-td dark-gray" style="padding: 20px 30px 0;">
-                                <h2 class="dark-subtext">Fund your real account via these payment methods</h2>
+                                <h2 class="dark-subtext">Payment methods available in {{event.country}}</h2>
                             </td>
                         </tr>
                         <!-- Payment method 2 col -->
@@ -621,23 +482,26 @@
                                             <table class="payment-tb" align="center">
                                                 <tr>
                                                     <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/debit-cards.png" style="width: 70px; margin: auto;"/>
+                                                        <img class="hide-dark-h-logo" src="https://static.deriv.com/email/images/design-2023/perfect-money-m.png" style="width: 70px !important; margin: auto;"/>
+                                                        <div class="logos-white-div" style="display: none;" align="center">
+                                                            <img src="https://static.deriv.com/email/images/design-2023/perfect-money-dark.png" style="width: 70px !important; margin: auto;"/>
+                                                        </div>
                                                     </td>
                                                     <td class="payment-td-desc">
                                                         <table>
                                                             <tr>
                                                                 <td class="payment-name-td dark-subtext">
-                                                                    <p class="dark-subtext">Credit and debit cards</p>
+                                                                    <p class="dark-subtext">Perfect Money</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-desc-td dark-subtext">
-                                                                    <p class="dark-subtext">Deposit and withdraw using your preferred credit or debit card. Charges and interest rates apply.</p>
+                                                                    <p class="dark-subtext">An affordable and easy method for deposits and withdrawals. Features auto payments, annual interest, and real-time statements.</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-limits-td dark-subtext">
-                                                                    <p class="dark-subtext">Min-max deposit: 10-10,000 (in USD, GBP, or EUR)<br>Processing time: Instant</p>
+                                                                    <p class="dark-subtext">Min-max deposit: 5-10,000 &nbsp;|&nbsp; Processing time: Instant</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -726,6 +590,45 @@
                                             <!--[if mso]></td></tr></table><![endif]-->
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/visa-icon.png" style="width: 70px; margin: auto;"/>
+                                                    </td>
+                                                    <td class="payment-td-desc">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-name-td dark-subtext">
+                                                                    <p class="dark-subtext">VISA</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td dark-subtext">
+                                                                    <p class="dark-subtext">Make a deposit using your Visa credit or debit card. Charges and interest rates apply.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td dark-subtext">
+                                                                    <p class="dark-subtext">Min-max deposit: 10-10,000 &nbsp;|&nbsp; Processing time: Instant</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="payment-td-link">
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--[if mso]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
                                 </table>
                             </td>
                         </tr>
@@ -735,11 +638,16 @@
                             <td class="dark-gray">
                                 <table style="width: 100%;">
                                     <tr>
-                                        <td class="payments-td dark-gray">
+                                        <td class="payments-td-nb dark-gray">
                                             <table class="item-tb-mb">
-                                                <tr>
+                                                <tr class="hide-light">
                                                     <td align="center" class="payment-td-icon dark-gray">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/debit-cards.png"/>
+                                                        <img src="https://static.deriv.com/email/images/design-2023/perfect-money-m.png" style="width: 120px !important; margin: 15px 0 0;"/>
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none; mso-hide:all;" align="center" class="show-dark dark-gray">
+                                                    <td class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/design-2023/perfect-money1-m.png" style="width: 140px !important; margin: 15px 0 0;"/>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -747,12 +655,12 @@
                                                         <table>
                                                             <tr>
                                                                 <td class="payment-desc-td dark-subtext">
-                                                                    <p class="dark-subtext">Deposit and withdraw using your preferred credit or debit card. Charges and interest rates apply.</p>
+                                                                    <p class="dark-subtext">An affordable and easy method for deposits and withdrawals. Features auto payments, annual interest, and real-time statements.</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="payment-limits-td dark-subtext">
-                                                                    Min-max deposit: 10-10,000 (in USD, GBP, or EUR)<br>Processing time: Instant
+                                                                <td class="payment-limits-td dark-subtext" style="padding: 0px 0px 15px;">
+                                                                    Min-max deposit: 5-10,000 &nbsp;|&nbsp; Processing time: Instant
                                                                 </td>
                                                             </tr>
                                                         </table><!--[if mso]></td></tr></table><![endif]-->
@@ -830,6 +738,38 @@
                                             </table>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td class="payments-td dark-gray">
+                                            <table class="item-tb-mb">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/visa-icon.png" style="width: 80px !important; margin: 0;"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="payment-td-desc dark-gray">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-desc-td dark-subtext">
+                                                                    <p class="dark-subtext">Make a deposit using your Visa credit or debit card. Charges and interest rates apply.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td dark-subtext" style="padding: 0px 0px 15px;">
+                                                                    Min-max deposit: 10-10,000 &nbsp;|&nbsp; Processing time: Instant
+                                                                </td>
+                                                            </tr>
+                                                        </table><!--[if mso]></td></tr></table><![endif]-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="payment-link-td" style="padding: 15px 10px;">
+                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now →</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
                                 </table>
                             </td>
                         </tr>
@@ -846,12 +786,10 @@
                                 <!--<![endif]-->
                             </td>
                         </tr>
-                        <!-- [endif]-->
-                        <!-- End of Payment methods Mobile -->
                         <!-- How to fund your account: DESKTOP VERSION -->
                         <tr>
                             <td align="center" style="padding: 20px 30px 0;" class="session-title-td dark-black">
-                                <h2 class="dark-subtext">Fund your account in 3 easy steps</h2>
+                                <h2 class="dark-subtext">How to fund your account in 3 easy steps</h2>
                             </td>
                         </tr>
                         <tr class="mobile-hide">
@@ -884,7 +822,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="step-text dark-black">
-                                                                    <p class="dark-subtext">On your Deriv account, click on Cashier or Deposit.</p>
+                                                                    <p class="dark-subtext">Open the Cashier or click on the Deposit button on the top right.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -939,7 +877,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="step-text dark-black">
-                                                                    <p class="dark-subtext">Complete the details and follow the instructions to confirm your payment.</p>
+                                                                    <p class="dark-subtext">Specify the amount you want to deposit, fill out details, and follow the on-screen prompts to confirm payment.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -977,7 +915,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="step-text-mb dark-black">
-                                                                    <p class="dark-subtext">On your Deriv account, click on Cashier or Deposit.</p>
+                                                                    <p class="dark-subtext">Open the Cashier or click on the Deposit button on the top right.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -1036,7 +974,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="step-text-mb dark-black">
-                                                                    <p class="dark-subtext">Complete the details and follow the instructions to confirm your payment.</p>
+                                                                    <p class="dark-subtext">Specify the amount you want to deposit, fill out details, and follow the on-screen prompts to confirm payment.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -1052,7 +990,7 @@
                         <!-- End of How to fund your account: MOBILE VERSION -->
                         <tr>
                             <td align="center" style="padding: 0px 30px 20px;" class="mobile-lowsidepadding dark-black">
-                                <p class="dark-subtext">Once your deposit has been processed, the amount will appear in your account balance and you can begin trading.</p>
+                                <p class="dark-subtext">Once approved, the deposit amount will appear in your Deriv {{event.currency}} balance and you can begin trading.</p>
                             </td>
                         </tr>
                         <tr>

@@ -178,7 +178,7 @@
                         overflow-wrap: anywhere;
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
-                    #header-table{ border: 0 !important; border-collapse: collapse !important; }
+                    #header-table{ width: 100%; border: 0 !important; border-collapse: collapse !important; }
                     #title-img-td{ max-height: 180px; }
                     #title-img-td img{ width: 100%; max-height: 180px; vertical-align: top; background-image: linear-gradient(#ff444f,#ff444f); }
                     #title-img-tb, #logo-title-tb{ width: 100%; height: 100%; margin: 0; }
@@ -221,12 +221,14 @@
                         .list-ul{ padding: 0px 30px 0px 40px; }
                     /* End of list styles */
                     /* Template specific */
-                        #cols-3-tb-ext{ width: 100%; max-width: 540px; margin: 0; }
+                        #cols-3-tb-ext, #cols-2-tb-ext{ width: 100%; max-width: 540px; margin: 0; }
                         .col-3-td, .col-3-td-1{ width: 33.3%; }
-                        .col-3-td-mb{ width: 100%; }
+                        .col-3-td-mb, .col-2-td-mb{ width: 100%; }
                         .col-3-td-mb table{ width: 100%; }
                         .col-3-td table, .col-3-td-1 table{ width: 100%; margin-top: 20px; }
                         .col-3-td-1, .item-tb-mb{ height: 300px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.1); }
+                        .cols-2-text{ width: 80%;}
+                        .cols-2-text p{ margin-right: 5px; font-size: 14px; font-weight: 350; line-height: 1.5; text-align: left; }
                         .session-title-td{ border-top: 1px solid #eee; }
                         .step-img-td{ height: 100px; vertical-align: middle;}
                         .step-img{ height: 80px; display: block; margin: 0px;}
@@ -419,15 +421,15 @@
                                             <td height="180" width="330" style="background-color: #ff444f; border: 0;" border="0">
                                                 <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" width="330" height="180" valign="top"/>
                                             </td>
-                                            <td height="150" id="title-text-td" style="background-color: #ff444f; border: 0;"border="0">
-                                                <h1 style="margin: 10px 15px 10px 15px; font-family: Ubuntu, 'IBM Plex Sans', Arial, sans-serif; color: #fff !important;">color: #fff !important;</h1>
+                                            <td height="180" id="title-text-td" style="background-color: #ff444f; border: 0;"border="0">
+                                                <h1 style="margin: 40px 15px 10px 15px; font-family: Ubuntu, 'IBM Plex Sans', Arial, sans-serif; color: #fff !important;">Your Deriv account is ready</h1>
                                             </td>
                                         <![endif]-->
                                         <!--[if !gte mso 9]><!-- -->
                                         <td id="title-img-td" style="width: 330px; border: 0 !important;">
-                                            <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" alt="" style="background-color: #ff444f; width: 330px;"/>
+                                            <img src="https://static.deriv.com/email/images/header-2023/welcome-key-m.png" alt="" style="background-color: #ff444f; width: 330px; height: 180px;"/>
                                         </td>
-                                        <td id="title-text-td" align="center" style=" width: 270px; background-color: #ff444f; border: 0 !important;">
+                                        <td id="title-text-td" align="center" style="width: 270px; height: 180px; background-color: #ff444f; border: 0 !important;">
                                             <h1 style="color: #fff !important;">Your Deriv account is ready</h1>
                                         </td>
                                         <!--<![endif]-->
@@ -439,172 +441,52 @@
                         </tr>
                         <!-- How to fund your account: DESKTOP VERSION -->
                         <tr>
-                            <td class="paragraph-td" align="center" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Your account number is {{event.loginid}}.</p>
-                            </td>
-                        </tr>
-                        <tr>
                             <td align="center" style="padding: 20px 30px 0;" class="session-title-td dark-black">
                                 <h2 class="dark-subtext">Trade on world markets with your new Deriv account</h2>
                             </td>
                         </tr>
-                        <tr class="mobile-hide">
+                        <tr>
                             <td align="left" style="padding: 0 30px 20px; max-width: 600px;" class="dark-black">
                                 <!--[if (gte mso 9)|(IE)]>
                                 <table width="570" cellpadding="0" cellspacing="0" valign="top" align="center">
                                     <tr>
                                         <td>
                                 <![endif]-->
-                                <table id="cols-3-tb-ext" align="center" class="dark-black">
+                                <table id="cols-2-tb-ext" align="center" class="dark-black">
                                     <tr>
-                                        <!--[if (gte mso 9)|(IE)]>
-                                            <td align="left" cellpadding="0" cellspacing="0" valign="top" width="190">
-                                        <![endif]-->
-                                        <td align="center" class="col-3-td-1 dark-black">
-                                            <table>
-                                                <tr>
-                                                    <td class="dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/forex.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Benefit from round-the-clock trading (Monday to Friday), high liquidity, low barriers to entry, a wide range of  offerings, and opportunities to trade on world events.</p>
-                                                        <p>
-                                                            <a href="https://deriv.com/markets#forex">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <td class="dark-black" valign="top" style="width: 20%; text-align: center;">
+                                            <img src="https://static.deriv.com/email/images/icons/forex.png" style="width: 60%;  margin-top: 15px;">
                                         </td>
-                                        <td align="center" class="col-3-td-1 dark-black">
-                                            <table>
-                                                <tr>
-                                                    <td class="dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/stock-indices.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Sourced from over-the-counter (OTC) markets, our stock indices offer competitively priced asset baskets and allow you to trade outside the regular hours of major stock markets.</p>
-                                                        <p class="dark-subtext">
-                                                            <a href="https://deriv.com/markets#stock">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <td class="cols-2-text dark-black">
+                                            <p class="dark-subtext"><strong>Forex</strong></p>
+                                            <p class="dark-subtext">Benefit from round-the-clock trading (Monday to Friday), high liquidity, low barriers to entry, a wide range of  offerings, and opportunities to trade on world events.</p>
                                         </td>
-                                        <td align="center" class="col-3-td-1 dark-black">
-                                            <table>
-                                                <tr>
-                                                    <td class="dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/commodities.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Speculate on the price movements of silver, gold, oil, and more. Profit from the price difference when the market moves in the direction that you have predicted.</p>
-                                                        <p class="dark-subtext">
-                                                            <a href="https://deriv.com/markets#commodities">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                    </tr>
+                                    <tr>
+                                        <td class="dark-black" valign="top" style="width: 20%; text-align: center;">
+                                            <img src="https://static.deriv.com/email/images/icons/indices.png" style="width: 60%;  margin-top: 15px;">
+                                        </td>
+                                        <td class="cols-2-text dark-black">
+                                            <p class="dark-subtext"><strong>Synthetic indices</strong></p>
+                                            <p class="dark-subtext">Developed by Deriv to simulate real-world market movements, these indices are unaffected by regular market hours, global events, or market and liquidity risks, allowing you to trade with confidence.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dark-black" valign="top" style="width: 20%; text-align: center;">
+                                            <img src="https://static.deriv.com/email/images/icons/crypto.png" style="width: 60%;  margin-top: 15px;">
+                                        </td>
+                                        <td class="cols-2-text dark-black">
+                                            <p class="dark-subtext"><strong>Cryptocurrencies</strong></p>
+                                            <p class="dark-subtext">Take advantage of the rise and fall of popular cryptocurrencies, BTC and ETH, without owning them.</p>
                                         </td>
                                     </tr>
                                 </table>
                                 <!--[if mso]></td></tr></table><![endif]-->
                             </td>
                         </tr>
-                        <!-- End of How to fund your account: DESKTOP VERSION -->
-                        <!-- How to fund your account: MOBILE VERSION -->
-                        <!--[if !gte mso 9]><!-- -->
-                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td align="left" class="dark-black">
-                                <table>
-                                    <tr>
-                                        <td style="padding: 20px 0px;">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="left" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/forex.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text-mb dark-black">
-                                                        <p class="dark-subtext"><strong>Forex</strong><br/>
-                                                            Open the Cashier or click on the Deposit button on the top right.
-                                                        </p>
-                                                        <p class="dark-subtext" style="padding: 15px 10px;">
-                                                            <a href="https://deriv.com/markets#forex">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" align="right" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-bottom: 20px;">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="left" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/stock-indices.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text-mb dark-black">
-                                                        <p class="dark-subtext"><strong>Stock indices</strong><br/>
-                                                            Sourced from over-the-counter (OTC) markets, our stock indices offer competitively priced asset baskets and allow you to trade outside the regular hours of major stock markets.
-                                                        </p>
-                                                        <p class="dark-subtext" style="padding: 15px 10px;">
-                                                            <a href="https://deriv.com/markets#stock">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" align="right" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-bottom: 20px;">
-                                            <table class="item-tb-mb">
-                                                <tr>
-                                                    <td align="left" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/commodities.png" style="height: 30px; margin: 0 0 0 8px; vertical-align: bottom;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="step-text-mb dark-black">
-                                                        <p class="dark-subtext"><strong>Commodities</strong><br/>
-                                                            Speculate on the price movements of silver, gold, oil, and more. Profit from the price difference when the market moves in the direction that you have predicted.
-                                                        </p>
-                                                        <p class="dark-subtext" style="padding: 15px 10px;">
-                                                            <a href="https://deriv.com/markets#commodities">
-                                                                <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" align="right" alt="Deriv.com">
-                                                            </a>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!--<![endif]-->
-                        <!-- End of How to fund your account: MOBILE VERSION -->
                         <tr>
                             <td align="center" class="payments-td dark-gray" style="padding: 20px 30px 0;">
-                                <h2 class="dark-subtext">Fund your real account via these payment methods</h2>
+                                <h2 class="dark-subtext">Fund your account via these payment methods and more</h2>
                             </td>
                         </tr>
                         <!-- Payment method 2 col -->
@@ -708,12 +590,90 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-desc-td dark-subtext">
-                                                                    <p class="dark-subtext">Used by over 20 million clients worldwide. Enjoy instant access, free withdrawals, and reward points that you can redeem for cash.</p>
+                                                                    <p class="dark-subtext">Make instant e-wallet deposits.</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-limits-td dark-subtext">
-                                                                    <p class="dark-subtext">Min-max deposit: 5-10,000 &nbsp;|&nbsp; Processing time: Instant</p>
+                                                                    <p class="dark-subtext">Min-max deposit: 10-10,000 (in USD, GBP, or EUR) &nbsp;|&nbsp; Processing time: Instant</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="payment-td-link">
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--[if mso]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/icons/paysafe.png" style="width: 70px; margin: auto;"/>
+                                                    </td>
+                                                    <td class="payment-td-desc">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-name-td dark-subtext">
+                                                                    <p class="dark-subtext">Paysafecard</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td dark-subtext">
+                                                                    <p class="dark-subtext">Make deposits using your local voucher system.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td dark-subtext">
+                                                                    <p class="dark-subtext">Min-max deposit: 5-1,000 (in USD, GBP, or EUR)<br>Processing time: Instant</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="payment-td-link">
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--[if mso]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="payments-td dark-gray">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table class="payment-tb" align="center">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/icons/rapid.png" style="width: 70px; margin: auto;"/>
+                                                    </td>
+                                                    <td class="payment-td-desc">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-name-td dark-subtext">
+                                                                    <p class="dark-subtext">Rapid Transfer</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-desc-td dark-subtext">
+                                                                    <p class="dark-subtext">Make instant bank transfers to all the major banks in your country.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td dark-subtext">
+                                                                    <p class="dark-subtext">Min-max deposit: 25-100 (in USD, GBP, or EUR)<br>Processing time: Instant</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -752,7 +712,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-limits-td dark-subtext">
-                                                                    Min-max deposit: 10-10,000 (in USD, GBP, or EUR)<br>Processing time: Instant
+                                                                    <p class="dark-subtext">Min-max deposit: 10-10,000 (in USD, GBP, or EUR) &nbsp;|&nbsp; Processing time: Instant</p>
                                                                 </td>
                                                             </tr>
                                                         </table><!--[if mso]></td></tr></table><![endif]-->
@@ -760,7 +720,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="payment-link-td" style="padding: 15px 10px;">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now →</a>
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -784,7 +744,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-limits-td dark-subtext">
-                                                                    Min-max deposit: 10-10,000 &nbsp;|&nbsp; Processing time: Instant
+                                                                    <p class="dark-subtext">Min-max deposit: 10-10,000 &nbsp;|&nbsp; Processing time: Instant</p>
                                                                 </td>
                                                             </tr>
                                                         </table><!--[if mso]></td></tr></table><![endif]-->
@@ -792,7 +752,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="payment-link-td" style="padding: 15px 10px;">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now →</a>
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -811,12 +771,12 @@
                                                         <table>
                                                             <tr>
                                                                 <td class="payment-desc-td dark-subtext">
-                                                                    <p class="dark-subtext">Used by over 20 million clients worldwide. Enjoy instant access, free withdrawals, and reward points that you can redeem for cash.</p>
+                                                                    <p class="dark-subtext">Make instant e-wallet deposits.</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-limits-td dark-subtext">
-                                                                    Min-max deposit: 5-10,000 &nbsp;|&nbsp; Processing time: Instant
+                                                                    <p class="dark-subtext">Min-max deposit: 10-10,000 (in USD, GBP, or EUR) &nbsp;|&nbsp; Processing time: Instant</p>
                                                                 </td>
                                                             </tr>
                                                         </table><!--[if mso]></td></tr></table><![endif]-->
@@ -824,7 +784,71 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="payment-link-td" style="padding: 15px 10px;">
-                                                        <a href="https://app.deriv.com/cashier/deposit">Fund now →</a>
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payments-td dark-gray">
+                                            <table class="item-tb-mb">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/icons/paysafe.png"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="payment-td-desc dark-gray">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-desc-td dark-subtext">
+                                                                    <p class="dark-subtext">Make deposits using your local voucher system.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td dark-subtext">
+                                                                    <p class="dark-subtext">Min-max deposit: 5-1,000 (in USD, GBP, or EUR) &nbsp;|&nbsp; Processing time: Instant</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table><!--[if mso]></td></tr></table><![endif]-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="payment-link-td" style="padding: 15px 10px;">
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payments-td dark-gray">
+                                            <table class="item-tb-mb">
+                                                <tr>
+                                                    <td align="center" class="payment-td-icon dark-gray">
+                                                        <img src="https://static.deriv.com/email/images/icons/rapid.png"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="payment-td-desc dark-gray">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="payment-desc-td dark-subtext">
+                                                                    <p class="dark-subtext">Make instant bank transfers to all the major banks in your country.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="payment-limits-td dark-subtext">
+                                                                    <p class="dark-subtext">Min-max deposit: 25-100 (in USD, GBP, or EUR) &nbsp;|&nbsp; Processing time: Instant</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table><!--[if mso]></td></tr></table><![endif]-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="payment-link-td" style="padding: 15px 10px;">
+                                                        <p class="dark-subtext"><a href="https://app.deriv.com/cashier/deposit">Fund now →</a></p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -896,7 +920,7 @@
                                             <table>
                                                 <tr>
                                                     <td class="step-img-td">
-                                                        <img src="https://static.deriv.com/email/images/marketing/launch/step-visa.png" class="step-img" alt="Add a real money account">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/neteller-step.png" class="step-img" alt="Add a real money account">
                                                     </td>
                                                 </tr>
                                                 <tr style="height: 200px;">
@@ -910,7 +934,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="step-text dark-black">
-                                                                    <p class="dark-subtext">Choose your payment method.</p>
+                                                                    <p class="dark-subtext">Choose a payment method available to you.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -991,7 +1015,7 @@
                                             <table class="item-tb-mb">
                                                 <tr>
                                                     <td align="center" class="col-3-td-mb dark-black">
-                                                        <img src="https://static.deriv.com/email/images/marketing/launch/step-visa.png" class="step-img" alt="Add a real money account">
+                                                        <img src="https://static.deriv.com/email/images/marketing/real-acc/neteller-step.png" class="step-img" alt="Add a real money account">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1005,7 +1029,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="step-text-mb dark-black">
-                                                                    <p class="dark-subtext">Choose your payment method.</p>
+                                                                    <p class="dark-subtext">Choose a payment method available to you.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -1060,11 +1084,11 @@
                                 <!--[if (gte mso 9)|(IE)]>
                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/cashier/deposit" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="40%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Make a deposit now</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:16px;font-weight:bold;">Make a deposit</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://app.deriv.com/cashier/deposit" target="_blank">Make a deposit now</a>
+                                <a class="button" href="https://app.deriv.com/cashier/deposit" target="_blank">Make a deposit</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
@@ -1080,23 +1104,17 @@
                     <!--[if (gte mso 9)|(IE)]>
                         <table id="ol-footer-table" align="center"><tr><td>
                             <center>
-                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                <a href="https://twitter.com/deriv_eu/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/twitter-gray.png" height="20" width="20" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                                <a href="https://www.facebook.com/DerivEU/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" height="20" width="20" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                                <a href="https://instagram.com/deriv_eu/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" height="20" width="20" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://t.me/derivdotcomofficial" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" height="20" width="20" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
-                                </a>&nbsp;&nbsp;
                                 <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" height="20" width="20" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/>&nbsp;&nbsp;
-                                </a>
-                                <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/youtube-gray.png" height="20" width="20" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/>
+                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" height="20" width="20" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/>
                                 </a>
                             </center>
                     <![endif]-->
@@ -1106,34 +1124,64 @@
                         <!-- SOCIAL -->
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
-                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                <a href="https://twitter.com/deriv_eu/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/twitter-gray.png" style="height: 20px;" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                                <a href="https://www.facebook.com/DerivEU/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" style="height: 20px;" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                                <a href="https://instagram.com/deriv_eu/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" style="height: 20px;" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://t.me/derivdotcomofficial" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" style="height: 20px;" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
-                                </a>&nbsp;&nbsp;
                                 <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" style="height: 20px;" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/>&nbsp;&nbsp;
+                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" style="height: 20px;" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/>
                                 </a>
-                                <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/youtube-gray.png" style="height: 20px;" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/>
-                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 10px 30px 20px;" class="dark-black">
+                                <p class="dark-subtext">This email is a marketing email intended for Retail and Professional Clients and has been issued by Deriv Investments (Europe) Limited with the registered address: W Business Centre, Level 3, Triq Dun Karm, Birkirkara, BKR 9033, Malta.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 20px;" class="dark-black">
+                                <p class="dark-subtext">Deriv Investments (Europe) Limited is licensed in Malta and regulated by the Malta Financial Services Authority under the Investment Services Act, to provide investment services in the European Union.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 20px;" class="dark-black">
+                                <p class="dark-subtext">Deriv Investments (Europe) Limited is authorised to deal on its own account and is both the manufacturer and distributor of its products.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 20px;" class="dark-black">
+                                <p class="dark-subtext">The products offered by Deriv Investments (Europe) Limited, including CFDs are classed as ‘complex products’ and may not be suitable for retail clients. CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 73% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 20px;" class="dark-black">
+                                <p class="dark-subtext">The products may be affected by changes in currency exchange rates; If you invest in this product, you may lose some or all of the money you invest; The value of your investment may go down as well as up.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 20px;" class="dark-black">
+                                <p class="dark-subtext">Deriv Investments (Europe) Limited does not offer investment advice.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">We will never share our email lists and other data with a third party. To learn more about how we protect your personal and financial information, please read our security and privacy policy.</p>
                             </td>
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p><a href="https://eu.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
                         <tr>
                             <td id="f-logo" align="center" class="dark-black">
-                                <a href="https://www.deriv.com">
+                                <a href="https://eu.deriv.com">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" height="20" title="Deriv.com">
                                     <![endif]-->

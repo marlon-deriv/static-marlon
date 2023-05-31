@@ -179,12 +179,14 @@
                         background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
                         width: 100%;
+                        max-width: 600px !important;
                         vertical-align: top;
                     }
                     #logo-img-td img{ height: 33px; max-height: 33px; margin: auto; padding: 25px 0px; }
                     #title-img-td img{ height: 200px;}
-                    #slash-td{ margin: 0; padding: 0; }
+                    #slash-td{  width: 100%; max-width: 600px !important; margin: 0; padding: 0; }
                     #slash-td img{ width: 100%; margin: 0; padding: 0; }
+                    #title-text-td{ width: 580px; }
                     .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
                     .data-property-td{ width: 35%; }
                     .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
@@ -236,7 +238,7 @@
                 /* Footer styles */
                     #footer-table{
                         width: 100%;
-                        max-width: 600px;
+                        max-width: 600px !important;
                         background-color: #fff;
                         padding: 0;
                         border: 0;
@@ -277,10 +279,10 @@
                 /* End of footer styles */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
-                        #header-td{ max-width: 600px; }
+                        #header-td{ max-width: 600px !important; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        h1{ padding: 0px 30px; margin-top: 10px; }
+                        h1{ font-size: 25px !important; padding: 0px 30px; margin-top: 10px; }
                         #slash-td{ margin: 0; padding: 0; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
@@ -312,7 +314,7 @@
                     }
                     @media screen and (max-width: 460px){
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 15px; margin-top: 5px; font-size: 20px; font-weight: 600; }
+                        #title-text-td h1{ padding: 10px 15px; margin-top: 5px; font-size: 20px !important; font-weight: 600; }
                         .email-data-tb{ width: 98%; }
                         .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
                         li, a.button, a.button-white, .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div, .paragraph-td-discl p, .columns-2-b-title, .columns-2-b-text, #footer-social-td, #footer-links-td{ font-size: 12px; }
@@ -397,7 +399,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td bgcolor="#ff444f" cellspacing="0">
+                                            <td cellspacing="0">
                                                 <h1 style="padding: 0px 50px 0px 50px; margin-top: 15px; margin-left: 30px; color: #fff !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;" class="dark-subtext">Scheduled system maintenance, 27 Feb at 7:00 GMT</h1>
                                             </td>
                                         </tr>
