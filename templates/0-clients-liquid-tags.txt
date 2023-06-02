@@ -28,7 +28,7 @@ Hello trader,
 
 -- ES --
 {% if customer.name != blank %}
-Hola, {{customer.name | titlecase }},
+Hola {{customer.name | titlecase }},
 {% else %}
 Hola, trader,
 {% endif %}
