@@ -9,7 +9,7 @@ Hello partner,
 {% if customer.name != blank %}
 Hola {{customer.name | titlecase }},
 {% else %}
-Hola, socio,
+Hola socio,
 {% endif %}
 
 -- FR --
