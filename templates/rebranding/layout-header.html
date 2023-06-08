@@ -43,18 +43,17 @@
                         *, h1, h2, h3, td, { font-family: 'Ubuntu', Arial, sans-serif; }
                         body{ background-color: #eee;}
                         p, a, .greeting-td p, .paragraph-td p{ font-family: 'IBM Plex Sans', Arial, sans-serif; }
-                        h1{ font-size: 27px; font-weight: 700; padding: 0 0 20px 20px; }
+                        h1{ font-size: 25px; font-weight: 700; padding: 0 0 20px 20px; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
-                        a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
+                        a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 12px; text-decoration: none; text-align: center; }
                         .button:hover{ background-color: #d43e47; }
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
                         #ol-logo-img-td{ background-color:#ff444f; width: 300px; height: 55px; }
-                        #ol-header-img-td{ background-color:#fff; width: 600px; }
                         .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
-                        .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 16px; font-weight: 400; line-height: 1.5; }
+                        .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 12px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
@@ -94,6 +93,7 @@
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                h1{ padding: 0px 80px 0px; margin-top: 15px; color: #414652 !important; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -139,14 +139,11 @@
                         text-decoration: none;
                     }
                     a:hover{ text-decoration: underline; }
-                    a.button{
-                        background-image: linear-gradient(#ff444f,#ff444f);
-                        background-color: #ff444f;
-                        padding: 8px 20px;
+                    a.button, a.button-white{
+                        padding: 6px 20px;
                         border: 0;
                         border-radius: 16px;
-                        font-size: 13px;
-                        color: #fff !important;
+                        font-size: 12px;
                         font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
@@ -154,7 +151,15 @@
                         display: inline-block;
                         overflow: visible;
                     }
-                    .button:hover{ background-color: #d43e47; }
+                    a.button{
+                        background-image: linear-gradient(#ff444f,#ff444f);
+                        background-color: #ff444f;
+                        color: #fff !important;
+                    }
+                    a.button-white{
+                        background-color: #fff !important;
+                        color: #ff444f;
+                    }
                 /* End of Deriv styles */
                 /* Layout structure classes */
                     #ext-table{ margin: auto; }
@@ -173,31 +178,20 @@
                     #logo-img-td{ 
                         background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
-                        width: 50%;
-                        height: 50px;
-                        vertical-align: top;
-                        text-align: center;
-                    }
-                    #logo-img-td img{ height: 21px; max-height: 21px; padding: 24px 0 0 25px; }
-                    #header-img-td{ 
-                        background-color: #fff;
                         width: 100%;
+                        vertical-align: top;
                     }
-                    #header-img-td img{ width: 600px; }
-                    #title-text-td{ vertical-align: top; }
-                    #title-text-td h1{ padding: 0px 60px; font-size: 30px; font-weight: 700; text-align: center; line-height: 40px;}
-                    .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
-                    .data-property-td{ width: 35%; font-weight: 700; }
-                    .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
-                    .data-value-td{ font-weight: 500; }
-                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 10px 0;}
+                    #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
+                    #logo-img-td img{ height: 21px; max-height: 21px; margin: auto; padding: 24px 0 0 25px; }
+                    #title-img-td img{ width: 600px; vertical-align: top;}
+                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
                     .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
+                        color: #414652;
                         line-height: 1.5;
                     }
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -218,22 +212,13 @@
                     li{
                         padding: 2px 0 0 5px;
                         font-family: inherit;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-weight: 400;
                         text-align: left;
                         line-height: 24px;
                     }
                     .list-ul{ padding: 0px 30px 0px 40px; }
                 /* End of list styles */
-                /* Table inside table styles */
-                    .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
-                    .columns-2-a{ width: 71px; }
-                    .columns-2-a img{ margin: auto !important; border: 0; display: block; }
-                    .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
-                    .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
-                    .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
-                    .no-padding-td p{ margin: 7px; }
-                /* End of table inside table styles */
                 /* Footer styles */
                     #footer-table{
                         width: 100%;
@@ -246,7 +231,7 @@
                     #footer-social-td{
                         padding: 20px 20px 35px;
                         color: #fff;
-                        font-size: 12px;
+                        font-size: 11px;
                         font-weight: 400;
                         line-height: 18px;
                     }
@@ -281,23 +266,18 @@
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        #title-text-td h1{ padding: 10px 10px 10px 20px; margin-top: 10px; font-size: 20px; font-weight: 600; line-height: 30px; color: green !important;}
+                        #title-img-td img{ width: 100% !important; }
+                        h1{ padding: 0px 30px 0px !important; margin-top: 10px; }
                         #slash-td{ margin: 0; padding: 0; }
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 14px; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
-                        .email-data-tb{ width: 94%; }
-                        .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
+                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
+                            font-size: 13px !important;
+                        }
                         .list-ul{ padding: 0px 10px 0px 15px; }
-                        .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
-                        .columns-2-a{ width: 50px; }
-                        .columns-2-a img{ width: 60px; margin: auto !important; }
-                        .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
-                        .columns-2-b-title{ font-size: 14px; font-weight: 550; }
-                        .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
                         #footer-social-td img{ height: 20px; }
                         .mobile-hide{
                             /* Hide desktop content on mobile */
@@ -314,10 +294,8 @@
                     }
                     @media screen and (max-width: 460px){
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; line-height: 25px;}
-                        .email-data-tb{ width: 98%; }
-                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
-                        .link-div{ font-size: 12px; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        .link-div{ font-size: 11px; }
                     }
                     @media screen and (max-width: 380px){ 
                         #title-text-td h1{ font-size: 16px; }
@@ -385,7 +363,7 @@
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
                                             <td id="ol-logo-img-td" align="center">
-                                                <div style="text-align: center;">
+                                                <div style="margin-left: 30px;">
                                                     <a href="https://www.deriv.com">
                                                         <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="21" title="Deriv.com"/>
                                                     </a>
@@ -393,27 +371,33 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                        <td id="ol-header-img-td" class="dark-black">
-                                            <a href="https://www.deriv.com">
-                                                <img src="img/sample-header.png" title="Deriv.com" width="600">
-                                            </a>
-                                        </td>
-                                    </tr>
+                                            <td id="title-img-td" align="center">
+                                                <img src="https://static-marlon.vercel.app/templates/rebranding/img/sample-header.png" width="600" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#fff" cellpadding="0" cellspacing="0">
+                                                <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">Broker Of The Year award with Ultimate Fintech</h1>
+                                            </td>
+                                        </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
-                                        <td id="logo-img-td">
+                                        <td id="logo-img-td" align="center">
                                             <a href="https://www.deriv.com">
                                                 <img src="https://static.deriv.com/logos/deriv-white-2023.png" title="Deriv.com">
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td id="header-img-td" class="dark-black">
-                                            <a href="https://www.deriv.com">
-                                                <img src="img/sample-header.png" title="Deriv.com">
-                                            </a>
+                                        <td id="title-img-td" align="center">
+                                            <img src="https://static-marlon.vercel.app/templates/rebranding/img/sample-header.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="title-text-td" align="center" style="padding: 0px;">
+                                            <h1>Broker Of The Year award with Ultimate Fintech</h1>
                                         </td>
                                     </tr>
                                 </table>
@@ -421,12 +405,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td id="title-text-td">
-                                <h1 class="dark-subtext">Broker Of The Year award with Ultimate Fintech</h1>
+                            <td class="greeting-td" align="left" style="padding: 10px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Hi [client's name],</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
                                 <p class="dark-subtext">We are pleased to announce that Deriv, a leading online trading platform, has been awarded the Broker of the Year award at the prestigious Ultimate Fintech ceremony. This recognition highlights Deriv's commitment to providing the best possible trading experience for its clients.</p>
                             </td>
                         </tr>
@@ -441,21 +425,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
                                 <p class="dark-subtext">Deriv remains committed to delivering the best possible trading experience for its clients and looks forward to serving them in the future.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" class="dark-black" style="padding: 10px 30px 40px 30px;">
-                                <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
-                                <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Learn More</center>
-                                </v:roundrect>
-                                <![endif]-->
-                                <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://deriv.com/" target="_blank">Learn More</a>
-                                <!--<![endif]-->
                             </td>
                         </tr>
                     </table>
@@ -519,7 +490,6 @@
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
                                 <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? {{snippets.custom_unsubscribe_link}}</a></p>
                             </td>
                         </tr>
                         <tr>
