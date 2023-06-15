@@ -392,12 +392,16 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hola [client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hola {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hola trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">¡Se acerca la fecha de nuestro Seminario de Afiliados de Perú!Nuestro Equipo de Marketing de Afiliados estará en el hotel Pullman Miraflores en julio, para compartir contigo sesiones técnicas y de marketing sobre nuestros productos. Nos emociona encontrarte ahí:</p>
+                                <p class="dark-subtext">¡Se acerca la fecha de nuestro Seminario de Afiliados de Perú! Nuestro Equipo de Marketing de Afiliados estará en el hotel Pullman Miraflores en julio, para compartir contigo sesiones técnicas y de marketing sobre nuestros productos. Nos emociona encontrarte ahí:</p>
                             </td>
                         </tr>
                         <tr>
