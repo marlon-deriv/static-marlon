@@ -93,7 +93,7 @@
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color: #414652; }
-                h2{ padding: 0px 50px 0px; margin-top: 15px; color: #414652 !important; font-size: 18px; font-weight: 700; text-align: center; line-height: 1.2; }
+                h1{ padding: 0px 80px 0px; margin-top: 15px; color: #414652 !important; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -143,7 +143,7 @@
                         padding: 6px 20px;
                         border: 0;
                         border-radius: 16px;
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
@@ -175,15 +175,16 @@
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
                     #title-img-tb{ width: 100%; height: 100%; margin: 0; }
-                    #logo-img-td, #title-img-td{ 
+                    #logo-img-td{ 
                         background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
                         width: 100%;
                         vertical-align: top;
                     }
-                    #title-text-td{ width: 100%; vertical-align: top;}
+                    #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
                     #logo-img-td img{ height: 21px; max-height: 21px; margin: auto; padding: 24px 0 0 25px; }
-                    #title-img-td img{ width: 420px; vertical-align: middle;}
+                    #title-img-td img{ width: 600px; vertical-align: top;}
+                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
                     .greeting-td p, .paragraph-td p{
                         margin: 0;
                         font-size: 16px;
@@ -194,7 +195,7 @@
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
-                        font-size: 13px;
+                        font-size: 12px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
@@ -211,7 +212,7 @@
                     li{
                         padding: 2px 0 0 5px;
                         font-family: inherit;
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 400;
                         text-align: left;
                         line-height: 24px;
@@ -221,14 +222,9 @@
                 /* Layout specific classes */
                     .payments-td, .payments-session-td, .payments-td-nb{ max-width: 600px; margin: auto; background-color: #f7f7f7; padding-bottom: 20px; padding-top: 15px;}
                     .payments-td{ border-top: 1px solid #eee;}
-                    .payment-tb{ width: 100%; max-width: 540px; margin: auto; }
-                    .payment-td-icon{ width: 20%; max-width: 110px; vertical-align: middle;}
+                    .payment-tb{ width: 100%; max-width: 540px; margin: auto; }                    
                     .payment-td-icon img{ width: 80px; text-align: center; margin: auto;}
                     .payment-td-desc{ padding: 5px 0px 0px 5px; }
-                    .payment-td-link{ width: 20%; max-width: 80px; font-size: 14px; padding-left: 15px; vertical-align: middle;}
-                    .payment-name-td p{ margin: 0; font-family: 'IBM Plex Sans'; font-size: 16px; font-weight: 600; line-height: 24px; padding-bottom: 8px; }
-                    .payment-desc-td p{ margin: 0; font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 21px; padding-bottom: 8px; text-align: center;}
-                    .payment-limits-td p{ margin: 0; font-family: 'IBM Plex Sans'; color: #999; font-size: 12px; line-height: 18px; padding-bottom: 8px; }
                     #cols-3-tb-ext{ width: 100%; max-width: 540px; margin: 0; }
                     .col-3-td{ width: 33.3%; }
                     .col-3-td-mb{ width: 100%; }
@@ -282,14 +278,17 @@
                         font-weight: 400;
                     }
                     #f-logo{ padding: 30px; }
+                    .trustpilot-td{ padding: 40px 30px 30px; background-color: #ddd; }
+                    .trustpilot-widget a{ text-decoration: none; }
+                    .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
                 /* End of footer styles */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        #title-img-td img{ width: 70% !important; }
-                        h2{ padding: 0px 30px 0px !important; margin-top: 10px; }
+                        #title-img-td img{ width: 100% !important; }
+                        h1{ padding: 0px 30px 0px !important; margin-top: 10px; }
                         #slash-td{ margin: 0; padding: 0; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
@@ -297,9 +296,8 @@
                             padding-right: 15px !important;
                         }
                         .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
-                            font-size: 14px !important;
+                            font-size: 13px !important;
                         }
-                        .payment-desc-td{ font-size: 14px; line-height: 1.5; padding-bottom: 5px; text-align: left !important;}
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         #footer-social-td img{ height: 20px; }
                         .mobile-hide{
@@ -317,10 +315,11 @@
                     }
                     @media screen and (max-width: 460px){
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        h2{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        .link-div{ font-size: 11px; }
                     }
                     @media screen and (max-width: 380px){ 
-                        h2{ font-size: 16px; }
+                        #title-text-td h1{ font-size: 16px; }
                     }
                 /* End of mobile styles */
                 /* Dark mode styles */
@@ -332,41 +331,35 @@
                         }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
+                        /* Hides light mode-only content */
+                        .hide-light{ display: none !important; }
+                        .show-dark{ display: block !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong, em { color: #fff !important; }
-                        .dark-gray{ background-color: #2b2b2b !important; }
+                        h1, h2, p, span, b, strong { color: #fff !important; }
+                        .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         #logo-img-td{ 
                             background-image: linear-gradient(#ff444f,#ff444f);
                             background-color: #ff444f;
                         }
-                        /* Hides light mode-only content */
-                        .hide-light{ display: none !important; }
-                        .show-dark{ display: block !important; }
-                        .hide-dark-h-logo{ display: none !important; }
-                        .logos-white-div{
-                            display: block !important;
-                            visibility: inherit !important;
-                            overflow: visible !important;
-                            float: none !important;
-                        }
+                        .email-data-tb, .link-div{ background-color: #2e2e2e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] em{ color: #fff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #fff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
-                    [data-ogsc] .dark-gray{ background-color: #2b2b2b !important; }
+                    [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
-                    [data-ogsc] .logos-white-div{ display: block !important; visibility: inherit !important; overflow: visible !important; float: none !important; }
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
+                        .email-data-tb, .link-div{ background-color: #2e2e2e !important;}
                     }
                 /* End of dark mode styles */
             </style>
@@ -425,7 +418,7 @@
                                     </tr>
                                     <tr>
                                         <td id="title-img-td" align="center" style="background-color: #ff444f;">
-                                            <img src="https://static.deriv.com/email/images/header-2023/gray-key.png" alt="" style="width: 70%">
+                                            <img src="https://static.deriv.com/email/images/header-2023/gray-key.png" alt="">
                                         </td>
                                     </tr>
                                     <tr>

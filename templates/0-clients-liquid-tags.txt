@@ -30,7 +30,7 @@ Hello trader,
 {% if customer.name != blank %}
 Hola {{customer.name | titlecase }},
 {% else %}
-Hola, trader,
+Hola trader,
 {% endif %}
 
 -- FR --
