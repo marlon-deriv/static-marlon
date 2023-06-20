@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title></title>
+        <title>¡Reserva tu lugar en nuestro Seminario! 🇵🇪</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -201,9 +201,10 @@
                         line-height: 1.5;
                     }
                     .body-img{
-                        width: 100%;
+                        width: 85%;
                         display: block;
                         outline: none;
+                        border-radius: 10px;
                     }
                 /* End of layout structure classes */
                 /* List styles */
@@ -364,7 +365,7 @@
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
                                             <td id="title-img-td" align="center">
-                                                <img src="https://static.deriv.com/email/images/header-2023/peru-seminar-reminder.png" width="600" alt="">
+                                                <img src="https://static.deriv.com/email/images/header-2023/ecuador_seminar.png" width="600" alt="">
                                             </td>
                                         </tr>
                                         <tr>
@@ -377,12 +378,12 @@
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
                                         <td id="title-img-td" align="center">
-                                            <img src="https://static.deriv.com/email/images/header-2023/peru-seminar-reminder.png" alt="">
+                                            <img src="https://static.deriv.com/email/images/header-2023/ecuador_seminar.png" alt="">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td id="title-text-td" align="center" style="padding: 0px;">
-                                            <h1 class="dark-subtext">¡Nos vemos mañana en el Seminario de Afiliados!</h1>
+                                            <h1 class="dark-subtext">¡Nos vemos mañana en el Seminariode Afiliados!</h1>
                                         </td>
                                     </tr>
                                 </table>
@@ -391,7 +392,11 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hola [client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hola {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hola trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
@@ -401,13 +406,12 @@
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Comenzaremos a las <strong>10:00 a.m. en la sala de conferencias del hotel Hilton Colon Quito</strong>. Durante el evento podrás compartir tus comentarios acerca de nuestros productos y programas de asociación, y conectar con otros asociados de tu país.</p>
+                                <p class="dark-subtext">Comenzaremos a las <strong>10:00 a.m. en la sala de conferencias del hotel Colon Guayaquil</strong>. Durante el evento podrás compartir tus comentarios acerca de nuestros productos y programas de asociación, y conectar con otros asociados de tu país.</p>
                             </td>
                         </tr>
                         <tr>
                             <td align="center" class="dark-black">
-                                <!-- <input class="body-img" type="image" src="https://static.deriv.com/email/images/design-2023/peru-seminar-content.png"/> -->
-                                <input class="body-img" type="image" src="learning-section.png"/>
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/design-2023/learning_section.png"/>
                             </td>
                         </tr>
                         <tr>
@@ -416,21 +420,40 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">Solo podrán participar los asociados que se hayan registrado previamente, ya que contamos con cupos limitados. Si ya te registraste, puedes omitir este paso.</p>
-                            </td>
-                        </tr>
-                        <tr>
                             <td align="center" class="dark-black">
                                 <!--[if (gte mso 9)|(IE)]>
                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://docs.google.com/forms/d/e/1FAIpQLScOlcwqMkmec1bMzIaVEFOovLKrMAeyvbkHnZLcag4ps3sdHA/viewform" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Descargar e-book</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Descargar programa</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScOlcwqMkmec1bMzIaVEFOovLKrMAeyvbkHnZLcag4ps3sdHA/viewform" target="_blank">Descargar e-book</a>
+                                <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScOlcwqMkmec1bMzIaVEFOovLKrMAeyvbkHnZLcag4ps3sdHA/viewform" target="_blank">Descargar programa</a>
                                 <!--<![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="center" style="padding: 30px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">No olvides seguirnos y etiquetarnos en nuestras cuentas oficiales en español:</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" class="dark-black">
+                                <table style="width: 90%; margin: auto;" class="dark-black">
+                                    <tr>
+                                        <td style="width: 20%; max-width: 196px; min-width: 100px;">&nbsp;</td>
+                                        <td style="width: 20%; max-width: 196px; min-width: 100px;" align="center">
+                                            <a href="https://www.facebook.com/derivespanol" target="_blank"><img src="https://static.deriv.com/email/images/icons/facebook-red.png" alt="Facebook"/></a>
+                                        </td>
+                                        <td style="width: 20%; max-width: 196px; min-width: 100px;" align="center">
+                                            <a href="https://www.instagram.com/deriv_espanol/" target="_blank"><img src="https://static.deriv.com/email/images/icons/instagram-red.png" alt="Instagram"/></a>
+                                        </td>
+                                        <td style="width: 20%; max-width: 196px; min-width: 100px;" align="center">
+                                            <a href="https://twitter.com/derivespanol?s=11&t=-e4nxSG_9VQKWlxf4fmNRA" target="_blank"><img src="https://static.deriv.com/email/images/icons/twitter-red.png" alt="Twitter"/></a>
+                                        </td>
+                                        <td style="width: 20%; max-width: 196px; min-width: 100px;">&nbsp;</td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>

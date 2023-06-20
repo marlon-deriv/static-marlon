@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title></title>
+        <title>¡Faltan 9 días para vernos en Ecuador! 🇪🇨</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -201,9 +201,10 @@
                         line-height: 1.5;
                     }
                     .body-img{
-                        width: 100%;
+                        width: 85%;
                         display: block;
                         outline: none;
+                        border-radius: 10px;
                     }
                 /* End of layout structure classes */
                 /* List styles */
@@ -364,12 +365,12 @@
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
                                             <td id="title-img-td" align="center">
-                                                <img src="https://static.deriv.com/email/images/header-2023/peru-seminar-reminder.png" width="600" alt="">
+                                                <img src="https://static.deriv.com/email/images/header-2023/ecuador_seminar.png" width="600" alt="">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td bgcolor="#fff" cellpadding="0" cellspacing="0">
-                                                <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">¡Nos vemos mañana en el Seminariode Afiliados!</h1>
+                                                <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">Nos vemos en el Seminario de Afiliados de Ecuador</h1>
                                             </td>
                                         </tr>
                                     </table>
@@ -377,12 +378,12 @@
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
                                         <td id="title-img-td" align="center">
-                                            <img src="https://static.deriv.com/email/images/header-2023/peru-seminar-reminder.png" alt="">
+                                            <img src="https://static.deriv.com/email/images/header-2023/ecuador_seminar.png" alt="">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td id="title-text-td" align="center" style="padding: 0px;">
-                                            <h1 class="dark-subtext">¡Nos vemos mañana en el Seminario de Afiliados!</h1>
+                                            <h1 class="dark-subtext">Nos vemos en el Seminario de Afiliados de Ecuador</h1>
                                         </td>
                                     </tr>
                                 </table>
@@ -391,33 +392,181 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hola [client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hola {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hola trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">¡Mañana es el gran día de nuestro evento! Nos hemos dedicado intensamente a su planificación para que sea una experiencia inolvidable para ti.</p>
+                                <p class="dark-subtext">¡Tenemos todo listo para encontrarnos en Ecuador el <strong>29 de junio</strong> y el <strong>1 de julio</strong>!</p>
                             </td>
                         </tr>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                            <tr style="display: none; mso-hide:all;" class="mb-visible-block">
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0px 0px 0px 40px; width: 80%; margin: auto;" class="dark-black">
+                                            <table style="width: 100%; margin: 0 auto;">
+                                                <tr>
+                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
+                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
+                                                    </td>
+                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
+                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Quito, Ecuador</span><br/>
+                                                            <strong>29 de Junio</strong><br/>
+                                                            Hilton Colón Quito<br/>
+                                                            10 am - 4pm
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px 0px 20px 40px; width: 80%; margin: auto;" class="dark-black">
+                                            <table style="width: 100%; margin: 0 auto;">
+                                                <tr>
+                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
+                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
+                                                    </td>
+                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
+                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;"> Guayaquil, Ecuador</span><br/>
+                                                            <strong>1 de Julio</strong><br/>
+                                                            Hilton Colón Guayaquil<br/>
+                                                            10 am - 4pm
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <![endif]-->
+                        <!--[if !gte mso 9]><!-- -->
+
+                        <tr class="mobile-hide">
+                            <td>
+                                <table style="width: 80%; margin: 0 auto;">
+                                    <tr>
+                                        <td style="padding: 0px 0px 20px 0px; width: 48%;" class="dark-black">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center" width="200">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table style="width: 100%; margin: 0 auto;">
+                                                <tr>
+                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
+                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
+                                                    </td>
+                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
+                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Quito, Ecuador</span><br/>
+                                                            <strong>29 de Junio</strong><br/>
+                                                            Hilton Colón Quito<br/>
+                                                            10 am - 4pm
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="padding: 0px 0px 20px 0px; width: 52%;" class="dark-black">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                                    <table align="center" width="200">
+                                                                        <tr>
+                                                                        <td align="left" valign="top">
+                                                                            <![endif]-->
+                                            <table style="width: 100%; margin: 0 auto;">
+                                                <tr>
+                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
+                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
+                                                    </td>
+                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
+                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;"> Guayaquil, Ecuador</span><br/>
+                                                            <strong>1 de Julio</strong><br/>
+                                                            Hilton Colón Guayaquil<br/>
+                                                            10 am - 4pm
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0px 0px 0px 40px; width: 80%; margin: auto;" class="dark-black">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center" width="200">
+                                                            <tr>
+                                                            <td align="left" valign="top">
+                                                                <![endif]-->
+                                            <table style="width: 100%; margin: 0 auto;">
+                                                <tr>
+                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
+                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
+                                                    </td>
+                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
+                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Quito, Ecuador</span><br/>
+                                                            <strong>29 de Junio</strong><br/>
+                                                            Hilton Colón Quito<br/>
+                                                            10 am - 4pm
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px 0px 20px 40px; width: 80%; margin: auto;" class="dark-black">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                                    <table align="center" width="200">
+                                                                        <tr>
+                                                                        <td align="left" valign="top">
+                                                                            <![endif]-->
+                                            <table style="width: 100%; margin: 0 auto;">
+                                                <tr>
+                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
+                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
+                                                    </td>
+                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
+                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;"> Guayaquil, Ecuador</span><br/>
+                                                            <strong>1 de Julio</strong><br/>
+                                                            Hilton Colón Guayaquil<br/>
+                                                            10 am - 4pm
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--<![endif]-->
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Comenzaremos a las <strong>10:00 a.m. en la sala de conferencias del hotel Hilton Colon Quito</strong>. Durante el evento podrás compartir tus comentarios acerca de nuestros productos y programas de asociación, y conectar con otros asociados de tu país.</p>
+                                <p class="dark-subtext">Como participante, disfrutarás de sesiones exclusivas de apoyo técnico y de marketing sobre nuestros productos, tendrás la oportunidad de conectar con otros asociados de tu país y hacer crecer nuestra colaboración profesional.</p>
                             </td>
                         </tr>
                         <tr>
                             <td align="center" class="dark-black">
-                                <!-- <input class="body-img" type="image" src="https://static.deriv.com/email/images/design-2023/peru-seminar-content.png"/> -->
-                                <input class="body-img" type="image" src="learning-section.png"/>
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/design-2023/learning_section.png"/>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Además, con este correo <strong>queremos regalarte un e-book</strong> para que tengas conocimiento exclusivo de uno de los mercados que es y será tendencia todo el año, ¡y que no te puedes perder!</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">Solo podrán participar los asociados que se hayan registrado previamente, ya que contamos con cupos limitados. Si ya te registraste, puedes omitir este paso.</p>
+                            <td class="paragraph-td" align="center" style="padding: 0px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">Descarga el programa en el siguiente enlace:</p>
                             </td>
                         </tr>
                         <tr>
@@ -425,11 +574,11 @@
                                 <!--[if (gte mso 9)|(IE)]>
                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://docs.google.com/forms/d/e/1FAIpQLScOlcwqMkmec1bMzIaVEFOovLKrMAeyvbkHnZLcag4ps3sdHA/viewform" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Descargar e-book</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Descargar programa</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScOlcwqMkmec1bMzIaVEFOovLKrMAeyvbkHnZLcag4ps3sdHA/viewform" target="_blank">Descargar e-book</a>
+                                <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScOlcwqMkmec1bMzIaVEFOovLKrMAeyvbkHnZLcag4ps3sdHA/viewform" target="_blank">Descargar programa</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
