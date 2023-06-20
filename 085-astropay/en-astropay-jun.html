@@ -392,22 +392,21 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hi {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hello trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">If you have missed trading, we have good news for you!</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Deriv has partnered with Astropay to bring you benefits.</p>
+                                <p class="dark-subtext">We have good news for you! Deriv has partnered with Astropay to bring you benefits!</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">Clients who will fund their Deriv Accounts with Astropay to trade, will be able to benefit from an exclusive 40% Cashback! The Cashback will be credited to your Astropay wallet within 24 hours, which you can then transfer to your Deriv account to trade Forex and other financial products.</p>
+                                <p class="dark-subtext">Clients who will fund their Deriv Accounts with Astropay to trade, will be able to benefit from an <strong>exclusive 40% Cashback!</strong> The Cashback will be credited to your Astropay wallet within 24 hours, which you can then transfer to your Deriv account to trade Forex and other financial products.</p>
                             </td>
                         </tr>
                         <tr>
@@ -427,7 +426,7 @@
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">The Astropay Cashback offer is valid only once per client so make the most of this unique offer while you can! It's the perfect opportunity for you to experience trading with Deriv.</p>
+                                <p class="dark-subtext">The Astropay Cashback offer is valid only once per client so make the most of this unique offer while you can!</p>
                             </td>
                         </tr>
                         <tr>
