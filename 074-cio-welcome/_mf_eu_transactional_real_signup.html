@@ -134,14 +134,9 @@
                     line-height: inherit !important;
                 }
                 /* Deriv styles */
-                    a, a:visited{
-                        color: #ff444f !important;
-                        text-decoration: none;
-                    }
                     a:hover{ text-decoration: underline; }
                     a.button, a.button-white{
                         padding: 6px 20px;
-                        border: 0;
                         border-radius: 16px;
                         font-size: 12px;
                         font-weight: 500 !important;
@@ -152,14 +147,17 @@
                         overflow: visible;
                     }
                     a.button{
-                        background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
+                        border: 0;
                         color: #fff !important;
                     }
                     a.button-white{
-                        background-color: #fff !important;
-                        color: #ff444f;
+                        background-color: #fff;
+                        border: 1px solid #414652;
+                        color: #414652;
                     }
+                    a.button:hover{ background-color: #ff555f !important; }
+                    a.button-white:hover{ background-color: #ddd !important; }
                 /* End of Deriv styles */
                 /* Layout structure classes */
                     #ext-table{ margin: auto; }
@@ -275,9 +273,6 @@
                         font-weight: 400;
                     }
                     #f-logo{ padding: 30px; }
-                    .trustpilot-td{ padding: 40px 30px 30px; background-color: #ddd; }
-                    .trustpilot-widget a{ text-decoration: none; }
-                    .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
                 /* End of footer styles */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
@@ -410,6 +405,11 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td class="paragraph-td" align="center" style="padding: 0px 50px 10px 50px;" class="dark-black">
+                                            <p class="dark-subtext">Your account number is {{event.loginid}}.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <td class="paragraph-td" align="center" style="padding: 0px 50px 30px 50px;" class="dark-black">
                                             <h2 class="dark-subtext">Trade on world markets with your new Deriv account</h2>
                                         </td>
@@ -451,7 +451,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Benefit from round-the-clock trading (Monday to Friday), high liquidity, low barriers to entry, a wide range of  offerings, and opportunities to trade on world events.</p>
+                                                        <p class="dark-subtext"><strong>Forex</strong><br/>
+                                                            Benefit from round-the-clock trading (Monday to Friday), high liquidity, low barriers to entry, a wide range of  offerings, and opportunities to trade on world events.</p>
                                                         <p>
                                                             <a href="https://deriv.com/markets#forex">
                                                                 <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
@@ -470,7 +471,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Sourced from over-the-counter (OTC) markets, our stock indices offer competitively priced asset baskets and allow you to trade outside the regular hours of major stock markets.</p>
+                                                        <p class="dark-subtext"><strong>Stock indices</strong><br/>
+                                                            Sourced from over-the-counter (OTC) markets, our stock indices offer competitively priced asset baskets and allow you to trade outside the regular hours of major stock markets.</p>
                                                         <p class="dark-subtext">
                                                             <a href="https://deriv.com/markets#stock">
                                                                 <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
@@ -489,7 +491,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="step-text dark-black">
-                                                        <p class="dark-subtext">Speculate on the price movements of silver, gold, oil, and more. Profit from the price difference when the market moves in the direction that you have predicted.</p>
+                                                        <p class="dark-subtext"><strong>Commodities</strong><br/>
+                                                            Speculate on the price movements of silver, gold, oil, and more. Profit from the price difference when the market moves in the direction that you have predicted.</p>
                                                         <p class="dark-subtext">
                                                             <a href="https://deriv.com/markets#commodities">
                                                                 <img src="https://static.deriv.com/email/images/marketing/real-acc/2-pink.png" border="0" style="margin-left: 120px;" alt="Deriv.com">
@@ -511,7 +514,7 @@
                             <td align="left" class="dark-black">
                                 <table>
                                     <tr>
-                                        <td style="padding: 20px 0px;" class="payments-td dark-gray">
+                                        <td style="padding: 20px 0px;" class="payments-td-nb dark-black">
                                             <table style="width: 90%; margin: auto;">
                                                 <tr>
                                                     <td align="left" class="col-3-td-mb dark-black">
@@ -534,7 +537,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-bottom: 20px;" class="payments-td dark-gray">
+                                        <td style="padding-bottom: 20px;" class="payments-td dark-black">
                                             <table style="width: 90%; margin: auto;">
                                                 <tr>
                                                     <td align="left" class="col-3-td-mb dark-black">
@@ -557,7 +560,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-bottom: 20px;" class="payments-td dark-gray">
+                                        <td style="padding-bottom: 20px;" class="payments-td dark-black">
                                             <table style="width: 90%; margin: auto;">
                                                 <tr>
                                                     <td align="left" class="col-3-td-mb dark-black">
@@ -834,7 +837,7 @@
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://app.deriv.com/cashier/deposit" target="_blank">View all payment options</a>
+                                <a class="button-white" href="https://app.deriv.com/cashier/deposit" target="_blank" style="color: #414652 !important">View all payment options</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
@@ -1042,6 +1045,19 @@
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
                                 <p class="dark-subtext">Once approved, the deposit amount will appear in your Deriv USD balance and you can begin trading.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="dark-black" style="padding: 20px 50px 10px 50px;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/cashier/deposit" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Make a deposit now</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="https://app.deriv.com/cashier/deposit" target="_blank">Make a deposit now</a>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>

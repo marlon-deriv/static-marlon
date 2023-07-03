@@ -134,14 +134,9 @@
                     line-height: inherit !important;
                 }
                 /* Deriv styles */
-                    a, a:visited{
-                        color: #ff444f !important;
-                        text-decoration: none;
-                    }
-                    a:hover{ text-decoration: underline; }
+                a:hover{ text-decoration: underline; }
                     a.button, a.button-white{
                         padding: 6px 20px;
-                        border: 0;
                         border-radius: 16px;
                         font-size: 12px;
                         font-weight: 500 !important;
@@ -152,14 +147,18 @@
                         overflow: visible;
                     }
                     a.button{
-                        background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
+                        border: 0;
                         color: #fff !important;
                     }
                     a.button-white{
-                        background-color: #fff !important;
-                        color: #ff444f;
+                        background-color: #fff;
+                        border: 1px solid #414652;
+                        color: #414652;
                     }
+                    a.button:hover{ background-color: #ff555f !important; }
+                    a.button-white:hover{ background-color: #ddd !important; }
+                /* End of Deriv styles */
                 /* End of Deriv styles */
                 /* Layout structure classes */
                     #ext-table{ margin: auto; }
@@ -518,7 +517,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="dark-gray">
-                                                                    <p class="dark-subtext" style="margin: 0;color: #999; padding: 5px 0px 8px; font-size: 13px;">Min-max deposit: 1-500 &nbsp;|&nbsp; Processing time: Max 1 hour</p>
+                                                                    <p class="dark-subtext" style="margin: 0;color: #999; padding: 5px 0px 8px; font-size: 13px;">Min-max deposit: 1-500 &nbsp;|&nbsp; Processing time: Max 2 hours</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -614,7 +613,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="payments-td-nb dark-gray" style="width: 100% !important;">
+                                        <td class="payments-td dark-gray" style="width: 100% !important;">
                                             <table align="left">
                                                 <tr>
                                                     <td align="left" class="dark-gray" style="padding: 10px 25px 5px;">
@@ -631,7 +630,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="payment-limits-td dark-subtext">
-                                                                    <p class="dark-subtext" style="margin: 0;color: #999; padding: 0px 0px 8px; font-size: 13px;">Min-max deposit: 1-500 &nbsp;|&nbsp; Processing time: Max 1 hour</p>
+                                                                    <p class="dark-subtext" style="margin: 0;color: #999; padding: 0px 0px 8px; font-size: 13px;">Min-max deposit: 1-500 &nbsp;|&nbsp; Processing time: Max 2 hours</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -681,6 +680,19 @@
                         </tr>
                         <!-- [endif]-->
                         <!-- End of Payment methods Mobile -->
+                        <tr>
+                            <td align="center" class="payments-td-nb title-cta dark-gray">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/cashier/deposit" style="height:40px;v-text-anchor:middle;width:230px; border: 1px solid #666;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
+                                <w:anchorlock/>
+                                <center style="color:#333;font-family:sans-serif;font-size:12px;font-weight:bold;">View all payment options</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button-white" href="https://app.deriv.com/cashier/deposit" target="_blank" style="color: #414652 !important;">View all payment options</a>
+                                <!--<![endif]-->
+                            </td>
+                        </tr>
                         <!-- How to fund your account: DESKTOP VERSION -->
                         <tr>
                             <td align="center" style="padding: 20px 30px 0;" class="session-title-td dark-black">
