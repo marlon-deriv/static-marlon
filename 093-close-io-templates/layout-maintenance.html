@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title>e-Visa required to attend Deriv Pan Asia Conference 2023</title>
+        <title></title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -51,7 +51,7 @@
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
-                        #ol-logo-img-td{ width: 300px; height: 55px; }
+                        #ol-logo-img-td{ background-color:#ff444f; width: 300px; height: 55px; }
                         .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
                         .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 12px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
@@ -91,11 +91,9 @@
                     }
                 /* END OF FONTS */
                 /* Applied to all tags */
-                *{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
-                p, a{ font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color: #414652; }
-                h1, h2{ padding: 0px 60px 0px; margin-top: 15px; color: #414652; font-weight: 700; text-align: center; line-height: 1.2; }
-                h1{ font-size: 27px; }
-                h2{ font-size: 18px; }
+                *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
+                p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                h1{ margin-top: 15px; font-size: 32px; font-weight: 700; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -145,7 +143,7 @@
                         padding: 6px 20px;
                         border: 0;
                         border-radius: 16px;
-                        font-size: 12px;
+                        font-size: 16px;
                         font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
@@ -177,27 +175,34 @@
                     }
                     #header-td{ width: 600px; margin: 0; padding: 0; }
                     #title-img-tb{ width: 100%; height: 100%; margin: 0; }
-                    #logo-img-td{ 
+                    #logo-img-td, #title-img-td{ 
                         background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
                         width: 100%;
+                        max-width: 600px !important;
                         vertical-align: top;
                     }
-                    #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
-                    #logo-img-td img{ height: 21px; max-height: 21px; margin: auto; padding: 24px 0 0 25px; }
-                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
-                    .greeting-td p, .paragraph-td p{
+                    #logo-img-td img{ height: 33px; max-height: 33px; margin: auto; padding: 25px 0px; }
+                    #title-img-td img{ height: 200px;}
+                    #slash-td{  width: 100%; max-width: 600px !important; margin: 0; padding: 0; }
+                    #slash-td img{ width: 100%; margin: 0; padding: 0; }
+                    #title-text-td{ width: 580px; }
+                    .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
+                    .data-property-td{ width: 35%; }
+                    .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
+                    .data-value-td{ font-weight: 500; }
+                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 16px; font-weight: 400; padding: 10px 0;}
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
-                        color: #414652;
                         line-height: 1.5;
                     }
-                    .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px; }
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
-                        font-size: 12px;
+                        font-size: 13px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
@@ -213,7 +218,7 @@
                     ul, ol{ padding-left: 25px; }
                     li{
                         padding: 2px 0 0 5px;
-                        font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif;
+                        font-family: inherit;
                         font-size: 16px;
                         font-weight: 400;
                         text-align: left;
@@ -221,11 +226,19 @@
                     }
                     .list-ul{ padding: 0px 30px 0px 40px; }
                 /* End of list styles */
-                
+                /* Table inside table styles */
+                    .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
+                    .columns-2-a{ width: 71px; }
+                    .columns-2-a img{ margin: auto !important; border: 0; display: block; }
+                    .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
+                    .columns-2-b-title{ font-size: 14px; font-weight: 550; line-height: 1; }
+                    .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
+                    .no-padding-td p{ margin: 7px; }
+                /* End of table inside table styles */
                 /* Footer styles */
                     #footer-table{
                         width: 100%;
-                        max-width: 600px;
+                        max-width: 600px !important;
                         background-color: #fff;
                         padding: 0;
                         border: 0;
@@ -234,14 +247,14 @@
                     #footer-social-td{
                         padding: 20px 20px 35px;
                         color: #fff;
-                        font-size: 11px;
+                        font-size: 14px;
                         font-weight: 400;
                         line-height: 18px;
                     }
                     #footer-social-td a{ text-decoration: none; }
                     #footer-links-td{
                         color: #646464;
-                        font-size: 11px;
+                        font-size: 14px;
                         font-weight: 500;
                         line-height: 16px;
                         -webkit-text-size-adjust: 100%;
@@ -266,21 +279,25 @@
                 /* End of footer styles */
                 /* Mobile styles */
                     @media screen and (max-width: 620px){
-                        #header-td{ max-width: 600px; }
+                        #header-td{ max-width: 600px !important; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        h1, h2{ padding: 0px 30px 0px !important; }
+                        h1{ font-size: 25px !important; padding: 0px 30px; margin-top: 10px; }
                         #slash-td{ margin: 0; padding: 0; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
-                        .email-data-tb{ max-width: 450px;}
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
-                            font-size: 13px !important;
-                        }
+                        .email-data-tb{ width: 94%; }
+                        .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
                         .list-ul{ padding: 0px 10px 0px 15px; }
+                        .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
+                        .columns-2-a{ width: 50px; }
+                        .columns-2-a img{ width: 60px; margin: auto !important; }
+                        .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
+                        .columns-2-b-title{ font-weight: 550; }
+                        .columns-2-b-text{ line-height: 1.5; }
                         #footer-social-td img{ height: 20px; }
                         .mobile-hide{
                             /* Hide desktop content on mobile */
@@ -296,10 +313,12 @@
                         }
                     }
                     @media screen and (max-width: 460px){
-                        .email-data-tb{ max-width: 380px;}
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        h2{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
-                        .link-div{ font-size: 11px; }
+                        #title-text-td h1{ padding: 10px 15px; margin-top: 5px; font-size: 20px !important; font-weight: 600; }
+                        .email-data-tb{ width: 98%; }
+                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
+                        li, a.button, a.button-white, .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div, .paragraph-td-discl p, .columns-2-b-title, .columns-2-b-text, #footer-social-td, #footer-links-td{ font-size: 12px; }
+                        
                     }
                     @media screen and (max-width: 380px){ 
                         #title-text-td h1{ font-size: 16px; }
@@ -320,8 +339,8 @@
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong { color: #fff !important; }
-                        .dark-gray{ background-color: #2b2b2b !important; }
+                        h1, h2, p, span, b, strong, em { color: #fff !important; }
+                        .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         #logo-img-td{ 
                             background-image: linear-gradient(#ff444f,#ff444f);
@@ -332,7 +351,7 @@
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #fff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] em{ color: #fff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
@@ -366,24 +385,30 @@
                                 <table id="title-img-tb">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
-                                            <td id="ol-logo-img-td" align="center" bgcolor="#ff444f">
+                                            <td id="ol-logo-img-td" align="center">
                                                 <div style="margin-left: 30px;">
                                                     <a href="https://www.deriv.com">
-                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="21" title="Deriv.com"/>
+                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="33" title="Deriv.com" style="padding: 25px;"/>
                                                     </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td id="slash-td">
-                                                <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="">
+                                                <img src="https://static.deriv.com/email/images/header-2023/red-slash-maintenance.png" alt="">
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td cellspacing="0">
+                                                <h1 style="padding: 0px 50px 0px 50px; margin-top: 15px; margin-left: 30px; color: #fff !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;" class="dark-subtext">Scheduled system maintenance, 27 Feb at 7:00 GMT</h1>
+                                            </td>
+                                        </tr>
+                                        
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
-                                        <td id="logo-img-td">
+                                        <td id="logo-img-td" align="center">
                                             <a href="https://www.deriv.com">
                                                 <img src="https://static.deriv.com/logos/deriv-white-2023.png" title="Deriv.com">
                                             </a>
@@ -391,78 +416,58 @@
                                     </tr>
                                     <tr>
                                         <td id="slash-td">
-                                            <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="">
+                                            <img src="https://static.deriv.com/email/images/header/red-alert.png" alt="">
                                         </td>
                                     </tr>
-                                    <!--<![endif]-->
+                                    <tr>
+                                        <td id="title-text-td" class="dark-black" style="padding: 0px 40px;">
+                                            <h1>Scheduled system maintenance, 27 Feb at 7:00 GMT</h1>
+                                        </td>
+                                    </tr>
                                 </table>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style="padding: 0px;">
-                                <h1 class="dark-subtext" style="margin-top: -15px;"></h1>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">{% if customer.name != blank %}
-                                    Dear {{customer.name | titlecase }},
-                                    {% else %}
-                                     Dear partner,
-                                    {% endif %}</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">The countdown to the Deriv Pan Asia Conference 2023 has begun, and we are excited to have you join us!</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">To ensure a smooth travel experience to Malaysia, it is highly recommended to apply for your e-visa as soon as possible to ensure attendance at this exclusive event. If a guest is joining you, please ensure that they have also submitted their e-visa application.</p>
+                            <td class="paragraph-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">We'll be performing scheduled maintenance on our systems this Monday, 27 February, at 07:00 (GMT), and there will be up to 30 minutes of downtime.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 0px 30px;" class="dark-black">
-                                <p class="dark-subtext">Application(s) must include the following important details:</p>
+                                <p class="dark-subtext">During maintenance, you will not be able to do the following:</p>
                             </td>
                         </tr>
                         <tr>
                             <td align="left" class="list-ul dark-black">
                                 <ul>
-                                    <li class="dark-subtext">Malaysia entry date: 3 August 2023</li>
-                                    <li class="dark-subtext">Malaysia exit date: 8 August 2023</li>
-                                    <li class="dark-subtext">Category of application: Normal</li>
+                                    <li class="dark-subtext"><strong><em>Trade on DTrader, DBot, Binary Bot, SmartTrader, and Deriv GO</em></strong><br/>
+                                        Please check your open positions before the maintenance starts and modify them if needed. You won't be able to modify them during the maintenance period.</li>
+                                    <li class="dark-subtext"><strong><em>Make deposits and withdrawals or any changes to your Deriv account settings</em></strong></li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 10px 30px 0px 30px;" class="dark-black">
-                                <p class="dark-subtext">For more details and processing of e-visa(s), please contact one of the agencies listed below in your respective state or country.</p>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 0px 30px;" class="dark-black">
+                                <p class="dark-subtext">You'll still be able to:</p>
                             </td>
                         </tr>
                         <tr>
                             <td align="left" class="list-ul dark-black">
                                 <ul>
-                                    <li class="dark-subtext">India: <a href="https://www.akbartravels.com/" target="_blank">Akbar Travels</a></li>
-                                    <li class="dark-subtext">Pakistan: <a href="http://akhtartravel.com/" target="_blank">Akhtar Travel and Tours</a></li>
-                                    <li class="dark-subtext">Sri Lanka: <a href="https://evs.lk/" target="_blank">Expo Visa Services</a></li>
+                                    <li class="dark-subtext"><strong><em>Trade on Deriv MT5 and Deriv X</em></strong></li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 20px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">Please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiQ5lYQhPhU7xX_GMQosPiofkg7WYF84J6GGdp8FNGTTA_Yw/viewform" target="_blank">Deriv Pan Asia Conference eVisa Application Information</a> form today to receive your flight and accommodation booking details from us.</p>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Our services will resume as soon as the maintenance is complete.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">If you encounter any issues or require assistance, don't hesitate to contact your Country Manager.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 40px 30px;" class="dark-black">
-                                <p class="dark-subtext">We look forward to welcoming you to the Deriv Pan Asia Conference 2023.</p>
+                            <td class="paragraph-td" align="center" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">If you have any questions, contact us via:<br/>
+                                    <a href="https://deriv.com/?is_livechat_open=true" target="_blank">Live chat</a> | <a href="https://api.whatsapp.com/send/?phone=35699578341&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></p>
                             </td>
                         </tr>
                     </table>
@@ -525,8 +530,7 @@
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? {{snippets.custom_unsubscribe_link}}</a></p>
+                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
                             </td>
                         </tr>
                         <tr>
