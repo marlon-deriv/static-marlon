@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title>Update on Deriv EZ web via Trader's Hub</title>
+        <title>Welcome on board!</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -51,7 +51,7 @@
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
-                        #ol-logo-img-td{ width: 300px; height: 55px; }
+                        #ol-logo-img-td{ background-color:#ff444f; width: 300px; height: 55px; }
                         .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
                         .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 12px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
@@ -91,11 +91,10 @@
                     }
                 /* END OF FONTS */
                 /* Applied to all tags */
-                *{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
-                p, a{ font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color: #414652; }
-                h1, h2{ padding: 0px 60px 0px; margin-top: 15px; color: #414652; font-weight: 700; text-align: center; line-height: 1.2; }
-                h1{ font-size: 27px; }
-                h2{ font-size: 18px; }
+                *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
+                p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                h1{ padding: 0px 60px 0px; margin-top: -15px; color: #414652; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.5; }
+                h3{ padding: 0px 50px 0px; font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -136,14 +135,9 @@
                     line-height: inherit !important;
                 }
                 /* Deriv styles */
-                    a, a:visited{
-                        color: #ff444f !important;
-                        text-decoration: none;
-                    }
-                    a:hover{ text-decoration: underline; }
+                a:hover{ text-decoration: underline; }
                     a.button, a.button-white{
                         padding: 6px 20px;
-                        border: 0;
                         border-radius: 16px;
                         font-size: 12px;
                         font-weight: 500 !important;
@@ -154,14 +148,17 @@
                         overflow: visible;
                     }
                     a.button{
-                        background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
+                        border: 0;
                         color: #fff !important;
                     }
                     a.button-white{
-                        background-color: #fff !important;
-                        color: #ff444f;
+                        background-color: #fff;
+                        border: 1px solid #414652;
+                        color: #414652;
                     }
+                    a.button:hover{ background-color: #ff555f !important; }
+                    a.button-white:hover{ background-color: #ddd !important; }
                 /* End of Deriv styles */
                 /* Layout structure classes */
                     #ext-table{ margin: auto; }
@@ -185,15 +182,15 @@
                     }
                     #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
                     #logo-img-td img{ height: 21px; max-height: 21px; margin: auto; padding: 24px 0 0 25px; }
+                    #title-img-td img{ width: 600px; vertical-align: top;}
                     .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
-                    .greeting-td p, .paragraph-td p{
+                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
                         color: #414652;
                         line-height: 1.5;
                     }
-                    .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
@@ -202,7 +199,7 @@
                         line-height: 1.5;
                     }
                     .body-img{
-                        width: 85%;
+                        width: 280px;
                         display: block;
                         outline: none;
                         border-radius: 10px;
@@ -214,14 +211,13 @@
                     li{
                         padding: 2px 0 0 5px;
                         font-family: inherit;
-                        font-size: 12px;
+                        font-size: 16px;
                         font-weight: 400;
                         text-align: left;
                         line-height: 24px;
                     }
                     .list-ul{ padding: 0px 30px 0px 40px; }
                 /* End of list styles */
-                
                 /* Footer styles */
                     #footer-table{
                         width: 100%;
@@ -269,17 +265,19 @@
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        h2{ padding: 0px 30px 0px !important; margin-top: 10px; }
+                        #title-img-td img{ width: 100% !important; }
+                        h1{ font-size: 22px; padding: 0px 30px 0px !important; margin-top: 10px; }
+                        h3{ font-size: 16px; padding: 0px 20px 0px !important;}
                         #slash-td{ margin: 0; padding: 0; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
-                        .email-data-tb{ max-width: 450px;}
                         .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                             font-size: 13px !important;
                         }
+                        .body-img{ width: 60% !important; padding: 10px 0px;}
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         #footer-social-td img{ height: 20px; }
                         .mobile-hide{
@@ -296,9 +294,8 @@
                         }
                     }
                     @media screen and (max-width: 460px){
-                        .email-data-tb{ max-width: 380px;}
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        h2{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
                         .link-div{ font-size: 11px; }
                     }
                     @media screen and (max-width: 380px){ 
@@ -321,7 +318,7 @@
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
                         h1, h2, p, span, b, strong { color: #fff !important; }
-                        .dark-gray{ background-color: #2b2b2b !important; }
+                        .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         #logo-img-td{ 
                             background-image: linear-gradient(#ff444f,#ff444f);
@@ -366,41 +363,30 @@
                                 <table id="title-img-tb">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
-                                            <td id="ol-logo-img-td" align="center" bgcolor="#ff444f">
-                                                <div style="margin-left: 30px;">
-                                                    <a href="https://www.deriv.com">
-                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="21" title="Deriv.com"/>
-                                                    </a>
-                                                </div>
+                                            <td id="title-img-td" align="center">
+                                                <img src="https://static.deriv.com/email/images/header-2023/coins-arrows-red-bg.png" width="600" alt="">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td id="slash-td">
-                                                <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="">
+                                            <td bgcolor="#fff" cellpadding="0" cellspacing="0">
+                                                <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">Welcome on board!</h1>
                                             </td>
                                         </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
-                                        <td id="logo-img-td">
-                                            <a href="https://www.deriv.com">
-                                                <img src="https://static.deriv.com/logos/deriv-white-2023.png" title="Deriv.com">
-                                            </a>
+                                        <td id="title-img-td" align="center">
+                                            <img src="https://static.deriv.com/email/images/header-2023/ppc-welcome.png" alt="">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td id="slash-td">
-                                            <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="">
+                                        <td id="title-text-td" align="center" style="padding: 0px;">
+                                            <h1 class="dark-subtext">Welcome on board!</h1>
                                         </td>
                                     </tr>
-                                    <!--<![endif]-->
                                 </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" style="padding: 0px;">
-                                <h1 class="dark-subtext" style="margin-top: -15px;">Deriv EZ is temporarily unavailable on Trader's Hub</h1>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
@@ -413,27 +399,163 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">We have temporarily removed the Deriv EZ demo app hosted on our web terminal to further improve the platform. To ensure the best user experience for you, we'll release it at a later date, so keep an eye out for future announcements.</p>
+                            <td class="paragraph-td" align="left" style="padding: 0px 40px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">We're thrilled to have you with us at Deriv and can't wait to share the exciting opportunities that come with trading CFDs on stocks & indices on our platform. </p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">In the meantime, if you would like to continue trading CFDs on Deriv EZ, you can do so via the <a href="https://deriv.com/deriv-go/" target="_blank">Deriv GO app</a>.</p>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">To help you get started, here is your free e-book about trading CFDs on stocks by veteran trader Vince Stanzione. It has everything you need to know to start trading on stocks & indices, including essential tips, trading techniques, and platforms.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">Don't have Deriv GO on your mobile yet? Download it now on the <a href="https://apps.apple.com/my/app/deriv-go-online-trading-app/id1550561298" target="_blank">Apple App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.deriv.app&pli=1" target="_blank">Google Play Store</a>, or <a href="https://appgallery.huawei.com/#/app/C103801913" target="_blank">Huawei App Gallery</a>.</p>
+                            <td align="center" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
+                                <w:anchorlock/>
+                                <center style="color:#414652;font-family:sans-serif;font-size:14px;font-weight:bold;">Download my free e-book now</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button-white" href="#" target="_blank" style="color: #414652 !important;">Download my free e-book now</a>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">We apologise for any inconvenience this may have caused and appreciate your understanding.</p>
+                            <td class="paragraph-td" align="center" style="padding: 10px 30px 0px 30px;" class="dark-black">
+                                <p class="dark-subtext" style="font-weight: 700;">How to open a Deriv MT5 Swap-Free account:</p>
+                            </td>
+                        </tr>
+                        <tr class="mobile-hide">
+                            <td align="center" class="dark-black" style="padding: 30px 30px 0px 30px;">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/ppc-welcome-1.png"/>
+                            </td>
+                        </tr>
+                        <!--[if !gte mso 9]><!-- -->
+                        <div>
+                            <tr style="display: none; mso-hide:all;" class="mb-visible-block" style="padding: 30px 30px 0px 30px;">
+                                <td align="center" class="dark-black" >
+                                    <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/ppc-welcome-1-m.png"/>
+                                </td>
+                            </tr>
+                        </div>
+                        <!--<![endif]-->
+                        <tr>
+                            <td align="center" style="padding: 0px 100px 0px 100px;" class="dark-black mb-no-padding">
+                                <p class="dark-subtext"><strong>Step 1:</strong><br/>
+                                    Log in to your Deriv account.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="mobile-hide">
+                            <td align="center" class="dark-black" style="padding: 30px 30px 0px 30px;">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-2.png"/>
+                            </td>
+                        </tr>
+                        <!--[if !gte mso 9]><!-- -->
+                        <div>
+                            <tr style="display: none; mso-hide:all;" class="mb-visible-block" style="padding: 30px 30px 0px 30px;">
+                                <td align="center" class="dark-black" >
+                                    <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-2-m.png"/>
+                                </td>
+                            </tr>
+                        </div>
+                        <!--<![endif]-->
+                        <tr>
+                            <td align="center" style="padding: 0px 100px 0px 100px;" class="dark-black mb-no-padding">
+                                <p class="dark-subtext"><strong>Step 2:</strong><br/>
+                                    In the <strong>Trader's Hub</strong>, scroll down to <strong>CFDs</strong>, navigate to <strong>Swap-Free</strong> under Deriv MT5, and select <strong>Get</strong>.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="mobile-hide">
+                            <td align="center" class="dark-black" style="padding: 30px 30px 0px 30px;">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-3.png"/>
+                            </td>
+                        </tr>
+                        <!--[if !gte mso 9]><!-- -->
+                        <div>
+                            <tr style="display: none; mso-hide:all;" class="mb-visible-block" style="padding: 30px 30px 0px 30px;">
+                                <td align="center" class="dark-black" >
+                                    <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-3-m.png"/>
+                                </td>
+                            </tr>
+                        </div>
+                        <!--<![endif]-->
+                        <tr>
+                            <td align="center" style="padding: 0px 120px 0px 120px;" class="dark-black mb-no-padding">
+                                <p class="dark-subtext"><strong>Step 3:</strong><br/>
+                                    Select the jurisdiction for your Deriv MT5 Swap-Free account.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="mobile-hide">
+                            <td align="center" class="dark-black" style="padding: 30px 30px 0px 30px;">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-4.png"/>
+                            </td>
+                        </tr>
+                        <!--[if !gte mso 9]><!-- -->
+                        <div>
+                            <tr style="display: none; mso-hide:all;" class="mb-visible-block" style="padding: 30px 30px 0px 30px;">
+                                <td align="center" class="dark-black" >
+                                    <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-4-m.png"/>
+                                </td>
+                            </tr>
+                        </div>
+                        <!--<![endif]-->
+                        <tr>
+                            <td align="center" style="padding: 0px 100px 0px 100px;" class="dark-black mb-no-padding">
+                                <p class="dark-subtext"><strong>Step 4:</strong><br/>
+                                    Enter your <strong>Deriv MT5 password</strong> to add the Swap-Free account and select <strong>Add account</strong>.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="mobile-hide">
+                            <td align="center" class="dark-black" style="padding: 30px 30px 0px 30px;">
+                                <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-5.png"/>
+                            </td>
+                        </tr>
+                        <!--[if !gte mso 9]><!-- -->
+                        <div>
+                            <tr style="display: none; mso-hide:all;" class="mb-visible-block" style="padding: 30px 30px 0px 30px;">
+                                <td align="center" class="dark-black" >
+                                    <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/swap-fees-step-5-m.png"/>
+                                </td>
+                            </tr>
+                        </div>
+                        <!--<![endif]-->
+                        <tr>
+                            <td align="center" style="padding: 0px 100px 20px 100px;" class="dark-black mb-no-padding">
+                                <p class="dark-subtext"><strong>Step 5:</strong><br/>
+                                    Select <strong>Transfer now</strong> to deposit funds into your account and start trading.
+                                </p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="center" style="padding: 20px 30px 40px 30px;" class="dark-black">
+                            <td class="paragraph-td" align="left" style="padding: 20px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">Create a Deriv MT5 Swap-Free account now and start saving on overnight charges!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Create account</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="#" target="_blank">Create account</a>
+                                <!--<![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext" style="font-size: 14px;"><strong>Note:</strong> Effective [DDMMYYY], forex trades on a Deriv MT5 Financial account and Deriv X account will no longer be swap-free.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="center" style="padding: 10px 30px 40px 30px;" class="dark-black">
                                 <p class="dark-subtext">If you have any questions, contact us:<br/>
                                     <a href="https://deriv.com/contact_us/?is_livechat_open=true" target="_blank">Live chat</a> | <a href="https://api.whatsapp.com/send/?phone=35699578341&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></p>
                             </td>
@@ -498,7 +620,8 @@
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
                         <tr>
