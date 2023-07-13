@@ -119,14 +119,15 @@
                     line-height: 1.5;
                 }
 
-                .title-red{
-                    width: 40%;
+                .title-red, .title-red-2{
                     max-height: 50px;
                     background-color: #ff5758;
                     margin: auto;
                     border-radius: 5px;
                 }
-                .title-red p{
+                .title-red{ width: 40%; }
+                .title-red-2{ width: 80%; }
+                .title-red p, .title-red-2 p{
                     padding: 0.3rem 0;
                     text-align: center;
                     vertical-align: middle;
@@ -135,283 +136,206 @@
                     font-weight: 700;
                 }
 
-                /* Followers 1 */
-                #followers-1{ margin-top: 20px; }
-                #followers-1 a{ color: #4b4f6b; font-size: 1.1rem; font-weight: 500; }
-                #followers-chart{ width: 80%; margin: auto; }
-                #followers-chart img{ width: 100%; margin-top: 10px; }
+                /* SM 3 cols */
+                #sm-2{ margin-top: 20px; }
                 .pt-es{ width: 100%; }
-                .deriv-es, .deriv-pt{ width: 50%; float: left; text-align: center; margin-top: 20px; font-size: 1.5rem;}
+                .deriv-es, .deriv-pt{ width: 50%; float: left; text-align: center; margin-top: 20px; font-size: 1rem;}
                 .deriv-es{ color: #ff5758;}
                 .deriv-pt{ color: #4b4f6b;}
-                .posts-3{ width: 25%; float: left; text-align: left; }
+                .chart-area{ width: 47%; min-height: 200px; float: left;}
+                #followers a{ color: #4b4f6b; font-size: 1.1rem; font-weight: 500; }
+                .chart-2{ width: 80%; margin: auto; }
+                #followers-chart img{ width: 90%; margin-top: 10px; }
+
+                /* Marketing campaigns 2 */
+                #campaigns-2, #mkt-comm-6, #ongoing-2{ margin-top: 20px; }
 
                 /* Creatives 4 */
                 #creatives-4{ margin-top: 20px; }
-                .img-thumbs{ width: 24%; height: 250px; float: left;}
-                .img-thumbs img { width: 85%; max-height: 220px; padding-top: 20px; object-fit: cover;}
-                .img-thumbs-center{ width: 3%; height: 150px; margin-top: 40px; float: left; border-left: #ff444f 3px solid; }
+                .img-thumbs{ width: 23%; height: 250px; float: left; }
+                .img-thumbs img { width: 85%; max-height: 220px; text-align: center; padding: 20px 0 0 10px; object-fit: cover;}
+                .img-thumbs-center{ width: 2%; height: 150px; margin: 50px 0 0 2%; float: left; border-left: #4b4f6b 3px solid; }
 
-                /* PPC 1 */
-                #campaigns-tb{ width: 95%; margin: 20px auto 30px; }
-                #campaigns-tb th{ background-color: #666; color: #fff; font-weight: 700; font-size: 1.1rem; text-align: left; padding: 0.3rem; border: 1px solid #fff;}
-                .left-td{ width: 20%; border-left: 2px solid #ddd; padding-left: 0.3rem; text-align: left !important;}
-                .td-15{ width: 15%; }
-                .td-10{ width: 10%;}
-                #campaigns-tb td{ padding: 0.1rem 0.3rem; font-size: 1.1rem; text-align: right;}
-                .low-campaign{ width: 33.3%; margin-top: 30px; float: left; font-size: 1.2rem; text-align: center; color: #4b4f6b; }
+                /* Marketing communications 6 */
+                .comms-6{ width: 30%; height: 150px; margin: 20px 0 0 2%; float: left; }
+                .comms-6 table{ width: 90%; height: 150px; background-color: #f3f1f1; margin: auto; border-radius: 10px; }
+                .comm-title{ font-size: 1.2rem; text-align: center; font-weight: 700; color: #4b4f6b; }
+                .comm-value{ font-size: 1.2rem; text-align: center; color: #ff5758; border-top: 2px dotted #ff5758; padding-top: 10px;}
 
-                /* Emails 1 */
-                .emails-tb{ width: 95%; margin: 20px auto 30px; }
-                .emails-tb th{ width: 20%; color: #4b4f6b; font-weight: 700; font-size: 1.1rem; text-align: center; padding: 0.3rem; }
-                .emails-tb td{ text-align: center; }
-                .es-tr{ color: #ff5758;}
-                .campaign-rate-desc{ width: 20%; float: left; font-weight: 700; text-align: left; }
-                .campaign-rate-chart{ width: 30%; float: left; }
-                .campaign-rate-desc p, .campaign-rate-chart img{ padding: 0.3rem; }
-                .campaign-rate-chart img{ width: 85%; margin: auto; }
-
-                /* Trends 3 */
-                .reg-trend{ width: 33.3%; height: 250px; margin-top: 20px; float: left; text-align: center; }
-                .reg-trend img{ width: 80%; max-height: 250px; margin: 15px auto 0; object-fit: contain;}
-                .trend-list, .trend-list-40{ margin-top: 20px; float: left; }
-                .trend-list{ width: 20%; }
-                .trend-list-40{ width: 40%; }
-                .trend-list li, .trend-list-40 li{ color: #4b4f6b; }
-
-                /* Forward 1 */
-                #forward-1 li{ color: #4b4f6b; line-height: 1.5; font-size: 1rem; }
-                #forward-1 strong{ color: #4b4f6b; }
-
-/* END OF REVIEWED */
-
-                #footer-notes{ width: 90%; margin: auto; padding-top: 30px; margin-bottom: 20px; font-size: 0.8rem; float: left;}
+                /* Ongoing 2 */
+                .ongoing-item{ width: 100%; min-height: 90px; margin-top: 20px; }
+                .ongoing-left, .ongoing-right{ background-color: #f3f1f1; height: 100%; border-radius: 15px; font-size: 1.2rem; padding-top: 20px; padding-bottom: 20px; float: left;}
+                .ongoing-left{ width: 25%; color: #4b4f6b; text-align: center; font-weight: 700; }
+                .ongoing-right{ width: 70%; padding-left: 2%; font-weight: 500;}
         </style>
     </head>
     <body>
         <h1>Digital Marketing<br/> LATAM Report</h1>
-        <h2>Q3/22 - Q1/23</h2>
-        <section id="followers-1">
-            <div class="title-red"><p>Social media followers</p></div>
-            <div style="width: 60%; margin: auto;">
-                <div class="pt-es">
-                    <div class="deriv-es">&#9679; deriv_espanol</div>
-                    <div class="deriv-pt">&#9679; deriv_portugues</div>
+        <h2>June 2023</h2>
+        <section id="sm-2">
+            <div class="chart-area">
+                <div class="title-red-2"><p>SM followers increase</p></div>
+                <div style="width: 90%; margin: auto;">
+                    <div class="pt-es">
+                        <div class="deriv-es"><a href="https://www.instagram.com/deriv_espanol/" target="_blank" style="color: #ff5758 !important; text-decoration: none !important;">&#9679; deriv_espanol</a></div>
+                        <div class="deriv-pt"><a href="https://www.instagram.com/deriv_portugues/" target="_blank" style="color: #4b4f6b !important; text-decoration: none !important;">&#9679; deriv_portugues</a></div>
+                    </div>
+                </div>
+                <div class="chart-2">
+                    <img src="https://static.deriv.com/email/images/reports/latam-q223/followers-chart.png" style="width: 100%; margin-top: 15px;"/>
                 </div>
             </div>
-            <div id="followers-chart">
-                <img src="https://static.deriv.com/email/images/reports/latam-q123/followers-chart.png"/>
+            <div class="img-thumbs-center">
+                <div id="grid-border"></div>
             </div>
-            <div style="width: 90%; margin: auto;">
-                <div class="posts-3"><p>&nbsp;</p></div>
-                <div class="posts-3"><p><a href="https://docs.google.com/spreadsheets/d/1zr2igTspKlyi6Odsa9jH33i4S8gVL8hzvjrY8slWo6M/edit#gid=1250739291" target="_blank">30 posts</a></p></div>
-                <div class="posts-3"><p><a href="https://docs.google.com/spreadsheets/d/1zr2igTspKlyi6Odsa9jH33i4S8gVL8hzvjrY8slWo6M/edit#gid=1836739611" target="_blank">239 posts</a></p></div>
-                <div class="posts-3"><p><a href="https://docs.google.com/spreadsheets/d/1zr2igTspKlyi6Odsa9jH33i4S8gVL8hzvjrY8slWo6M/edit#gid=31033365" target="_blank">289 posts</a></p></div>
+            <div class="chart-area">
+                <div class="title-red-2"><p>Engagement rate increase</p></div>
+                <div style="width: 90%; margin: auto;">
+                    <div class="pt-es">
+                        <div class="deriv-es"><a href="https://www.instagram.com/deriv_espanol/" target="_blank" style="color: #ff5758 !important; text-decoration: none !important;">&#9679; deriv_espanol</a></div>
+                        <div class="deriv-pt"><a href="https://www.instagram.com/deriv_portugues/" target="_blank" style="color: #4b4f6b !important; text-decoration: none !important;">&#9679; deriv_portugues</a></div>
+                    </div>
+                </div>
+                <div class="chart-2">
+                    <img src="https://static.deriv.com/email/images/reports/latam-q223/engagement-chart.png" style="width: 100%; margin-top: 15px;"/>
+                </div>
             </div>
         </section>
 
         <section id="creatives-4">
             <div class="title-red"><p>Top creatives</p></div>
             <div class="pt-es">
-                <div class="deriv-es">deriv_espanol</div>
-                <div class="deriv-pt">deriv_portugues</div>
+                <div class="deriv-es"><a href="https://www.instagram.com/deriv_espanol/" target="_blank" style="color: #ff5758 !important; text-decoration: none !important;">deriv_espanol</a></div>
+                <div class="deriv-pt"><a href="https://www.instagram.com/deriv_portugues/" target="_blank" style="color: #4b4f6b !important; text-decoration: none !important;">deriv_portugues</a></div>
             </div>
             <div class="grid-5">
                 <div class="img-thumbs">
-                    <a href="https://www.instagram.com/p/CopjNT6IlFp/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/es-1.png"/></a>
+                    <a href="https://www.instagram.com/p/CrgV5iWIyqc/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q223/es-1.png"/></a>
                 </div>
                 <div class="img-thumbs">
-                    <a href="https://www.instagram.com/p/Cki20-DO2iD/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/es-2.jpg"/></a>
+                    <a href="https://www.instagram.com/p/Cr2Cn0lu00H/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q223/es-2.png"/></a>
                 </div>
                 <div class="img-thumbs-center">
                     <div id="grid-border"></div>
                 </div>
                 </div>
                 <div class="img-thumbs">
-                    <a href="https://www.instagram.com/p/CpXyadPouap/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/pt-1.jpg"/></a>
+                    <a href="https://www.instagram.com/p/Csto8k_IBb0/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q223/pt-1.png"/></a>
                 </div>
                 <div class="img-thumbs">
-                    <a href="https://www.instagram.com/p/CltwOmjAEPV/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/pt-2.jpg"/></a>
+                    <a href="https://www.instagram.com/reel/Cr3qY75gZTv/" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q223/pt-2.png"/></a>
                 </div>
             </div>
         </section>
 
-        <section id="ppc-1">
-            <div class="title-red"><p>PPC</p></div>
-            <h3>Top performing campaigns | Q3/22 - Q1/23</h3>
-            <table id="campaigns-tb">
-                <tr>
-                    <th class="left-td">Campaign Theme</th>
-                    <th class="td-15">Spend</th>
-                    <th class="td-15">Deposit</th>
-                    <th class="td-15">DOAS</th>
-                    <th class="td-10">Leads</th>
-                    <th class="td-10">CPL</th>
-                    <th>New Funded</th>
-                </tr>
-                <tr>
-                    <td class="left-td">Forex ebook</td>
-                    <td>$49,039</td>
-                    <td>$150,666</td>
-                    <td>307,24%</td>
-                    <td>3156</td>
-                    <td>$42</td>
-                    <td>249</td>
-                </tr>
-                <tr>
-                    <td class="left-td">Synthetic</td>
-                    <td>$159,103</td>
-                    <td>$277,293</td>
-                    <td>174,29%</td>
-                    <td>5103</td>
-                    <td>$205</td>
-                    <td>580</td>
-                </tr>
-                <tr>
-                    <td class="left-td">Crypto ebook</td>
-                    <td>$38,114</td>
-                    <td>$60,643</td>
-                    <td>159,11%</td>
-                    <td>760</td>
-                    <td>$52</td>
-                    <td>219</td>
-                </tr>
-                <tr>
-                    <td class="left-td">Stock ebook</td>
-                    <td>$71,950</td>
-                    <td>$65,985</td>
-                    <td>91,71%</td>
-                    <td>1187</td>
-                    <td>$66</td>
-                    <td>112</td>
-                </tr>
-            </table>
-            <h3>Low performing campaigns | Q3/22 - Q1/23</h3>
-            <div style="width: 90%; margin: auto;">
-                <div class="low-campaign"><strong style="color: #4b4f6b;">Synthetic indices</strong><br/>on Taboola</div>
-                <div class="low-campaign"><strong style="color: #4b4f6b;">Competitor keywords</strong><br/>on Eskimi</div>
-                <div class="low-campaign"><strong style="color: #4b4f6b;">Forex spread</strong><br/>on Reddit</div>
+        <section id="campaigns-2">
+            <div class="title-red"><p>Marketing campaigns</p></div>
+            <div class="chart-area" style="margin-top: 20px;">
+                <div class="chart-2">
+                    <img src="https://static.deriv.com/email/images/reports/latam-q223/onramp.png" style="width: 100%; margin-top: 25px;"/>
+                </div>
+            </div>
+            <div class="img-thumbs-center">
+                <div id="grid-border"></div>
+            </div>
+            <div class="chart-area" style="margin-top: 20px;">
+                <div class="chart-2">
+                    <img src="https://static.deriv.com/email/images/reports/latam-q223/affiliate-marketing.png" style="width: 100%; margin-top: 25px;"/>
+                </div>
             </div>
         </section>
 
-        <section id="emails-1">
-            <div class="title-red"><p>Emails</p></div>
-            <h3>Automated marketing emails (product tour)</h3>
-            <table class="emails-tb">
-                <tr>
-                    <th class="td-20">&nbsp;</th>
-                    <th class="td-20">Number of emails</th>
-                    <th class="td-20">Total sent</th>
-                    <th class="td-20">Av. open rate</th>
-                    <th class="td-20">Av. click rate</th>
-                </tr>
-                <tr>
-                    <td class="es-tr" style="font-weight: 700;">SP</td>
-                    <td class="es-tr">12</td>
-                    <td class="es-tr">254,552</td>
-                    <td class="es-tr">19,1%</td>
-                    <td class="es-tr">0,6%</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: 700;">PT</td>
-                    <td>12</td>
-                    <td>230,072</td>
-                    <td>31,3%</td>
-                    <td>5,4%</td>
-                </tr>
-            </table>
-            <div style="width: 100%; margin-bottom: 30px; float: left;">
-                <div class="campaign-rate-desc"><p style="color: #ff5758;">Top theme campaigns<br/>Average open rate<br/>Spanish</p></div>
-                <div class="campaign-rate-chart">
-                    <img src="https://static.deriv.com/email/images/reports/latam-q123/top-campaigns-es.png" alt="">
+        <section id="mkt-comm-6">
+            <div class="title-red"><p>Marketing communications</p></div>
+            <div class="pt-es">
+                <div class="deriv-es" style="font-weight: 700; font-size: 1.5rem;">Spanish</div>
+                <div class="deriv-pt" style="font-weight: 700; font-size: 1.5rem;">Portuguese</div>
+            </div>
+            <div class="chart-area" style="margin-top: 20px;">
+                <div class="comms-6">
+                    <table>
+                        <tr>
+                            <td class="comm-title">Total emails sent</td>
+                        </tr>
+                        <tr>
+                            <td class="comm-value">1,697,894</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="campaign-rate-desc"><p style="color: #4b4f6b;">Top theme campaigns<br/>Average open rate<br/>Portuguese</p></div>
-                <div class="campaign-rate-chart">
-                    <img src="https://static.deriv.com/email/images/reports/latam-q123/top-campaigns-pt.png" alt="">
+                <div class="comms-6">
+                    <table>
+                        <tr>
+                            <td class="comm-title">Open rate<br/>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="comm-value">19.5%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="comms-6">
+                    <table>
+                        <tr>
+                            <td class="comm-title">Click rate<br/>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="comm-value">0.4%</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <h3>Broadcast & newsletters</h3>
-            <table class="emails-tb">
-                <tr>
-                    <th class="td-20">&nbsp;</th>
-                    <th class="td-20">Number of emails</th>
-                    <th class="td-20">Total sent</th>
-                    <th class="td-20">Av. open rate</th>
-                    <th class="td-20">Av. click rate</th>
-                </tr>
-                <tr>
-                    <td class="es-tr" style="font-weight: 700;">SP</td>
-                    <td class="es-tr">180</td>
-                    <td class="es-tr">13,175,273</td>
-                    <td class="es-tr">23,85%</td>
-                    <td class="es-tr">0,3%</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: 700;">PT</td>
-                    <td>131</td>
-                    <td>13,899,747</td>
-                    <td>18,2%</td>
-                    <td>0,3%</td>
-                </tr>
-            </table>
-        </section>
-        <section id="trends-3">
-            <div class="title-red"><p>Regional trends</p></div>
-            <div style="width: 95%; min-height: 320px; margin: auto;">
-                <div class="reg-trend">
-                    <h4>Free webinars & seminars</h4>
-                    <a href="https://www.instagram.com/tv/Cc8KCKQglHL/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/webinars-1.png" alt=""></a>
-                </div>
-                <div class="reg-trend">
-                    <h4>Industry news</h4>
-                    <a href="https://www.instagram.com/p/CqnzBems03B/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/industry-1.png" alt=""></a>
-                </div>
-                <div class="reg-trend">
-                    <h4>Short educational videos</h4>
-                    <a href="https://www.instagram.com/reel/CjjTju0ANq7/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="https://static.deriv.com/email/images/reports/latam-q123/educational-1.png" alt=""></a>
-                </div>
+            <div class="img-thumbs-center">
+                <div id="grid-border"></div>
             </div>
-            <div style="width: 95%; min-width: 500px; margin: auto;">
-                <div class="trend-list">&nbsp;</div>
-                <div class="trend-list">
-                    <ul style="padding-left: 30%;">
-                        <li>Sponsorships</li>
-                        <li>Industry facts</li>
-                    </ul>
+            <div class="chart-area" style="margin-top: 20px;">
+                <div class="comms-6">
+                    <table>
+                        <tr>
+                            <td class="comm-title">Total emails sent</td>
+                        </tr>
+                        <tr>
+                            <td class="comm-value" style="color: #4b4f6b !important;">448,927</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="trend-list">&nbsp;</div>
-                <div class="trend-list-40">
-                    <ul>
-                        <li>Attendance to regional events</li>
-                        <li>Corporate Social Responsibility</li>
-                    </ul>
+                <div class="comms-6">
+                    <table>
+                        <tr>
+                            <td class="comm-title">Open rate<br/>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="comm-value" style="color: #4b4f6b !important;">21.2%</td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-            <div style="width: 100%; min-width: 500px; float: left;">
-                <h4 style="margin-top: 30px;"><a href="https://docs.google.com/document/d/1taMg9eF6b_jJLPqAv92fwKz0DW7BahVrvA1nrSjiKU0/edit">See full analysis for Q3/22 - Q1/23 with C&MI recommendations</a></h4>
+                <div class="comms-6">
+                    <table>
+                        <tr>
+                            <td class="comm-title">Click rate<br/>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="comm-value" style="color: #4b4f6b !important;">0.3%</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
-        <section id="forward-1">
-            <div class="title-red"><p>Moving forward</p></div>
-            <div style="width: 90%; margin: auto;">
-                <h4 style="margin: 20px 0 10px;">Challenges</h4>
-                <ul>
-                    <li>We faced <strong>posting delays</strong> in Q1/2023, mainly due to Design work overload. (9/12 posts published each month on average)</li>
-                    <li>There were a <strong>few “publishing errors” on falcon.io</strong> due to platform issues. We are addressing it with Falcon CS to reach a final solution.</li>
-                </ul>
-                <h4 style="margin: 10px 0;">Achievements</h4>
-                <ul>
-                    <li>We reached the <strong>1K followers milestone</strong> on our Spanish Instagram channel entirely organically.</li>
-                    <li>Our followers <strong>doubled</strong>, and engagement <strong>increased</strong> on our Portuguese Instagram channel due to our PT Conference coverage in Paraguay.</li>
-                    <li><strong>2 videos</strong> were produced and released with decent engagement before our professional equipment acquisition.</li>
-                </ul>
-                <h4 style="margin: 10px 0;">Goals</h4>
-                <ul>
-                    <li>We plan to <strong>engage in and cover</strong> LATAM Affiliate Marketing seminars, conferences, and trips.</li>
-                    <li>We aim to <strong>increase affiliate presence</strong> on our social media.</li>
-                    <li>We aim to <strong>produce</strong> good quality, educational reels/videos with people presence, at least 1 every 2 months.</li>
-                    <li>We plan to <strong>introduce</strong> regional industry news on our Facebook & Instagram stories, at least twice a month.</li>
-                </ul>
+
+        <section id="ongoing-2">
+            <div class="title-red"><p>Ongoing projects</p></div>
+            <div class="ongoing-item">
+                <div class="ongoing-left">PPC for LATAM</div>
+                <div style="width: 3%; float: left;">&nbsp;</div>
+                <div class="ongoing-right">LATAM Digital Marketing team will start their training to kick off PPC regional ops.</div>
+            </div>
+            <div class="ongoing-item">
+                <div class="ongoing-left">Affiliate videos</div>
+                <div style="width: 3%; float: left;">&nbsp;</div>
+                <div class="ongoing-right">We began recording educational videos for affiliates in Spanish & EU Portuguese.</div>
+            </div>
+            <div class="ongoing-item">
+                <div class="ongoing-left">TikTok for LATAM</div>
+                <div style="width: 3%; float: left;">&nbsp;</div>
+                <div class="ongoing-right">Our team is already working on a calendar for our TikTok account in Spanish.</div>
             </div>
         </section>
     </body>
