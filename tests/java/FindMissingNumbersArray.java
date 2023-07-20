@@ -1,7 +1,7 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 
-class HelloWorld {
+class FindMissingNumbersArray {
     public static int min = 0;
     public static int max = 0;
     public static void main(String[] args) {
