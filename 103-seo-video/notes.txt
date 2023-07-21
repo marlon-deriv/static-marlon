@@ -1,0 +1,22 @@
+Meta description: 
+    <meta data-react-helmet="true" name="description" content="
+
+Deriv: an online trading platform available 24/7 with a wide selection of derivatives.
+
+/Users/marlongeneroso/Documents/repositories/static-marlon/102-level-up-forex/level-up-forex.html
+" />
+
+Meta og:title: 
+    <meta data-react-helmet="true" property="og:title" content="Online trading with Deriv | Simple. Flexible. Reliable." />
+
+Meta og:site_name: 
+    <meta data-react-helmet="true" property="og:site_name" content="Online trading platform | Forex, commodities, synthetic indices, stocks, and stock indices | Deriv" />
+
+Meta og:locale: 
+    <meta data-react-helmet="true" property="og:locale" content="en" />
+
+H1:
+
+Deriv: an online trading platform available 24/7 with a wide selection of derivatives.
+
+One broker, countless trading opportunities
