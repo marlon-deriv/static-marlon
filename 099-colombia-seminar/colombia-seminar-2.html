@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title>¡Nos vemos en Colombia! | 5 y 8 de septiembre 🇨🇴</title>
+        <title>¡Reserva tu lugar en nuestro Seminario! 🇨🇴</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -51,7 +51,7 @@
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
-                        #ol-logo-img-td{ background-color:#ff444f; width: 300px; height: 55px; }
+                        #ol-logo-img-td{ width: 300px; height: 55px; }
                         .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
                         .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 12px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
@@ -91,10 +91,11 @@
                     }
                 /* END OF FONTS */
                 /* Applied to all tags */
-                *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
-                p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
-                h1{ padding: 0px 60px 0px; margin-top: 15px; color: #414652; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.5; }
-                h3{ padding: 0px 50px 0px; font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2; }
+                *{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                p, a{ font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color: #414652; }
+                h1, h2{ padding: 0px 100px 0px; margin-top: 15px; color: #414652; font-weight: 700; text-align: center; line-height: 1.2; }
+                h1{ font-size: 27px; }
+                h2{ font-size: 18px; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -184,9 +185,8 @@
                     }
                     #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
                     #logo-img-td img{ height: 21px; max-height: 21px; margin: auto; padding: 24px 0 0 25px; }
-                    #title-img-td img{ width: 600px; vertical-align: top;}
                     .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
+                    .greeting-td p, .paragraph-td p{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
@@ -212,7 +212,7 @@
                     ul, ol{ padding-left: 25px; }
                     li{
                         padding: 2px 0 0 5px;
-                        font-family: inherit;
+                        font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif;
                         font-size: 16px;
                         font-weight: 400;
                         text-align: left;
@@ -220,6 +220,7 @@
                     }
                     .list-ul{ padding: 0px 30px 0px 40px; }
                 /* End of list styles */
+                
                 /* Footer styles */
                     #footer-table{
                         width: 100%;
@@ -267,16 +268,15 @@
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
                         #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        #title-img-td img{ width: 100% !important; }
-                        h1{ font-size: 22px; padding: 0px 30px 0px !important; margin-top: 10px; }
-                        h3{ font-size: 16px; padding: 0px 20px 0px !important;}
+                        h1, h2{ padding: 0px 30px 0px !important; }
                         #slash-td{ margin: 0; padding: 0; }
                         .greeting-td, .paragraph-td{
                             /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
+                        .email-data-tb{ max-width: 450px;}
+                        li, .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                             font-size: 13px !important;
                         }
                         .list-ul{ padding: 0px 10px 0px 15px; }
@@ -295,8 +295,9 @@
                         }
                     }
                     @media screen and (max-width: 460px){
+                        .email-data-tb{ max-width: 380px;}
                         #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        h2{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
                         .link-div{ font-size: 11px; }
                     }
                     @media screen and (max-width: 380px){ 
@@ -318,8 +319,8 @@
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong { color: #fff !important; }
-                        .dark-gray{ color: #6e6e6e !important; }
+                        h1, h2, p, span, b, strong, em { color: #fff !important; }
+                        .dark-gray{ background-color: #2b2b2b !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         #logo-img-td{ 
                             background-image: linear-gradient(#ff444f,#ff444f);
@@ -330,7 +331,7 @@
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #fff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] em{ color: #fff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
@@ -364,30 +365,51 @@
                                 <table id="title-img-tb">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
-                                            <td id="title-img-td" align="center">
-                                                <img src="https://static.deriv.com/email/images/header-2023/colombia-seminar.png" width="600" alt="">
+                                            <td id="ol-logo-img-td" align="center" bgcolor="#ff444f">
+                                                <div style="margin-left: 30px;">
+                                                    <a href="https://www.deriv.com">
+                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="21" title="Deriv.com"/>
+                                                    </a>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td bgcolor="#fff" cellpadding="0" cellspacing="0">
-                                                <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">Te esperamos en el Seminario de Afiliados de Colombia</h1>
+                                            <td>
+                                                <img src="https://static.deriv.com/email/images/header-2023/registrate-es.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="slash-td">
+                                                <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="" style="margin-top: -5px;">
                                             </td>
                                         </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
-                                        <td id="title-img-td" align="center">
-                                            <img src="https://static.deriv.com/email/images/header-2023/colombia-seminar.png" alt="">
+                                        <td id="logo-img-td">
+                                            <a href="https://www.deriv.com">
+                                                <img src="https://static.deriv.com/logos/deriv-white-2023.png" title="Deriv.com">
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td id="title-text-td" align="center" style="padding: 0px;">
-                                            <h1 class="dark-subtext">Te esperamos en el Seminario de Afiliados de Colombia</h1>
+                                        <td>
+                                            <img src="https://static.deriv.com/email/images/header-2023/registrate-es.png" alt="">
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td >
+                                            <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="" style="margin-top: -5px;">
+                                        </td>
+                                    </tr>
+                                    <!--<![endif]-->
                                 </table>
-                                <!--<![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 0px;">
+                                <h1 class="dark-subtext" style="margin-top: -15px;">¿Ya te registraste para nuestro Seminario de Afiliados?</h1>
                             </td>
                         </tr>
                         <tr>
@@ -395,165 +417,33 @@
                                 <p class="dark-subtext">{% if customer.name != blank %}
                                     Hola {{customer.name | titlecase }},
                                     {% else %}
-                                    Hola trader,
+                                    Hola socio,
                                     {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 40px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">¡Te invitamos a participar de nuestro <strong>Seminario de Afiliados de Colombia!</strong></p>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">¡Se acerca la fecha de nuestro <strong>Seminario de Afiliados de Colombia!</strong></p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Nuestro Equipo de Marketing de Afiliados estará próximamente en las ciudades de Bogotá y Medellín, para brindarte sesiones exclusivas de apoyo técnico y marketing. ¡Nos encantaría verte ahí!</p>
-                            </td>
-                        </tr>
-                        <!--[if (gte mso 9)|(IE)]>
-                            <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td style="padding: 0px 0px 0px 40px; width: 80%; margin: auto;" class="dark-black">
-                                            <table style="width: 100%; margin: 0 auto;">
-                                                <tr>
-                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
-                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
-                                                    </td>
-                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
-                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Bogotá, Colombia</span><br/>
-                                                            <strong>5 de septiembre</strong>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 0px 0px 20px 40px; width: 80%; margin: auto;" class="dark-black">
-                                            <table style="width: 100%; margin: 0 auto;">
-                                                <tr>
-                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
-                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
-                                                    </td>
-                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
-                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Medellín, Colombia</span><br/>
-                                                            <strong>8 de septiembre</strong>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <![endif]-->
-                        <!--[if !gte mso 9]><!-- -->
-
-                        <tr class="mobile-hide">
-                            <td>
-                                <table style="width: 80%; margin: 0 auto;">
-                                    <tr>
-                                        <td style="padding: 0px 0px 20px 0px; width: 48%;" class="dark-black">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center" width="200">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table style="width: 100%; margin: 0 auto;">
-                                                <tr>
-                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
-                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
-                                                    </td>
-                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
-                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Bogotá, Colombia</span><br/>
-                                                            <strong>5 de septiembre</strong>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td style="padding: 0px 0px 20px 0px; width: 52%;" class="dark-black">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                                    <table align="center" width="200">
-                                                                        <tr>
-                                                                        <td align="left" valign="top">
-                                                                            <![endif]-->
-                                            <table style="width: 100%; margin: 0 auto;">
-                                                <tr>
-                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
-                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
-                                                    </td>
-                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
-                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Medellín, Colombia</span><br/>
-                                                            <strong>8 de septiembre</strong>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr style="display: none; mso-hide:all;" class="mb-visible-block">
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td style="padding: 0px 0px 0px 40px; width: 80%; margin: auto;" class="dark-black">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                        <table align="center" width="200">
-                                                            <tr>
-                                                            <td align="left" valign="top">
-                                                                <![endif]-->
-                                            <table style="width: 100%; margin: 0 auto;">
-                                                <tr>
-                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
-                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
-                                                    </td>
-                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
-                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Bogotá, Colombia</span><br/>
-                                                            <strong>5 de septiembre</strong>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 0px 0px 20px 40px; width: 80%; margin: auto;" class="dark-black">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                                                    <table align="center" width="200">
-                                                                        <tr>
-                                                                        <td align="left" valign="top">
-                                                                            <![endif]-->
-                                            <table style="width: 100%; margin: 0 auto;">
-                                                <tr>
-                                                    <td align="left" class="dark-black" style="width: 40px; padding: 10px 0px 0px 0px;">
-                                                        <img src="https://static.deriv.com/email/images/icons/dark-gray-pin.png" style="width: 35px; text-align: left; margin-top: 10px; margin-right: 0px;"/>
-                                                    </td>
-                                                    <td align="left" class="dark-black" style="padding: 10px 10px 0px 10px;">
-                                                        <p class="dark-black" style="font-size: 15px; line-height: 1.5;"><span style="font-weight: 700; color: #ff444f !important;">Medellín, Colombia</span><br/>
-                                                            <strong>8 de septiembre</strong>
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!--<![endif]-->
-                        <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">También tendrás la oportunidad de hacer networking con otros asociados durante un almuerzo de cortesía, así como compartir tus comentarios y experiencias acerca de nuestros productos y programas de asociación.</p>
+                                <p class="dark-subtext">Nuestro Equipo de Marketing de Afiliados estará en el hotel <strong>Hyatt Bogotá el 5 de septiembre</strong> y en el hotel <strong>Dann Carlton Medellín el 8 de septiembre</strong>, para compartir contigo sesiones técnicas y de marketing sobre nuestros productos.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext"><strong>Confirma tu asistencia</strong> enviando el formulario de inscripción antes del 25 de julio de 2023.</p>
+                                <p class="dark-subtext">Disfrutarás también de un <em>almuerzo de cortesía y múltiples oportunidades</em> de hacer crecer nuestra colaboración y conectar con otros asociados de tu país.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Solo podrán participar los asociados que se hayan registrado previamente, ya que contamos con <strong>cupos limitados</strong>. Si ya te registraste, puedes omitir este paso.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="center" style="padding: 0px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext"><strong>Regístrate aquí:</strong></p>
                             </td>
                         </tr>
                         <tr>
