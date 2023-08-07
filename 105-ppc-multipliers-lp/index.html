@@ -49,43 +49,47 @@
                     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
                     }
                 }
-                *{margin: 0; padding: 0; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif;}
-                h1, h2{font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif;}
+                *{ margin: 0; padding: 0; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color:#414652; }
+                h1, h2{ font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; }
                 h1{ color: #fff; line-height: 1.4; margin-left: 15%; padding: 0% 5% 0% 10%; font-size: 3rem; }
                 h2{ line-height: 1.4;  font-size: 2.3rem; }
 
                 
-                body{margin: 0; padding: 0; background-color: #fff; width: 100vw;}
-                #ext-h-logo{max-height: 40px; width: 100vw; margin: 0 10%; padding: 0; }
-                #int-h-logo{width: 20%; margin: 10px 0px; padding: 0; background-color: #0f0;}
-                    #int-h-logo img{max-height: 32px; object-fit: scale-down; left: 0;}
-                #hero-ext{height: 70vh; width: 100%; background-color: #ff444f; padding: 30px 0px;}
-                    #hero-title{width: 50vw; padding: 10% 0px; float: left;}
-                    #hero-form{width: 50vw; background-color: darkkhaki; float: right; vertical-align: top;}
-                .slash-separator{width: 0; height: 0; border-left: 100vw solid transparent; border-bottom: 13vw solid white; margin-top: -13vw;}
+                body{ margin: 0; padding: 0; background-color: #fff; width: 100vw; }
+                #ext-h-logo{ max-height: 40px; width: 100vw; margin: 0 10%; padding: 0; }
+                #int-h-logo{ width: 20%; margin: 10px 0px; padding: 0; }
+                    #int-h-logo img{ max-height: 32px; object-fit: scale-down; left: 0; }
+                #hero-ext{ height: 70vh; width: 100%; background-color: #ff444f; padding: 30px 0px; }
+                    #hero-title{ width: 50vw; padding: 10% 0px; float: left; }
+                    #hero-form{ width: 50vw; background-color: darkkhaki; float: right; vertical-align: top; }
+                .slash-separator{ width: 0; height: 0; border-left: 100vw solid transparent; border-bottom: 13vw solid white; margin-top: -13vw; }
 
                 /* Form */
-                .button {display: flex; gap: 5px; padding: 10px 25px; justify-content: center; align-items: center; background-color: #ff444f; color: #fff; border: 1px solid #ff444f;      border-radius: 5px; font-size: 14px; cursor: pointer; height: 40px !important; width: 420px !important; margin-top: 2rem; font-weight: bold;}
+                .button { display: flex; gap: 5px; padding: 10px 25px; justify-content: center; align-items: center; background-color: #ff444f; color: #fff; border: 1px solid #ff444f; border-radius: 5px; font-size: 14px; cursor: pointer; height: 40px !important; width: 420px !important; margin-top: 2rem; font-weight: bold; }
                 .button:hover { background-color: #d43e47; }
                 .button:active { transition: width 0.1s, height 0.1s; height: 37px; width: 113px; }
                 .button span { font-weight: bold; }
                 .text-header { display: flex; justify-content: space-around; }
-                .text-header span { padding: 0 10px; color: white; font-family: "Arial";}
-                .line-container { display: flex; justify-content: space-around; align-items: center;}
-                .line { width: 100px; border-bottom: 1px solid #fff;}
-                input[type=text] { height: 40px !important; border-radius: 3px;}
-                a{text-decoration: none;}
-                .button_socialH { display: flex; gap: 5px; padding: 10px 25px; justify-content: center; align-items: center; background-color: white; border: 1px solid #ebebeb; border-radius: 5px; font-size: 14px; cursor: pointer; height: 40px; width: 120px; margin-top: 1rem; font-weight: bold;}
-                .button_socialH:hover { background-color: #fafafa;}
-                .button_socialH:active { transition: width 0.1s, height 0.1s; height: 37px; width: 113px;}
-                .button_socialH span { font-weight: bold;}
-                .button_socialHs_container { display: flex; justify-content: space-around; gap: 10px;}
-                .button_socialHs_container a { text-decoration: none;}
+                .text-header span { padding: 0 10px; color: white; font-family: "Arial"; }
+                .line-container { display: flex; justify-content: space-around; align-items: center; }
+                .line { width: 100px; border-bottom: 1px solid #fff; }
+                input[type=text] { height: 40px !important; border-radius: 3px; }
+                a{ text-decoration: none; }
+                .button_socialH { display: flex; gap: 5px; padding: 10px 25px; justify-content: center; align-items: center; background-color: white; border: 1px solid #ebebeb; border-radius: 5px; font-size: 14px; cursor: pointer; height: 40px; width: 120px; margin-top: 1rem; font-weight: bold; }
+                .button_socialH:hover { background-color: #fafafa; }
+                .button_socialH:active { transition: width 0.1s, height 0.1s; height: 37px; width: 113px; }
+                .button_socialH span { font-weight: bold; }
+                .button_socialHs_container { display: flex; justify-content: space-around; gap: 10px; }
+                .button_socialHs_container a { text-decoration: none; }
+
+                #s_n1{ margin: auto; width: 430px !important; }
+                #email_input_n1{ width: 420px !important; border: none; outline: none; }
+                #pEmail_n1{ color: #ff444f !important; font-size: 12px; display: none; margin: -19px 0 15px; }
 
             </style>
 
     </head>
-    <body>
+    <body style="background-color: blue;">
         <div id="ext-h-logo">
             <div id="int-h-logo">
                 <img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo"/>
@@ -106,14 +110,13 @@
                 <p>By pressing “Create demo account”, you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's Security and privacy.</p>
             </div>
         </div>
-        
         <div class="slash-separator"></div>
 
-            <div id="s_n1" style="width: 430px !important;"> 
-                <input id="email_input_n1" style="width: 420px !important;border: none;outline: none;" type="text" placeholder="E-mail" ><br><br>
-                <p id="pEmail_n1" style="color: #ff444f !important; font-size:12px;display: none;margin: -19px 0 15px;">Insira um e-mail válido</p>
+            <div id="s_n1"> 
+                <input id="email_input_n1" type="text" placeholder="E-mail" ><br/><br/>
+                <p id="pEmail_n1">Insira um e-mail válido</p>
                 <input type="checkbox" id="ckbx_n1">
-                <label style="color: #D4D4D4 !important;"  for="ckbx_n1"> Concordo com os <a href="https://deriv.com/terms-and-conditions/#clients" style="color: #ff444f !important;">termos e condições</a>.</label><br>
+                <label style="color: #d4d4d4 !important;"  for="ckbx_n1"> Concordo com os <a href="https://deriv.com/terms-and-conditions/#clients" style="color: #ff444f !important;">termos e condições</a>.</label><br>
                 <p id="pAgree_n1" style="color: #ff444f !important;font-size:12px;display: none;margin:0;">Clique na caixa de seleção para se inscrever</p>
                 <button id="myBtn_n1" class="button" type="button">Abrir uma conta</button>
                 <p style="color: #D4D4D4 !important;padding: 20px 0;font-size: 12px;">Ao pressionar "Abrir uma conta", confirma que tem 18 anos ou mais. Compreenda que podemos utilizar o seu e-mail para  enviar informações sobre produtos e serviços Deriv, bem como notícias do mercado. Pode sempre anular a subscrição destes e-mails nas definições da sua conta. Para mais informações, consulte a <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">secção Segurança e Privacidade</a> da Deriv.</p>
