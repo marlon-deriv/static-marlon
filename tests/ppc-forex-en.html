@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -46,14 +47,14 @@
                         h1{ font-size: 25px; font-weight: 700; padding: 0 0 20px 20px; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
-                        a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 12px; text-decoration: none; text-align: center; }
+                        a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
                         .button:hover{ background-color: #d43e47; }
                         #ol-int-table, #ol-footer-table { width: 600px; background-color: #fff; padding: 0; border: 0; }
                         #ol-int-td { width: 600px; background-color: #fff; margin: 0; vertical-align: top; }
                         #ol-title-img-tb{ width: 600px; }
                         #ol-logo-img-td{ background-color:#ff444f; width: 300px; height: 55px; }
                         .email-data-tb{ background-color: #efefef; padding-left: 30px; border-radius: 16px; }
-                        .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 12px; font-weight: 400; line-height: 1.5; }
+                        .greeting-td p, .paragraph-td p{ margin: 0; color: #414652; font-size: 16px; font-weight: 400; line-height: 1.5; }
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
@@ -143,7 +144,7 @@
                     a.button, a.button-white{
                         padding: 6px 20px;
                         border-radius: 16px;
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
@@ -198,7 +199,7 @@
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
-                        font-size: 12px;
+                        font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
@@ -280,7 +281,7 @@
                             padding-right: 15px !important;
                         }
                         .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
-                            font-size: 13px !important;
+                            font-size: 16px !important;
                         }
                         .body-img{ width: 60% !important; padding: 10px 0px;}
                         .list-ul{ padding: 0px 10px 0px 15px; }
@@ -383,7 +384,6 @@
                                     <tr>
                                         <td id="title-img-td" align="center">
                                             <img src="https://static.deriv.com/email/images/header-2023/ppc-forex-ebook.png" alt="">
-                                            <!-- <img src="ppc-forex-fr.png" alt=""> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -398,7 +398,11 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name]</p>
+                                <p class="dark-subtext">{% if customer.firstName != blank %}
+                Hello {{customer.firstName | titlecase }},
+                {% else %}
+                Hello trader,
+                {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
@@ -409,13 +413,13 @@
                         <tr>
                             <td align="center" class="dark-black">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://static.deriv.com/marketing/ebook-forextrading-hq.pdf" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
                                 <w:anchorlock/>
-                                <center style="color:#414652;font-family:sans-serif;font-size:14px;font-weight:bold;">Download my free e-book now</center>
+                                <center style="color:#414652;font-family:sans-serif;font-size:16px;font-weight:bold;">Download my free e-book now</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button-white" href="#" target="_blank" style="color: #414652 !important;">Download my free e-book now</a>
+                                <a class="button-white" href="https://static.deriv.com/marketing/ebook-forextrading-hq.pdf" target="_blank" style="color: #414652 !important;">Download my free e-book now</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
@@ -427,13 +431,13 @@
                         <tr>
                             <td align="center" style="padding: 0px 30px 40px 30px;" class="dark-black">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
                                 <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Let's get trading</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="#" target="_blank">Let's get trading</a>
+                                <a class="button" href="https://app.deriv.com/" target="_blank">Let's get trading</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
@@ -497,7 +501,7 @@
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
                                 <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
