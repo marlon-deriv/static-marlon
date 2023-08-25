@@ -436,7 +436,11 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 0px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hello [Affiliate name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hi {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hello partner,
+                                    {% endif %}</p>
                             </td>
                         </tr>                        
                         <tr>
@@ -446,14 +450,14 @@
                         </tr>
                         <tr>
                             <td class="dark-black" align="left" style="padding: 0px 30px 20px 30px;">
-                                <table class="dark-gray" style="width: 90%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
+                                <table class="dark-gray mb-no-padding" style="width: 90%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
                                     <tr>
                                         <td style="width: 60px;">
                                             <img src="https://static.deriv.com/email/images/icons-2023/topic-balloon.png" style="width: 40px; text-align: center; margin-top: 10px; margin-left: 20px;"/>
                                         </td>
                                         <td>
                                             <div style="height: 40px; text-align: left; margin: 20px 10px 5px; background-color: #fff; border-radius: 15px;" class="dark-black">
-                                                <p style="padding: 10px 15px; font-weight: 500; font-size: 14px;">Topic</p>
+                                                <p style="padding: 10px 15px; font-weight: 500; font-size: 13px;">Topic</p>
                                             </div>
                                         </td>
                                     </tr>
@@ -463,7 +467,7 @@
                                         </td>
                                         <td>
                                             <div style="height: 40px; text-align: left; margin: 20px 10px 5px; background-color: #fff; border-radius: 15px;" class="dark-black">
-                                                <p style="padding: 10px 15px; font-weight: 500; font-size: 14px;">Date/Time</p>
+                                                <p style="padding: 10px 15px; font-weight: 500; font-size: 13px !important;">Date/Time</p>
                                             </div>
                                         </td>
                                     </tr>
@@ -477,7 +481,7 @@
                         </tr>
                         <tr>
                             <td class="dark-black" align="left" style="padding: 0px 30px 20px 30px;" class="mb-no-padding">
-                                <table class="dark-gray" style="width: 90%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
+                                <table class="dark-gray mb-no-padding" style="width: 90%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
                                     <tr>
                                         <td align="left" style="padding: 20px 30px 20px 30px;" class="mb-no-padding">
                                             <p class="dark-subtext" style="font-weight: 700;">Main points to be addressed:</p>
