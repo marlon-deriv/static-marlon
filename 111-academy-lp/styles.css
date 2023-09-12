@@ -1,3 +1,6 @@
+#header{ background-image: url("woman-tablet-1.png"); background-repeat: no-repeat; background-size: contain; }
+#header-mb{ background-image: url("woman-tablet-2.png"); background-repeat: no-repeat; background-size: contain; }
+
 @media screen{
     /* latin */
     @font-face {
@@ -29,8 +32,13 @@
 }
 
 *{ margin: 0; padding: 0; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; color:#414652; }
+h1{ font-size: 2.6rem; }
+h2{ font-size: 2.2rem; }
 a{ text-decoration: none; }
 input[type=text] { height: 40px !important; border: 1px solid #d6dadb; border-radius: 16px; padding-left: 20px; }
+
+
+
 #pEmail_n1, #pAgree_n1, #pEmail_n2, #pAgree_n2{ color: #ff444f !important; font-size: 12px; display: none; margin: 0; }
 #pEmail_n1, #pEmail_n2{ margin: -19px 0 15px; }
 
@@ -50,6 +58,8 @@ input[type=text] { height: 40px !important; border: 1px solid #d6dadb; border-ra
 .button-signup:active, .button-google:active, .button-fb:active { transition: width 0.1s, height 0.1s; height: 37px; width: 113px; }
 .button-google img, .button-fb img, .button-apple img{ width: 24px; }
 
+.cta-white{ background-color: #fff; padding: 10px 20px; border-radius: 16px; width: 180px; text-align: center; margin: 20px 14%; font-size: 0.8rem; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; font-weight: 700;}
+.cta-red{ background-color: #ff444f; padding: 10px 20px; border-radius: 16px; width: 180px; text-align: center; margin: 0px 14%; font-size: 0.8rem; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; font-weight: 700; color: #fff !important; }
 
 .button-google-33, .button-google-33-mb, .button-fb-33, .button-fb-33-mb, .button-apple-33, .button-apple-33-mb { height: 2.6rem;  padding: 10px 25px; background-color: #fff; border: 0.5px solid #414652; border-radius: 16px; font-weight: 700; justify-content: center; align-items: center; display: flex; gap: 5px; cursor: pointer;float: left; }
 .button-google-33, .button-fb-33, .button-apple-33 { width: 105px !important; font-size: 0.8rem; margin: 1rem 0 0 10px; }
@@ -63,5 +73,4 @@ input[type=text] { height: 40px !important; border: 1px solid #d6dadb; border-ra
 @media screen and (max-width: 1160px){ 
     h1{ font-size: 2.5rem; }
     h2{ font-size: 2rem; }
-    #s_n1{ width: 380px; padding: 25px;}
 }
