@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
+        <!-- ==== META TAGS ==== -->
+            <!-- Makes IE displays a webpage in Edge mode -->
             <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <!-- Character encoding -->
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <!-- Set 100% scale, allow zoom -->
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <!-- Define supported color schemes -->
             <meta name="color-scheme" content="light dark"/>
 
+            <!-- Remove default blue colour from links so you can style your own -->
             <meta name="format-detection" content="address=no"/>
             <meta name="format-detection" content="date=no"/>
             <meta name="format-detection" content="email=no"/>
             <meta name="format-detection" content="telephone=no"/>
 
+            <!-- Prevent iOS 11 from automatically scaling your email -->
             <meta name="x-apple-disable-message-reformatting"/>
 
+            <!-- FONTS: -->
+            <!-- Ubuntu 400: -->
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+            <!-- Ubuntu 500: -->
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+            <!-- Ubuntu 700: -->
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-        <title></title>
+        <!-- ==== END OF META TAGS ==== -->
+        <title>Welcome on board!</title>
+        <!-- ==== STYLES ==== -->
+            <!-- Styles for Outlook: -->
                 <!--[if mso]>
                     <style type="text/css">
                         *, h1, h2, h3, td, { font-family: 'Ubuntu', Arial, sans-serif; }
                         body{ background-color: #eee;}
                         p, a, .greeting-td p, .paragraph-td p{ font-family: 'IBM Plex Sans', Arial, sans-serif; }
-                        h1{ font-size: 27px; font-weight: 700; padding: 0 0 20px 20px; }
+                        h1{ font-size: 25px; font-weight: 700; padding: 0 0 20px 20px; }
                         table { border-collapse: collapse; }
                         a, a:visited { color: #ff444f !important; text-decoration: none; }
                         a.button{ padding: 10px 16px; color: #fff !important; border: 0; border-radius: 4px; font-size: 14px; text-decoration: none; text-align: center; }
@@ -43,8 +57,11 @@
                         .body-img{ width: 85%; max-width: 520px; display: block; outline: none; border-radius: 10px; }
                     </style>
                 <![endif]-->
+            <!-- End of styles for Outlook: -->
             <style type="text/css">
+                /* FONTS */
                     @media screen{
+                        /* latin */
                         @font-face {
                         font-family: 'IBM Plex Sans';
                         font-style: normal;
@@ -53,6 +70,7 @@
                         src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2) format('woff2');
                         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
                         }
+                        /* latin */
                         @font-face {
                         font-family: 'IBM Plex Sans';
                         font-style: normal;
@@ -61,6 +79,7 @@
                         src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdP3pBms.woff2) format('woff2');
                         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
                         }
+                        /* latin */
                         @font-face {
                         font-family: 'IBM Plex Sans';
                         font-style: normal;
@@ -70,8 +89,12 @@
                         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
                         }
                     }
+                /* END OF FONTS */
+                /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
+                h1{ padding: 0px 60px 0px; margin-top: -15px; color: #414652; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.5; }
+                h3{ padding: 0px 50px 0px; font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
                     height: 100%;
@@ -79,8 +102,10 @@
                     margin: 0;
                     padding: 0;
                 }
+                /* Controls the text inflation algorithm used on some smartphones and tablets */
                 body, table, td, a, p{
                     text-size-adjust: 100%;
+                    /* webkit: Safari and Chrome */
                     -webkit-text-size-adjust: 100%;
                 }
                 table, td{
@@ -88,9 +113,11 @@
                     border: 0;
                     border-collapse: collapse;
                     border-spacing: 0px;
+                    /* Remove spaces Outlook can sometimes add in a table */
                     mso-table-lspace: 0pt;
                     mso-table-rspace: 0pt;
                 }
+                /* Remove extra elements applied to img */
                 img{
                     height: auto;
                     border: 0;
@@ -98,6 +125,7 @@
                     outline: none;
                     text-decoration: none;
                 }
+                /* iOS BLUE LINKS */
                 a[x-apple-data-detectors]{
                     color: inherit !important;
                     text-decoration: none !important;
@@ -106,27 +134,37 @@
                     font-weight: inherit !important;
                     line-height: inherit !important;
                 }
+                /* Deriv styles */
                     a, a:visited{
-                        color: #ff444f !important;
+                        color: #ff444f;
                         text-decoration: none;
                     }
                     a:hover{ text-decoration: underline; }
-                    a.button{
-                        background-image: linear-gradient(#ff444f,#ff444f);
-                        background-color: #ff444f;
-                        padding: 8px 20px;
-                        border: 0;
+                    a.button, a.button-white{
+                        padding: 6px 20px;
                         border-radius: 16px;
-                        font-size: 13px;
-                        color: #fff !important;
-                        font-weight: 500 !important;
+                        font-size: 14px;
+                        font-weight: 700 !important;
                         text-decoration: none;
                         text-align: center;
                         line-height: 20px;
                         display: inline-block;
                         overflow: visible;
                     }
-                    .button:hover{ background-color: #d43e47; }
+                    a.button{
+                        background-color: #ff444f;
+                        border: 0;
+                        color: #fff !important;
+                    }
+                    a.button-white{
+                        background-color: #fff;
+                        border: 1px solid #414652;
+                        color: #414652;
+                    }
+                    a.button:hover{ background-color: #ff555f !important; }
+                    a.button-white:hover{ background-color: #ddd !important; }
+                /* End of Deriv styles */
+                /* Layout structure classes */
                     #ext-table{ margin: auto; }
                     #ext-td{ background-color: #eee; }
                     #int-table{
@@ -143,40 +181,36 @@
                     #logo-img-td{ 
                         background-image: linear-gradient(#ff444f,#ff444f);
                         background-color: #ff444f;
-                        width: 50%;
-                        height: 50px;
+                        width: 100%;
                         vertical-align: top;
                     }
-                    #logo-img-td img{ height: 21px; max-height: 21px; padding: 24px 0 0 25px; }
-                    #slash-td{ margin: 0; padding: 0; }
-                    #slash-td img{ width: 100%; margin: 0; padding: 0; }
-                    #title-text-td{ vertical-align: top; }
-                    #title-text-td h1{ padding: 0px 60px; margin-top: -15px; font-size: 28px; font-weight: 700; text-align: center; line-height: 40px;}
-                    .email-data-tb{ width: 90%; margin: 0 auto; background-color: rgba(65, 70, 82, 0.05); border-radius: 16px;}
-                    .data-property-td{ width: 35%; }
-                    .data-property-td, .data-value-td{ padding: 20px 30px 5px; }
-                    .data-value-td{ font-weight: 500; }
-                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 15px; font-weight: 400; padding: 10px 0;}
+                    #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
+                    #logo-img-td img{ height: 33px; max-height: 33px; margin: auto; padding: 24px 0 0 25px; }
+                    #title-img-td img{ width: 600px; vertical-align: top;}
+                    .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
                     .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
                         margin: 0;
                         font-size: 16px;
                         font-weight: 400;
+                        color: #414652;
                         line-height: 1.5;
                     }
-                    .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{ color: #414652; }
                     .paragraph-td-discl p{
                         margin: 0;
                         color: #999;
-                        font-size: 12px;
+                        font-size: 16px;
                         font-weight: 400;
                         line-height: 1.5;
                     }
                     .body-img{
-                        width: 85%;
+                        width: 280px;
                         display: block;
                         outline: none;
                         border-radius: 10px;
                     }
+                    .light-gray-bg{ background-color: #F9F9FA; }
+                /* End of layout structure classes */
+                /* List styles */
                     ul { list-style-type: disc; }
                     ul, ol{ padding-left: 25px; }
                     li{
@@ -188,13 +222,8 @@
                         line-height: 24px;
                     }
                     .list-ul{ padding: 0px 30px 0px 40px; }
-                    .columns-2-ext-td{ width: 100%; padding: 0 50px 5px; }
-                    .columns-2-a{ width: 71px; }
-                    .columns-2-a img{ margin: auto !important; border: 0; display: block; }
-                    .columns-2-b{ padding: 0px 20px 0px; vertical-align: middle; }
-                    .columns-2-b-title{ font-size: 16px; font-weight: 550; line-height: 1; }
-                    .columns-2-b-text{ font-size: 14px; line-height: 1.8; font-weight: 400; }
-                    .no-padding-td p{ margin: 7px; }
+                /* End of list styles */
+                /* Footer styles */
                     #footer-table{
                         width: 100%;
                         max-width: 600px;
@@ -204,9 +233,9 @@
                         border-spacing: 0px;
                     }
                     #footer-social-td{
-                        padding: 20px 20px;
+                        padding: 20px 20px 35px;
                         color: #fff;
-                        font-size: 12px;
+                        font-size: 11px;
                         font-weight: 400;
                         line-height: 18px;
                     }
@@ -235,47 +264,48 @@
                     .trustpilot-td{ padding: 40px 30px 30px; background-color: #ddd; }
                     .trustpilot-widget a{ text-decoration: none; }
                     .trustpilot-widget img{ border: 0; height: 18px; max-height: 18px; }
+                /* End of footer styles */
+                /* Mobile styles */
                     @media screen and (max-width: 620px){
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
-                        #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
-                        #title-text-td h1{ padding: 10px 10px 0px 20px; margin-top: 10px; font-size: 20px; font-weight: 600; }
+                        #logo-img-td img{ height: 30px; padding: 20px 0 0 20px; }
+                        #title-img-td img{ width: 100% !important; }
+                        h1{ font-size: 22px; padding: 0px 30px 0px !important; margin-top: 10px; }
+                        h3{ font-size: 16px; padding: 0px 20px 0px !important;}
                         #slash-td{ margin: 0; padding: 0; }
-                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div{ font-size: 14px; }
                         .greeting-td, .paragraph-td{
+                            /* Decrease padding on mobile */
                             padding-left: 15px !important;
                             padding-right: 15px !important;
                         }
-                        .email-data-tb{ width: 94%; }
-                        .data-property-td, .data-value-td{ padding: 15px 20px 5px; }
+                        .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td { font-size: 14px !important; }
+                        .body-img{ width: 60% !important; padding: 10px 0px;}
                         .list-ul{ padding: 0px 10px 0px 15px; }
-                        .columns-2-ext-td{ width: 100%; padding: 0 10px 5px; }
-                        .columns-2-a{ width: 50px; }
-                        .columns-2-a img{ width: 60px; margin: auto !important; }
-                        .columns-2-b{ padding: 0px 10px 0px; vertical-align: middle; }
-                        .columns-2-b-title{ font-size: 14px; font-weight: 550; }
-                        .columns-2-b-text{ font-size: 13px; line-height: 1.5; }
                         #footer-social-td img{ height: 20px; }
                         .mobile-hide{
+                            /* Hide desktop content on mobile */
                             display: none !important;
                         }
                         .mb-no-padding{
+                            /* Remove padding on external td from mobile */
                             padding: 0 !important;
                         }
                         .mb-visible-block{
+                            /* Shows mobile content */
                             display: block !important;
                         }
                     }
                     @media screen and (max-width: 460px){
-                        #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
-                        #title-text-td h1{ padding: 10px 10px 0px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
-                        .email-data-tb{ width: 98%; }
-                        .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
-                        .link-div{ font-size: 12px; }
+                        #logo-img-td img{ height: 28px; padding: 15px 0 0 15px; }
+                        #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
+                        .link-div{ font-size: 11px; }
                     }
                     @media screen and (max-width: 380px){ 
                         #title-text-td h1{ font-size: 16px; }
                     }
+                /* End of mobile styles */
+                /* Dark mode styles */
                     @media (prefers-color-scheme: dark ){
                         *{ color: #c2c2c2; }
                         a, a:visited{
@@ -284,9 +314,12 @@
                         }
                         a.button{ color: #fff !important; }
                         li { color: #c2c2c2 !important; }
+                        /* Hides light mode-only content */
                         .hide-light{ display: none !important; }
                         .show-dark{ display: block !important; }
+                        /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
+                        /* Custom dark mode font colors */
                         h1, h2, p, span, b, strong { color: #fff !important; }
                         .dark-gray{ color: #6e6e6e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
@@ -294,12 +327,14 @@
                             background-image: linear-gradient(#ff444f,#ff444f);
                             background-color: #ff444f;
                         }
-                        .email-data-tb, .link-div{ background-color: #2e2e2e !important; }
+                        .light-gray-bg, .link-div{ background-color: #2e2e2e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
+                    /* Custom dark mode font colors */
                     [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #fff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
+                    /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
                     [data-ogsc] .dark-gray{ color: #6e6e6e !important; }
                     [data-ogsc] .dark-subtext{ color: #c2c2c2 !important; }
@@ -309,16 +344,20 @@
                         li { color: #c2c2c2 !important; }
                         .email-data-tb, .link-div{ background-color: #2e2e2e !important;}
                     }
+                /* End of dark mode styles */
             </style>
+        <!-- ==== END OF STYLES ==== -->
     </head>
     <body>
         <table id="ext-table" align="center">
+             <!-- Email body -->
             <tr>
                 <td id="ext-td" class="mb-no-padding" align="center">
                     <!--[if (gte mso 9)|(IE)]>
                     <table id="ol-int-table" align="center"><tr><td id="ol-int-td" align="center">
                     <![endif]-->
                     <table id="int-table" class="dark-black">
+                        <!-- START HERO -->
                         <tr>
                             <td id="header-td">
                                 <!--[if (gte mso 9)|(IE)]>
@@ -327,32 +366,39 @@
                                 <table id="title-img-tb">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
-                                            <td id="ol-logo-img-td">
+                                            <td id="ol-logo-img-td" align="center">
                                                 <div style="margin-left: 30px;">
-                                                    <a href="https://www.deriv.com">
-                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="21" title="Deriv.com"/>
-                                                    </a>
+                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="20" title="Deriv.com" style="padding: 25px;"/>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td id="slash-td">
-                                                <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="">
+                                            <td id="title-img-td" align="center">
+                                                <img src="https://static.deriv.com/email/images/header-2023/ppc-forex-hi.png" width="600" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#fff" cellpadding="0" cellspacing="0" align="center">
+                                                <h3 style="padding: 10px 0px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2;">Enter confidently into</h3>
+                                                <h1 style="padding: 0px 0px 10px 0px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 27px; font-weight: 700; text-align: center; line-height: 1.2;">the world of forex trading with Deriv</h1>
                                             </td>
                                         </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
-                                        <td id="logo-img-td">
-                                            <a href="https://www.deriv.com">
+                                        <td id="logo-img-td" align="center">
                                                 <img src="https://static.deriv.com/logos/deriv-white-2023.png" title="Deriv.com">
-                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td id="slash-td">
-                                            <img src="https://static.deriv.com/email/images/general/red-slash.png" alt="">
+                                        <td id="title-img-td" align="center">
+                                            <img src="https://static.deriv.com/email/images/header-2023/ppc-forex-hi.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="title-text-td" align="center" style="padding: 0px;">
+                                            <h1 class="dark-subtext">Deriv के साथ फॉरेक्स ट्रेडिंग की दुनिया में आत्मविश्वास से प्रवेश करें</h1>
                                         </td>
                                     </tr>
                                 </table>
@@ -360,35 +406,44 @@
                             </td>
                         </tr>
                         <tr>
-                            <td id="title-text-td">
-                                <h1 class="dark-subtext" style="margin-bottom: 0;">Kami tidak dapat memproses permintaan penarikan Anda</h1>
+                            <td class="greeting-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">नमस्कार </p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="center" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">ID akun&nbsp;Deriv %_PIN_%!</p>
+                            <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
+                              <p class="dark-subtext">हम आपको हमारे साथ पाकर उत्साहित हैं और हमें बेसब्री से इंतजार है की आप DERIV के साथ फॉरेक्स ट्रेडिंग के सभी अवसरों के बारे में जानें। शुरू करने में आपकी मदद करने के लिए अनुभवी व्यापारी <strong>विंस स्टैन्ज़ियोन</strong> द्वारा आपकी मुफ्त ईबुक <strong>'फॉरेक्स मार्किट में व्यापार ट्रेड कै से करें'</strong> है। यह फॉरेक्स ट्रेडिंग की मूल बातें के माध्यम से आपका मार्गदर्शन करने के लिए व्यावहारिक युक्तियों और तकनीकों से भरा है।</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="greeting-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hai %_CustName_%!</p>
+                            <td align="center" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.link/ebook-forex-en-hq" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
+                                <w:anchorlock/>
+                                <center style="color:#414652;font-family:sans-serif;font-size:16px;font-weight:bold;">मेरी मुफ्त ईबुक अभी डाउनलोड करें</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button-white" href="https://deriv.link/ebook-forex-en-hq" target="_blank" style="color: #414652 !important;">मेरी मुफ्त ईबुक अभी डाउनलोड करें</a>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Mohon maaf, kami tidak dapat memproses permintaan penarikan Anda sebesar&nbsp;%_Amount_% %_FrontEndBaseCurrency_% &nbsp;dengan ID lacak %_TraceID_% berhubung alasan berikut ini:</p>
+                            <td class="paragraph-td" align="left" style="padding: 30px 30px 30px 30px;" class="dark-black">
+                                <p class="dark-subtext">आपकी मुफ्त ईबुक एक DERIV डेमो अकाउंट के साथ आती है ताकि आप बिना जोखिम के फॉरेक्स ट्रेडिंग का अभ्यास कर सकें। आपके पास अभ्यास करने के लिए <strong>10,000 USD</strong> की वर्चुअल करेंसी होगी और आप कुछ ही क्लिक के साथ इस बैलेंस को कभी भी रीसेट कर सकते हैं।</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">&#9679;&nbsp;%_SpecialInstructions_%</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="paragraph-td" align="center" style="padding: 10px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Jika Anda memiliki pertanyaan, hubungi kami melalui:<br/>
-                                    <a href="https://deriv.com/?is_livechat_open=true" target="_blank">Live chat</a> | <a href="https://api.whatsapp.com/send/?phone=35699578341&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a>
-                                </p>
+                            <td align="center" style="padding: 0px 30px 40px 30px;" class="dark-black">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <w:anchorlock/>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">चलो ट्रेडिंग करें</center>
+                                </v:roundrect>
+                                <![endif]-->
+                                <!--[if !gte mso 9]><!-- -->
+                                <a class="button" href="https://app.deriv.com/" target="_blank">चलो ट्रेडिंग करें</a>
+                                <!--<![endif]-->
                             </td>
                         </tr>
                     </table>
@@ -396,37 +451,64 @@
                     <![endif]-->
                 </td>
             </tr>
+            <!-- End Email body-->
+            <!-- FOOTER -->
             <tr>
                 <td align="center" class="mb-no-padding">
                     <!--[if (gte mso 9)|(IE)]>
-                        <table id="ol-footer-table" align="center">
+                        <table id="ol-footer-table" align="center"><tr><td>
+                            <center>
+                                <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" height="20" width="20" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
+                                </a>&nbsp;&nbsp;
+                                <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" height="20" width="20" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
+                                </a>&nbsp;&nbsp;
+                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/x-gray.png" height="20" width="20" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
+                                </a>&nbsp;&nbsp;
+                                <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/youtube-gray.png" height="20" width="20" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/>
+                                </a>&nbsp;&nbsp;
+                                <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" height="20" width="20" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/>&nbsp;&nbsp;
+                                </a>
+                                <a href="https://t.me/derivdotcomofficial" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" height="20" width="20" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
+                                </a>
+                            </center>
                     <![endif]-->
+                    <!--[if !gte mso 9]><!-- -->
                     <table id="footer-table" class="dark-black">
+                        <!-- Insert Trustpilot widget here -->
+                        <!-- SOCIAL -->
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
-                                <a href="https://twitter.com/derivdotcom" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/twitter-gray.png" style="height: 20px;" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
-                                </a>&nbsp;&nbsp;&nbsp;
                                 <a href="https://www.facebook.com/derivdotcom" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" style="height: 20px;" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
-                                </a>&nbsp;&nbsp;&nbsp;
+                                </a>&nbsp;&nbsp;
                                 <a href="https://www.instagram.com/deriv_official/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" style="height: 20px;" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="https://t.me/derivdotcomofficial" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" style="height: 20px;" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
-                                </a>&nbsp;&nbsp;&nbsp;
+                                </a>&nbsp;&nbsp;
+                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/x-gray.png" style="height: 20px;" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
+                                </a>&nbsp;&nbsp;
                                 <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/youtube-gray.png" style="height: 20px;" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/>
-                                </a>&nbsp;&nbsp;&nbsp;
+                                </a>&nbsp;&nbsp;
                                 <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
-                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" style="height: 20px;" alt="Deriv.com on Linkedin" title="Deriv.com on Linkedin"/>
+                                    <img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" style="height: 20px;" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/>
+                                </a>&nbsp;&nbsp;
+                                <a href="https://t.me/derivdotcomofficial" target="_blank">
+                                    <img src="https://static.deriv.com/email/images/icons/telegram-gray.png" style="height: 20px;" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/>
                                 </a>
                             </td>
                         </tr>
+                        <!--[endif]-->
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
                         <tr>
