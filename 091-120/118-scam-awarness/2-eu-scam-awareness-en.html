@@ -437,7 +437,11 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 0px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hi {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hello trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
@@ -474,7 +478,6 @@
                                                             <span style="font-size: 12px;"><a href="https://twitter.com/deriv_eu/" target="_blank">@Deriv_EU</a></span>
                                                         </td>
                                                     </tr>
-                                                    
                                                 </table>
                                             </div>
                                         </td>
@@ -484,7 +487,7 @@
                                             <div style="width: 85%; margin: auto; padding: 10px 0;">
                                                 <p class="dark-subtext"><strong>2. Check the account activity</strong><br/>
                                                     Misspelling of the account name, a high following count, and emoji-loaded offers that sound too good to be true are red flags.<br/><br/>
-                                                    We never ask for personal or bank details through social media, or do giveaways or promotions. Only trust info posted on our <a href="http://eu.deriv.com" target="_blank">website</a>, official social media accounts and emails ending in <strong>@deriv.com</strong>.</p>
+                                                    We never ask for personal or bank details through social media, or do giveaways or promotions. Only trust info posted on our <a href="http://eu.deriv.com" target="_blank">website</a>, and official social media accounts and emails ending in <strong>@deriv.com</strong>.</p>
                                                 <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/scam-awarness2-fake-facebook-instagram-x.png" alt="" style="margin: 10px auto 0;"/>
                                             </div>
                                         </td>
@@ -594,7 +597,7 @@
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
                                 <p><a href="https://eu.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
+                                <p id="unsubscribe-p" class="dark-black dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
                         <tr>

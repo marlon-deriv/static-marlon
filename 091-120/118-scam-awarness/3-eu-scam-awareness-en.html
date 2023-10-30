@@ -437,7 +437,11 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 0px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Client's name],</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Hi {{customer.name | titlecase }},
+                                    {% else %}
+                                    Hello trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>
@@ -464,7 +468,7 @@
                                                 <ul>
                                                     <li class="dark-subtext">Spelling and grammatical errors in the message.</li>
                                                     <li class="dark-subtext">Calls to click on links or download apps.</li>
-                                                    <li class="dark-subtext">Promises of huge profits and easy money.</li>
+                                                    <li class="dark-subtext">Promises you huge profits and easy money.</li>
                                                     <li class="dark-subtext">Urgent requests for personal data like your password and bank details.</li>
                                                 </ul>
                                                 <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/scam-awarness3-whatsapp-scam-eu.png" alt="" style="margin: 10px auto 0;"/>
@@ -582,7 +586,7 @@
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
                                 <p><a href="https://eu.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-gray dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
+                                <p id="unsubscribe-p" class="dark-black dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
                         <tr>
